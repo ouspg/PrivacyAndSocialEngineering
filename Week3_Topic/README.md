@@ -4,7 +4,7 @@
 
 There have been a few cases of compromised systems due to hardcoded passwords and API keys accidentally ending up in production code. [Google offers some advice how to handle such information more securely](https://cloud.google.com/docs/authentication/api-keys)
 
-Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a single hardcoded password from the provided compiled C code. There is also a secret 'Activation Key' for you to figure out, which has validation arguments that can be seen with the some closer inspection of the decompiler
+Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a single hardcoded password from the provided compiled C code file called **secretKey**. There is also a secret 'Activation Key' for you to figure out, which has validation arguments that can be seen with the some closer inspection of the decompiler
 
 In case if the site is under maintenance, there is a HexRaysSecretKey file, which has the full output of the decompilation process. Use an editor that can understands C++ to inspect the file with proper highlighting.
 
