@@ -34,12 +34,14 @@ Let's look at the information about cookies on the Old School Runescape landing 
 
 ---
 
-## **For further reading**
+## **Further reading**
 
 ***GDPR Related***
 
 [GDPR.EU](https://gdpr.eu/tag/gdpr/)
+
 [europa.eu | Your Europe](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
+
 [edpb.europa.eu | Guidelines on data subject rights - Right of access](https://edpb.europa.eu/our-work-tools/documents/public-consultations/2022/guidelines-012022-data-subject-rights-right_en)
 
 ***Cookie Related***
