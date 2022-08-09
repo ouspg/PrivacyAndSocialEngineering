@@ -8,8 +8,6 @@ You may use prewritten templates, however you should make sure the template used
 
 You can return to this assignment once you have received your information.
 
----
-
 After receiving the answer to your data request answer the following questions. Keep your answers concise, focused and **at most** to 200 words.
 
 1. Which company did you choose to request your data from and how long did they take to submit that information?
@@ -33,3 +31,17 @@ Let's look at the information about cookies on the Old School Runescape landing 
 * In Statistics and Marketing, what other Apps or Companies are listed, other than Jagex 
 
 **22.7.2022**
+
+---
+
+## **For further reading**
+
+***GDPR Related***
+
+[GDPR.EU](https://gdpr.eu/tag/gdpr/)
+[europa.eu | Your Europe](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
+[edpb.europa.eu | Guidelines on data subject rights - Right of access](https://edpb.europa.eu/our-work-tools/documents/public-consultations/2022/guidelines-012022-data-subject-rights-right_en)
+
+***Cookie Related***
+
+[Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9) 
