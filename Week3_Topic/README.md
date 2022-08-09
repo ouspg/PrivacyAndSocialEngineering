@@ -8,6 +8,6 @@ Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you 
 
 In case if the site is under maintenance, there is a HexRaysSecretKey file, which has the full output of the decompilation process. Use an editor that can understands C++ to inspect the file with proper highlighting.
 
-You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and and using the command **./secretKey**
+You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey**
 
-Return a valid **password** and a **valid activation key** along with the **instructions** on how to create a activation key, since there are multiple correct activation keys
+Return a valid **password** and a **valid activation key** along with the **instructions** on how to create an activation key, since there are multiple correct activation keys
