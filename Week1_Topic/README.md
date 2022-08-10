@@ -4,6 +4,8 @@
 
 Create a GDPR-compliant data access request from a company of your choice. We recommend you choose a company you know holds data on you. The response may take some time, according to [GDPR](https://gdpr-info.eu/issues/right-of-access/) this **shouldn't** take more than a month from them receiving the request, however it might take longer than this depending on the company and your request. Therefore it is better to do it as soon as possible after starting the course.
 
+Read at least [GDPR Article 15](https://gdpr-info.eu/art-15-gdpr/) before crafting your request.
+
 You may use prewritten templates, however you should make sure the template used requests all of your data.
 
 You can return to this assignment once you have received your information.
