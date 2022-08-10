@@ -2,7 +2,7 @@
 
 # **Task 1:** Have I been Pwned
 
-[Have I been Pwned](https://haveibeenpwned.com/) is a site that occurrances of emails and phone numbers from various data leak dumps. 
+[Have I been Pwned](https://haveibeenpwned.com/) is a site that tracks occurrances of emails and phone numbers in various data leak dumps. 
 
 Search for ***joe@gmail.com*** and answer the following questions:
 
