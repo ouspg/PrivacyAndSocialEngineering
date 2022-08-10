@@ -36,6 +36,33 @@ Let's look at the information about cookies on the Old School Runescape landing 
 
 ---
 
+## **Task 3:** Browser Fingerprinting
+
+[EFF Cover Your Tracks](https://coveryourtracks.eff.org/)
+
+Run the test made by EFF. After running the test you will see a score for ‘Bits of identifying information’. Below each score you will see how many users on X amount of devices are running the same setup. The rarer your setup is the more uniquely identifiable you are. Return two categories and results where you had the highest and lowest amount of identifying bits of information.
+
+**(Ignore the AD BLOCKER USED section, as it appears to not work correctly, giving a -0.0 score)**
+
+Why does identifiability matter? 
+
+What pros and cons can you think of to being unique vs common?
+
+---
+
+[AmIUnique](https://amiunique.org/)
+
+View your browser fingerprint with Am I Unique. **Canvas elements** are created by taking features from your device and browser. These features are used to generate a picture that represents your browsing setup. Return the similarity percentages of your Canvas and, if your browser supports it, WebGL Data Attributes.
+
+What is your Screen width and Screen height similarity percentage? You may or may not have a common screen resolution in use. However people use User Interfaces and Taskbars of different sizes. Now check out the similarity percentage for Screen available width and Screen available height. Can you explain your result?
+
+Return similarity percentage for:
+-Canvas + WebGL Data
+-Screen width, Screen height
+-Screen available width, Screen available height
+
+---
+
 ## **Further reading**
 
 ***GDPR Related***
