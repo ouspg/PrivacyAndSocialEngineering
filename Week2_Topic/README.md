@@ -49,4 +49,4 @@ Name your application and answer the following questions for each application.
 1. How many trackers and permissions each application has?
 2. How many 'dangerous' and/or 'special' permissions does each have? (Red exclamation mark)
 3. Did the applications have permissions to access such data they would use or sell for monetary gain? Which permissions and trackers are these?
-4. Describe two atttack vectors for each application, had an attacker gained access into the application and/or their database.
+4. Describe two atttack vectors enabled by these permissions for each application, had an attacker gained access into the application and/or their database.
