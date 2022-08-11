@@ -57,9 +57,9 @@ View your browser fingerprint with Am I Unique. **Canvas elements** are created 
 What is your Screen width and Screen height similarity percentage? You may or may not have a common screen resolution in use. However people use User Interfaces and Taskbars of different sizes. Now check out the similarity percentage for Screen available width and Screen available height. Can you explain your result?
 
 Return similarity percentage for:
--Canvas + WebGL Data
--Screen width, Screen height
--Screen available width, Screen available height
+- Canvas + WebGL Data
+- Screen width, Screen height
+- Screen available width, Screen available height
 
 ---
 
