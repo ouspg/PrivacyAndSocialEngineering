@@ -8,7 +8,7 @@ Search for ***joe@gmail.com*** and answer the following questions:
 
 In how many **data breaches** and **pastes** can this email be found?
 
-What are the **compromised data types** in the following services? (each seperately)
+What are the **compromised data types** in the following services? (each separately)
 
 - **Bell**
 - **Drizly**
