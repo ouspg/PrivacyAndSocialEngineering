@@ -1,6 +1,6 @@
 # **Week 2**
 
-# **Task 1:** Have I been Pwned
+## **Task 1:** Have I been Pwned
 
 [Have I been Pwned](https://haveibeenpwned.com/) is a site that tracks occurrances of emails and phone numbers in various data leak dumps. 
 
@@ -18,7 +18,7 @@ While you are at it you might want to check if **your own email addresses** have
 
 ---
 
-# **Task 2:** IoT Home Assistants
+## **Task 2:** IoT Home Assistants
 
 Take a quick look at these few short articles about
 
@@ -30,9 +30,12 @@ Take a quick look at these few short articles about
 
 What **security risks** and **privacy implications** there are from bringing all these devices to your home?
 
+For each device separately describe
+- Two situations where privacy and/or security of the user can be compromised
+
 ---
 
-# **Task 3:** Application Permissions
+## **Task 3:** Application Permissions
 
 [Exodus](https://reports.exodus-privacy.eu.org/en/)
 
