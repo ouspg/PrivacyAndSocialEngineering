@@ -14,8 +14,8 @@ Provided with a clean virtual machine install of Windows 10. Install utilities y
 
 Get a baseline of traffic leaving your machine. Analyzing it you may find destinations for the traffic, document all these findings.
 
-Windows includes built in settings to harden your privacy and limit what actually gets collected. Do your best to harden your machine and minimize data forwarded to microsoft or their associates. You may follow instructions found in the web, however you should make sure you understand what you are doing.
+Windows includes built in settings to harden your privacy and limit what actually gets collected. Do your best to harden your machine and minimize data forwarded to microsoft or their associates. You may follow instructions and/or tools found in the web(such [O&O ShutUp10++](https://www.oo-software.com/en/shutup10)), however you should make sure you understand what you are doing.
 
 After hardening your machine analyze it's traffic again. Document your findings and compare them to your previous results. Are there differences and have you noticed the operating system behaving differently, again document your findings.
 
-Summarize your research precisely, including actions taken to harden the OS and what changed in it's behaviour. Do you think these tradeoffs are worth your losing your data?
+Summarize your research precisely, including actions taken to harden the OS and what changed in it's behaviour. Do you think these tradeoffs are worth losing your data?
