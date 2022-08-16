@@ -10,7 +10,9 @@ Search online what data your phone's manufacturer and OS are sending forward. An
 
 ## **Task 2:** Windows 10 Privacy Hardening
 
-Provided with a clean virtual machine install of Windows 10. Install utilities you want and/or need to analyze your network traffic (such as [wireshark](https://www.wireshark.org/)). Get a baseline of traffic leaving your machine. Analyzing it you may find destinations for the traffic, document all these findings.
+Provided with a clean virtual machine install of Windows 10. Install utilities you want and/or need to analyze your network traffic (such as [wireshark](https://www.wireshark.org/) or [Windows Diagnostic Data Viewer](https://docs.microsoft.com/en-us/windows/privacy/diagnostic-data-viewer-overview) Keep in mind the latter one being microsofts own software). 
+
+Get a baseline of traffic leaving your machine. Analyzing it you may find destinations for the traffic, document all these findings.
 
 Windows includes built in settings to harden your privacy and limit what actually gets collected. Do your best to harden your machine and minimize data forwarded to microsoft or their associates. You may follow instructions found in the web, however you should make sure you understand what you are doing.
 
