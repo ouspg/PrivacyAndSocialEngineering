@@ -19,10 +19,14 @@ Task will be graded based on the methods used and actions taken to accomplish th
 
 There have been a few cases of compromised systems due to hardcoded passwords and API keys accidentally ending up in production code. [Google offers some advice how to handle such information more securely](https://cloud.google.com/docs/authentication/api-keys)
 
-Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a single hardcoded password from the provided compiled C code file called **secretKey**. There is also a secret 'Activation Key' for you to figure out, which has validation arguments that can be seen with the some closer inspection of the decompiler
+Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a **plaintext hardcoded password** from the provided compiled C code file called **secretKey**. 
 
-In case if the site is under maintenance, there is a HexRaysSecretKey file, which has the full output of the decompilation process. Use an editor that can understands C++ to inspect the file with proper highlighting.
+As a second task there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with the some closer inspection of the decompiler.
+
+As a third and last task there is a **Super secret password** that is hardcoded, but has been encrypted with a mystery hash.
+
+In case if the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process. Use an editor that can understands C++ to inspect the file with proper highlighting.
 
 You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey**
 
-Return a valid **password** and a **valid activation key** along with the **instructions** on how to create an activation key, since there are multiple correct activation keys
+After completing the task, you have five items to return. Return a valid **password** and **one valid activation key** along with the **instructions** on how to create rest of the activation keys, since there are multiple valid ones. Also return the **plaintext version of the super secret password** and **the name of the hash function** it was encrypted with.
