@@ -9,20 +9,3 @@ spiderfoot open source edition can be installed from github: https://github.com/
 and is also pre installed in kali linux
 
 ---
-
-## **Task 2:** VPN comparison
-
-Go to https://techlore.tech/vpn and choose three vpn:s from the list and click compare.
-provide short answers to what following listings mean vpn:s privacy and security in mind and how different vpn:s fare in each category. (you can change your choices to get differing results in each category):
-* OpenVPN and Wireguard
-* System/app killswitch
-* Infracture and client audit
-* Logging policy
-* Jurisdiction
-* 14 Eyes
-* Warrant canary/transparency report
-* Anon Payment and Signup
-* Misleading security marketing
-* Open source client
-* Multihop
-* Port Forwarding
