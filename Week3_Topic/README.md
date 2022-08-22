@@ -30,3 +30,42 @@ In case if the site is under maintenance, there is a HexRaysOutput file, which h
 You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey**
 
 After completing the task, you have five items to return. Return a valid **password** and **one valid activation key** along with the **instructions** on how to create rest of the activation keys, since there are multiple valid ones. Also return the **plaintext version of the super secret password** and **the name of the hash function** it was encrypted with.
+
+---
+
+## **Task 3:** Blockhain
+
+We will take a brief look at online tools available for inspecting the bitcoin blockchain
+
+Just as a quick recap: **Blockchain** is a ledger containing information of all transactions made with the cryptocurrency. Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block. These hashes are brute forces aka **mined** mainly using the prosessing power of Graphics Processing Units (GPU).
+
+Early Bitcoin developer Laszlo Hanyecz was alledgedly one of the first to invent GPU mining. However, what he is remembered for is the first documented purchase of goods using bitcoin, where he traded **10,000** bitcoin for **2 Pizzas**.
+
+You can find conflicting information from the internet about the pizza parlor where the pizzas were bought from. Aside from that, by inspecting the blockchain we can find exact information about the transaction.
+
+Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect the block **57043** and provide the following information.
+
+Transaction
+- Date and Time of the transaction
+- Hash of the transaction
+- Address of sender
+- Address of receiver
+- Transaction fee amount in bitcoin
+
+Receiver Address
+- Who was the owner of this address? Use [OXT.me](https://oxt.me/) and Google to figure out the real name of the user
+- Date and Time when he 'spent' the 10,000 bitcoins they received from the trade
+- Transaction hash of the above mentioned transaction
+- Addresses that received the 10,000 bitcoins and the corresponding sums to each address
+
+Block
+- Hash of the block
+- Amount of transactions in the block
+- Block reward amount
+
+Miner
+- Address of the miner for the block 57043
+- Has this address spent the block reward they received?
+
+
+**FYI**: **Maltego** is a great tool for blockchain tracing. It let's you to create a tree like structure out of inbound and outbound transactions from different addresses. It also requires registration.
