@@ -54,9 +54,8 @@ Transaction
 
 Receiver Address
 - Who was the owner of this address? Use [OXT.me](https://oxt.me/) and Google to figure out the real name of the user
-- Date and Time when he 'spent' the 10,000 bitcoins they received from the trade
-- Transaction hash of the above mentioned transaction
-- Addresses that received the 10,000 bitcoins and the corresponding sums to each address
+- The owner instantly divided and forwarded the 10,000 to **how many** other addresses
+- Addresses that received the 10,000 bitcoin and the corresponding sums to each address
 
 Block
 - Hash of the block
