@@ -33,7 +33,7 @@ After completing the task, you have five items to return. Return a valid **passw
 
 ---
 
-## **Task 3:** Blockhain
+## **Task 3:** Blockchain
 
 We will take a brief look at online tools available for inspecting the bitcoin blockchain
 
