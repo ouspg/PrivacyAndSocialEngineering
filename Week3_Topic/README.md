@@ -58,12 +58,12 @@ Receiver Address
 - Addresses that received the 10,000 bitcoin and the corresponding sums to each address
 
 Block
-- Hash of the block
+- Hash of the block 57043
 - Amount of transactions in the block
 - Block reward amount
 
 Miner
-- Address of the miner for the block 57043
+- Address of the miner for block 57043
 - Has this address spent the block reward they received?
 
 
