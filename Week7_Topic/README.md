@@ -18,6 +18,6 @@ Example tools:
 
 You are to review the email sent to you and grade it on a scale of 0-5. Write your name at the end of the review and send it as a response to the original email.
 
-For grading return your email, tester used and possible output as well as your peer's review.
+For grading return the email you sent, tester used with any possible output as well as your peer's review.
 
 ## **Task 2:** Social Engineering on the Phone
