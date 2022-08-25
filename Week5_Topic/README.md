@@ -9,3 +9,11 @@ spiderfoot open source edition can be installed from github: https://github.com/
 and is also pre installed in kali linux
 
 ---
+
+## **Task 2:** Security Questions
+
+Security questions are still often used to confirm your identity in online services
+
+Work to this **Account recovery chatbot** and try to reset the password of a long lost account called **PewDie** that may have once belonged to the internet personality **Felix Kjellberg**
+
+//chatbot in not currently hosted//
