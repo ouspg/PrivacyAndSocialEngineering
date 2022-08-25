@@ -24,9 +24,11 @@ Work to this **Account recovery chatbot** and try to reset the password of a lon
 
 Pictures can contain a lot of additional metadata as EXIF (Exchangeable Image File Format) Data
 
-Download **image2** and extract the following information from it
+Download **[image2](https://github.com/ouspg/PrivacyAndSocialEngineering/blob/main/Week5_Topic/images/image2.jpg?raw=true)** and extract the following information from it
 - GPS coordinates
 - Device manufacturer and the model the image has been taken with
 - Date and time when the image has been originally taken
 
-Then strip the image of the above mentioned information and return the image. You can do this for example by using **Imagemagick**
+Then strip the image of the above mentioned information and return the image. You can do this for example by using **Imagemagick**. The image should not contain the above mentioned information **in any form**.
+
+For reference here is **image1** that is an example of a picture where the EXIF data has been stripped
