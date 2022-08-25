@@ -21,3 +21,7 @@ You are to review the email sent to you and grade it on a scale of 0-5. Write yo
 For grading return the email you sent, tester used with any possible output as well as your peer's review.
 
 ## **Task 2:** Social Engineering on the Phone
+
+Phones have been steadily topping the scam lists in English-speaking countries for some time now. More often than not, the phone scams are social engineering, with the bad actors posing as another person or a corporate entity. 
+
+In the security side of things, social engineering on the phone more often is Vishing; Voice Phishing. The bad actors are using social engineering to make their targets **want** to do, whatever the bad actors want. The goal of Vishing is to gain access to valuable and/or protected information, helping them compromise the target.
