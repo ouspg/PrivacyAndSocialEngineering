@@ -17,3 +17,16 @@ Security questions are still often used to confirm your identity in online servi
 Work to this **Account recovery chatbot** and try to reset the password of a long lost account called **PewDie** that may have once belonged to the internet personality **Felix Kjellberg**
 
 //chatbot in not currently hosted//
+
+---
+
+## **Task 3:** EXIF Metadata
+
+Pictures can contain a lot of additional metadata as EXIF (Exchangeable Image File Format) Data
+
+Download **image2** and extract the following information from it
+- GPS coordinates
+- Device manufacturer and the model the image has been taken with
+- Date and time when the image has been originally taken
+
+Then strip the image of the above mentioned information and return the image. You can do this for example by using **Imagemagick**
