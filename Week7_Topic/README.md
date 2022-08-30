@@ -8,7 +8,7 @@ Your task is to write a credible and believable spear phishing e-mail to your pa
 
 Before sending the email, test the email with at least one detection tool of your choice. 
 
-Example tools: 
+Example tools (you are free to use others as you please): 
 
 [MailGenius](https://www.mailgenius.com/) 
 
@@ -25,3 +25,53 @@ For grading return the email you sent, tester used with any possible output as w
 Phones have been steadily topping the scam lists in English-speaking countries for some time now. More often than not, the phone scams are social engineering, with the bad actors posing as another person or a corporate entity. 
 
 In the security side of things, social engineering on the phone more often is Vishing; Voice Phishing. The bad actors are using social engineering to make their targets **want** to do, whatever the bad actors want. The goal of Vishing is to gain access to valuable and/or protected information, helping them compromise the target.
+
+Examine following Vishing transcripts targeted at both companies and individuals.
+
+**Money Laundering** 
+
+Call to the founder(Matti Meikäläinen) of a Finnish company carrying out accounting tasks on behalf of external contractors.
+
+> *Founder (F)* : Founder speaking
+
+> *Caller (C)* : Hello this is Meikälainen Maija from the Finnish Regional State Administrative Agency, you might know us as AVI or as Aluehallintovirasto. 
+> I was trying to reach Meikäläinen Matti. Did we have the right number on register?
+
+> *(F)* : Yes, Hello Maija, this is Matti.
+
+> *(C)* : Wonderful.. I am calling you for the Anti-money laundering registration. As you might know, registration for anti-money laundering became obligatory in 2019. 
+> Due to Covid restraints, we've had some difficulties handling the applications. Do you remember filling the registration form?
+
+> *(F)* : Uhh.. I think so, is there something wrong with my form?
+
+> *(C)* : Oh goodness, no! Our IT-system requires us to call and confirm the identities for each company. This is done to have a record of the people possibly coming in contact with laundered money. Unfortunately there is quite the amount of small businesses used to circulate laundered money. 
+> Is there any other personnel handling transactions within your company?
+
+> *(F)* : Alright, that is important I guess. We have only one other person who handles payments; our own accounting manager Miina Meikäläinen.
+
+> *(C)* : Fantastic, nice to see businesses have only one accounting manager. I will be contacting her as well, could you provide me with her contact information? 
+
+> *(F)* : Ah yes. You can contact her at *email@companyemail.com* and her phone number is **********.
+
+> *(C)* : Right that was *email@companyemail.com* and *********'? 
+
+> *(F)* : Correct.
+
+> *(C)* : And would you like us to send the confirmation email to your personal or company email?
+
+> *(F)* : Company email please. *founder@companyemail.com*. Thank you very much.
+
+> *(C)* : Great, thank you for being so helpful. The email has the confirmation link, just follow that to confirm we contacted you and that's it!
+
+> *(F)* : Thank you, that seems simple enough! Will I be hearing from you after contacting Miina?
+
+> *(C)* : Hopefully not, if everything goes smoothly your registration is complete after her information is on the record.
+
+> *(F)* : Ah right. Well thank you for contacting me so swiftly, and have a nice day.
+
+> *(C)* : You too sir, have a nice day.
+
+**Fraudulent transaction**
+
+
+**_All transcripts are purely fictional and any similarities to actual events are coincidental_**
