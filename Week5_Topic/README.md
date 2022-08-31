@@ -31,6 +31,6 @@ Download **[image2](https://github.com/ouspg/PrivacyAndSocialEngineering/blob/ma
 - Device manufacturer and the model the image has been taken with
 - Date and time when the image has been originally taken
 
-Then strip the image of the above mentioned information and return the image. You can do this for example by using **Imagemagick**. The image should not contain the above mentioned information **in any form**.
+Then strip the image of the above mentioned information and return the image. You can do this for example by using **[Imagemagick](https://imagemagick.org/index.php)**. The image should not contain the above mentioned information **in any form**.
 
 For reference here is **[image1](https://github.com/ouspg/PrivacyAndSocialEngineering/blob/main/Week5_Topic/images/image1.jpg?raw=true)** that is an example of a picture where the EXIF data has been stripped
