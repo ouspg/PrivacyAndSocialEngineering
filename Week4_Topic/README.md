@@ -40,3 +40,37 @@ Windows has built-in settings to protect your privacy and limit what data is act
 Once you have hardened your machine, re-analyze its traffic. Document your findings and compare them to your previous results. If there are or if you have noticed that the operating system behaves differently, document your findings.
 
 Make a detailed summary of your research, including actions taken to harden the OS and what changed in its behaviour. Do you think these trade-offs are worth the loss your data?
+
+---
+
+## **Task 4** Leaving no traces with, Tails, GPG, Tor and OnionShare
+
+perehtymis linkit Tails, Tor, GPA, OnionShare --
+
+*This task **requires a usb stick** and operates through Tor so we recommend the **TOR TASK HERE** before continuing to this one*
+
+In this task we are taking a look at staying private and anonymous while conducting private business and sharing files.
+
+Tails(The Amnesiac Incognito Live System) is a Linux operating system distribution focused heavily on protecting the user from surveillance and censorship. The portable operating system runs from a live usb installation and routes everything you do online through Tor. Being an amnesiac live system the system is forgets everything everytime you unplug your usb stick, that means always starting with an untracked system.
+
+The recommended way to install Tails is through their [official installation instructions](https://tails.boum.org/install/index.en.html), **note that your usb stick will be wiped clean.** Other installation means are **EXTREMELY HEAVILY DISCOURAGED** as they do not guarantee proper operations and may result in identity leakage or traces on computers. 
+
+After installing **DO NOT UPDATE THE SYSTEM WITH APT**, this might break the operating system or the packages, Tails releases a upgrades every six weeks.
+
+Now that the warnings are done, go ahead and follow their [installation instructions](https://tails.boum.org/install/index.en.html) to install Tails on a usb stick. 
+
+At this point we recommend having this task open on another computer or your phone as you will be booting into Tails shortly.
+
+
+**TODO**
+
+
+What to return for this task:
+
+Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your public key to decrypt it on the OnionShare address. 
+
+//Then answer the questions below\\ __Is this needed?__
+
+1. What happens when you pull out your Tails usb stick?
+
+2. Why do these kinds of operations and services exist?
