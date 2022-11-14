@@ -45,7 +45,7 @@ Make a detailed summary of your research, including actions taken to harden the 
 
 ## **Task 4** Leaving no traces with, Tails, GPG, Tor and OnionShare
 
-[Tails](https://tails.boum.org/), [GPA](https://www.gnupg.org/related_software/gpa/index.html), [Tor](https://www.torproject.org/), [OnionShare](https://onionshare.org/) 
+[Tails](https://tails.boum.org/), [GPG](https://www.gnupg.org/software/index.html)/[GPA](https://www.gnupg.org/related_software/gpa/index.html), [Tor](https://www.torproject.org/), [OnionShare](https://onionshare.org/) 
 
 
 *This task **requires a usb stick** and operates through Tor so we recommend the **TOR TASK HERE** before continuing to this one*
@@ -68,7 +68,11 @@ After installing **DO NOT UPDATE THE SYSTEM WITH APT**, this might break the ope
 <summary>What is GPG/GPA?</summary>
 <br>
 
-GPG/GPA explanation
+GPG is a complete and free implementation of OpenPGP stadard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates. 
+
+Here in this task we are using it to encrypt an image file; a screenshot of your Tails instance with your name and Student ID.
+
+[More on this](https://www.gnupg.org/faq/gnupg-faq.html)
 
 </details>
 
@@ -76,7 +80,11 @@ GPG/GPA explanation
 <summary>What is TOR?</summary>
 <br>
 
-Little about Tor in the context of this task
+You should by now be familiar with Tor and aware of it's capabilities and limitations. Tor(The Onion Router) is free and open-source designed for enabling anonymous communications. Little about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
+
+Tor network consists of thousands of relays worldwide concealing user's location and usage. Tor attempts to protect the privacy of it's users and enable the ability to communicate freely and confidentially.
+
+For more and precise information on how Tor networks and browsers operate, refer their own [site](https://www.torproject.org/), their documentation is vast and of high quality
 
 </details>
 
