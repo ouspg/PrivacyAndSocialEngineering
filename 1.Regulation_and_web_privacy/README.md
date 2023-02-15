@@ -1,25 +1,65 @@
-# **Week 1** 
+# **Week 1: Regulation and privacy on the web** 
+
+The GDPR regulation entered into force on 24 May 2016 and applies since 25 May 2018.
+Since then, data collection of the companies has been restricted and consumer rights have been expanded.
+The usage, processing, and storage of personally identifiable information (PII) (information about an identifiable, living person) was limited for companies operating in European Union.
+
+Exercises this week go through some practical examples of why the regulation exists and what it means in practice.
+The focus is on browser-based internet use.
+
+## Reading material
+
+### GDPR Related
+
+[GDPR.EU](https://gdpr.eu/tag/gdpr/)
+
+[europa.eu | Your Europe](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
+
+[edpb.europa.eu | Guidelines on data subject rights - Right of access](https://edpb.europa.eu/our-work-tools/documents/public-consultations/2022/guidelines-012022-data-subject-rights-right_en)
+
+### Cookie Related
+
+[Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9) 
+
+
+Task #|Points|Description|
+-----|:---:|-----------|
+Task 1 | 1 | GDPR Data Request
+Task 2 | 2 | Cookie Raid
+Task 3 | 3 | Browser Fingerprinting
+
+Grade 1 can be acquired by doing the mini-exam for the corresponding week.
+
 
 ## **Task 1:** GDPR Data Request
 
-Create a GDPR-compliant data access request from a company of your choice. We recommend you choose a company you know holds data on you. The response may take some time, according to [GDPR](https://gdpr-info.eu/issues/right-of-access/) this **shouldn't** take more than a month from them receiving the request, however it might take longer than this depending on the company and your request. Therefore it is better to do it as soon as possible after starting the course.
+But now, companies are obligated to provide the information they have collected about you, and this will be your first task.
+
+Create a GDPR-compliant data access request from a company of your choice. We recommend you choose a company you know holds data on you.
+The response may take some time, according to [GDPR](https://gdpr-info.eu/issues/right-of-access/) this **shouldn't** take more than a month from them receiving the request, however, it might take longer than this depending on the company and your request.
+Therefore it is better to do it as soon as possible after starting the course.
 
 Read at least [GDPR Article 15](https://gdpr-info.eu/art-15-gdpr/) before crafting your request.
 
-You may use prewritten templates, however you should make sure the template used requests all of your data.
+You may use prewritten templates, however, you should make sure the template used requests all of your data.
 
-You can return to this assignment once you have received your information.
+You can return to this assignment once you have received your information, but you should make the request as soon as possible.
 
-After receiving the answer to your data request answer the following questions. Keep your answers concise, focused and **at most** to 200 words.
+After receiving the answer to your data request answer the following questions. Keep your answers concise, focused and **at most** 200 words.
 
-1. Which company did you choose to request your data from and how long did they take to submit that information?
+1. Which company did you choose to request your data from and how long did it take to submit that information?
 2. In what format did you receive your data and how many pages of it were there?
 3. What kind of information was there that you had not directly given yourself? 
-4. Were you surprised about something, what? 
+4. Did you understand the meaning of the information?
+5. Do you think that the company collected the least amount of data required to provide the service you needed? 
+6. Were you surprised about something, what? 
 
 ---
 
 ## **Task 2:** Cookie Raid
+
+Cookie banners are known phenomenon since GDPR entered into force.
+Essentially, cookies are more or less persistent way to store user and website specific data.
 
 [Old School Runescape Landing Page](https://oldschool.runescape.com/)
 
@@ -63,16 +103,3 @@ Return similarity percentage for:
 
 ---
 
-## **Further reading**
-
-***GDPR Related***
-
-[GDPR.EU](https://gdpr.eu/tag/gdpr/)
-
-[europa.eu | Your Europe](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
-
-[edpb.europa.eu | Guidelines on data subject rights - Right of access](https://edpb.europa.eu/our-work-tools/documents/public-consultations/2022/guidelines-012022-data-subject-rights-right_en)
-
-***Cookie Related***
-
-[Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9) 

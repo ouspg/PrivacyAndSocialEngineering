@@ -13,6 +13,23 @@ Upon completion of the course the student will be able to:
 
 ## Practicalities
 
+The course includes practical exercises from the previously mentioned topics.
+In general, you are not required to complete technically very challenging tasks to acquire grade 3, but beyond that command-line skills might be required.
+So be prepared!
+
+### Grading
+
+The course can be passed by completing the questionnaires in the Moodle.
+These will be released weekly and will handle current affairs.
+
+Total Points|Total Grade
+:-:|:-:
+9+ | 2
+15+ | 3
+21+ | 4
+27+ | 5
+
+
 ## General material
 
 [GDPR regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679)
