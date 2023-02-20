@@ -74,7 +74,7 @@ When asking for consent, there is often included also a bit confusing term: legi
 
 > Your company/organisation has a legitimate interest when the processing takes place within a client relationship, when it processes personal data for direct marketing purposes, to prevent fraud or to ensure the network and information security of your IT systems. [^9]
 
-To read more about security related properties of the cookies, see the book Computer Security and the Internet and the Chapter *Web and Browser Security* [^10]. 
+To read more about security-related properties of cookies, see the book Computer Security and the Internet and the Chapter *Web and Browser Security* [^10]. 
 
 ### Looking at the [Old School Runescape Landing Page](https://oldschool.runescape.com/)
 
@@ -130,7 +130,7 @@ Return similarity percentage for:
 - Screen available width, Screen available height
 
 
----
+## Task 4: TikTok Challenge (bonus)
 
 [^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
 
