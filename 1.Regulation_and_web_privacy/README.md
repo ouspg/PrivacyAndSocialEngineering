@@ -17,10 +17,10 @@ Points from the exercises count towards better grades than the passable grade 1,
 
 Task #|Points|Description|
 -----|:---:|-----------|
-Task 1 | 1 | GDPR Data Request
-Task 2 | 1 | Cookie Raid
-Task 3 | 1 | Browser Fingerprinting
-Task 4 | 2 | TikTok Challenge (bonus)
+[Task 1](#task-1-gdpr-data-request) | 1 | GDPR Data Request
+[Task 2](#task-2-cookie-raid) | 1 | Cookie Raid
+[Task 3](#task-3-browser-fingerprinting) | 1 | Browser Fingerprinting
+[Task 4](#task-4-tiktok-challenge--bonus-) | 2 | TikTok Challenge (bonus)
 
 
 ## **Task 1:** GDPR Data Request
@@ -78,7 +78,7 @@ To read more about security related properties of the cookies, see the book Comp
 
 ### Looking at the [Old School Runescape Landing Page](https://oldschool.runescape.com/)
 
-Let's look at the information about cookies on the Old School Runescape landing page. When you enter the page, you should be prompted to give your consent to the use of cookies. If this is not the case, you may have visited the site before or you may have already given your consent to bulk cookie tracking on another site that uses Cookiebot as its cookie manager. You can see the prompt again if you open the page in a new safe search page, such as Incognito in Chrome or Private Search in Safari and Firefox. Use the *Details* tab to answer the following questions:
+Let's look at the information about cookies on the Old School Runescape landing page. When you enter the page, you should be prompted to give your consent to the use of cookies. If this is not the case, you may have visited the site before or you may have already given your consent to bulk cookie tracking on another site that uses Cookiebot as its cookie manager. You can see the prompt again if you open the page in a new safe search page, such as Incognito in Chrome or Private Search in Safari and Firefox. Use the *Details* tab **to answer the following questions**:
 
 * How many necessary cookies are there? 
 * What happens if you try to disable necessary cookies? 
@@ -95,9 +95,20 @@ Cookies are presented as key-value pairs.
 
 ## **Task 3:** Browser Fingerprinting
 
-[EFF Cover Your Tracks](https://coveryourtracks.eff.org/)
+Cookies are an efficient way to identify the specific user from a single device, especially if they have authenticated against the service.
+What if the user has not always logged in to the website or has prevented all the cookies?
 
-Run the test made by EFF. After running the test you will see a score for ‘Bits of identifying information’. Below each score you will see how many users on X amount of devices are running the same setup. The rarer your setup is the more uniquely identifiable you are. Return two categories and results where you had the highest and lowest amount of identifying bits of information.
+A more general way to identify the specific user across the different services is *fingerprinting*.
+With fingerprinting, a website might also acquire data to link multiple different accounts of the user into a single one or include all unauthenticated traffic to authenticated accounts.
+Fingerprinting attempts to use all available information from the user to generate unique and identifying characteristics. 
+
+A notorious case about general fingerprinting is Google's "No CAPTCHA reCAPTCHA", while the purpose might have been good [^12] [^13] [^14].
+
+In this assignment, you can test your browsers and the traces they leave.
+
+### Task 3 A) [EFF Cover Your Tracks](https://coveryourtracks.eff.org/)
+
+Run the test made by EFF. After running the test you will see a score for ‘Bits of identifying information’. Below each score, you will see how many users on X amount of devices are running the same setup. The rarer your setup is the more uniquely identifiable you are. Return two categories and results where you had the highest and lowest amount of identifying bits of information.
 
 **(Ignore the AD BLOCKER USED section, as it appears to not work correctly, giving a -0.0 score)**
 
@@ -107,7 +118,7 @@ What pros and cons can you think of to being unique vs common?
 
 ---
 
-[AmIUnique](https://amiunique.org/)
+### Task 3 B) [AmIUnique](https://amiunique.org/)
 
 View your browser fingerprint with Am I Unique. **Canvas elements** are created by taking features from your device and browser. These features are used to generate a picture that represents your browsing setup. Return the similarity percentages of your Canvas and, if your browser supports it, WebGL Data Attributes.
 
@@ -117,6 +128,7 @@ Return similarity percentage for:
 - Canvas + WebGL Data
 - Screen width, Screen height
 - Screen available width, Screen available height
+
 
 ---
 
@@ -141,3 +153,9 @@ Return similarity percentage for:
 [^10]: [Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9)
 
 [^11]: [Data protection under GDPR](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
+
+[^12]: [Reverse-engineering the new “captchaless” ReCaptcha system...](https://github.com/neuroradiology/InsideReCaptcha)
+
+[^13]: [Are you a robot? Introducing “No CAPTCHA reCAPTCHA”](https://security.googleblog.com/2014/12/are-you-robot-introducing-no-captcha.html)
+
+[^14]: [I’m not a human: Breaking the Google reCAPTCHA](https://www.blackhat.com/docs/asia-16/materials/asia-16-Sivakorn-Im-Not-a-Human-Breaking-the-Google-reCAPTCHA-wp.pdf)
