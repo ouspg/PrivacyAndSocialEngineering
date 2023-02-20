@@ -138,6 +138,6 @@ Return similarity percentage for:
 
 [^9]: [What does ‘grounds of legitimate interest’ mean?](https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/legal-grounds-processing-data/grounds-processing/what-does-grounds-legitimate-interest-mean_en)
 
-[^10] [Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9)
+[^10]: [Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9)
 
-[^11] [Data protection under GDPR](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
+[^11]: [Data protection under GDPR](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
