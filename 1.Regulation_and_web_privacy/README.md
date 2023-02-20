@@ -1,7 +1,7 @@
 # **Week 1: Regulation and privacy on the web** 
 
-The GDPR regulation entered into force on May 2016 and applies since May 2018.
-Since then, data collection of the companies has been restricted and consumer rights have been expanded.
+The GDPR regulation [^1] entered into force on May 2016 and applies since May 2018.
+Since then, data collection of the companies has been restricted and consumer rights have been expanded [^7].
 The usage, processing, and storage of personally identifiable information (PII) (information about an identifiable, living person) was limited for companies operating in European Union.
 
 Exercises this week go through some practical examples of why the regulation exists and what it means in practice.
@@ -21,9 +21,7 @@ The focus is on browser-based internet use.
 
 [europa.eu | Your Europe](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
 
-[edpb.europa.eu | Guidelines on data subject rights - Right of access](https://edpb.europa.eu/our-work-tools/documents/public-consultations/2022/guidelines-012022-data-subject-rights-right_en)
-
-There are also new regulations on the way, such as ([European ePrivacy Regulation](https://digital-strategy.ec.europa.eu/en/policies/eprivacy-regulation)), which will further attempt to reinforceg trust and security in the digital world.
+There are also new regulations on the way, such as ([European ePrivacy Regulation](https://digital-strategy.ec.europa.eu/en/policies/eprivacy-regulation)), which will further attempt to reinforce trust and security in the digital world.
 
 ### Cookie Related
 
@@ -46,7 +44,7 @@ Task 4 | 2 | TikTok Challenge (bonus)
 But now, companies are obligated to provide the information they have collected about you, and this will be your first task.
 
 Create a GDPR-compliant data access request from a company of your choice. We recommend you choose a company you know holds data on you.
-The response may take some time, according to [GDPR](https://gdpr-info.eu/issues/right-of-access/) this **shouldn't** take more than a month from them receiving the request, however, it might take longer than this depending on the company and your request.
+The response may take some time, according to GDPR [^6][^7] this **shouldn't** take more than a month from them receiving the request, however, it might take longer than this depending on the company and your request.
 Therefore it is better to do it as soon as possible after starting the course.
 
 Read at least [GDPR Article 15](https://gdpr-info.eu/art-15-gdpr/) before crafting your request.
@@ -87,15 +85,7 @@ Essentially, cookies are the more or less persistent way to store user and websi
 
 > If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent. [^1] [^2] [^3] [^4] [^5]
 
-[^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
 
-[^2]: [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/)
-
-[^3]: [Cookie Banner](https://cookieinformation.com/cookie-banner/)
-
-[^4]: [Cookie Consent Exemptions: Strictly Necessary Cookies](https://www.cookieyes.com/blog/cookie-consent-exemption-for-strictly-necessary-cookies/)
-
-[^5]: [Consent guidelines by The European Data Protection Board](https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_guidelines_202005_consent_en.pdf)
 
 ### [Old School Runescape Landing Page](https://oldschool.runescape.com/)
 
@@ -107,6 +97,9 @@ Let's look at the information about cookies on the Old School Runescape landing 
 * List 3 different cookie types from necessary cookies 
 * In Statistics, what are the expiry time and cookie type of **JXWEBUID** 
 * In Statistics and Marketing, what other Apps or Companies are listed, other than Jagex 
+
+You can inspect cookies by using the browser's developer tools.
+For example, with Firefox, you can open `Web Developer Tools` panel, and from there, the storage tab.
 
 ---
 
@@ -137,3 +130,18 @@ Return similarity percentage for:
 
 ---
 
+[^8]: [REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+
+[^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
+
+[^2]: [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/)
+
+[^3]: [Cookie Banner](https://cookieinformation.com/cookie-banner/)
+
+[^4]: [Cookie Consent Exemptions: Strictly Necessary Cookies](https://www.cookieyes.com/blog/cookie-consent-exemption-for-strictly-necessary-cookies/)
+
+[^5]: [Consent guidelines by The European Data Protection Board](https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_guidelines_202005_consent_en.pdf)
+
+[^6]: [GDPR - Right of Access](https://gdpr-info.eu/issues/right-of-access/)
+
+[^7]: [Guidelines 01/2022 on data subject rights - Right of access](https://edpb.europa.eu/our-work-tools/documents/public-consultations/2022/guidelines-012022-data-subject-rights-right_en)
