@@ -76,7 +76,7 @@ European ePrivacy Directive (Cookie Law) was already effective in 2002, but GDPR
 
 Cookie banners are a known phenomenon, and they have been used mainly for one purpose; **to identify you**.
 
-Cookies will allow the website to store domain-specific information in the browser: 
+Cookies will allow the website to store domain-specific information in the browser, for example to: 
 
   * Keep you authenticated to the website (**session management**)
   * Site settings and targeted advertising (**personalisation**)
@@ -85,17 +85,17 @@ Cookies will allow the website to store domain-specific information in the brows
 
 Essentially, cookies are the more or less persistent way to store user and website-specific data.
 
-> If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent.[1, 2, 3, 4]
+> If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent.[^1, ^2, ^3, ^4, ^5]
 
-[1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
+[^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
 
-[2]: [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/)
+[^2]: [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/)
 
-[3]: [Cookie Banner](https://cookieinformation.com/cookie-banner/)
+[^3]: [Cookie Banner](https://cookieinformation.com/cookie-banner/)
 
-[4]: [Cookie Consent Exemptions: Strictly Necessary Cookies](https://www.cookieyes.com/blog/cookie-consent-exemption-for-strictly-necessary-cookies/)
+[^4]: [Cookie Consent Exemptions: Strictly Necessary Cookies](https://www.cookieyes.com/blog/cookie-consent-exemption-for-strictly-necessary-cookies/)
 
-[5]: [Consent guidelines by The European Data Protection Board](https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_guidelines_202005_consent_en.pdf)
+[^5]: [Consent guidelines by The European Data Protection Board](https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_guidelines_202005_consent_en.pdf)
 
 ### [Old School Runescape Landing Page](https://oldschool.runescape.com/)
 
