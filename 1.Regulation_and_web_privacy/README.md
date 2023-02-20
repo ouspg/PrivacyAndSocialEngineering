@@ -85,7 +85,7 @@ Cookies will allow the website to store domain-specific information in the brows
 
 Essentially, cookies are the more or less persistent way to store user and website-specific data.
 
-> If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent.[^1, ^2, ^3, ^4, ^5]
+> If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent. [^1] [^2] [^3] [^4] [^5]
 
 [^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
 
