@@ -1,15 +1,21 @@
 # **Week 1: Regulation and privacy on the web** 
 
-The GDPR regulation entered into force on 24 May 2016 and applies since 25 May 2018.
+The GDPR regulation entered into force on May 2016 and applies since May 2018.
 Since then, data collection of the companies has been restricted and consumer rights have been expanded.
 The usage, processing, and storage of personally identifiable information (PII) (information about an identifiable, living person) was limited for companies operating in European Union.
 
 Exercises this week go through some practical examples of why the regulation exists and what it means in practice.
 The focus is on browser-based internet use.
 
+ 
+
+## Required tools and environments
+
+>   * Browser with developer tools, Firefox Developer Edition (recommended)
+
 ## Reading material
 
-### GDPR Related
+### Regulation, directives and other legal
 
 [GDPR.EU](https://gdpr.eu/tag/gdpr/)
 
@@ -17,18 +23,22 @@ The focus is on browser-based internet use.
 
 [edpb.europa.eu | Guidelines on data subject rights - Right of access](https://edpb.europa.eu/our-work-tools/documents/public-consultations/2022/guidelines-012022-data-subject-rights-right_en)
 
+There are also new regulations on the way, such as ([European ePrivacy Regulation](https://digital-strategy.ec.europa.eu/en/policies/eprivacy-regulation)), which will further attempt to reinforceg trust and security in the digital world.
+
 ### Cookie Related
 
 [Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9) 
 
+## Grading
+
+Points from the exercises count towards better grades than the passable grade 1, which is obtained by doing weekly quizzes.
 
 Task #|Points|Description|
 -----|:---:|-----------|
 Task 1 | 1 | GDPR Data Request
-Task 2 | 2 | Cookie Raid
-Task 3 | 3 | Browser Fingerprinting
-
-Grade 1 can be acquired by doing the mini-exam for the corresponding week.
+Task 2 | 1 | Cookie Raid
+Task 3 | 1 | Browser Fingerprinting
+Task 4 | 2 | TikTok Challenge (bonus)
 
 
 ## **Task 1:** GDPR Data Request
@@ -48,20 +58,46 @@ You can return to this assignment once you have received your information, but y
 After receiving the answer to your data request answer the following questions. Keep your answers concise, focused and **at most** 200 words.
 
 1. Which company did you choose to request your data from and how long did it take to submit that information?
-2. In what format did you receive your data and how many pages of it were there?
+2. In what format did you receive your data and how many pages/bytes of it were there?
 3. What kind of information was there that you had not directly given yourself? 
 4. Did you understand the meaning of the information?
 5. Do you think that the company collected the least amount of data required to provide the service you needed? 
 6. Were you surprised about something, what? 
 
+> Please, aswer to these questions to complete this assigment.
+
 ---
 
 ## **Task 2:** Cookie Raid
 
-Cookie banners are known phenomenon since GDPR entered into force.
-Essentially, cookies are more or less persistent way to store user and website specific data.
 
-[Old School Runescape Landing Page](https://oldschool.runescape.com/)
+If you have been using the internet before and after the GDPR regulation, you might have noticed that banners are everywhere after.
+European ePrivacy Directive (Cookie Law) was already effective in 2002, but GDPR changed the overall impact.
+
+Cookie banners are a known phenomenon, and they have been used mainly for one purpose; **to identify you**.
+
+Cookies will allow the website to store domain-specific information in the browser: 
+
+  * Keep you authenticated to the website (**session management**)
+  * Site settings and targeted advertising (**personalisation**)
+  * How do you behave? (**tracking**)
+    * All over the internet (third-party cookies)
+
+Essentially, cookies are the more or less persistent way to store user and website-specific data.
+
+> If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent.[1, 2, 3, 4]
+
+[1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
+
+[2]: [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/)
+
+[3]: [Cookie Banner](https://cookieinformation.com/cookie-banner/)
+
+[4]: [Cookie Consent Exemptions: Strictly Necessary Cookies](https://www.cookieyes.com/blog/cookie-consent-exemption-for-strictly-necessary-cookies/)
+
+[5]: [Consent guidelines by The European Data Protection Board](https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_guidelines_202005_consent_en.pdf)
+
+### [Old School Runescape Landing Page](https://oldschool.runescape.com/)
 
 Let's look at the information about cookies on the Old School Runescape landing page. When you enter the page, you should be prompted to give your consent to the use of cookies. If this is not the case, you may have visited the site before or you may have already given your consent to bulk cookie tracking on another site that uses Cookiebot as its cookie manager. You can see the prompt again if you open the page in a new safe search page, such as Incognito in Chrome or Private Search in Safari and Firefox. Use the *Details* tab to answer the following questions:
 
@@ -69,10 +105,8 @@ Let's look at the information about cookies on the Old School Runescape landing 
 * What happens if you try to disable necessary cookies? 
 * List at least 7 different expiry times from the necessary cookies 
 * List 3 different cookie types from necessary cookies 
-* In Statistics, what is the expiry time and cookie type of **JXWEBUID** 
+* In Statistics, what are the expiry time and cookie type of **JXWEBUID** 
 * In Statistics and Marketing, what other Apps or Companies are listed, other than Jagex 
-
-**22.7.2022**
 
 ---
 
