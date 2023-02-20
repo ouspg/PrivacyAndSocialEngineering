@@ -1,6 +1,6 @@
 # **Week 1: Regulation and privacy on the web** 
 
-The GDPR regulation [^8][^11] entered into force on May 2016 and applies since May 2018.
+The GDPR regulation [^8] [^11] entered into force on May 2016 and applies since May 2018.
 Since then, data collection of the companies has been restricted and consumer rights have been expanded [^7].
 The usage, processing, and storage of personally identifiable information (PII) (information about an identifiable, living person) was limited for companies operating in European Union.
 
@@ -28,7 +28,7 @@ Task 4 | 2 | TikTok Challenge (bonus)
 But now, companies are obligated to provide the information they have collected about you, and this will be your first task.
 
 Create a GDPR-compliant data access request from a company of your choice. We recommend you choose a company you know holds data on you.
-The response may take some time, according to GDPR [^6][^7] this **shouldn't** take more than a month from them receiving the request, however, it might take longer than this depending on the company and your request.
+The response may take some time, according to GDPR [^6] [^7] this **shouldn't** take more than a month from them receiving the request, however, it might take longer than this depending on the company and your request.
 Therefore it is better to do it as soon as possible after starting the course.
 
 Read at least [GDPR Article 15](https://gdpr-info.eu/art-15-gdpr/) before crafting your request.
@@ -111,7 +111,7 @@ What pros and cons can you think of to being unique vs common?
 
 View your browser fingerprint with Am I Unique. **Canvas elements** are created by taking features from your device and browser. These features are used to generate a picture that represents your browsing setup. Return the similarity percentages of your Canvas and, if your browser supports it, WebGL Data Attributes.
 
-What is your Screen width and Screen height similarity percentage? You may or may not have a common screen resolution in use. However people use User Interfaces and Taskbars of different sizes. Now check out the similarity percentage for Screen available width and Screen available height. Can you explain your result?
+What are your Screen width and Screen height similarity percentage? You may or may not have a common screen resolution in use. However, people use User Interfaces and Taskbars of different sizes. Now check out the similarity percentage for Screen available width and Screen available height. Can you explain your result?
 
 Return similarity percentage for:
 - Canvas + WebGL Data
