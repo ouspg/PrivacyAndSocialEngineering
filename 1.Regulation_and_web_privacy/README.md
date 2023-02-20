@@ -1,31 +1,15 @@
 # **Week 1: Regulation and privacy on the web** 
 
-The GDPR regulation [^1] entered into force on May 2016 and applies since May 2018.
+The GDPR regulation [^8][^11] entered into force on May 2016 and applies since May 2018.
 Since then, data collection of the companies has been restricted and consumer rights have been expanded [^7].
 The usage, processing, and storage of personally identifiable information (PII) (information about an identifiable, living person) was limited for companies operating in European Union.
 
 Exercises this week go through some practical examples of why the regulation exists and what it means in practice.
 The focus is on browser-based internet use.
 
- 
-
 ## Required tools and environments
 
->   * Browser with developer tools, Firefox Developer Edition (recommended)
-
-## Reading material
-
-### Regulation, directives and other legal
-
-[GDPR.EU](https://gdpr.eu/tag/gdpr/)
-
-[europa.eu | Your Europe](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
-
-There are also new regulations on the way, such as ([European ePrivacy Regulation](https://digital-strategy.ec.europa.eu/en/policies/eprivacy-regulation)), which will further attempt to reinforce trust and security in the digital world.
-
-### Cookie Related
-
-[Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9) 
+  * Browser with developer tools, Firefox Developer Edition (recommended)
 
 ## Grading
 
@@ -69,25 +53,30 @@ After receiving the answer to your data request answer the following questions. 
 ## **Task 2:** Cookie Raid
 
 
-If you have been using the internet before and after the GDPR regulation, you might have noticed that banners are everywhere after.
-European ePrivacy Directive (Cookie Law) was already effective in 2002, but GDPR changed the overall impact.
+If you have been using the internet before and after the GDPR regulation, you might have noticed that banners have drastically increased.
+European ePrivacy Directive (Cookie Law) was already effective in 2002 [^1], but GDPR changed the overall impact.
 
-Cookie banners are a known phenomenon, and they have been used mainly for one purpose; **to identify you**.
+Cookie banners are a known phenomenon, and they have been used mainly for one purpose; **to **ask for consent to identify** you**.
 
 Cookies will allow the website to store domain-specific information in the browser, for example to: 
 
-  * Keep you authenticated to the website (**session management**)
+  * Keep you authenticated [^10] to the website (**session management**)
   * Site settings and targeted advertising (**personalisation**)
   * How do you behave? (**tracking**)
     * All over the internet (third-party cookies)
 
 Essentially, cookies are the more or less persistent way to store user and website-specific data.
 
+
 > If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent. [^1] [^2] [^3] [^4] [^5]
 
+When asking for consent, there is often included also a bit confusing term: legitimate interest, which means, for example following:
 
+> Your company/organisation has a legitimate interest when the processing takes place within a client relationship, when it processes personal data for direct marketing purposes, to prevent fraud or to ensure the network and information security of your IT systems. [^9]
 
-### [Old School Runescape Landing Page](https://oldschool.runescape.com/)
+To read more about security related properties of the cookies, see the book Computer Security and the Internet and the Chapter *Web and Browser Security* [^10]. 
+
+### Looking at the [Old School Runescape Landing Page](https://oldschool.runescape.com/)
 
 Let's look at the information about cookies on the Old School Runescape landing page. When you enter the page, you should be prompted to give your consent to the use of cookies. If this is not the case, you may have visited the site before or you may have already given your consent to bulk cookie tracking on another site that uses Cookiebot as its cookie manager. You can see the prompt again if you open the page in a new safe search page, such as Incognito in Chrome or Private Search in Safari and Firefox. Use the *Details* tab to answer the following questions:
 
@@ -98,8 +87,9 @@ Let's look at the information about cookies on the Old School Runescape landing 
 * In Statistics, what are the expiry time and cookie type of **JXWEBUID** 
 * In Statistics and Marketing, what other Apps or Companies are listed, other than Jagex 
 
-You can inspect cookies by using the browser's developer tools.
-For example, with Firefox, you can open `Web Developer Tools` panel, and from there, the storage tab.
+You can inspect cookies in depth by using the browser's developer tools.
+For example, with Firefox, you can open `Web Developer Tools` panel, and from there the storage tab.
+Cookies are presented as key-value pairs.
 
 ---
 
@@ -130,8 +120,6 @@ Return similarity percentage for:
 
 ---
 
-[^8]: [REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
-
 [^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
 
 [^2]: [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/)
@@ -145,3 +133,11 @@ Return similarity percentage for:
 [^6]: [GDPR - Right of Access](https://gdpr-info.eu/issues/right-of-access/)
 
 [^7]: [Guidelines 01/2022 on data subject rights - Right of access](https://edpb.europa.eu/our-work-tools/documents/public-consultations/2022/guidelines-012022-data-subject-rights-right_en)
+
+[^8]: [REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL](https://eur-lex.europa.eu/eli/reg/2016/679/oj)
+
+[^9]: [What does ‘grounds of legitimate interest’ mean?](https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/legal-grounds-processing-data/grounds-processing/what-does-grounds-legitimate-interest-mean_en)
+
+[^10] [Computer Security and the Internet | Web and Browser Security](https://link.springer.com/chapter/10.1007/978-3-030-83411-1_9)
+
+[^11] [Data protection under GDPR](https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr//index_en.htm)
