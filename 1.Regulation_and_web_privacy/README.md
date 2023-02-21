@@ -10,6 +10,7 @@ The focus is on browser-based internet use.
 ## Required tools and environments
 
   * Browser with developer tools, Firefox Developer Edition (recommended)
+  * Linux for the final task (cURL, jq, GNU Core Utilities...)
 
 ## Grading
 
@@ -132,7 +133,7 @@ Return similarity percentage for:
 
 ## Task 4: TikTok Challenge (bonus)
 
-> This requires some technical skills!
+> This task requires some technical skills!
 
 TikTok is notoriously known for its data collection practices, including fingerprinting and data sharing with third-party services.
 Governments and individual security researchers have raised privacy concerns related to the behaviour of the service. [^15][^16][^17][^18][^19][^20] 
@@ -142,7 +143,7 @@ We will take a brief look at that.
 
 ### Task 4 A) Analysing the HAR file
 
-We have the following  [HTTP Archive (HAR) file]() from browsing TikTok with a web browser.
+We have the following  [HTTP Archive (HAR) file](files/www.tiktok.com.har) from browsing TikTok with a web browser.
 HAR is an industry-standard file format to archive captured HTTP traffic [^21][^22][^23].
 
 You can analyse a HAR file by using, for example, [Google's HAR analyser](https://toolbox.googleapps.com/apps/har_analyzer/) in browser,  or just looking at the JSON file manually.
@@ -152,20 +153,25 @@ Captured traffic presents the following workflow:
   * The user opens tiktok.com in private mode
   * The user attempts to search with the specific keyword
 
-Your work is to identify the following information about the user:
+**Your work is to identify the following information about the user:**
 
   * Browser
   * Operating system
   * Screen size
-  * Timezone
   * Local language
+  * Browser language
   * Region
+  * Timezone
   * Search keyword
 
+You can reproduce the previous by capturing the HAR file yourself, and looking into the details if you want.
 
 ### Task 4 B) TikTok VM obfuscation
 
 However, it appears that the previous details are not the only information TikTok is collecting.
+There is a lot of random-looking data in the previous requests.
+
+Apparently, TikTok has created a virtual machine in JavaScript virtual space to hide some of its data collection operations.
 
 Read the following blog posts:
 
