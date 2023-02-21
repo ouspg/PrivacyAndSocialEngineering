@@ -20,7 +20,7 @@ Task #|Points|Description|
 [Task 1](#task-1-gdpr-data-request) | 1 | GDPR Data Request
 [Task 2](#task-2-cookie-raid) | 1 | Cookie Raid
 [Task 3](#task-3-browser-fingerprinting) | 1 | Browser Fingerprinting
-[Task 4](#task-4-tiktok-challenge--bonus-) | 2 | TikTok Challenge (bonus)
+[Task 4](#task-4-tiktok-challenge-bonus) | 2 | TikTok Challenge (bonus)
 
 
 ## **Task 1:** GDPR Data Request
@@ -132,6 +132,15 @@ Return similarity percentage for:
 
 ## Task 4: TikTok Challenge (bonus)
 
+> This task is very technical and might be challenging. Be prepared!
+
+TikTok is notoriously known for its data collection practices, including fingerprinting and sharing with third-party services.
+Governments and individual security researchers have raised privacy concerns related to the behaviour of the service. [^15][^16][^17][^18][^19][^20] 
+
+But how much and what kind of data it collects?
+We will take a brief look at that.
+
+
 [^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
 
 [^2]: [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/)
@@ -159,3 +168,15 @@ Return similarity percentage for:
 [^13]: [Are you a robot? Introducing “No CAPTCHA reCAPTCHA”](https://security.googleblog.com/2014/12/are-you-robot-introducing-no-captcha.html)
 
 [^14]: [I’m not a human: Breaking the Google reCAPTCHA](https://www.blackhat.com/docs/asia-16/materials/asia-16-Sivakorn-Im-Not-a-Human-Breaking-the-Google-reCAPTCHA-wp.pdf)
+
+[^15]: [EU confirms multiple ongoing investigations into TikTok data practices](https://www.engadget.com/tiktok-data-investigation-data-practices-161535147.html)
+
+[^16]: [TikTok is "unacceptable security risk" and should be removed from app stores, says FCC](https://www.malwarebytes.com/blog/news/2022/07/tiktok-is-unacceptable-security-risk-and-should-be-removed-from-app-stores-says-fcc)
+
+[^17]: [EXCLUSIVE: TikTok Spied On Forbes Journalists](https://www.forbes.com/sites/emilybaker-white/2022/12/22/tiktok-tracks-forbes-journalists-bytedance/?sh=49a7f8d67da5)
+
+[^18]: [TikTok to end clipboard snooping following iOS 14 revelations](https://www.imore.com/tiktok-end-clipboard-snooping-following-ios-14-revelations)
+
+[^19]: [Privacy Analysis of Tiktok’s App and Website](https://rufposten.de/blog/2019/12/05/privacy-analysis-of-tiktoks-app-and-website/)
+
+[^20]: [TikTok Quietly Updated Privacy Policy to Collect Faceprints and Voiceprints](https://www.pandasecurity.com/en/mediacenter/security/tiktok-privacy-faceprints/)
