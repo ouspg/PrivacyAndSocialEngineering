@@ -1,6 +1,6 @@
 # **Week 1: Regulation and privacy on the web** 
 
-The GDPR regulation [^8] [^11] entered into force on May 2016 and applies since May 2018.
+The GDPR regulation [^8][^11] entered into force on May 2016 and applies since May 2018.
 Since then, data collection of the companies has been restricted and consumer rights have been expanded [^7].
 The usage, processing, and storage of personally identifiable information (PII) (information about an identifiable, living person) was limited for companies operating in European Union.
 
@@ -20,7 +20,7 @@ Task #|Points|Description|
 [Task 1](#task-1-gdpr-data-request) | 1 | GDPR Data Request
 [Task 2](#task-2-cookie-raid) | 1 | Cookie Raid
 [Task 3](#task-3-browser-fingerprinting) | 1 | Browser Fingerprinting
-[Task 4](#task-4-tiktok-challenge-bonus) | 2 | TikTok Challenge (bonus)
+[Task 4](#task-4-tiktok-challenge-bonus) | 3 | TikTok Challenge (bonus)
 
 
 ## **Task 1:** GDPR Data Request
@@ -28,7 +28,7 @@ Task #|Points|Description|
 But now, companies are obligated to provide the information they have collected about you, and this will be your first task.
 
 Create a GDPR-compliant data access request from a company of your choice. We recommend you choose a company you know holds data on you.
-The response may take some time, according to GDPR [^6] [^7] this **shouldn't** take more than a month from them receiving the request, however, it might take longer than this depending on the company and your request.
+The response may take some time, according to GDPR [^6][^7] this **shouldn't** take more than a month from them receiving the request, however, it might take longer than this depending on the company and your request.
 Therefore it is better to do it as soon as possible after starting the course.
 
 Read at least [GDPR Article 15](https://gdpr-info.eu/art-15-gdpr/) before crafting your request.
@@ -68,7 +68,7 @@ Cookies will allow the website to store domain-specific information in the brows
 Essentially, cookies are the more or less persistent way to store user and website-specific data.
 
 
-> If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent. [^1] [^2] [^3] [^4] [^5]
+> If the website would use only session management-related technical cookies required for the site need to be functional, they would not need a consent. [^1][^2][^3][^4][^5]
 
 When asking for consent, there is often included also a bit confusing term: legitimate interest, which means, for example following:
 
@@ -102,7 +102,7 @@ A more general way to identify the specific user across the different services i
 With fingerprinting, a website might also acquire data to link multiple different accounts of the user into a single one or include all unauthenticated traffic to authenticated accounts.
 Fingerprinting attempts to use all available information from the user to generate unique and identifying characteristics. 
 
-A notorious case about general fingerprinting is Google's "No CAPTCHA reCAPTCHA", while the purpose might have been good [^12] [^13] [^14].
+A notorious case about general fingerprinting is Google's "No CAPTCHA reCAPTCHA", while the purpose might have been good [^12][^13][^14].
 
 In this assignment, you can test your browsers and the traces they leave.
 
@@ -134,11 +134,11 @@ Return similarity percentage for:
 
 > This task is very technical and might be challenging. Be prepared!
 
-TikTok is notoriously known for its data collection practices, including fingerprinting and sharing with third-party services.
+TikTok is notoriously known for its data collection practices, including fingerprinting and data sharing with third-party services.
 Governments and individual security researchers have raised privacy concerns related to the behaviour of the service. [^15][^16][^17][^18][^19][^20] 
 
 But how much and what kind of data it collects?
-We will take a brief look at that.
+We will take a brief look for that.
 
 
 [^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
