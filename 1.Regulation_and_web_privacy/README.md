@@ -10,11 +10,13 @@ The focus is on browser-based internet use.
 ## Required tools and environments
 
   * Browser with developer tools, Firefox Developer Edition (recommended)
-  * Linux for the final task (cURL, jq, GNU Core Utilities...)
+  * Linux for the final task (`cURL`, `jq`, GNU Core Utilities...)
 
 ## Grading
 
 Points from the exercises count towards better grades than the passable grade 1, which is obtained by doing weekly quizzes.
+
+The bonus task is not counted toward the course's maximum possible points; it is extra and can compensate for other work.
 
 Task #|Points|Description|
 -----|:---:|-----------|
@@ -123,6 +125,8 @@ What pros and cons can you think of to being unique vs common?
 
 View your browser fingerprint with Am I Unique. **Canvas elements** are created by taking features from your device and browser. These features are used to generate a picture that represents your browsing setup. Return the similarity percentages of your Canvas and, if your browser supports it, WebGL Data Attributes.
 
+TODO more information about WebGL
+
 What are your Screen width and Screen height similarity percentage? You may or may not have a common screen resolution in use. However, people use User Interfaces and Taskbars of different sizes. Now check out the similarity percentage for Screen available width and Screen available height. Can you explain your result?
 
 Return similarity percentage for:
@@ -133,7 +137,7 @@ Return similarity percentage for:
 
 ## Task 4: TikTok Challenge (bonus)
 
-> This task requires some technical skills!
+> This task requires some technical skills! You are expected to know how HTTP protocol works, and the command line is required.
 
 TikTok is notoriously known for its data collection practices, including fingerprinting and data sharing with third-party services.
 Governments and individual security researchers have raised privacy concerns related to the behaviour of the service. [^15][^16][^17][^18][^19][^20] 
@@ -150,8 +154,8 @@ You can analyse a HAR file by using, for example, [Google's HAR analyser](https:
 
 Captured traffic presents the following workflow:
 
-  * The user opens tiktok.com in private mode
-  * The user attempts to search with the specific keyword
+  1. The user opens tiktok.com in private mode
+  2. The user attempts to search with the specific keyword
 
 **Your work is to identify the following information about the user:**
 
@@ -166,7 +170,9 @@ Captured traffic presents the following workflow:
 
 You can reproduce the previous by capturing the HAR file yourself, and looking into the details if you want.
 
-### Task 4 B) TikTok VM obfuscation
+ > **Find the previos information. Also, describe shortly where this information is located and how and when it is carried to TikTok's servers.**
+
+### Task 4 B) TikTok data obfuscation
 
 However, it appears that the previous details are not the only information TikTok is collecting.
 There is a lot of random-looking data in the previous requests.
@@ -175,10 +181,22 @@ Apparently, TikTok has created a virtual machine in JavaScript virtual space to 
 
 Read the following blog posts:
 
-   * [Reverse Engineering Tiktok's VM Obfuscation (Part 1)](https://www.nullpt.rs/reverse-engineering-tiktok-vm-1)
-   * [Reverse Engineering TikTok's VM Obfuscation (Part 2) (different author)](https://ibiyemiabiodun.com/projects/reversing-tiktok-pt2/)
+   * [Reverse Engineering Tiktok's VM Obfuscation (Part 1)(2022)](https://www.nullpt.rs/reverse-engineering-tiktok-vm-1)
+   * [Reverse Engineering TikTok's VM Obfuscation (Part 2)(2023) (different author)](https://ibiyemiabiodun.com/projects/reversing-tiktok-pt2/)
 
-You don't have to understand most of things.
+You don't have to understand what is going on there exactly but we will try to replicate something easy.
+
+In the first blog post, you notice the long cURL[^24] command to request TikTok API as an attempt outside of the browser.
+
+We will try to make a minimal working cURL command to get information about the user `pellesecurity`, by using TikTok's API `https://www.tiktok.com/api/user/detail/`.
+
+Some tips and tricks:
+  * The default compression algorithm for TikTok's responses is [brotli](https://github.com/google/brotli).
+  cURL does not support it by default in many systems, so you can either control it by adjusting `Accept-Encoding` header or installing `brotli` on the system. For example, on Debian based system, it is `brotli` package, which provides the command-line tool.
+  * You can copy a full cURL command for the specific request from Firefox's web developer tools, in the network tab. It is recommended to clean and format it.
+  * You can use [`jq`](https://stedolan.github.io/jq/) to lint JSON data, for example, `$ brotli -dc data.br | jq .` 
+
+  > Make a minimal working cURL command to get the user information, and return the command and user information in JSON format. What are mandatory parameters for command to work? Do you have any idea what they mean?
 
 
 [^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
@@ -226,3 +244,5 @@ You don't have to understand most of things.
 [^22]: [HTTP Archive format](https://docs.gitlab.com/ee/user/application_security/api_fuzzing/create_har_files.html)
 
 [^23]: [HTTP Archive (HAR) format - Historical Draft August 14, 2012](https://w3c.github.io/web-performance/specs/HAR/Overview.html)
+
+[^24]: [curl:// command line tool and library for transferring data with URLs (since 1998)](https://curl.se/)
