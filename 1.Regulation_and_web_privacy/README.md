@@ -20,7 +20,7 @@ Task #|Points|Description|
 [Task 1](#task-1-gdpr-data-request) | 1 | GDPR Data Request
 [Task 2](#task-2-cookie-raid) | 1 | Cookie Raid
 [Task 3](#task-3-browser-fingerprinting) | 1 | Browser Fingerprinting
-[Task 4](#task-4-tiktok-challenge-bonus) | 3 | TikTok Challenge (bonus)
+[Task 4](#task-4-tiktok-challenge-bonus) | 2 | TikTok Challenge (bonus)
 
 
 ## **Task 1:** GDPR Data Request
@@ -132,13 +132,47 @@ Return similarity percentage for:
 
 ## Task 4: TikTok Challenge (bonus)
 
-> This task is very technical and might be challenging. Be prepared!
+> This requires some technical skills!
 
 TikTok is notoriously known for its data collection practices, including fingerprinting and data sharing with third-party services.
 Governments and individual security researchers have raised privacy concerns related to the behaviour of the service. [^15][^16][^17][^18][^19][^20] 
 
 But how much and what kind of data it collects?
-We will take a brief look for that.
+We will take a brief look at that.
+
+### Task 4 A) Analysing the HAR file
+
+We have the following  [HTTP Archive (HAR) file]() from browsing TikTok with a web browser.
+HAR is an industry-standard file format to archive captured HTTP traffic [^21][^22][^23].
+
+You can analyse a HAR file by using, for example, [Google's HAR analyser](https://toolbox.googleapps.com/apps/har_analyzer/) in browser,  or just looking at the JSON file manually.
+
+Captured traffic presents the following workflow:
+
+  * The user opens tiktok.com in private mode
+  * The user attempts to search with the specific keyword
+
+Your work is to identify the following information about the user:
+
+  * Browser
+  * Operating system
+  * Screen size
+  * Timezone
+  * Local language
+  * Region
+  * Search keyword
+
+
+### Task 4 B) TikTok VM obfuscation
+
+However, it appears that the previous details are not the only information TikTok is collecting.
+
+Read the following blog posts:
+
+   * [Reverse Engineering Tiktok's VM Obfuscation (Part 1)](https://www.nullpt.rs/reverse-engineering-tiktok-vm-1)
+   * [Reverse Engineering TikTok's VM Obfuscation (Part 2) (different author)](https://ibiyemiabiodun.com/projects/reversing-tiktok-pt2/)
+
+You don't have to understand most of things.
 
 
 [^1]: [ePrivacy Directive](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32002L0058)
@@ -180,3 +214,9 @@ We will take a brief look for that.
 [^19]: [Privacy Analysis of Tiktok’s App and Website](https://rufposten.de/blog/2019/12/05/privacy-analysis-of-tiktoks-app-and-website/)
 
 [^20]: [TikTok Quietly Updated Privacy Policy to Collect Faceprints and Voiceprints](https://www.pandasecurity.com/en/mediacenter/security/tiktok-privacy-faceprints/)
+
+[^21]: [HAR (file format)](https://en.wikipedia.org/wiki/HAR_(file_format))
+
+[^22]: [HTTP Archive format](https://docs.gitlab.com/ee/user/application_security/api_fuzzing/create_har_files.html)
+
+[^23]: [HTTP Archive (HAR) format - Historical Draft August 14, 2012](https://w3c.github.io/web-performance/specs/HAR/Overview.html)
