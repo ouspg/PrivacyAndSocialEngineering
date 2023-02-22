@@ -124,8 +124,7 @@ What pros and cons can you think of to being unique vs common?
 ### Task 3 B) [AmIUnique](https://amiunique.org/)
 
 View your browser fingerprint with Am I Unique. **Canvas elements** are created by taking features from your device and browser. These features are used to generate a picture that represents your browsing setup. Return the similarity percentages of your Canvas and, if your browser supports it, WebGL Data Attributes.
-
-TODO more information about WebGL
+The information that WebGL can provide about your machine, is yet another efficient way to fingerprint across the web [^25][^26]. 
 
 What are your Screen width and Screen height similarity percentage? You may or may not have a common screen resolution in use. However, people use User Interfaces and Taskbars of different sizes. Now check out the similarity percentage for Screen available width and Screen available height. Can you explain your result?
 
@@ -150,7 +149,7 @@ We will take a brief look at that.
 We have the following  [HTTP Archive (HAR) file](files/www.tiktok.com.har) from browsing TikTok with a web browser.
 HAR is an industry-standard file format to archive captured HTTP traffic [^21][^22][^23].
 
-You can analyse a HAR file by using, for example, [Google's HAR analyser](https://toolbox.googleapps.com/apps/har_analyzer/) in browser,  or just looking at the JSON file manually.
+You can analyse a HAR file by using, for example, [Google's HAR [analyser](https://toolbox.googleapps.com/apps/har_analyzer/) in the browser, importing it in the browser's developer tools,  or just looking at the JSON file manually.
 
 Captured traffic presents the following workflow:
 
@@ -246,3 +245,7 @@ Some tips and tricks:
 [^23]: [HTTP Archive (HAR) format - Historical Draft August 14, 2012](https://w3c.github.io/web-performance/specs/HAR/Overview.html)
 
 [^24]: [curl:// command line tool and library for transferring data with URLs (since 1998)](https://curl.se/)
+
+[^25]: [Researchers use GPU fingerprinting to track users online](https://www.bleepingcomputer.com/news/security/researchers-use-gpu-fingerprinting-to-track-users-online/)
+
+[^26]: [DRAWNAPART: A Device Identification Technique based on Remote GPU Fingerprinting](https://arxiv.org/abs/2201.09956)
