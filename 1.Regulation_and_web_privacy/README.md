@@ -149,7 +149,7 @@ We will take a brief look at that.
 We have the following  [HTTP Archive (HAR) file](files/www.tiktok.com.har) from browsing TikTok with a web browser.
 HAR is an industry-standard file format to archive captured HTTP traffic [^21][^22][^23].
 
-You can analyse a HAR file by using, for example, [Google's HAR [analyser](https://toolbox.googleapps.com/apps/har_analyzer/) in the browser, importing it in the browser's developer tools,  or just looking at the JSON file manually.
+You can analyse a HAR file by using, for example, [Google's HAR analyser](https://toolbox.googleapps.com/apps/har_analyzer/) in the browser, importing it in the browser's developer tools,  or just looking at the JSON file manually.
 
 Captured traffic presents the following workflow:
 
