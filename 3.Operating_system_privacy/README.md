@@ -68,7 +68,7 @@ After installing **DO NOT UPDATE THE SYSTEM WITH APT**, this might break the ope
 <summary>What is GPG/GPA?</summary>
 <br>
 
-GPG is a complete and free implementation of OpenPGP stadard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates. 
+GPG is a complete and free implementation of OpenPGP stadard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI application for GPG.
 
 Here in this task we are using it to encrypt an image file; a screenshot of your Tails instance with your name and Student ID.
 
@@ -80,7 +80,7 @@ Here in this task we are using it to encrypt an image file; a screenshot of your
 <summary>What is TOR?</summary>
 <br>
 
-You should by now be familiar with Tor and aware of it's capabilities and limitations. Tor(The Onion Router) is free and open-source designed for enabling anonymous communications. Little about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
+You should by now be familiar with Tor and aware of it's capabilities and limitations. Tor(The Onion Router) is free and open-source designed for enabling anonymous communications. Here you can find a little bit about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
 
 Tor network consists of thousands of relays worldwide concealing user's location and usage. Tor attempts to protect the privacy of it's users and enable the ability to communicate freely and confidentially.
 
@@ -92,30 +92,49 @@ For more and precise information on how Tor networks and browsers operate, refer
 <summary>What is OnionShare?</summary>
 <br>
 
-OnionShare principles and how we are using it in this task
+Onionshare is a privacy focused open-source tool for chatting, hosting websites and sending and receiving files anonymously using Tor. Tails comes with onionshare installed and features at least the GUI application. 
+
+We are using Onionshare here to send an encrypted image with a message to the provided [.onion address](https://en.wikipedia.org/wiki/.onion).
 
 </details>
 
 ---
 
-Now that the introductions and warnings are done, go ahead and follow Tails' [installation instructions](https://tails.boum.org/install/index.en.html) to install Tails on a usb stick. 
+Now that the introductions and warnings are done, go ahead and follow Tails' [installation instructions](https://tails.boum.org/install/index.en.html) to install Tails on a usb stick. These are fairly straight forward and should go without trouble.
 
-At this point we recommend having this task open on another computer or your phone as you will be booting into Tails shortly.
+At this point we recommend having this task and the instructions open on another computer or your phone as you will be booting into Tails shortly. 
 
+Go ahead and follow the instructions to booting in to the Tails instance on the computer of your choosing.
 
-**TODO**
+Most computers handle this without any implications, and the most common problem is with internet connections. In case of problems we hope you try troubleshooting a little before contacting us, for example, you could try using an ethernet cable to fix internet connection issues.
 
+---
+
+**Once inside Tails**
+
+- Take a screenshot showing your name and student id on any text editor.
+
+- Encrypt it with GPG/GPA.
+
+- Follow the provided .onion address to an onionshare file sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". **Here send the encrypted image with your name and public key as a message.**
 
 What to return for this task:
 
-Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your public key to decrypt it on the OnionShare address. 
+Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name and public key to decrypt the image on the OnionShare address. 
 
-//Then answer the questions below\\ __Is this needed?__
+**Then answer the questions below:**
 
-1. What happens when you pull out your Tails usb stick?
+1. What happens when you pull out your Tails usb stick, did you try this?
 
-2. Why do these kinds of operations and services exist?
+2. Why do these kinds of operations and services exist? Answer in less than 200 words.
 
+<details>
+<summary>For a bonus point</summary>
+<br>
+
+Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible to anyone. Provide the .onion address and possible password with your answers.
+
+</details>
 
 # **Week 3** 
 
