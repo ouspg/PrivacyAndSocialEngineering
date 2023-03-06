@@ -139,7 +139,10 @@ Return similarity percentage for:
 > This task requires some technical skills! You are expected to know how HTTP protocol works, and the command line is required.
 
 TikTok is notoriously known for its data collection practices, including fingerprinting and data sharing with third-party services.
-Governments and individual security researchers have raised privacy concerns related to the behaviour of the service. [^15][^16][^17][^18][^19][^20] 
+Also, TikTok development kit and trackers appear at least in 25 281 other apps [^28] and hundreds websites collecting data for TikTok [^29].
+Governments and individual security researchers have raised privacy concerns related to the behaviour of the service [^15][^16][^17][^18][^19][^20].
+Recently, there has been a lot of talks about banning it in the U.S. [^27]. 
+
 
 But how much and what kind of data it collects?
 We will take a brief look at that.
@@ -249,3 +252,9 @@ Some tips and tricks:
 [^25]: [Researchers use GPU fingerprinting to track users online](https://www.bleepingcomputer.com/news/security/researchers-use-gpu-fingerprinting-to-track-users-online/)
 
 [^26]: [DRAWNAPART: A Device Identification Technique based on Remote GPU Fingerprinting](https://arxiv.org/abs/2201.09956)
+
+[^27]: [Banning TikTok](https://www.schneier.com/blog/archives/2023/02/banning-tiktok.html)
+
+[^28]: [We Found 28,000 Apps Sending TikTok Data. Banning the App Won't Help.](https://gizmodo.com/tiktok-ban-joe-biden-28000-apps-sdk-data-china-1850174019)
+
+[^29]: [How TikTok Tracks You Across the Web, Even If You Don’t Use the App](https://www.consumerreports.org/electronics-computers/privacy/tiktok-tracks-you-across-the-web-even-if-you-dont-use-app-a4383537813/)
