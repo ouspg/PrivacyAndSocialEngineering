@@ -1,8 +1,8 @@
 # Privacy and Social Engineering IC00AI83 
 
-This repository contains exercises and related material for the course Privacy and Social Engineering in the University of Oulu.
+This repository contains exercises and related material for the course Privacy and Social Engineering at the University of Oulu.
 
-Upon completion of the course the student will be able to:
+Upon completion of the course, the student will be able to:
 * explain the basic concepts related to privacy and recognises the national and international regulation related to the topic
 * understand the basics of the technologies that are used to process information and can think about their effects on privacy
 * understand the basic privacy features and problems of mobile operating systems, browsers and computers networks
@@ -19,16 +19,15 @@ So be prepared!
 
 ### Grading
 
-The course can be passed by completing the questionnaires in the Moodle.
+The course can be passed by completing the questionnaires in the Moodle workspace.
 These will be released weekly and will handle current affairs.
 
 Total Points|Total Grade
 :-:|:-:
-9+ | 2
-15+ | 3
-21+ | 4
-27+ | 5
-
+6+ | 2
+10+ | 3
+14+ | 4
+18+ | 5
 
 ## General material
 
