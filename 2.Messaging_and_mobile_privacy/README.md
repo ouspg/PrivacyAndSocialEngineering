@@ -64,6 +64,7 @@ To compare specifically mobile application privacy, Apple's Privacy Labels [^8] 
 Scroll down to *App Privacy* section and click *See Details*.
 You can also use Google's Play Store's *Data Safety Labels*, or even compare the labels of these two.
 
+> **Note**
 > However, these labels should be taken **with a grain of salt**; both of them are mostly based on the "honour" system; app publisher tells about them and nobody is officially verifying them.
 A recent study from Mozilla claims Google's labels are misleading [^9], and also other research [^11][^12] indicates the same about Apple's labels. 
 
