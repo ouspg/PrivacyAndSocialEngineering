@@ -51,27 +51,27 @@ Depending on the nature of the platform, centralised platform owner is often abl
 ### Task 2A) Compare messaging platforms
 
 Compare different messaging platforms; check for online for official and research sources *what kind of information* WhatsApp, Signal and Telegram collects about users.
-
-Consider also encryption options from the "defaults" perspective.
-What is end-to-end-encrypted (E2EE) by default?
-By default, for example, WhatsApp backups messages as unencrypted, and recommends backing up the data. 
-Chats are alse stored into iCloud Backups as unencrypted by default [^7].
-What it means if law enforments want to access your data?
-Does end-to-end encryption help in that case?
-
 You can also include additional services.
 
-**Write a short comparison of 2-3 paragraphs.**
+Consider also encryption options from the "defaults" perspective.
+In what scenearios is end-to-end-encrypted (E2EE) enabled by default?
+
+By default, for example, WhatsApp backups messages as unencrypted, and recommends backing up the data. 
+On iOS devices chats are alse included into iCloud Backups as unencrypted by default [^7].
+What it means if law enforments want to access your data?
+Has end-to-end encryption on messaging helped in that case?
+
+
+**Write a short comparison of 3-4 paragraphs.**
 
 Note also the use of same phone number accross different services.For example, WhatsApp shares phone numbers and other information with Meta Company outside of European Union [^6].
-What this means in the context of social graphs and accuracy of behavior modeling?
+What this means in the context of social graphs and accuracy of possible behavior modeling?
 
 **Write a one paragraph of your thoughts.**
 
-Additionally, what privacy risks "last seen" or showing "online status" can include? Imagine a situation, where someone who has the same contact list as you have, automates to process of checking online status of every contact for every second and stores this information.
+Additionally, what privacy risks "last seen" or showing "online status" can include? Imagine a situation, where someone who has the same contact list as you have, automates to process of checking online status of every contact for every second and stores this information for a longer period of time.
 
-
-Phone numer sharing risks?
+**Write a one paragraph of your thoughts.**
 
 ### **Task 2 B)** Image metadata
 
