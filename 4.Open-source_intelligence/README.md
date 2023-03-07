@@ -35,17 +35,13 @@ Start the task by finding possible social media accounts used for marketing by t
 Your end goal is to infiltrate the company's FTP server.
 
 Feel free to use tools such as:
-https://github.com/sherlock-project/sherlock
 
-https://breachdirectory.org/
-
-https://github.com/six2dez/reconftw#osint
-
-https://hashes.com/en/decrypt/hash
-
-https://hashcat.net/hashcat/
-
-https://github.com/openwall/john
+- https://github.com/sherlock-project/sherlock
+- https://breachdirectory.org/
+- https://github.com/six2dez/reconftw#osint
+- https://hashes.com/en/decrypt/hash
+- https://hashcat.net/hashcat/
+- https://github.com/openwall/john
 
 
 ### What is the alias of the new employee and where is he from? Explain where you found this information.
@@ -65,6 +61,8 @@ https://github.com/openwall/john
 
 
 ### What is in the flag.txt file located on the FTP server?
+
+
 
 
 ---
