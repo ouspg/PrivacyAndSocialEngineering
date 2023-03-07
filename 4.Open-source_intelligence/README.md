@@ -36,12 +36,12 @@ Your end goal is to infiltrate the company's FTP server.
 
 Feel free to use tools such as:
 
-- https://github.com/sherlock-project/sherlock
-- https://breachdirectory.org/
-- https://github.com/six2dez/reconftw#osint
-- https://hashes.com/en/decrypt/hash
-- https://hashcat.net/hashcat/
-- https://github.com/openwall/john
+- [Sherlock](https://github.com/sherlock-project/sherlock) 
+- [Breachdirectory](https://breachdirectory.org/)
+- [ReconFTW](https://github.com/six2dez/reconftw#osint)
+- [Hashescom](https://hashes.com/en/decrypt/hash)
+- [Hashcat](https://hashcat.net/hashcat/)
+- [John the ripper](https://github.com/openwall/john)
 
 
 ### What is the alias of the new employee and where is he from? Explain where you found this information.
