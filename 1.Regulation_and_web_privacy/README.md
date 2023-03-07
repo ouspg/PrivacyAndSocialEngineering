@@ -16,6 +16,10 @@ The focus is on browser-based internet use.
 
 Points from the exercises count towards better grades than the passable grade 1, which is obtained by doing weekly quizzes.
 
+You must do tasks **in order**.
+
+You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
+
 The bonus task is not counted toward the course's maximum possible points; it is extra and can compensate for other work.
 
 Task #|Points|Description|

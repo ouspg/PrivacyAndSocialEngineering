@@ -11,15 +11,16 @@ Many of these findings reflect iOS-based systems as well.
 ## Grading
 
 You must do tasks **in order**.
-You are expected to use more time on later tasks to get an equal amount of points.
+
+You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
 
 Task #|Points|Description|
 -----|:---:|-----------|
-[Task 1](#task-1-gdpr-data-request) | 1 | Private messaging
+[Task 1](#task-1-gdpr-data-request) | 1 | Private and authentic messaging
 [Task 2](#task-2-cookie-raid) | 2 | Metadata and messaging
 [Task 3](#task-3-browser-fingerprinting) | 1 | Application Permissions and Trackers 
 
-## **Task 1:** Private and authentic messaging (PGP)
+## **Task 1:** Private and authentic messaging
 
 "PGP" Encryption is short for Pretty Good Privacy, an encryption program originally published by Phil Zimmermann & Associates in 1991 [^1].
 Later on derivatives OpenPGP[^2] and GPG[^3] were introduced, which stand for Open-Source PGP and GnuPG/Gnu Privacy Guard respectively.
@@ -28,7 +29,7 @@ These encryptions allow users to quite easily have, for example, encrypted email
 
 "*Arguing that you don't care about the right to privacy because you have nothing to hide is no different from saying you don't care about free speech because you have nothing to say.*" – **Edward Snowden**
 
-Using any(**LEGAL**) means necessary try to stay **as private** and **as anonymous as possible** and exchange public keys to start an encrypted email conversation with your randomly selected classmate. Your goal is to have the conversation **as unlinkable** to yourself **as possible** even for statewide actors. Being completely untraceable is quite impossible, the important part here is to learn and show how invisible you can become and what it takes.
+Using any(**LEGAL**) means necessary to try to stay **as private** and **as anonymous as possible** and exchange public keys to start an encrypted email conversation with your randomly selected classmate. Your goal is to have the conversation **as unlinkable** to yourself **as possible** even for statewide actors. Being completely untraceable is quite impossible, the important part here is to learn and show how invisible you can become and what it takes.
 
 * Document your actions precisely, and name software or services used to the best of your ability. 
 * Describe the experience and how difficult you found this to be.
@@ -62,7 +63,7 @@ To compare specifically mobile application privacy, Apple's Privacy Labels [^8] 
   * Meta's Messenger [in App store](https://apps.apple.com/us/app/messenger/id454638411)
 
 Scroll down to *App Privacy* section and click *See Details*.
-You can also use Google's Play Store's *Data Safety Labels*, or even compare the labels of these two.
+You can also use Google's Play store's *Data Safety Labels* [^13], or even compare the labels of these two.
 
 > **Note**
 > However, these labels should be taken **with a grain of salt**; both of them are mostly based on the "honour" system; app publisher tells about them and nobody is officially verifying them.
@@ -75,7 +76,7 @@ In what scenarios is end-to-end-encrypted (E2EE) enabled by default? How about E
 By default, for example, WhatsApp backups messages as unencrypted, and recommends backing up the data.
 On iOS devices, chats are also included in iCloud Backups as unencrypted by default [^7].
 What does it mean if law enforcement wants to access your private conversations?
-Has end-to-end encryption on messaging helped in that case?
+Has end-to-end encryption on messaging helped on preventing access in that case?
 What is the impact of defaults on the general public, which use the service advertised as a "private, secure messenger"?
 
 Also, consider the following example scenario to highlight the metadata:
@@ -91,7 +92,7 @@ Without knowing the message content, can you deduce information from User A and 
 
 Note also the use of the same phone number across different services. 
 For example, WhatsApp shares phone numbers and other information with Meta Company outside of the European Union [^6].
-What does this mean in the context of social graphs and the accuracy of possible behaviour modelling?
+What does this mean in the context of social graphs and the accuracy of possible behaviour and knowledge modelling?
 
 **Write one paragraph of your thoughts.**
 
@@ -126,7 +127,12 @@ Many other file formats also include metadata, but we don't handle them in this 
 
 ## **Task 3:** Application Permissions and Trackers
 
-[Exodus](https://reports.exodus-privacy.eu.org/en/)
+In the previous task, we observed data collection practices on some common messaging applications.
+Apple's Privacy Labels and Google's Data Safety Labels were mentioned as one measurement.
+
+In this task, we expand the scope for general applications and we will make some research by ourselves.
+
+### Exodus Privacy
 
 Applications may have permissions and trackers for data the application does not require to function. Such data may be used for example to profile and hook you, for research, and for monetary gain by selling to third parties, which may or may not handle it safely. 
 
@@ -140,16 +146,16 @@ Name your application and answer the following questions for each application.
 
 1. How many trackers and permissions each application has?
 2. How many 'dangerous' and/or 'special' permissions does each have? (Red exclamation mark)
-3. Did the applications have permissions to access such data they would use or sell for monetary gain? Which permissions and trackers are these?
-4. Describe two atttack vectors enabled by these permissions for each application, had an attacker gained access into the application and/or their database.
+3. Did the applications have permission to access such data they could use or sell for monetary gain? Which permissions and trackers are these?
+4. Describe two attack vectors enabled by these permissions for each application, had an attacker gained access into the application and/or their database.
 
 Facebook Pixel, Authentication?
 Google Analytics and friends? (TikTok SDK and Pixel)
 
-[^1]: https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html
-[^2]: https://www.openpgp.org/
-[^3]: https://gnupg.org/
-[^4]: https://www.ietf.org/
+[^1]: [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)
+[^2]: [OpenPGP ](https://www.openpgp.org/)
+[^3]: [The GNU Privacy Guard](https://gnupg.org/)
+[^4]: [IETF](https://www.ietf.org/)
 [^5]: [Social graph](https://en.wikipedia.org/wiki/Social_graph)
 [^6]: [What information does WhatsApp share with the Meta Companies?](https://faq.whatsapp.com/1303762270462331)
 [^7]: [About end-to-end encrypted backup - Device-level backups on iPhone](https://faq.whatsapp.com/490592613091019)
@@ -158,3 +164,4 @@ Google Analytics and friends? (TikTok SDK and Pixel)
 [^10]: [I checked Apple’s new privacy ‘nutrition labels.’ Many were false.](https://www.washingtonpost.com/technology/2021/01/29/apple-privacy-nutrition-label/)
 [^11]: [Lalaine: Measuring and Characterizing Non-Compliance of Apple Privacy Labels at Scale](https://arxiv.org/abs/2206.06274)
 [^12]: [Goodbye Tracking? Impact of iOS App Tracking Transparency and Privacy Labels](https://dl.acm.org/doi/10.1145/3531146.3533116)
+[^13]: [Provide information for Google Play's Data safety section](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en)
