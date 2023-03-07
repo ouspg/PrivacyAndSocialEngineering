@@ -5,8 +5,7 @@ Digital transformation has made it possible to eavesdrop on conversations in new
 
 Exercises this week goes some basics of the digital confidential discussion and what kind of information you can leave even if the message content is encrypted.
 
-Also, will go through privacy problems, measurements and features on Android-based mobile systems.
-Many of these findings reflect iOS-based systems as well.
+Also, we will go through privacy problems, measurements and features on iOS and Android-based mobile systems.
 
 ## Grading
 
@@ -14,11 +13,14 @@ You must do tasks **in order**.
 
 You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
 
+The bonus task is not counted toward the course's maximum possible points; it is extra and can compensate for other work.
+
 Task #|Points|Description|
 -----|:---:|-----------|
-[Task 1](#task-1-gdpr-data-request) | 1 | Private and authentic messaging
-[Task 2](#task-2-cookie-raid) | 2 | Metadata and messaging
-[Task 3](#task-3-browser-fingerprinting) | 1 | Application Permissions and Trackers 
+[Task 1](#task-1-private-and-authentic-messaging) | 1 | Private and authentic messaging
+[Task 2](#task-2-metadata-and-messaging) | 2 | Metadata and messaging
+[Task 3](#task-3-application-permissions-and-trackers) | 1 | Application permissions and trackers 
+[Task 4](#) | 1 | Application SDKs, code signatures, and pixels (bonus)
 
 ## **Task 1:** Private and authentic messaging
 
@@ -77,18 +79,18 @@ By default, for example, WhatsApp backups messages as unencrypted, and recommend
 On iOS devices, chats are also included in iCloud Backups as unencrypted by default [^7].
 What does it mean if law enforcement wants to access your private conversations?
 Has end-to-end encryption on messaging helped on preventing access in that case?
-What is the impact of defaults on the general public, which use the service advertised as a "private, secure messenger"?
+What is the impact of defaults on the general public, which use the service advertised as a "private, secure messenger", but has no idea of the meaning of defaults?
 
 Also, consider the following example scenario to highlight the metadata:
 
 > User A only messages User B from an iPhone 14 Pro Max, once a week, every Thursday. Location stays; the same Helsinki City location of “The Nice Cafe,” around 13:00 PM CET
 
-> User B messages User A from a Windows Machine,  Acer Nitro computer, connected to “Best Wi-Fi” with IP address 123.45.67.89 every Thursday at 13:10 PM CET and later around 13:30 PM CET from a Nokia G21 running Android 12 near a Elisa cell tower within a 2-mile radius of the Helsinki City location of “The Nice Cafe.”
+> User B messages User A from a Windows machine,  Acer Nitro computer, connected to “Best Wi-Fi” with IP address 123.45.67.89 every Thursday at 13:10 PM CET and later around 13:30 PM CET from a Nokia G21 running Android 12 near a Elisa cell tower within a 2-mile radius of the Helsinki City location of “The Nice Cafe.”
 
 Without knowing the message content, can you deduce information from User A and User B?
 
 
-**Write an essay of one A4 page (400 to 500 words) based on the previous sources and examples, considering also the importance of E2E encrypted metadata.**
+**Write an essay of one A4 page (400 to 500 words) based on the previous sources and examples, including app comparison and considering also the importance of E2E encrypted metadata.**
 
 Note also the use of the same phone number across different services. 
 For example, WhatsApp shares phone numbers and other information with Meta Company outside of the European Union [^6].
@@ -125,29 +127,44 @@ Many other file formats also include metadata, but we don't handle them in this 
 
 ---
 
-## **Task 3:** Application Permissions and Trackers
+## **Task 3:** Application permissions and trackers
 
 In the previous task, we observed data collection practices on some common messaging applications.
 Apple's Privacy Labels and Google's Data Safety Labels were mentioned as one measurement.
 
 In this task, we expand the scope for general applications and we will make some research by ourselves.
 
-### Exodus Privacy
+### Identifying permissions and trackers
 
-Applications may have permissions and trackers for data the application does not require to function. Such data may be used for example to profile and hook you, for research, and for monetary gain by selling to third parties, which may or may not handle it safely. 
+Applications may have permissions [^14][^15] and trackers for data the application does not require to function. Such data may be used for example to profile and hook you, for research, and for monetary gain by selling to third parties, which may or may not handle it safely. 
 
 These permissions might also be exploited by an insider attacker or an outside attacker for compromising your privacy and safety. Such are for example the permission to record audio and full network access.
 
 [Exodus](https://reports.exodus-privacy.eu.org/en/) is a privacy auditing platform for Android applications. You can use Exodus to check Android applications for trackers, permissions and signing fingerprints. 
 
-Choose 2 applications yourself to analyze with the help of Exodus, and find a third application that has obvious unnecessary dangerous permissions, such as a flashlight application accessing your contacts. 
+You can either use it on the browser or [in command-line.](https://github.com/Exodus-Privacy/exodus-standalone)
+
+**Choose two (2)** applications yourself to analyze with the help of Exodus, **and find a third** application that has obvious unnecessary dangerous permissions, such as a flashlight application accessing your contacts. 
 
 Name your application and answer the following questions for each application.
 
 1. How many trackers and permissions each application has?
-2. How many 'dangerous' and/or 'special' permissions does each have? (Red exclamation mark)
+2. How many "dangerous" (runtime) and/or "special" permissions does each have? (Red exclamation mark, see these in Google's guide [^14])
 3. Did the applications have permission to access such data they could use or sell for monetary gain? Which permissions and trackers are these?
 4. Describe two attack vectors enabled by these permissions for each application, had an attacker gained access into the application and/or their database.
+5. Compare Android and iOS privacy labels (if it is available on both platfroms) to your findings about trackers
+
+
+## Task 4: Application SDKs, code signatures, and pixels (bonus)
+
+Mobile business advertising spending is estimated to be 327.1 billion U.S. dollars worldwide in 2022 [^19].
+
+Many application developers want their share of the income.
+
+
+In late 2020, Apple made use of the Identifier for Advertisers (IDFA)[^16], currently known as App Tracking Transparency (ATT) [^18] feature requiring a prompt for users; the user was able to opt-in or out of IDFA.
+
+As a result, about 75% of worldwide users opted out of IDFA, based on the existence of the ATT framework in applications [^17]. 
 
 Facebook Pixel, Authentication?
 Google Analytics and friends? (TikTok SDK and Pixel)
@@ -165,3 +182,9 @@ Google Analytics and friends? (TikTok SDK and Pixel)
 [^11]: [Lalaine: Measuring and Characterizing Non-Compliance of Apple Privacy Labels at Scale](https://arxiv.org/abs/2206.06274)
 [^12]: [Goodbye Tracking? Impact of iOS App Tracking Transparency and Privacy Labels](https://dl.acm.org/doi/10.1145/3531146.3533116)
 [^13]: [Provide information for Google Play's Data safety section](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en)
+[^14]: [Permissions on Android](https://developer.android.com/guide/topics/permissions/overview)
+[^15]: [Requesting access to protected resources](https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy/requesting_access_to_protected_resources)
+[^16]: [Identifier for Advertisers](https://en.wikipedia.org/wiki/Identifier_for_Advertisers)
+[^17]: [App Tracking Transparency Opt-In Rate - Monthly Updates](https://www.flurry.com/blog/att-opt-in-rate-monthly-updates/)
+[^18]: [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)
+[^19]: [Mobile advertising spending worldwide from 2007 to 2024 ](https://www.statista.com/statistics/303817/mobile-internet-advertising-revenue-worldwide/)
