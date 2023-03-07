@@ -36,23 +36,32 @@ Your end goal is to infiltrate the company's FTP server.
 
 Feel free to use tools such as:
 https://github.com/sherlock-project/sherlock
+
 https://breachdirectory.org/
+
 https://github.com/six2dez/reconftw#osint
+
 https://hashes.com/en/decrypt/hash
+
 https://hashcat.net/hashcat/
+
 https://github.com/openwall/john
 
 
 ### What is the alias of the new employee and where is he from? Explain where you found this information.
 
 
+
 ### What is the employee's real name? Explain how you found it.
+
 
 
 ### The employee may have accidentally leaked his email address. Find the password of this leaked email. Explain where you found it:
 
 
+
 ### Explain how you logged into the FTP server. What was the password?
+
 
 
 ### What is in the flag.txt file located on the FTP server?
