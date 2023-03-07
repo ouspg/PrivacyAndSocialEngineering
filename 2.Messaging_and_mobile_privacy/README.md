@@ -38,40 +38,41 @@ The task will be graded based on the methods used and actions taken to accomplis
 Sometimes the data you send contains more information than you are aware of.
 Especially in the context of messaging, the message content might be less interesting than *to whom, where and when you are sending it*.
 
-Depending on the nature of the platform, centralised platform owner is often able to gather:
+Depending on the nature of the platform, a centralised platform owner is often able to gather:
 
   * Social graphs [^5]
   * Availability status (last seen and online)
   * Read receipts
-  * Intensivity of messaging and timestamps
+  * The intensity of messaging and timestamps
   * Global unique identifier (phone number)
   * Location
   * Device
 
 ### Task 2A) Compare messaging platforms
 
-Compare different messaging platforms; check for online for official and research sources *what kind of information* WhatsApp, Signal and Telegram collects about users.
+Compare different messaging platforms; check online for official and research sources *what kind of information* WhatsApp, Signal and Telegram collect about users.
 You can also include additional services.
 
 Consider also encryption options from the "defaults" perspective.
-In what scenearios is end-to-end-encrypted (E2EE) enabled by default?
+In what scenarios is end-to-end-encrypted (E2EE) enabled by default?
 
-By default, for example, WhatsApp backups messages as unencrypted, and recommends backing up the data. 
-On iOS devices chats are alse included into iCloud Backups as unencrypted by default [^7].
-What it means if law enforments want to access your data?
+By default, for example, WhatsApp backups messages as unencrypted, and recommends backing up the data.
+On iOS devices, chats are also included in iCloud Backups as unencrypted by default [^7].
+What does it mean if law enforcement wants to access your data?
 Has end-to-end encryption on messaging helped in that case?
 
 
 **Write a short comparison of 3-4 paragraphs.**
 
-Note also the use of same phone number accross different services.For example, WhatsApp shares phone numbers and other information with Meta Company outside of European Union [^6].
-What this means in the context of social graphs and accuracy of possible behavior modeling?
+Note also the use of the same phone number across different services. 
+For example, WhatsApp shares phone numbers and other information with Meta Company outside of the European Union [^6].
+What does this mean in the context of social graphs and the accuracy of possible behaviour modelling?
 
-**Write a one paragraph of your thoughts.**
+**Write one paragraph of your thoughts.**
 
-Additionally, what privacy risks "last seen" or showing "online status" can include? Imagine a situation, where someone who has the same contact list as you have, automates to process of checking online status of every contact for every second and stores this information for a longer period of time.
+Additionally, what privacy risks "last seen" or showing "online status" can include? Imagine a situation, where someone who has the same contact list as you have, automates to process of checking the online status of every contact for every second and finally stores this information for a longer period.
 
-**Write a one paragraph of your thoughts.**
+**Write one paragraph of your thoughts.**
 
 ### **Task 2 B)** Image metadata
 
