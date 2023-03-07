@@ -10,11 +10,13 @@ Many of these findings reflect iOS-based systems as well.
 
 ## Grading
 
+You must do tasks **in order**.
+You are expected to use more time on later tasks to get an equal amount of points.
 
 Task #|Points|Description|
 -----|:---:|-----------|
 [Task 1](#task-1-gdpr-data-request) | 1 | Private messaging
-[Task 2](#task-2-cookie-raid) | 1 | Metadata
+[Task 2](#task-2-cookie-raid) | 2 | Metadata and messaging
 [Task 3](#task-3-browser-fingerprinting) | 1 | Application Permissions and Trackers 
 
 ## **Task 1:** Private and authentic messaging (PGP)
@@ -33,12 +35,12 @@ Using any(**LEGAL**) means necessary try to stay **as private** and **as anonymo
 
 The task will be graded based on the methods used and actions taken to accomplish the conversation and by the level of anonymity achieved.
 
-## **Task 2:** Metadata 
+## **Task 2:** Metadata and messaging
 
 Sometimes the data you send contains more information than you are aware of.
 Especially in the context of messaging, the message content might be less interesting than *to whom, where and when you are sending it*.
 
-Depending on the nature of the platform, a centralised platform owner is often able to gather:
+Depending on the nature of the messaging platform, a centralised platform owner is often able to gather on top of message content:
 
   * Social graphs [^5]
   * Availability status (last seen and online)
@@ -48,21 +50,43 @@ Depending on the nature of the platform, a centralised platform owner is often a
   * Location
   * Device
 
-### Task 2A) Compare messaging platforms
+### **Task 2A)** Compare messaging platforms
 
-Compare different messaging platforms; check online for official and research sources *what kind of information* WhatsApp, Signal and Telegram collect about users.
-You can also include additional services.
+Compare different messaging platforms; check online for official and research sources *what kind of information* WhatsApp, Signal, Telegram and Messenger collect about users.
+You can also compare additional services if you want to.
+To compare specifically mobile application privacy, Apple's Privacy Labels [^8] might be useful:
+
+  * WhatsApp [in App Store](https://apps.apple.com/us/app/whatsapp-messenger/id310633997)
+  * Signal [in App Store](https://apps.apple.com/us/app/signal-private-messenger/id874139669)
+  * Telegram [in App Store](https://apps.apple.com/us/app/telegram-messenger/id686449807)
+  * Meta's Messenger [in App store](https://apps.apple.com/us/app/messenger/id454638411)
+
+Scroll down to *App Privacy* section and click *See Details*.
+You can also use Google's Play Store's *Data Safety Labels*, or even compare the labels of these two.
+
+> However, these labels should be taken **with a grain of salt**; both of them are mostly based on the "honour" system; app publisher tells about them and nobody is officially verifying them.
+A recent study from Mozilla claims Google's labels are misleading [^9], and also other research [^11][^12] indicates the same about Apple's labels. 
+
 
 Consider also encryption options from the "defaults" perspective.
-In what scenarios is end-to-end-encrypted (E2EE) enabled by default?
+In what scenarios is end-to-end-encrypted (E2EE) enabled by default? How about E2EE of the metadata?
 
 By default, for example, WhatsApp backups messages as unencrypted, and recommends backing up the data.
 On iOS devices, chats are also included in iCloud Backups as unencrypted by default [^7].
-What does it mean if law enforcement wants to access your data?
+What does it mean if law enforcement wants to access your private conversations?
 Has end-to-end encryption on messaging helped in that case?
+What is the impact of defaults on the general public, which use the service advertised as a "private, secure messenger"?
+
+Also, consider the following example scenario to highlight the metadata:
+
+> User A only messages User B from an iPhone 14 Pro Max, once a week, every Thursday. Location stays; the same Helsinki City location of “The Nice Cafe,” around 13:00 PM CET
+
+> User B messages User A from a Windows Machine,  Acer Nitro computer, connected to “Best Wi-Fi” with IP address 123.45.67.89 every Thursday at 13:10 PM CET and later around 13:30 PM CET from a Nokia G21 running Android 12 near a Elisa cell tower within a 2-mile radius of the Helsinki City location of “The Nice Cafe.”
+
+Without knowing the message content, can you deduce information from User A and User B?
 
 
-**Write a short comparison of 3-4 paragraphs.**
+**Write an essay of one A4 page (400 to 500 words) based on the previous sources and examples, considering also the importance of E2E encrypted metadata.**
 
 Note also the use of the same phone number across different services. 
 For example, WhatsApp shares phone numbers and other information with Meta Company outside of the European Union [^6].
@@ -76,21 +100,26 @@ Additionally, what privacy risks "last seen" or showing "online status" can incl
 
 ### **Task 2 B)** Image metadata
 
+Messaging is not limited to text anymore, and photos and videos might be the most common data you also share.
+These can also include more data than you are aware of.
 
-Some services(especially image related) strip it off for your own safety, but that is always not the case.
+Images can contain a lot of additional metadata as EXIF (Exchangeable Image File Format) data.
+Some services (especially image related) strip it off for your own safety, but that is always not the case.
 
-Pictures can contain a lot of additional metadata as EXIF (Exchangeable Image File Format) Data
 
-Download **[image2](images/image2.jpg?raw=true)** and extract the following information from it
+Download [**image2**](images/image2.jpg?raw=true) and extract the following information from it
 - GPS coordinates
 - Device manufacturer and the model the image has been taken with
 - Date and time when the image has been originally taken
 
-Then strip the image of the above mentioned information and return the image. You can do this for example by using **[Imagemagick](https://imagemagick.org/index.php)**. The image should not contain the above mentioned information **in any form**.
+You can either use the EXIF tool of [CyberChef](https://gchq.github.io/CyberChef/#recipe=Extract_EXIF()) or install [Perl based tool on Arch Linux, for example](https://archlinux.org/packages/extra/any/perl-image-exiftool/).
 
-For reference here is **[image1](images/image1.jpg?raw=true)** that is an example of a picture where the EXIF data has been stripped
+Then strip the image of the above-mentioned information and return the image. You can do this for example by using [CyberChef's Remove EXIF](https://gchq.github.io/CyberChef/#recipe=Remove_EXIF()) or  [**Imagemagick**](https://imagemagick.org/index.php).
+The image should not contain the above-mentioned information **in any form**.
 
-https://29a.ch/photo-forensics/
+For reference, here is [**image1**](images/image1.jpg?raw=true) as an example of a picture where the EXIF data has been stripped.
+
+Many other file formats also include metadata, but we don't handle them in this exercise.
 
 ---
 
@@ -113,11 +142,18 @@ Name your application and answer the following questions for each application.
 3. Did the applications have permissions to access such data they would use or sell for monetary gain? Which permissions and trackers are these?
 4. Describe two atttack vectors enabled by these permissions for each application, had an attacker gained access into the application and/or their database.
 
+Facebook Pixel, Authentication?
+Google Analytics and friends? (TikTok SDK and Pixel)
 
 [^1]: https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html
 [^2]: https://www.openpgp.org/
 [^3]: https://gnupg.org/
 [^4]: https://www.ietf.org/
-[^5]: https://en.wikipedia.org/wiki/Social_graph
-[^6]: https://faq.whatsapp.com/1303762270462331
-[^7]: https://faq.whatsapp.com/490592613091019
+[^5]: [Social graph](https://en.wikipedia.org/wiki/Social_graph)
+[^6]: [What information does WhatsApp share with the Meta Companies?](https://faq.whatsapp.com/1303762270462331)
+[^7]: [About end-to-end encrypted backup - Device-level backups on iPhone](https://faq.whatsapp.com/490592613091019)
+[^8]: [App privacy details on the App Store](https://developer.apple.com/app-store/app-privacy-details/)
+[^9]: [See No Evil: Loopholes in Google’s Data Safety Labels Keep Companies in the Clear and Consumers in the Dark](https://foundation.mozilla.org/en/campaigns/googles-data-safety-labels/)
+[^10]: [I checked Apple’s new privacy ‘nutrition labels.’ Many were false.](https://www.washingtonpost.com/technology/2021/01/29/apple-privacy-nutrition-label/)
+[^11]: [Lalaine: Measuring and Characterizing Non-Compliance of Apple Privacy Labels at Scale](https://arxiv.org/abs/2206.06274)
+[^12]: [Goodbye Tracking? Impact of iOS App Tracking Transparency and Privacy Labels](https://dl.acm.org/doi/10.1145/3531146.3533116)
