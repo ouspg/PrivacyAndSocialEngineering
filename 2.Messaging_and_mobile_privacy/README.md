@@ -20,7 +20,7 @@ Task #|Points|Description|
 [Task 1](#task-1-private-and-authentic-messaging) | 1 | Private and authentic messaging
 [Task 2](#task-2-metadata-and-messaging) | 2 | Metadata and messaging
 [Task 3](#task-3-application-permissions-and-trackers) | 1 | Application permissions and trackers 
-[Task 4](#) | 1 | Application SDKs, code signatures, Tags and Pixels (bonus)
+[Task 4](#task-4-application-sdks-code-signatures-tags-and-pixels-bonus) | 1 | Application SDKs, code signatures, Tags and Pixels (bonus)
 
 ## **Task 1:** Private and authentic messaging
 
