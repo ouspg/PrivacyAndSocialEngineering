@@ -188,7 +188,7 @@ As a result, about 75% of worldwide users opted out of IDFA[^17], which made it 
 Google followed, and a year later, they introduced similar permission [^23].
 
 This little change has been estimated to bring a significant impact on the advertising business and user privacy.
-As a response, for example, ByteDance (TikTok) has started to develop more efficient device fingerprinting technologies [^25].
+As a response, for example, ByteDance (TikTok) has started to test more efficient device fingerprinting technologies [^25].
 
 > Look for research articles regarding the impact of this change. Write 2-3 paragraphs based on at least 3 sources.
 
@@ -237,7 +237,7 @@ Go through some Finnish or other web services with the above helper extensions i
 
 What kind of tracking pixels you are finding? Note, that you might need to accept all the cookies.
 
-Have you encountered ads when using some of the social platforms? You can check if it has analytics integrated.
+Have you encountered ads when using some of the social platforms? You can check if the advertising entity has analytics integrated.
 
 Use Exodus privacy to detect possible code signatures of the advertiser SDKs if the website has its own app.
 Many of the tracking capabilities are integrated into "partners", software.
