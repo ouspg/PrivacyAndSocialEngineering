@@ -199,7 +199,7 @@ Currently, there are more sophisticated ways to track users across devices.
 They are also developer-friendly and easy to use.
 
 On mobile applications, the normal way for ad platform providers **and their partners** is to develop and offer application SDKs which can be embedded into the other apps.
-They often bring tracking capabilities off the self.
+They often bring post-install tracking capabilities off the self.
 
 
 So-called **Pixels** or **Tags** are currently trending ways to track the efficiency of ads and people's actions after they see the ads and go to the websites. 
@@ -239,7 +239,7 @@ What kind of tracking pixels you are finding? Note, that you might need to accep
 
 Have you encountered ads when using some of the social platforms? You can check if the advertising entity has analytics integrated.
 
-Use Exodus privacy to detect possible code signatures of the advertiser SDKs if the website has its own app.
+Use Exodus privacy to detect possible code signatures of the advertising platform SDKs if the website has its own app.
 Many of the tracking capabilities are integrated into "partners", software.
 Take a look for example the partnership between AppFlyers and TikTok [^26]. 
 
