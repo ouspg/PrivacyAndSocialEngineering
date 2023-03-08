@@ -13,9 +13,15 @@ Upon completion of the course, the student will be able to:
 
 ## Practicalities
 
-The course includes practical exercises from the previously mentioned topics.
+The course includes practical exercises for six weeks on the previously mentioned topics.
 In general, you are not required to complete technically very challenging tasks to acquire grade 3, but beyond that command-line skills might be required.
 So be prepared!
+
+The course will use GitHub Classroom for returning the work.
+See general instructions [here.](https://ouspg.org/guides/github/)
+
+For higher grades, you will need a Linux environment for some tasks.
+See laboratory and virtual machine instructions over [here.](https://ouspg.org/guides/laboratories/)
 
 ### Grading
 
@@ -30,6 +36,11 @@ Total Points|Total Grade
 18+ | 5
 
 ## General material
+
+Fundamental privacy sources include current legislation.
+The book of Hadnagy will be used as a source for the basics of social engineering.
+
+There will be plenty of additional sources for every week in corresponding exercises.
 
 [GDPR regulation](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679)
 
