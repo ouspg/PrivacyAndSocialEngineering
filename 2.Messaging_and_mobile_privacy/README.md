@@ -157,16 +157,15 @@ Name your application and answer the following questions for each application.
 
 ## Task 4: Application SDKs, code signatures, Tags and Pixels (bonus)
 
-> This task attempts to go through the motivation behind advertising business, trackers and how do they work in the mobile world and elsewhere
+> What is the motivation behind advertising business and trackers? Let's see how do they work in the mobile world and elsewhere.
 
 Mobile business advertising spending was estimated to be around 330 billion U.S. dollars worldwide in 2022 [^19][^20], from a total of 600 billion spent on digital ads[^21].
-Companies spend a lot of money on advertising, and they like to know whether their money has had any impact, or what kind of impact it has been.
 
 Revenue of some of the world's most valuable companies is based on ads:
-  * Alphabet (Google Ads, YouTube Ads)
-  * Meta Platforms, Inc. (Facebook, Instagram, Messenger, WhatsApp, Oculus)
+  * Alphabet, Inc. (Google Ads, YouTube Ads)
+  * Meta Platforms, Inc. (Facebook, Instagram, Messenger, WhatsApp, Oculus, etc.)
 
-In 2022, Meta and Google took alone 48,4% of the digital ad revenue [^22]. 
+In 2022, Meta and Alphabet took alone 48,4% of the digital ad revenue [^22]. 
 
 Other companies with audience-based platforms have also high revenue on ads:
   * ByteDance (TikTok)
@@ -175,29 +174,80 @@ Other companies with audience-based platforms have also high revenue on ads:
   * Microsoft (LinkedIn)
   * Amazon.com, Inc (Amazon Ads)
 
-To offer capabilities for estimating the ad efficiency and targeting of the ads, many of these companies have developed many, but similar kinds of technologies.
+Companies spend a lot of money on advertising, and they like to know whether their money has had any impact, or what kind of impact it has been.
+To offer capabilities for estimating the ad efficiency and targeting of the ads, many of these advertising companies have developed many, but similar kinds of technologies.
 
 ### Task 4A) Legacy technologies
 
 Some traditional tracking technologies to track users across the web and apps include
-  * Third-party cookies
-  * Advertising ID by Google [^23] and Identifier for Advertisers (IDFA)[^16] by Apple
+  * Third-party cookies (the end is near [^24])
+  * Advertising ID by Google [^23] and Identifier for Advertisers (IDFA)[^16] by Apple on mobile phones
 
 In early 2021, Apple made use of the IDFA, currently known as App Tracking Transparency (ATT) [^18] feature, requiring a prompt for users; the user was able to opt-in or out of IDFA.
-As a result, about 75% of worldwide users opted out of IDFA, based on the use of the ATT framework in applications [^17], which made it significantly harder to track users between different applications. 
-Google followed, and year later, they introduced similar permission [^23].
+As a result, about 75% of worldwide users opted out of IDFA[^17], which made it significantly harder to track users between different applications. 
+Google followed, and a year later, they introduced similar permission [^23].
 
 This little change has been estimated to bring a significant impact on the advertising business and user privacy.
+As a response, for example, ByteDance (TikTok) has started to develop more efficient device fingerprinting technologies [^25].
 
-> Look for research articles regarding the impact of this change.
+> Look for research articles regarding the impact of this change. Write 2-3 paragraphs based on at least 3 sources.
 
 
-### Task 4B) Analysing the use of the advanced technologies
+### Task 4B) The use of the advanced technologies
 
-Many application developers want their share of the ad income.
+Currently, there are more sophisticated ways to track users across devices.
+They are also developer-friendly and easy to use.
 
-Facebook Pixel, Authentication, Tags?
-Google Analytics and friends? (TikTok SDK and Pixel)
+On mobile applications, the normal way for advertisers **and their partners** is to develop and offer application SDKs which can be embedded into the other apps.
+They often bring tracking capabilities off the self.
+
+
+So-called **Pixels** or **Tags** are currently trending ways to track the efficiency of ads and people's actions after they see the ads and go to the websites. 
+They are little code snippets that you inject into your website or integrate into the mobile application.
+See [TikTok's graph](https://ads.tiktok.com/help/article/tiktok-pixel?lang=en#) to understand the basic workflow.
+
+|Platform| Pixel/Tag | Helper |
+|-|-|-|
+|Google| [Google Tag](https://developers.google.com/tag-platform/devguides)| [Tag Assistant](https://tagassistant.google.com/)
+|Meta Platforms| [Meta Pixel](https://developers.facebook.com/docs/meta-pixel/)/[Meta App Event Tracking](https://developers.facebook.com/docs/app-events/) | [Meta Pixel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc) |
+|Twitter | [Twitter Pixel](https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html) | [Twitter Pixel Helper](https://chrome.google.com/webstore/detail/twitter-pixel-helper/jepminnlebllinfmkhfbkpckogoiefpd) |
+| TikTok | [TikTok Pixel](https://ads.tiktok.com/help/article/tiktok-pixel?redirected=2#) | [TikTok Pixel Helper](https://chrome.google.com/webstore/detail/tiktok-pixel-helper/aelgobmabdmlfmiblddjfnjodalhidnn?hl=en) |
+| Snapchat | [Snap Pixel](https://businesshelp.snapchat.com/s/article/snap-pixel-about?language=en_US) | [Snap Pixel Helper](https://chrome.google.com/webstore/detail/snap-pixel-helper/hnlbfcoodjpconffdbddfglilhkhpdnf?hl=en) | 
+| LinkedIn | [Linkedin Insight Tag](https://business.linkedin.com/marketing-solutions/insight-tag) | [LinkedIn Pixel Helper](https://chrome.google.com/webstore/detail/pixel-helper-for-linkedin/adbhmmjkppnhjjiapocjgjaknpigdoaa)|
+
+
+Go through some Finnish or other web services with the above helper extensions installed. 
+
+
+
+
+* For example, you can check [here for analytics on sites](https://trends.builtwith.com/analytics) in Finland, or some examples below.
+
+  * motonet.fi
+  * masku.com
+  * polar.com
+  * wolt.com
+  * verkkokauppa.com
+  * power.fi
+  * etuovi.com
+  * huutokaupat.com
+  * tentree.ca
+  * crypto.com
+  * investing.com
+
+What kind of tracking pixels you are finding? Note, that you might need to accept all the cookies.
+
+Use Exodus privacy to detect possible code signatures of the advertiser SDKs if the website has own app.
+Many of the tracking capabilities are integrated into "partners", software.
+Take a look for example the partnership of AppFlyers and TikTok [^26]. 
+
+Do you find similar analytics from their apps? If you don't, but for example, you find AppFlyers integrated, do you have any idea where your data is going and what is even tracked?
+
+Also, consider what is the impact of using advertiser-provided log-in options.
+E.g. for using Google login or Facebook login to some service, which has integrated relevant tracking software.
+
+> Write at least 4-5 paragraphs of your thoughts and findings, when looking these trackers.
+
 
 [^1]: [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)
 [^2]: [OpenPGP ](https://www.openpgp.org/)
@@ -222,3 +272,6 @@ Google Analytics and friends? (TikTok SDK and Pixel)
 [^21]: [Digital Ad Spend (2021–2026)](https://www.oberlo.com/statistics/digital-ad-spend)
 [^22]: [Slow fade for Google and Meta's ad dominance](https://www.axios.com/2022/12/20/google-meta-duopoly-online-advertising)
 [^23]: [Advertising ID](https://support.google.com/googleplay/android-developer/answer/6048248?hl=en)
+[^24]: [What the Death of Browser Tracking Cookies Means for Marketers: Part 1](https://www.invoca.com/blog/what-the-death-of-browser-tracking-cookies-means-for-marketers-part-1)
+[^25]: [CAID (technology)](https://en.wikipedia.org/wiki/CAID_(technology))
+[^26]: [TikTok partners with AppsFlyer to boost in-app measurement and performance](https://www.tiktok.com/business/en-US/blog/appsflyer-in-app-measurement-performance)
