@@ -20,7 +20,7 @@ Task #|Points|Description|
 [Task 1](#task-1-private-and-authentic-messaging) | 1 | Private and authentic messaging
 [Task 2](#task-2-metadata-and-messaging) | 2 | Metadata and messaging
 [Task 3](#task-3-application-permissions-and-trackers) | 1 | Application permissions and trackers 
-[Task 4](#) | 1 | Application SDKs, code signatures, and pixels (bonus)
+[Task 4](#) | 1 | Application SDKs, code signatures, Tags and Pixels (bonus)
 
 ## **Task 1:** Private and authentic messaging
 
@@ -85,7 +85,7 @@ Also, consider the following example scenario to highlight the metadata:
 
 > User A only messages User B from an iPhone 14 Pro Max, once a week, every Thursday. Location stays; the same Helsinki City location of “The Nice Cafe,” around 13:00 PM CET
 
-> User B messages User A from a Windows machine,  Acer Nitro computer, connected to “Best Wi-Fi” with IP address 123.45.67.89 every Thursday at 13:10 PM CET and later around 13:30 PM CET from a Nokia G21 running Android 12 near a Elisa cell tower within a 2-mile radius of the Helsinki City location of “The Nice Cafe.”
+> User B messages User A from a Windows machine,  Acer Nitro computer, connected to “Best Wi-Fi” with IP address 123.45.67.89 every Thursday at 13:10 PM CET and later around 13:30 PM CET from a Nokia G21 running Android 12 near a Elisa cell tower within a 3-kilometer radius of the Helsinki City location of “The Nice Cafe.”
 
 Without knowing the message content, can you deduce information from User A and User B?
 
@@ -152,21 +152,51 @@ Name your application and answer the following questions for each application.
 2. How many "dangerous" (runtime) and/or "special" permissions does each have? (Red exclamation mark, see these in Google's guide [^14])
 3. Did the applications have permission to access such data they could use or sell for monetary gain? Which permissions and trackers are these?
 4. Describe two attack vectors enabled by these permissions for each application, had an attacker gained access into the application and/or their database.
-5. Compare Android and iOS privacy labels (if it is available on both platfroms) to your findings about trackers
+5. Compare Android and iOS privacy labels (if it is available on both platforms) to your findings about trackers
 
 
-## Task 4: Application SDKs, code signatures, and pixels (bonus)
+## Task 4: Application SDKs, code signatures, Tags and Pixels (bonus)
 
-Mobile business advertising spending is estimated to be 327.1 billion U.S. dollars worldwide in 2022 [^19].
+> This task attempts to go through the motivation behind advertising business, trackers and how do they work in the mobile world and elsewhere
 
-Many application developers want their share of the income.
+Mobile business advertising spending was estimated to be around 330 billion U.S. dollars worldwide in 2022 [^19][^20], from a total of 600 billion spent on digital ads[^21].
+Companies spend a lot of money on advertising, and they like to know whether their money has had any impact, or what kind of impact it has been.
+
+Revenue of some of the world's most valuable companies is based on ads:
+  * Alphabet (Google Ads, YouTube Ads)
+  * Meta Platforms, Inc. (Facebook, Instagram, Messenger, WhatsApp, Oculus)
+
+In 2022, Meta and Google took alone 48,4% of the digital ad revenue [^22]. 
+
+Other companies with audience-based platforms have also high revenue on ads:
+  * ByteDance (TikTok)
+  * Twitter, Inc. (Twitter)
+  * Snap Inc. (Snapchat)
+  * Microsoft (LinkedIn)
+  * Amazon.com, Inc (Amazon Ads)
+
+To offer capabilities for estimating the ad efficiency and targeting of the ads, many of these companies have developed many, but similar kinds of technologies.
+
+### Task 4A) Legacy technologies
+
+Some traditional tracking technologies to track users across the web and apps include
+  * Third-party cookies
+  * Advertising ID by Google [^23] and Identifier for Advertisers (IDFA)[^16] by Apple
+
+In early 2021, Apple made use of the IDFA, currently known as App Tracking Transparency (ATT) [^18] feature, requiring a prompt for users; the user was able to opt-in or out of IDFA.
+As a result, about 75% of worldwide users opted out of IDFA, based on the use of the ATT framework in applications [^17], which made it significantly harder to track users between different applications. 
+Google followed, and year later, they introduced similar permission [^23].
+
+This little change has been estimated to bring a significant impact on the advertising business and user privacy.
+
+> Look for research articles regarding the impact of this change.
 
 
-In late 2020, Apple made use of the Identifier for Advertisers (IDFA)[^16], currently known as App Tracking Transparency (ATT) [^18] feature requiring a prompt for users; the user was able to opt-in or out of IDFA.
+### Task 4B) Analysing the use of the advanced technologies
 
-As a result, about 75% of worldwide users opted out of IDFA, based on the existence of the ATT framework in applications [^17]. 
+Many application developers want their share of the ad income.
 
-Facebook Pixel, Authentication?
+Facebook Pixel, Authentication, Tags?
 Google Analytics and friends? (TikTok SDK and Pixel)
 
 [^1]: [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)
@@ -188,3 +218,7 @@ Google Analytics and friends? (TikTok SDK and Pixel)
 [^17]: [App Tracking Transparency Opt-In Rate - Monthly Updates](https://www.flurry.com/blog/att-opt-in-rate-monthly-updates/)
 [^18]: [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)
 [^19]: [Mobile advertising spending worldwide from 2007 to 2024 ](https://www.statista.com/statistics/303817/mobile-internet-advertising-revenue-worldwide/)
+[^20]: [State of Mobile](https://www.data.ai/en/go/state-of-mobile-2023/)
+[^21]: [Digital Ad Spend (2021–2026)](https://www.oberlo.com/statistics/digital-ad-spend)
+[^22]: [Slow fade for Google and Meta's ad dominance](https://www.axios.com/2022/12/20/google-meta-duopoly-online-advertising)
+[^23]: [Advertising ID](https://support.google.com/googleplay/android-developer/answer/6048248?hl=en)
