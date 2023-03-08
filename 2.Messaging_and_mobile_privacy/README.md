@@ -198,7 +198,7 @@ As a response, for example, ByteDance (TikTok) has started to develop more effic
 Currently, there are more sophisticated ways to track users across devices.
 They are also developer-friendly and easy to use.
 
-On mobile applications, the normal way for advertisers **and their partners** is to develop and offer application SDKs which can be embedded into the other apps.
+On mobile applications, the normal way for ad platform providers **and their partners** is to develop and offer application SDKs which can be embedded into the other apps.
 They often bring tracking capabilities off the self.
 
 
