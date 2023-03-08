@@ -208,7 +208,7 @@ See [TikTok's graph](https://ads.tiktok.com/help/article/tiktok-pixel?lang=en#) 
 
 |Platform| Pixel/Tag | Helper |
 |-|-|-|
-|Google| [Google Tag](https://developers.google.com/tag-platform/devguides)| [Tag Assistant](https://tagassistant.google.com/)
+|Google| [Google Tag](https://developers.google.com/tag-platform/devguides)| [Tag Assistant](https://tagassistant.google.com/)/[Legacy extension](https://chrome.google.com/webstore/detail/tag-assistant-legacy-by-g/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=en)
 |Meta Platforms| [Meta Pixel](https://developers.facebook.com/docs/meta-pixel/)/[Meta App Event Tracking](https://developers.facebook.com/docs/app-events/) | [Meta Pixel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc) |
 |Twitter | [Twitter Pixel](https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html) | [Twitter Pixel Helper](https://chrome.google.com/webstore/detail/twitter-pixel-helper/jepminnlebllinfmkhfbkpckogoiefpd) |
 | TikTok | [TikTok Pixel](https://ads.tiktok.com/help/article/tiktok-pixel?redirected=2#) | [TikTok Pixel Helper](https://chrome.google.com/webstore/detail/tiktok-pixel-helper/aelgobmabdmlfmiblddjfnjodalhidnn?hl=en) |
@@ -237,9 +237,11 @@ Go through some Finnish or other web services with the above helper extensions i
 
 What kind of tracking pixels you are finding? Note, that you might need to accept all the cookies.
 
-Use Exodus privacy to detect possible code signatures of the advertiser SDKs if the website has own app.
+Have you encountered ads when using some of the social platforms? You can check if it has analytics integrated.
+
+Use Exodus privacy to detect possible code signatures of the advertiser SDKs if the website has its own app.
 Many of the tracking capabilities are integrated into "partners", software.
-Take a look for example the partnership of AppFlyers and TikTok [^26]. 
+Take a look for example the partnership between AppFlyers and TikTok [^26]. 
 
 Do you find similar analytics from their apps? If you don't, but for example, you find AppFlyers integrated, do you have any idea where your data is going and what is even tracked?
 
