@@ -171,7 +171,7 @@ Other companies with audience-based platforms have also high revenue on ads:
   * ByteDance (TikTok)
   * Twitter, Inc. (Twitter)
   * Snap Inc. (Snapchat)
-  * Microsoft (LinkedIn)
+  * Microsoft (LinkedIn, Microsoft Search Network)
   * Amazon.com, Inc (Amazon Ads)
 
 Companies spend a lot of money on advertising, and they like to know whether their money has had any impact, or what kind of impact it has been.
@@ -241,7 +241,7 @@ Have you encountered ads when using some of the social platforms? You can check 
 
 Use Exodus privacy to detect possible code signatures of the advertising platform SDKs if the website has its own app.
 Many of the tracking capabilities are integrated into "partners", software.
-Take a look for example the partnership between AppFlyers and TikTok [^26]. 
+Take a look for example the partnership between AppFlyers and TikTok [^26][^27]. 
 
 Do you find similar analytics from their apps? If you don't, but for example, you find AppFlyers integrated, do you have any idea where your data is going and what is even tracked?
 
@@ -277,3 +277,4 @@ E.g. for using Google login or Facebook login to some service, which has integra
 [^24]: [What the Death of Browser Tracking Cookies Means for Marketers: Part 1](https://www.invoca.com/blog/what-the-death-of-browser-tracking-cookies-means-for-marketers-part-1)
 [^25]: [CAID (technology)](https://en.wikipedia.org/wiki/CAID_(technology))
 [^26]: [TikTok partners with AppsFlyer to boost in-app measurement and performance](https://www.tiktok.com/business/en-US/blog/appsflyer-in-app-measurement-performance)
+[^27]: [How to win on iOS 14+ with AppsFlyer and TikTok: The complete guide](https://www.tiktok.com/business/en-US/blog/win-ios14-appsflyer-tiktok-complete-guide)
