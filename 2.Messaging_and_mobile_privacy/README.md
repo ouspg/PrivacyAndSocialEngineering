@@ -59,10 +59,10 @@ Compare different messaging platforms; check online for official and research so
 You can also compare additional services if you want to.
 To compare specifically mobile application privacy, Apple's Privacy Labels [^8] might be useful:
 
-  * WhatsApp [in App Store](https://apps.apple.com/us/app/whatsapp-messenger/id310633997)
-  * Signal [in App Store](https://apps.apple.com/us/app/signal-private-messenger/id874139669)
-  * Telegram [in App Store](https://apps.apple.com/us/app/telegram-messenger/id686449807)
-  * Meta's Messenger [in App store](https://apps.apple.com/us/app/messenger/id454638411)
+  * WhatsApp in [App Store](https://apps.apple.com/us/app/whatsapp-messenger/id310633997) and [Play Store](https://play.google.com/store/apps/details?id=com.whatsapp) 
+  * Signal in [App Store](https://apps.apple.com/us/app/signal-private-messenger/id874139669) and [Play Store](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms)
+  * Telegram in [App Store](https://apps.apple.com/us/app/telegram-messenger/id686449807) and [Play Store](https://play.google.com/store/apps/details?id=org.telegram.messenger)
+  * Meta's Messenger in [App Store](https://apps.apple.com/us/app/messenger/id454638411) and [Play Store](https://play.google.com/store/apps/details?id=com.facebook.orca)
 
 Scroll down to *App Privacy* section and click *See Details*.
 You can also use Google's Play store's *Data Safety Labels* [^13], or even compare the labels of these two.
