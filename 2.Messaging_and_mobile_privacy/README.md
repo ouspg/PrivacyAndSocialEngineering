@@ -34,14 +34,29 @@ These encryptions allow users to quite easily have, for example, encrypted email
 Using any(**LEGAL**) means necessary to try to stay **as private** and **as anonymous as possible** and exchange public keys to start an encrypted email conversation with your randomly selected classmate. Your goal is to have the conversation **as unlinkable** to yourself **as possible** even for statewide actors. Being completely untraceable is quite impossible, the important part here is to learn and show how invisible you can become and what it takes.
 
 * Document your actions precisely, and name software or services used to the best of your ability. 
+* You are expected to generate PGP keys, exchange them, encrypt, sign, verify and decrypt the message content
 * Describe the experience and how difficult you found this to be.
 
 The task will be graded based on the methods used and actions taken to accomplish the conversation and by the level of anonymity achieved.
 
+<details><summary>Hints</summary>
+
+You can generate PGP keys [in the browser as well](https://gchq.github.io/CyberChef/#recipe=Generate_PGP_Key_Pair('ECC-384','','','')) by using CyberChef. For practice only!
+
+> **Warning**
+> Cryptographic operations in CyberChef should not be relied upon to provide security in any situation. No guarantee is offered for their correctness. We advise you not to use keys generated from CyberChef in operational contexts.
+
+You can use [CyberChef](https://gchq.github.io/CyberChef/) to encrypt and sign the data as well. 
+You can also use it for verifying and decrypting the data.
+
+There is a search in CyberChef. Use `PGP` search word to find the required operations.
+
+</details>
+
 ## **Task 2:** Metadata and messaging
 
 Sometimes the data you send contains more information than you are aware of.
-Especially in the context of messaging, the message content might be less interesting than *to whom, where and when you are sending it*.
+Especially in the context of modern messaging, the message content might be less interesting than *to whom, where and when you are sending it*.
 
 Depending on the nature of the messaging platform, a centralised platform owner is often able to gather on top of message content:
 
@@ -55,7 +70,7 @@ Depending on the nature of the messaging platform, a centralised platform owner 
 
 ### **Task 2A)** Compare messaging platforms
 
-Compare different messaging platforms; check online for official and research sources *what kind of information* WhatsApp, Signal, Telegram and Messenger collect about users.
+Compare different mobile messaging platforms; check online for official and research sources *what kind of information* WhatsApp, Signal, Telegram and Messenger collect about users.
 You can also compare additional services if you want to.
 To compare specifically mobile application privacy, Apple's Privacy Labels [^8] might be useful:
 
@@ -75,7 +90,7 @@ A recent study from Mozilla claims Google's labels are misleading [^9], and also
 Consider also encryption options from the "defaults" perspective.
 In what scenarios is end-to-end-encrypted (E2EE) enabled by default? How about E2EE of the metadata?
 
-By default, for example, WhatsApp backups messages as unencrypted, and recommends backing up the data.
+By default, for example, WhatsApp encrypts messages in the delivery phase, but backups messages as unencrypted, and recommends backing up the data.
 On iOS devices, chats are also included in iCloud Backups as unencrypted by default [^7].
 What does it mean if law enforcement wants to access your private conversations?
 Has end-to-end encryption on messaging helped on preventing access in that case?
