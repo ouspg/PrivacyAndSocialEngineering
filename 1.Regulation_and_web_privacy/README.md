@@ -143,7 +143,7 @@ Return similarity percentage for:
 > This task requires some technical skills! You are expected to know how HTTP protocol works, and the command line is required.
 
 TikTok is notoriously known for its data collection practices, including fingerprinting and data sharing with third-party services.
-Also, TikTok development kit and trackers appear at least in 25 281 other apps ^28 and hundreds of websites collecting data for TikTok [^29].
+Also, TikTok development kit and trackers appear at least in 25 281 other apps [^28] and hundreds of websites collecting data for TikTok [^29].
 Governments and individual security researchers have raised privacy concerns related to the behaviour of the service [^15][^16][^17][^18][^19][^20].
 Recently, there have been a lot of talks about banning it in the U.S. [^27]. 
 
