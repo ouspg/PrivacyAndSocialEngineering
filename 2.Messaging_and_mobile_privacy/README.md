@@ -24,6 +24,12 @@ Task #|Points|Description|
 
 ## **Task 1:** Private and authentic messaging
 
+In private messaging, no other than the sender and intended receiver should be able to read the message content.
+For the receiver to be able to verify that the message is coming from the claimed source, the sender must sign it, and then the receiver can verify it from the *signature*.
+You can read more about encryption and digital signatures from Wikipedia if needed [^29][^28].
+
+This task will combine some of the basic concepts of encryption and authentication, by using PGP as an example, which is often used in emails.
+
 "PGP" Encryption is short for Pretty Good Privacy, an encryption program originally published by Phil Zimmermann & Associates in 1991 [^1].
 Later on derivatives OpenPGP[^2] and GPG[^3] were introduced, which stand for Open-Source PGP and GnuPG/Gnu Privacy Guard respectively.
 OpenPGP became standardized by the IETF [^4] and GPG was specifically designed to be compatible with OpenPGP and allows the decryption of OpenPGP encryption.
@@ -33,13 +39,14 @@ These encryptions allow users to quite easily have, for example, encrypted email
 
 Using any(**LEGAL**) means necessary to try to stay **as private** and **as anonymous as possible** and exchange public keys to start an encrypted email conversation with your randomly selected classmate. Your goal is to have the conversation **as unlinkable** to yourself **as possible** even for statewide actors. Being completely untraceable is quite impossible, the important part here is to learn and show how invisible you can become and what it takes.
 
+
 * Document your actions precisely, and name software or services used to the best of your ability. 
-* You are expected to generate PGP keys, exchange them, encrypt, sign, verify and decrypt the message content
+* You are expected to generate PGP keys, exchange them (public keys only!), encrypt, sign, verify and decrypt the message content
 * Describe the experience and how difficult you found this to be.
 
 The task will be graded based on the methods used and actions taken to accomplish the conversation and by the level of anonymity achieved.
 
-<details><summary>Hints</summary>
+<details><summary>Tips and Tricks</summary>
 
 You can generate PGP keys [in the browser as well](https://gchq.github.io/CyberChef/#recipe=Generate_PGP_Key_Pair('ECC-384','','','')) by using CyberChef. For practice only!
 
@@ -293,3 +300,5 @@ E.g. for using Google login or Facebook login to some service, which has integra
 [^25]: [CAID (technology)](https://en.wikipedia.org/wiki/CAID_(technology))
 [^26]: [TikTok partners with AppsFlyer to boost in-app measurement and performance](https://www.tiktok.com/business/en-US/blog/appsflyer-in-app-measurement-performance)
 [^27]: [How to win on iOS 14+ with AppsFlyer and TikTok: The complete guide](https://www.tiktok.com/business/en-US/blog/win-ios14-appsflyer-tiktok-complete-guide)
+[^28]: [Digital signature](https://en.wikipedia.org/wiki/Digital_signature)
+[^29]: [Encryption](https://en.wikipedia.org/wiki/Encryption)
