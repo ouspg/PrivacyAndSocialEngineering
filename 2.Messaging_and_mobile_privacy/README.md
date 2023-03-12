@@ -202,7 +202,7 @@ To offer capabilities for estimating the ad efficiency and targeting of the ads,
 ### Task 4A) Legacy technologies
 
 Some traditional tracking technologies to track users across the web and apps include
-  * Third-party cookies (the end is near [^24])
+  * Third-party cookies (the end is near [^24][^30])
   * Advertising ID by Google [^23] and Identifier for Advertisers (IDFA)[^16] by Apple on mobile phones
 
 In early 2021, Apple made use of the IDFA, currently known as App Tracking Transparency (ATT) [^18] feature, requiring a prompt for users; the user was able to opt-in or out of IDFA.
@@ -226,6 +226,7 @@ They often bring post-install tracking capabilities off the self.
 
 So-called **Pixels** or **Tags** are currently trending ways to track the efficiency of ads and people's actions after they see the ads and go to the websites. 
 They are little code snippets that you inject into your website or integrate into the mobile application.
+
 See [TikTok's graph](https://ads.tiktok.com/help/article/tiktok-pixel?lang=en#) to understand the basic workflow.
 
 |Platform| Pixel/Tag | Helper |
@@ -302,3 +303,4 @@ E.g. for using Google login or Facebook login to some service, which has integra
 [^27]: [How to win on iOS 14+ with AppsFlyer and TikTok: The complete guide](https://www.tiktok.com/business/en-US/blog/win-ios14-appsflyer-tiktok-complete-guide)
 [^28]: [Digital signature](https://en.wikipedia.org/wiki/Digital_signature)
 [^29]: [Encryption](https://en.wikipedia.org/wiki/Encryption)
+[^30]: [Tracking Cookies are Dead: What Marketers Can Do About It](https://www.invoca.com/blog/tracking-cookies-are-dead-what-marketers-can-do-about-it)
