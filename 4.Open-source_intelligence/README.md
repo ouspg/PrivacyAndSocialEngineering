@@ -32,16 +32,17 @@ As a last round interview assignment, you are tasked with performing OSINT on th
 
 Start the task by finding possible social media accounts used for marketing by the company.
 
-Your end goal is to infiltrate the company's FTP server.
+Your end goal is to infiltrate the company's server. The server is located at 86.50.170.187
 
 Feel free to use tools such as:
 
 - [Sherlock](https://github.com/sherlock-project/sherlock) 
 - [Breachdirectory](https://breachdirectory.org/)
 - [ReconFTW](https://github.com/six2dez/reconftw#osint)
-- [Hashescom](https://hashes.com/en/decrypt/hash)
 - [Hashcat](https://hashcat.net/hashcat/)
 - [John the ripper](https://github.com/openwall/john)
+
+**PROVIDE SCREENSHOTS FOR ALL PARTS OF THIS TASK!**
 
 
 ### What is the alias of the new employee and where is he from? Explain where you found this information.
@@ -56,11 +57,17 @@ Feel free to use tools such as:
 
 
 
-### Explain how you logged into the FTP server. What was the password?
+### Explain how you logged into the SFTP server. What was the password?
 
 
 
-### What is in the flag.txt file located on the FTP server?
+### What is in the flag.txt file located on the SFTP server?
+
+
+### Now finish the task by logging into the company's server. Explain how you did this.
+
+
+### What is in the text file located on the server?
 
 
 
