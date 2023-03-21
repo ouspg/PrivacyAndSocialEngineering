@@ -18,10 +18,10 @@ In general, you are not required to complete technically very challenging tasks 
 So be prepared!
 
 The course will use GitHub Classroom for returning the work.
-See general instructions [here.](https://ouspg.org/guides/github/)
+See general instructions [here.](https://ouspg.org/resources/github/)
 
 For higher grades, you will need a Linux environment for some tasks.
-See laboratory and virtual machine instructions over [here.](https://ouspg.org/guides/laboratories/)
+See laboratory and virtual machine instructions over [here.](https://ouspg.org/resources/laboratories/)
 
 ### Grading
 
