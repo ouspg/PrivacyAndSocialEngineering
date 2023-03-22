@@ -1,6 +1,6 @@
 # **Week 3: Operating system privacy** 
 
-Operating systems and devices very often "call back" to their respective owners and/or manufacturers. This data can be used against people and is vulnerable for example to leaks and intercepting. In some cases these devices do not require this data transportation and may leave entry holes for attackers e.g. IOT devices may be used in botnets 
+Operating systems and devices very often ["phone home"](https://en.wikipedia.org/wiki/Phoning_home) to their respective owners and/or manufacturers. This data can be used against people and is vulnerable for example to leaks and intercepting. In some cases these devices do not require this data transportation and may leave entry holes for attackers e.g. IOT devices may be used in [botnets.](https://www.cloudflare.com/learning/ddos/glossary/mirai-botnet/)
 
 Exercises this week focus on problems with operating systems and the way they can affect your privacy. We also take a look at how to avoid these issues in the last task.
 
@@ -155,25 +155,21 @@ Most computers handle this without any implications, and the most common problem
 
 - Encrypt the screenshot with GPG/GPA.
 
-- Follow the provided .onion address to an onionshare file sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". **Here upload the encrypted image and add your name and public key as a message.**
+- Follow the provided .onion address to an onionshare file sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". 
 
-What to return for this task:
+### Task 4 A) What to return on the website
 
-Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name and public key to decrypt the image on the OnionShare address. 
+Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name and public key to decrypt the image. 
+
+### Task 4 B) Onionshare website
+
+Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible. Provide the .onion address and possible password with your answers. Your site should be up for time of the in class exercise time, it is at this time we check the sites.
 
 **Then answer the questions below:**
 
 1. What happens when you pull out your Tails usb stick, did you try this?
 
 2. Why do these kinds of operations and services exist? Answer in less than 200 words.
-
-<details>
-<summary>For a bonus point</summary>
-<br>
-
-Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible. Provide the .onion address and possible password with your answers. Your site should be up for time of the in class exercise time, it is at this time we check the sites.
-
-</details>
 
 ---
 
