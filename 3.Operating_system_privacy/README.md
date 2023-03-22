@@ -1,45 +1,59 @@
 # **Week 3** 
 
-## **Task 1:** Telemetry and data collection
 
-Most operating systems and manufacturers collect and send telemetry and other information about your device. This information may include data such as location, time, usage times and reasons for use. 
+## **Task 1:** IoT Home Assistants
 
-Search online to find out what data your phone manufacturer and operating system are sending forward. Analyze your findings, write a summary and list your sources. (Maximum one A4 page)
+Take a quick look at these few short articles about
+
+- **Ring Always Home Cam** [Wired](https://www.wired.com/story/ring-always-home-cam-september-2021/)
+- **Roomba** [Wired](https://www.wired.com/story/amazon-irobot-roomba-acquisition-data-privacy/)
+- **Alexa/Echo** [The Verge](https://www.theverge.com/2022/4/28/23047026/amazon-alexa-voice-data-targeted-ads-research-report)
+- **Doorbell cameras** [Wired](https://www.wired.com/story/ring-hacks-exemplify-iot-security-crisis/)
+- **Astro** [Wired](https://www.wired.com/story/amazon-astro/)
+
+What **security risks** and **privacy implications** there are from bringing these kind of devices to your home?
+
+**Answer the following questions:**
+
+- For each device separately describe two situations where privacy and/or security of the user can be compromised
+- Find and list 5 CVEs[^1] for IOT devices such as above. Give a short explanation of the CVEs. (You can choose the devices and CVEs yourself and the CVEs can be patchable)
+
+A great place to search for the CVEs is [Mitre](https://cve.mitre.org/index.html). Their CVE list search is an amazing tool. [Tips for the search](https://cve.mitre.org/find/search_tips.html)
 
 ---
 
-## **Task 2:** VPN comparison
+## **Task 2:** Telemetry and data collection
+
+Most operating systems and manufacturers collect and send telemetry and other information about your device[^2]. This information may include data such as location, time, usage times and reasons for use. 
+
+Search online to find out what data your phone manufacturer and operating system are sending forward. Analyze your findings, write a summary and list your sources. (Try keep this concise)
+
+**List atleast the following at the beginning:**
+
+- Your phone and the OS version
+- Manufacturer and their country of origin
+- Did you learn anything new about your phone **yes/no**
+
+---
+
+## **Task 3:** VPN[^3] comparison
 
 Go to https://techlore.tech/vpn and choose three vpn:s from the list and click compare.
-provide short answers to what following listings mean vpn:s privacy and security in mind and how different vpn:s fare in each category. (you can change your choices to get differing results in each category):
-* OpenVPN and Wireguard
-* System/app killswitch
-* Infracture and client audit
-* Logging policy
-* Jurisdiction
-* 14 Eyes
-* Warrant canary/transparency report
-* Anon Payment and Signup
+Provide short answers to what the following listings mean, keeping vpn:s privacy and security in mind and how different vpn:s fare in each category. (you can change your choices to get differing results in each category):
+* OpenVPN[^4] and Wireguard[^5]
+* System/app killswitch[^6]
+* Infracture and client audit[^7]
+* Logging policy[^8]
+* Jurisdiction [^9]
+* 14 Eyes[^10]
+* Warrant canary/transparency report[^11]
+* Anonymous Payment and Signup
 * Misleading security marketing
 * Open source client
-* Multihop
-* Port Forwarding
+* Multihop[^12]
+* Port Forwarding[^13]
 
----
-
-## **Task 3:** Windows 10 Privacy Hardening
-
-Provided with a clean virtual machine install of Windows 10. Install the utilities you want and/or need to analyze your network traffic (such as [wireshark](https://www.wireshark.org/) or [Windows Diagnostic Data Viewer](https://docs.microsoft.com/en-us/windows/privacy/diagnostic-data-viewer-overview) Keep in mind that the latter is proprietary software from microsoft). 
-
-**Hot Tip:** You can install Windows 10 Home Edition without a Microsoft account if you do not have an internet connection. You can do this by disabling the internet connection of your VM
-
-Get a baseline of traffic leaving your machine. By analyzing it you may find destinations for the traffic, document all these findings.
-
-Windows has built-in settings to protect your privacy and limit what data is actually collected. Do your best to harden your machine and minimize the amount of data transmitted to microsoft or its partners. You can follow instructions and/or tools you can find online (such as [O&O ShutUp10++](https://www.oo-software.com/en/shutup10)), but make sure you understand what you are doing. You can always wipe the installation if you happen to break something permanently.
-
-Once you have hardened your machine, re-analyze its traffic. Document your findings and compare them to your previous results. If there are or if you have noticed that the operating system behaves differently, document your findings.
-
-Make a detailed summary of your research, including actions taken to harden the OS and what changed in its behaviour. Do you think these trade-offs are worth the loss your data?
+**Which 3 VPN:s do you think are the most important to avoid and why?**
 
 ---
 
@@ -48,7 +62,7 @@ Make a detailed summary of your research, including actions taken to harden the 
 [Tails](https://tails.boum.org/), [GPG](https://www.gnupg.org/software/index.html)/[GPA](https://www.gnupg.org/related_software/gpa/index.html), [Tor](https://www.torproject.org/), [OnionShare](https://onionshare.org/) 
 
 
-*This task **requires a usb stick** and operates through Tor so we recommend the **TOR TASK HERE** before continuing to this one*
+*This task **requires a usb stick** and operates through Tor*
 
 In this task we are taking a look at staying private and anonymous while conducting private business and sharing files.
 
@@ -60,12 +74,12 @@ Tails(The Amnesiac Incognito Live System) is a Linux operating system distributi
 
 The recommended way to install Tails is through their [official installation instructions](https://tails.boum.org/install/index.en.html), **note that your usb stick will be wiped clean.** Other installation means are **HEAVILY DISCOURAGED** as they do not guarantee proper operations and may result in identity leakage or traces on computers. 
 
-After installing **DO NOT UPDATE THE SYSTEM WITH APT**, this might break the operating system or the packages, Tails releases upgrades every six weeks.
+After installing **DO NOT UPDATE THE SYSTEM WITH APT[^19]**, this might break the operating system or the packages, Tails releases upgrades every six weeks.
 
 </details>
 
 <details>
-<summary>What is GPG/GPA?</summary>
+<summary>What is GPG/GPA?[^15][^16]</summary>
 <br>
 
 GPG is a complete and free implementation of OpenPGP stadard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI application for GPG.
@@ -77,7 +91,7 @@ Here in this task we are using it to encrypt an image file; a screenshot of your
 </details>
 
 <details>
-<summary>What is TOR?</summary>
+<summary>What is TOR?[^17]</summary>
 <br>
 
 You should by now be familiar with Tor and aware of it's capabilities and limitations. Tor(The Onion Router) is free and open-source designed for enabling anonymous communications. Here you can find a little bit about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
@@ -89,7 +103,7 @@ For more and precise information on how Tor networks and browsers operate, refer
 </details>
 
 <details>
-<summary>What is OnionShare?</summary>
+<summary>What is OnionShare?[^18]</summary>
 <br>
 
 Onionshare is a privacy focused open-source tool for chatting, hosting websites and sending and receiving files anonymously using Tor. Tails comes with onionshare installed and features at least the GUI application. 
@@ -114,9 +128,9 @@ Most computers handle this without any implications, and the most common problem
 
 - Take a screenshot showing your name and student id on any text editor.
 
-- Encrypt it with GPG/GPA.
+- Encrypt the screenshot with GPG/GPA.
 
-- Follow the provided .onion address to an onionshare file sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". **Here send the encrypted image with your name and public key as a message.**
+- Follow the provided .onion address to an onionshare file sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". **Here upload the encrypted image and add your name and public key as a message.**
 
 What to return for this task:
 
@@ -132,78 +146,28 @@ Upload an encrypted image file containing a screenshot of tails with your name a
 <summary>For a bonus point</summary>
 <br>
 
-Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible to anyone. Provide the .onion address and possible password with your answers.
+Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible. Provide the .onion address and possible password with your answers. Your site should be up for time of the in class exercise time, it is at this time we check the sites.
 
 </details>
 
-# **Week 3** 
-
-## **Task 1:** IoT Home Assistants
-
-Take a quick look at these few short articles about
-
-- **Ring Always Home Cam** https://www.wired.com/story/ring-always-home-cam-september-2021/
-- **Roomba** https://www.wired.com/story/amazon-irobot-roomba-acquisition-data-privacy/
-- **Alexa/Echo** https://www.theverge.com/2022/4/28/23047026/amazon-alexa-voice-data-targeted-ads-research-report
-- **Doorbell cameras** https://www.wired.com/story/ring-hacks-exemplify-iot-security-crisis/
-- **Astro** https://www.wired.com/story/amazon-astro/
-
-What **security risks** and **privacy implications** there are from bringing all these devices to your home?
-
-For each device separately describe
-- Two situations where privacy and/or security of the user can be compromised
 ---
 
-## **Task 2:** Hardcoded Passwords
-
-There have been a few cases of compromised systems due to hardcoded passwords and API keys accidentally ending up in production code. [Google offers some advice how to handle such information more securely](https://cloud.google.com/docs/authentication/api-keys)
-
-Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a **plaintext hardcoded password** from the provided compiled C code file called **secretKey**. 
-
-As a second task there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with the some closer inspection of the decompiler.
-
-As a third and last task there is a **Super secret password** that is hardcoded, but has been encrypted with a mystery hash.
-
-In case if the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process. Use an editor that can understands C++ to inspect the file with proper highlighting.
-
-You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey**
-
-After completing the task, you have five items to return. Return a valid **password** and **one valid activation key** along with the **instructions** on how to create rest of the activation keys, since there are multiple valid ones. Also return the **plaintext version of the super secret password** and **the name of the hash function** it was encrypted with.
-
----
-
-## **Task 3:** Blockchain
-
-We will take a brief look at online tools available for inspecting the bitcoin blockchain
-
-Just as a quick recap: **Blockchain** is a ledger containing information of all transactions made with the cryptocurrency. Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block. These hashes are brute forces aka **mined** mainly using the prosessing power of Graphics Processing Units (GPU).
-
-Early Bitcoin developer Laszlo Hanyecz was alledgedly one of the first to invent GPU mining. However, what he is remembered for is the first documented purchase of goods using bitcoin, where he traded **10,000** bitcoin for **2 Pizzas**.
-
-You can find conflicting information from the internet about the pizza parlor where the pizzas were bought from. Aside from that, by inspecting the blockchain we can find exact information about the transaction.
-
-Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect the block **57043** and provide the following information.
-
-Transaction
-- Date and Time of the transaction
-- Hash of the transaction
-- Address of sender
-- Address of receiver
-- Transaction fee amount in bitcoin
-
-Receiver Address
-- Who was the owner of this address? Use [OXT.me](https://oxt.me/) and Google to figure out the real name of the user
-- The owner instantly divided and forwarded the 10,000 to **how many** other addresses
-- Addresses that received the 10,000 bitcoin and the corresponding sums to each address
-
-Block
-- Hash of the block 57043
-- Amount of transactions in the block
-- Block reward amount
-
-Miner
-- Address of the miner for block 57043
-- Has this address spent the block reward they received?
-
-
-**FYI**: **Maltego** is a great tool for blockchain tracing. It let's you to create a tree like structure out of inbound and outbound transactions from different addresses. It also requires registration.
+[^1]: [Mitre](https://cve.mitre.org/index.html)
+[^2]: [Scale of phone data sharing](https://www.ed.ac.uk/news/2021/extensive-scale-of-phone-data-sharing-revealed)
+[^3]: [VPN](https://en.wikipedia.org/wiki/Virtual_private_network)
+[^4]: [OpenVPN](https://fi.wikipedia.org/wiki/OpenVPN)
+[^5]: [Wireguard](https://fi.wikipedia.org/wiki/WireGuard)
+[^6]: [Killswitches](https://www.techtarget.com/whatis/definition/kill-switch)
+[^7]: [VPN audits](https://www.techradar.com/features/vpn-audits-what-do-they-mean-and-why-are-they-important)
+[^8]: [VPN Logging](https://www.vpnuniversity.com/learn/what-do-vpn-really-log)
+[^9]: [Jurisdiction](https://medium.com/@gershwin.aaron/one-of-the-essential-features-of-a-high-quality-vpn-service-is-a-no-logs-policy-d570a02622dd)
+[^10]: [14 Eyes](https://en.wikipedia.org/wiki/UKUSA_Agreement#9_Eyes,_14_Eyes,_and_other_%22third_parties%22)
+[^11]: [Warrrant canary](https://www.cloudflare.com/learning/privacy/what-is-warrant-canary/)
+[^12]: [Multihop](https://www.comparitech.com/blog/vpn-privacy/multi-hop-vpn/)
+[^13]: [VPN port forwarding](https://surfshark.com/blog/vpn-port-forwarding)
+[^14]: [TAILS](https://tails.boum.org/)
+[^15]: [GPG](ttps://www.gnupg.org/software/index.html)
+[^16]: [GPA](https://www.gnupg.org/related_software/gpa/index.html)
+[^17]: [TOR](https://www.torproject.org/)
+[^18]: [Onionshare](https://onionshare.org/)
+[^19]: [APT](https://ubuntu.com/server/docs/package-management)
