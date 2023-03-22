@@ -169,7 +169,7 @@ Set up a static website with just your name on it with Onionshare, keep in mind 
 
 1. What happens when you pull out your Tails usb stick, did you try this?
 
-2. Why do these kinds of operations and services exist? Answer in less than 200 words.
+2. Why do these kinds of operations and services exist? Answer at around between 200 and 300 words.
 
 ---
 
