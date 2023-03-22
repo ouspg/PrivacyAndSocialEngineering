@@ -99,7 +99,7 @@ Tails(The Amnesiac Incognito Live System)[^14] is a Linux operating system distr
 
 The recommended way to install Tails is through their [official installation instructions](https://tails.boum.org/install/index.en.html), **note that your usb stick will be wiped clean.** Other installation means are **HEAVILY DISCOURAGED** as they do not guarantee proper operations and may result in identity leakage or traces on computers. 
 
-After installing **DO NOT UPDATE THE SYSTEM WITH APT[^19]**, this might break the operating system or the packages, Tails releases upgrades every six weeks.
+After installing **DO NOT UPDATE THE SYSTEM WITH APT[^19][^20]**, this might break the operating system or the packages, Tails releases upgrades every six weeks.
 
 </details>
 
@@ -196,3 +196,4 @@ Set up a static website with just your name on it with Onionshare, keep in mind 
 [^17]: [TOR](https://www.torproject.org/)
 [^18]: [Onionshare](https://onionshare.org/)
 [^19]: [APT](https://ubuntu.com/server/docs/package-management)
+[^20]: [Do not update via APT](https://tails.boum.org/support/faq/index.en.html#index10h2)
