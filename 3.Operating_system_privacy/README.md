@@ -92,10 +92,10 @@ Provide short answers to what the following listings mean, keeping vpn:s privacy
 In this task we are taking a look at staying private and anonymous while conducting private business and sharing files.
 
 <details>
-<summary>What is Tails</summary>[^14]
+<summary>What is Tails</summary>
 <br>
 
-Tails(The Amnesiac Incognito Live System) is a Linux operating system distribution focused heavily on protecting the user from surveillance and censorship as well as keeping the user private. The portable operating system runs from a live usb installation and routes everything you do online through Tor. Being an amnesiac live system the system forgets everything everytime you unplug your usb stick, that means always starting with an untracked system. **NOTE** Privacy and security gains are assuming that your Tails download was not compromised, and your BIOS, firmware and hardware are not compromised [More on this](https://tails.boum.org/doc/about/warnings/index.en.html).
+Tails(The Amnesiac Incognito Live System)[^14] is a Linux operating system distribution focused heavily on protecting the user from surveillance and censorship as well as keeping the user private. The portable operating system runs from a live usb installation and routes everything you do online through Tor. Being an amnesiac live system the system forgets everything everytime you unplug your usb stick, that means always starting with an untracked system. **NOTE** Privacy and security gains are assuming that your Tails download was not compromised, and your BIOS, firmware and hardware are not compromised [More on this](https://tails.boum.org/doc/about/warnings/index.en.html).
 
 The recommended way to install Tails is through their [official installation instructions](https://tails.boum.org/install/index.en.html), **note that your usb stick will be wiped clean.** Other installation means are **HEAVILY DISCOURAGED** as they do not guarantee proper operations and may result in identity leakage or traces on computers. 
 
@@ -104,10 +104,10 @@ After installing **DO NOT UPDATE THE SYSTEM WITH APT[^19]**, this might break th
 </details>
 
 <details>
-<summary>What is GPG/GPA?</summary>[^15][^16]
+<summary>What is GPG/GPA?</summary>
 <br>
 
-GPG is a complete and free implementation of OpenPGP stadard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI application for GPG.
+GPG[^15][^16] is a complete and free implementation of OpenPGP stadard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI application for GPG.
 
 Here in this task we are using it to encrypt an image file; a screenshot of your Tails instance with your name and Student ID.
 
@@ -116,10 +116,10 @@ Here in this task we are using it to encrypt an image file; a screenshot of your
 </details>
 
 <details>
-<summary>What is TOR?</summary>[^17]
+<summary>What is TOR?</summary>
 <br>
 
-You should by now be familiar with Tor and aware of it's capabilities and limitations. Tor(The Onion Router) is free and open-source designed for enabling anonymous communications. Here you can find a little bit about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
+You should by now be a bit familiar atleast with Tor[^17] and aware of it's capabilities and limitations. Tor(The Onion Router) is free and open-source designed for enabling anonymous communications. Here you can find a little bit about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
 
 Tor network consists of thousands of relays worldwide concealing user's location and usage. Tor attempts to protect the privacy of it's users and enable the ability to communicate freely and confidentially.
 
@@ -128,10 +128,10 @@ For more and precise information on how Tor networks and browsers operate, refer
 </details>
 
 <details>
-<summary>What is OnionShare?</summary>[^18]
+<summary>What is OnionShare?</summary>
 <br>
 
-Onionshare is a privacy focused open-source tool for chatting, hosting websites and sending and receiving files anonymously using Tor. Tails comes with onionshare installed and features at least the GUI application. 
+Onionshare[^18] is a privacy focused open-source tool for chatting, hosting websites and sending and receiving files anonymously using Tor. Tails comes with onionshare installed and features at least the GUI application. 
 
 We are using Onionshare here to send an encrypted image with a message to the provided [.onion address](https://en.wikipedia.org/wiki/.onion).
 
