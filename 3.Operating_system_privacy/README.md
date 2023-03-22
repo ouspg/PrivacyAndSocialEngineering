@@ -1,5 +1,30 @@
-# **Week 3** 
+# **Week 3: Operating system privacy** 
 
+Operating systems and devices very often "call back" to their respective owners and/or manufacturers. This data can be used against people and is vulnerable for example to leaks and intercepting. In some cases these devices do not require this data transportation and may leave entry holes for attackers e.g. IOT devices may be used in botnets 
+
+Exercises this week focus on problems with operating systems and the way they can affect your privacy. We also take a look at how to avoid these issues in the last task.
+
+## Required tools and environments
+
+  - Last task requires a USB stick to boot from and a PC you can boot from said USB stick
+  - Last task uses Linux, but it is not required before hand
+
+## Grading
+
+Points from the exercises count towards better grades than the passable grade 1, which is obtained by doing quizzes.
+
+You must do tasks **in order**
+
+You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
+
+The bonus task is not counted toward the courses maximum possible points; it is extra and can compensate for other work.
+
+Task #|Points|Description|
+-----|:---:|----------|
+[Task 1](#task-1-iot-home-assistants) | 1 | Home IOT
+[Task 2](#task-2-telemetry-and-data-collection) | 1 | Telemetry and Data Collection
+[Task 3](#task-3-vpn3-comparison) | 1 | VPN Comparison
+[Task 4](#task-4-leaving-no-traces-with-tails-gpg-tor-and-onionshare) | 2 | Tails, GPG, TOR, Onionshare
 
 ## **Task 1:** IoT Home Assistants
 
@@ -26,7 +51,7 @@ A great place to search for the CVEs is [Mitre](https://cve.mitre.org/index.html
 
 Most operating systems and manufacturers collect and send telemetry and other information about your device[^2]. This information may include data such as location, time, usage times and reasons for use. 
 
-Search online to find out what data your phone manufacturer and operating system are sending forward. Analyze your findings, write a summary and list your sources. (Try keep this concise)
+Search online to find out what data your phone manufacturer and operating system are sending forward. Analyze your findings, write a summary and list your sources. (Try keep this at around one page / 300 words)
 
 **List atleast the following at the beginning:**
 
@@ -38,7 +63,7 @@ Search online to find out what data your phone manufacturer and operating system
 
 ## **Task 3:** VPN[^3] comparison
 
-Go to https://techlore.tech/vpn and choose three vpn:s from the list and click compare.
+Go to [Techlore VPN comparison](https://techlore.tech/vpn) and choose three vpn:s from the list and click compare.
 Provide short answers to what the following listings mean, keeping vpn:s privacy and security in mind and how different vpn:s fare in each category. (you can change your choices to get differing results in each category):
 * OpenVPN[^4] and Wireguard[^5]
 * System/app killswitch[^6]
@@ -67,7 +92,7 @@ Provide short answers to what the following listings mean, keeping vpn:s privacy
 In this task we are taking a look at staying private and anonymous while conducting private business and sharing files.
 
 <details>
-<summary>What is tails</summary>
+<summary>What is Tails</summary>[^14]
 <br>
 
 Tails(The Amnesiac Incognito Live System) is a Linux operating system distribution focused heavily on protecting the user from surveillance and censorship as well as keeping the user private. The portable operating system runs from a live usb installation and routes everything you do online through Tor. Being an amnesiac live system the system forgets everything everytime you unplug your usb stick, that means always starting with an untracked system. **NOTE** Privacy and security gains are assuming that your Tails download was not compromised, and your BIOS, firmware and hardware are not compromised [More on this](https://tails.boum.org/doc/about/warnings/index.en.html).
@@ -79,7 +104,7 @@ After installing **DO NOT UPDATE THE SYSTEM WITH APT[^19]**, this might break th
 </details>
 
 <details>
-<summary>What is GPG/GPA?[^15][^16]</summary>
+<summary>What is GPG/GPA?</summary>[^15][^16]
 <br>
 
 GPG is a complete and free implementation of OpenPGP stadard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI application for GPG.
@@ -91,7 +116,7 @@ Here in this task we are using it to encrypt an image file; a screenshot of your
 </details>
 
 <details>
-<summary>What is TOR?[^17]</summary>
+<summary>What is TOR?</summary>[^17]
 <br>
 
 You should by now be familiar with Tor and aware of it's capabilities and limitations. Tor(The Onion Router) is free and open-source designed for enabling anonymous communications. Here you can find a little bit about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
@@ -103,7 +128,7 @@ For more and precise information on how Tor networks and browsers operate, refer
 </details>
 
 <details>
-<summary>What is OnionShare?[^18]</summary>
+<summary>What is OnionShare?</summary>[^18]
 <br>
 
 Onionshare is a privacy focused open-source tool for chatting, hosting websites and sending and receiving files anonymously using Tor. Tails comes with onionshare installed and features at least the GUI application. 
