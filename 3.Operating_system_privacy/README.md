@@ -1,23 +1,24 @@
 # **Week 3: Operating system privacy** 
 
-Operating systems and devices very often ["phone home"](https://en.wikipedia.org/wiki/Phoning_home) to their respective owners and/or manufacturers. This data can be used against people and is vulnerable for example to leaks and intercepting. In some cases these devices do not require this data transportation and may leave entry holes for attackers e.g. IOT devices may be used in [botnets.](https://www.cloudflare.com/learning/ddos/glossary/mirai-botnet/)
+Operating systems and devices very often "phone home"[^21], collect telemetry or another kind of data for their respective owners and/or manufacturers. 
+This data can be misused and is sometimes vulnerable for example to leaks and intercepting. 
+In some cases, these devices do not require this data transportation and may leave a remote attack surface for attackers e.g.
+Internet of Things (IoT) devices may be used in [botnets.](https://www.cloudflare.com/learning/ddos/glossary/mirai-botnet/)
 
-Exercises this week focus on problems with operating systems and the way they can affect your privacy. We also take a look at how to avoid these issues in the last task.
+Exercises this week focus on problems with operating systems and the way they can affect your privacy. We also take a look at how to avoid these issues in the last task, in a bit extreme way.
 
 ## Required tools and environments
 
-  - Last task requires a USB stick to boot from and a PC you can boot from said USB stick
-  - Last task uses Linux, but it is not required before hand
+  - The final task requires a USB stick to boot from and a PC you can boot from said USB stick
+  - The final task uses Linux, but it is not required beforehand
 
 ## Grading
 
 Points from the exercises count towards better grades than the passable grade 1, which is obtained by doing quizzes.
 
-You must do tasks **in order**
+You must do tasks **in order**.
 
 You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
-
-The bonus task is not counted toward the courses maximum possible points; it is extra and can compensate for other work.
 
 Task #|Points|Description|
 -----|:---:|----------|
@@ -28,22 +29,27 @@ Task #|Points|Description|
 
 ## **Task 1:** IoT Home Assistants
 
-Take a quick look at these few short articles about
+Take a quick look at these few short articles about IoT devices.
+Use your browser's private mode if they seem to be behind paywall.
 
-- **Ring Always Home Cam** [Wired](https://www.wired.com/story/ring-always-home-cam-september-2021/)
+- **Ring Always Home Cam** [Wired](https://web.archive.org/web/20230215011008/https://www.wired.com/story/ring-always-home-cam-september-2021/), 
 - **Roomba** [Wired](https://www.wired.com/story/amazon-irobot-roomba-acquisition-data-privacy/)
 - **Alexa/Echo** [The Verge](https://www.theverge.com/2022/4/28/23047026/amazon-alexa-voice-data-targeted-ads-research-report)
-- **Doorbell cameras** [Wired](https://www.wired.com/story/ring-hacks-exemplify-iot-security-crisis/)
-- **Astro** [Wired](https://www.wired.com/story/amazon-astro/)
+- **Ring Doorbell cameras** [Wired](https://www.wired.com/story/ring-hacks-exemplify-iot-security-crisis/), [Politico](https://www.politico.com/news/2023/03/07/privacy-loophole-ring-doorbell-00084979)
+- **Astro** [Wired](https://www.wired.com/story/amazon-astro/), [Slashgear](https://www.slashgear.com/911997/the-amazon-astro-poses-a-huge-privacy-threat/)
 
-What **security risks** and **privacy implications** there are from bringing these kind of devices to your home?
+What **security risks** and **privacy implications** there are from bringing this kinds of devices to your home?
+
 
 **Answer the following questions:**
 
-- For each device separately describe two situations where privacy and/or security of the user can be compromised
-- Find and list 5 CVEs[^1] for IOT devices such as above. Give a short explanation of the CVEs. (You can choose the devices and CVEs yourself and the CVEs can be patchable)
+- For each device separately describe two situations where the privacy and/or security of the user can be compromised
+- Find and list 5 CVEs[^1] for IOT devices such as those above. Give a short explanation of the CVEs. (You can choose the devices and CVEs yourself and the CVEs can be patchable)
+- In the U.S., there is a so-called [third-party doctorine](https://en.wikipedia.org/wiki/Third-party_doctrine), which essentially gives the government access to all of your data without warrants, if you have given consent for a service provider to collect your data. Does this apply in Finland? If not, is it prevented by the Finnish legislation or European Union regulation?
 
 A great place to search for the CVEs is [Mitre](https://cve.mitre.org/index.html). Their CVE list search is an amazing tool. [Tips for the search](https://cve.mitre.org/find/search_tips.html)
+
+> You are expected to produce essay-like answer, approximately half A4 (200-250 words).
 
 ---
 
@@ -63,20 +69,24 @@ Search online to find out what data your phone manufacturer and operating system
 
 ## **Task 3:** VPN[^3] comparison
 
-Go to [Techlore VPN comparison](https://techlore.tech/vpn) and choose three vpn:s from the list and click compare.
-Provide short answers to what the following listings mean, keeping vpn:s privacy and security in mind and how different vpn:s fare in each category. (you can change your choices to get differing results in each category):
+Go to [Techlore VPN comparison](https://techlore.tech/vpn) and choose three VPNs from the list and click compare.
+Provide short answers to what **the following listings mean**, keeping VPNs' privacy and security in mind and how different VPNs fare in each category. (you can change your choices to get differing results in each category):
 * OpenVPN[^4] and Wireguard[^5]
 * System/app killswitch[^6]
-* Infracture and client audit[^7]
+* Infrastructure and client audit[^7]
 * Logging policy[^8]
 * Jurisdiction [^9]
 * 14 Eyes[^10]
 * Warrant canary/transparency report[^11]
 * Anonymous Payment and Signup
 * Misleading security marketing
-* Open source client
+* Open-source client
 * Multihop[^12]
 * Port Forwarding[^13]
+
+In addition to explaining the listings, find out why Wireguard protocol is often considered "superior" to OpenVPN from a technical point of view. Consider at least:
+  * Layers and types of the encryption
+  * Privacy 
 
 **Which 3 VPN:s do you think are the most important to avoid and why?**
 
@@ -87,9 +97,11 @@ Provide short answers to what the following listings mean, keeping vpn:s privacy
 [Tails](https://tails.boum.org/), [GPG](https://www.gnupg.org/software/index.html)/[GPA](https://www.gnupg.org/related_software/gpa/index.html), [Tor](https://www.torproject.org/), [OnionShare](https://onionshare.org/) 
 
 
-*This task **requires a usb stick** and operates through Tor*
+*This task **requires a USB stick** and operates through Tor.*
 
-In this task we are taking a look at staying private and anonymous while conducting private business and sharing files.
+It is recommended to use a USB stick, but if you really can't, you can boot Tails with the virtual machine.
+
+In this task, we are taking a look at staying private and anonymous while conducting private business and sharing files.
 
 <details>
 <summary>What is Tails</summary>
@@ -155,11 +167,11 @@ Most computers handle this without any implications, and the most common problem
 
 - Encrypt the screenshot with GPG/GPA.
 
-- Follow the provided .onion address to an onionshare file sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". 
+- Follow the provided .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". 
 
 ### Task 4 A) What to return on the website
 
-Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name and public key to decrypt the image. 
+Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name and private key to decrypt the image. 
 
 ### Task 4 B) Onionshare website
 
@@ -174,16 +186,16 @@ Set up a static website with just your name on it with Onionshare, keep in mind 
 ---
 
 [^1]: [Mitre](https://cve.mitre.org/index.html)
-[^2]: [Scale of phone data sharing](https://www.ed.ac.uk/news/2021/extensive-scale-of-phone-data-sharing-revealed)
+[^2]: [Extensive scale of phone data sharing revealed](https://www.ed.ac.uk/news/2021/extensive-scale-of-phone-data-sharing-revealed)
 [^3]: [VPN](https://en.wikipedia.org/wiki/Virtual_private_network)
 [^4]: [OpenVPN](https://fi.wikipedia.org/wiki/OpenVPN)
 [^5]: [Wireguard](https://fi.wikipedia.org/wiki/WireGuard)
 [^6]: [Killswitches](https://www.techtarget.com/whatis/definition/kill-switch)
-[^7]: [VPN audits](https://www.techradar.com/features/vpn-audits-what-do-they-mean-and-why-are-they-important)
-[^8]: [VPN Logging](https://www.vpnuniversity.com/learn/what-do-vpn-really-log)
-[^9]: [Jurisdiction](https://medium.com/@gershwin.aaron/one-of-the-essential-features-of-a-high-quality-vpn-service-is-a-no-logs-policy-d570a02622dd)
+[^7]: [VPN audits: what do they mean and why are they important?](https://www.techradar.com/features/vpn-audits-what-do-they-mean-and-why-are-they-important)
+[^8]: [What Information do VPN’s Really Log?](https://www.vpnuniversity.com/learn/what-do-vpn-really-log)
+[^9]: [Why VPN jurisdiction matters](https://medium.com/@gershwin.aaron/one-of-the-essential-features-of-a-high-quality-vpn-service-is-a-no-logs-policy-d570a02622dd)
 [^10]: [14 Eyes](https://en.wikipedia.org/wiki/UKUSA_Agreement#9_Eyes,_14_Eyes,_and_other_%22third_parties%22)
-[^11]: [Warrrant canary](https://www.cloudflare.com/learning/privacy/what-is-warrant-canary/)
+[^11]: [What is a warrant canary?](https://www.cloudflare.com/learning/privacy/what-is-warrant-canary/)
 [^12]: [Multihop](https://www.comparitech.com/blog/vpn-privacy/multi-hop-vpn/)
 [^13]: [VPN port forwarding](https://surfshark.com/blog/vpn-port-forwarding)
 [^14]: [TAILS](https://tails.boum.org/)
@@ -193,3 +205,4 @@ Set up a static website with just your name on it with Onionshare, keep in mind 
 [^18]: [Onionshare](https://onionshare.org/)
 [^19]: [APT](https://ubuntu.com/server/docs/package-management)
 [^20]: [Do not update via APT](https://tails.boum.org/support/faq/index.en.html#index10h2)
+[^21]: [Phoning home](https://en.wikipedia.org/wiki/Phoning_home)
