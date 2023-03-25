@@ -1,9 +1,11 @@
 # **Week 3: Operating system privacy** 
 
-Operating systems and devices very often "phone home"[^21], collect telemetry or another kind of data for their respective owners and/or manufacturers. 
-This data can be misused and is sometimes vulnerable for example to leaks and intercepting. 
-In some cases, these devices do not require this data transportation and may leave a remote attack surface for attackers e.g.
-Internet of Things (IoT) devices may be used in [botnets.](https://www.cloudflare.com/learning/ddos/glossary/mirai-botnet/)
+Operating systems and their representative devices very often "phone home"[^21], collect telemetry or another kind of data for their respective owners and/or manufacturers. 
+In 2021, Windows OS talked to 291 hosts and 2,764 IPs on the internet [^0].
+
+This data can be misused and also could be vulnerable for example to leaks and intercepting. 
+In some cases, these devices do not require this data transportation which may leave a remote attack surface for attackers.
+For example, Internet of Things (IoT) devices may, and have been used in [botnets.](https://www.cloudflare.com/learning/ddos/glossary/mirai-botnet/)
 
 Exercises this week focus on problems with operating systems and the way they can affect your privacy. We also take a look at how to avoid these issues in the last task, in a bit extreme way.
 
@@ -22,15 +24,20 @@ You are expected to use more time on later tasks to get an equal amount of point
 
 Task #|Points|Description|
 -----|:---:|----------|
-[Task 1](#task-1-iot-home-assistants) | 1 | Home IOT
-[Task 2](#task-2-telemetry-and-data-collection) | 1 | Telemetry and Data Collection
-[Task 3](#task-3-vpn3-comparison) | 1 | VPN Comparison
-[Task 4](#task-4-leaving-no-traces-with-tails-gpg-tor-and-onionshare) | 2 | Tails, GPG, TOR, Onionshare
+[Task 1](#task-1-telemetry-and-other-data-collection) | 1 | Telemetry and other data collection
+[Task 2](#task-2-vpn-comparison) | 1 | VPN comparison
+[Task 3](#task-3-leaving-no-traces-with-tails-gpg-tor-and-onionshare) | 2 | Tails, GPG, TOR, Onionshare
 
-## **Task 1:** IoT Home Assistants
+## **Task 1:** Telemetry and other data collection
 
-Take a quick look at these few short articles about IoT devices.
-Use your browser's private mode if they seem to be behind paywall.
+In the first task, we take a look into some common data collection scenarios and evaluate whether there are data collection and risks present.
+
+### **Task 1A)** IoT Home Assistants
+
+A quite frenzied discussion has been going on around the privacy, security, and safety of IoT devices [^22][^23][^24].
+
+Take a quick look at these few, trailing articles about IoT devices.
+Use your browser's private mode if they seem to be behind a paywall.
 
 - **Ring Always Home Cam** [Wired](https://web.archive.org/web/20230215011008/https://www.wired.com/story/ring-always-home-cam-september-2021/), 
 - **Roomba** [Wired](https://www.wired.com/story/amazon-irobot-roomba-acquisition-data-privacy/)
@@ -53,21 +60,27 @@ A great place to search for the CVEs is [Mitre](https://cve.mitre.org/index.html
 
 ---
 
-## **Task 2:** Telemetry and data collection
+### **Task 1B)** Regular operating systems
 
 Most operating systems and manufacturers collect and send telemetry and other information about your device[^2]. This information may include data such as location, time, usage times and reasons for use. 
 
-Search online to find out what data your phone manufacturer and operating system are sending forward. Analyze your findings, write a summary and list your sources. (Try keep this at around one page / 300 words)
 
-**List atleast the following at the beginning:**
+Search online to find out what data your phone or computer manufacturer and operating system are sending forward.
+If you are unable to find sources for your devices, you can use some well-studied ones instead.
 
-- Your phone and the OS version
+> Include at least two **peer-reviewed** research sources
+
+ Analyze your findings, write a summary and list your sources. (Keep this at around half a page / 200-250 words)
+
+**List at least the following at the beginning:**
+
+- The phone/computer and the OS version
 - Manufacturer and their country of origin
-- Did you learn anything new about your phone **yes/no**
+- Did you learn anything new about your phone/computer?
 
 ---
 
-## **Task 3:** VPN[^3] comparison
+## **Task 2:** VPN[^3] comparison
 
 Go to [Techlore VPN comparison](https://techlore.tech/vpn) and choose three VPNs from the list and click compare.
 Provide short answers to what **the following listings mean**, keeping VPNs' privacy and security in mind and how different VPNs fare in each category. (you can change your choices to get differing results in each category):
@@ -84,15 +97,15 @@ Provide short answers to what **the following listings mean**, keeping VPNs' pri
 * Multihop[^12]
 * Port Forwarding[^13]
 
-In addition to explaining the listings, find out why Wireguard protocol is often considered "superior" to OpenVPN from a technical point of view. Consider at least:
-  * Layers and types of the encryption
-  * Privacy 
+In addition to explaining the listings, find out why Wireguard protocol is often considered "superior" to OpenVPN from a performance and security point of view, but this might not be the case with privacy.
 
-**Which 3 VPN:s do you think are the most important to avoid and why?**
+> Reason on a technical level, why privacy might, or might not be a case, with Wireguard. 
+
+> Which three VPNs do you think are the most important to avoid and why?
 
 ---
 
-## **Task 4** Leaving no traces with, Tails, GPG, Tor and OnionShare
+## **Task 3** Leaving no traces with, Tails, GPG, Tor and OnionShare
 
 [Tails](https://tails.boum.org/), [GPG](https://www.gnupg.org/software/index.html)/[GPA](https://www.gnupg.org/related_software/gpa/index.html), [Tor](https://www.torproject.org/), [OnionShare](https://onionshare.org/) 
 
@@ -185,6 +198,7 @@ Set up a static website with just your name on it with Onionshare, keep in mind 
 
 ---
 
+[^0]: [Windows OS, Services & Apps: Network Connection Target Hosts](https://helgeklein.com/blog/windows-os-services-apps-network-connection-target-hosts/)
 [^1]: [Mitre](https://cve.mitre.org/index.html)
 [^2]: [Extensive scale of phone data sharing revealed](https://www.ed.ac.uk/news/2021/extensive-scale-of-phone-data-sharing-revealed)
 [^3]: [VPN](https://en.wikipedia.org/wiki/Virtual_private_network)
@@ -206,3 +220,6 @@ Set up a static website with just your name on it with Onionshare, keep in mind 
 [^19]: [APT](https://ubuntu.com/server/docs/package-management)
 [^20]: [Do not update via APT](https://tails.boum.org/support/faq/index.en.html#index10h2)
 [^21]: [Phoning home](https://en.wikipedia.org/wiki/Phoning_home)
+[^22]: [IoT Privacy and Security: Challenges and Solutions ](https://www.mdpi.com/2076-3417/10/12/4102)
+[^23]: [IoT Security, Privacy, Safety and Ethics](https://link.springer.com/chapter/10.1007/978-3-030-18732-3_8)
+[^24]: [IoT Privacy and Security Challenges for Smart Home Environments](https://www.mdpi.com/2078-2489/7/3/44)
