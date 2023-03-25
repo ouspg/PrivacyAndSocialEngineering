@@ -188,11 +188,11 @@ Most computers handle this without any implications, and the most common problem
 
 - Encrypt the screenshot with GPG/GPA [**by using the provided public key**](for_tails_encryption.pub).
 
-- Follow the provided .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". 
+- Follow the provided .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task 3 return box". 
 
 ### Task 3 A) What to return on the website
 
-Upload an encrypted image file containing a screenshot of Tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name or another identifier which you can provide in the return repository. 
+Upload an encrypted image file containing a screenshot of the Tails desktop with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name or another identifier. (Identifier can be mentioned in the return repository) 
 
 ### Task 3 B) Onionshare website
 
@@ -205,7 +205,7 @@ However, you should do it as **a reproducible service**.
 3. Use containers to deploy the service (Docker[^25], Podman [^26] et. al). See the Dockers' guide [^25] if you are new to containers.
 `ENTRYPOINT` and `CMD` instructions should be used to launch the site with your configurations.
 4. Take a screenshot of your website from the Onion address. Identifier and address should be visible.
-5. Return the screenshot and Dockerfile[^27] or Containerfile [^28] to create the service.
+5. Return the screenshot and Dockerfile[^27] or Containerfile [^28], which was used to create the service. These should be returned to your own repository.
 
 
 ### Task 3 C) Then answer the questions below:
