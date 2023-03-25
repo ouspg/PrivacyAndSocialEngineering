@@ -25,7 +25,7 @@ You are expected to use more time on later tasks to get an equal amount of point
 Task #|Points|Description|
 -----|:---:|----------|
 [Task 1](#task-1-telemetry-and-other-data-collection) | 1 | Telemetry and other data collection
-[Task 2](#task-2-vpn-comparison) | 1 | VPN comparison
+[Task 2](#task-2-vpn8-comparison) | 1 | VPN comparison
 [Task 3](#task-3-leaving-no-traces-with-tails-gpg-tor-and-onionshare) | 2 | Tails, GPG, TOR, Onionshare
 
 ## **Task 1:** Telemetry and other data collection
@@ -107,7 +107,7 @@ In addition to explaining the listings, find out why Wireguard protocol is often
 
 ---
 
-## **Task 3** Leaving no traces with, Tails, GPG, Tor and OnionShare
+## **Task 3:** Leaving no traces with, Tails, GPG, Tor and OnionShare
 
 [Tails](https://tails.boum.org/), [GPG](https://www.gnupg.org/software/index.html)/[GPA](https://www.gnupg.org/related_software/gpa/index.html), [Tor](https://www.torproject.org/), [OnionShare](https://onionshare.org/) 
 
@@ -190,11 +190,11 @@ Most computers handle this without any implications, and the most common problem
 
 - Follow the provided .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". 
 
-### Task 4 A) What to return on the website
+### Task 3 A) What to return on the website
 
 Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name and private key to decrypt the image. 
 
-### Task 4 B) Onionshare website
+### Task 3 B) Onionshare website
 
 Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible. Provide the .onion address and possible password with your answers. 
 Your site should be up for time of the in class exercise time, it is at this time we check the sites.
