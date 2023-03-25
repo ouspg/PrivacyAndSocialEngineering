@@ -70,7 +70,7 @@ If you are unable to find sources for your devices, you can use some well-studie
 
 > Include at least two **peer-reviewed** research sources
 
- Analyze your findings, write a summary and list your sources. (Keep this at around half a page / 200-250 words)
+> Analyze your findings, write a summary and list your sources. (Keep this at around half a page / 200-250 words)
 
 **List at least the following at the beginning:**
 
@@ -99,6 +99,8 @@ Provide short answers to what **the following listings mean**, keeping VPNs' pri
 
 In addition to explaining the listings, find out why Wireguard protocol is often considered "superior" to OpenVPN from a performance and security point of view, but this might not be the case with privacy.
 
+> Explain the listings.
+
 > Reason on a technical level, why privacy might, or might not be a case, with Wireguard. 
 
 > Which three VPNs do you think are the most important to avoid and why?
@@ -110,7 +112,7 @@ In addition to explaining the listings, find out why Wireguard protocol is often
 [Tails](https://tails.boum.org/), [GPG](https://www.gnupg.org/software/index.html)/[GPA](https://www.gnupg.org/related_software/gpa/index.html), [Tor](https://www.torproject.org/), [OnionShare](https://onionshare.org/) 
 
 
-*This task **requires a USB stick** and operates through Tor.*
+*This task **requires a USB stick** and operates through the Tor network.*
 
 It is recommended to use a USB stick, but if you really can't, you can boot Tails with the virtual machine.
 
@@ -120,9 +122,13 @@ In this task, we are taking a look at staying private and anonymous while conduc
 <summary>What is Tails</summary>
 <br>
 
-Tails(The Amnesiac Incognito Live System)[^14] is a Linux operating system distribution focused heavily on protecting the user from surveillance and censorship as well as keeping the user private. The portable operating system runs from a live usb installation and routes everything you do online through Tor. Being an amnesiac live system the system forgets everything everytime you unplug your usb stick, that means always starting with an untracked system. **NOTE** Privacy and security gains are assuming that your Tails download was not compromised, and your BIOS, firmware and hardware are not compromised [More on this](https://tails.boum.org/doc/about/warnings/index.en.html).
+Tails(The Amnesiac Incognito Live System)[^14] is a Linux operating system distribution focused heavily on protecting the user from surveillance and censorship as well as keeping the user private. 
+The portable operating system runs from the live USB installation and routes everything you do online through Tor.
+Being an amnesiac live system the system forgets everything every time you unplug your USB stick, which means always starting with an untracked system. 
 
-The recommended way to install Tails is through their [official installation instructions](https://tails.boum.org/install/index.en.html), **note that your usb stick will be wiped clean.** Other installation means are **HEAVILY DISCOURAGED** as they do not guarantee proper operations and may result in identity leakage or traces on computers. 
+**NOTE** Privacy and security gains are assuming that your Tails download was not compromised, and your BIOS, firmware and hardware are not compromised [More on this](https://tails.boum.org/doc/about/warnings/index.en.html).
+
+The recommended way to install Tails is through their [official installation instructions](https://tails.boum.org/install/index.en.html), **note that your USB stick will be wiped clean.** Other installation means are **HEAVILY DISCOURAGED** as they do not guarantee proper operations and may result in identity leakage or traces on computers. 
 
 After installing **DO NOT UPDATE THE SYSTEM WITH APT[^19][^20]**, this might break the operating system or the packages, Tails releases upgrades every six weeks.
 
@@ -132,9 +138,9 @@ After installing **DO NOT UPDATE THE SYSTEM WITH APT[^19][^20]**, this might bre
 <summary>What is GPG/GPA?</summary>
 <br>
 
-GPG[^15][^16] is a complete and free implementation of OpenPGP stadard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI application for GPG.
+GPG[^15][^16] is a complete and free implementation of OpenPGP standard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI-application for GPG.
 
-Here in this task we are using it to encrypt an image file; a screenshot of your Tails instance with your name and Student ID.
+Here in this task, we are using it to encrypt an image file; a screenshot of your Tails instance with your name and Student ID.
 
 [More on this](https://www.gnupg.org/faq/gnupg-faq.html)
 
@@ -144,11 +150,12 @@ Here in this task we are using it to encrypt an image file; a screenshot of your
 <summary>What is TOR?</summary>
 <br>
 
-You should by now be a bit familiar atleast with Tor[^17] and aware of it's capabilities and limitations. Tor(The Onion Router) is free and open-source designed for enabling anonymous communications. Here you can find a little bit about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
+You should by now be a bit familiar at least with Tor[^17] and aware of its capabilities and limitations. Tor(The Onion Router) is free and open-source and designed for enabling anonymous communications. Here you can find a little bit about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
 
-Tor network consists of thousands of relays worldwide concealing user's location and usage. Tor attempts to protect the privacy of it's users and enable the ability to communicate freely and confidentially.
+Tor network consists of thousands of relays worldwide concealing users' location and usage. 
+Tor attempts to protect the privacy of its users and enable the ability to communicate freely and confidentially.
 
-For more and precise information on how Tor networks and browsers operate, refer their own [site](https://www.torproject.org/), their documentation is vast and of high quality
+For more precise information on how Tor networks and browsers operate, refer into their own [site](https://www.torproject.org/), their documentation is vast and of high quality
 
 </details>
 
@@ -156,7 +163,8 @@ For more and precise information on how Tor networks and browsers operate, refer
 <summary>What is OnionShare?</summary>
 <br>
 
-Onionshare[^18] is a privacy focused open-source tool for chatting, hosting websites and sending and receiving files anonymously using Tor. Tails comes with onionshare installed and features at least the GUI application. 
+Onionshare[^18] is a privacy-focused open-source tool for chatting, hosting websites and sending and receiving files anonymously using Tor. 
+Tails comes with Onionshare installed and features at least the GUI application. 
 
 We are using Onionshare here to send an encrypted image with a message to the provided [.onion address](https://en.wikipedia.org/wiki/.onion).
 
@@ -164,11 +172,11 @@ We are using Onionshare here to send an encrypted image with a message to the pr
 
 ---
 
-Now that the introductions and warnings are done, go ahead and follow Tails' [installation instructions](https://tails.boum.org/install/index.en.html) to install Tails on a usb stick. These are fairly straight forward and should go without trouble.
+Now that the introductions and warnings are done, go ahead and follow Tails' [installation instructions](https://tails.boum.org/install/index.en.html) to install Tails on a USB stick. These are fairly straightforward and should go without trouble.
 
-At this point we recommend having this task and the instructions open on another computer or your phone as you will be booting into Tails shortly. 
+At this point, we recommend having this task and the instructions open on another computer or your phone as you will be booting into Tails shortly. 
 
-Go ahead and follow the instructions to booting in to the Tails instance on the computer of your choosing.
+Go ahead and follow the instructions to boot into the Tails instance on the computer of your choosing.
 
 Most computers handle this without any implications, and the most common problem is with internet connections. In case of problems we hope you try troubleshooting a little before contacting us, for example, you could try using an ethernet cable to fix internet connection issues.
 
@@ -188,7 +196,8 @@ Upload an encrypted image file containing a screenshot of tails with your name a
 
 ### Task 4 B) Onionshare website
 
-Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible. Provide the .onion address and possible password with your answers. Your site should be up for time of the in class exercise time, it is at this time we check the sites.
+Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible. Provide the .onion address and possible password with your answers. 
+Your site should be up for time of the in class exercise time, it is at this time we check the sites.
 
 **Then answer the questions below:**
 
