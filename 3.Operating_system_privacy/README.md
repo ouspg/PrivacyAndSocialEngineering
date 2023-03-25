@@ -101,9 +101,9 @@ In addition to explaining the listings, find out why Wireguard protocol is often
 
 > Explain the listings.
 
-> Reason on a technical level, why privacy might, or might not be a case, with Wireguard. 
+> Reason on a technical level, why privacy might, or might not be an issue, with Wireguard. 
 
-> Which three VPNs do you think are the most important to avoid and why?
+> Which three VPN service providers do you think are the most important to avoid and why?
 
 ---
 
@@ -138,7 +138,7 @@ After installing **DO NOT UPDATE THE SYSTEM WITH APT[^19][^20]**, this might bre
 <summary>What is GPG/GPA?</summary>
 <br>
 
-GPG[^15][^16] is a complete and free implementation of OpenPGP standard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI-application for GPG.
+GPG[^15][^16] is a complete and free implementation of the OpenPGP standard. GPG has an extensive list of features and libraries, it can for example be used to manage your keys, sign and encrypt your data and create TLS server certificates.  GPA is GUI-application for GPG.
 
 Here in this task, we are using it to encrypt an image file; a screenshot of your Tails instance with your name and Student ID.
 
@@ -147,7 +147,7 @@ Here in this task, we are using it to encrypt an image file; a screenshot of you
 </details>
 
 <details>
-<summary>What is TOR?</summary>
+<summary>What is Tor?</summary>
 <br>
 
 You should by now be a bit familiar at least with Tor[^17] and aware of its capabilities and limitations. Tor(The Onion Router) is free and open-source and designed for enabling anonymous communications. Here you can find a little bit about [perfect anonymity](https://support.torproject.org/faq/#faq_staying-anonymous), in short, it's generally impossible. 
@@ -186,24 +186,33 @@ Most computers handle this without any implications, and the most common problem
 
 - Take a screenshot showing your name and student id on any text editor.
 
-- Encrypt the screenshot with GPG/GPA.
+- Encrypt the screenshot with GPG/GPA [**by using the provided public key**](for_tails_encryption.pub).
 
 - Follow the provided .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task 4 return box". 
 
 ### Task 3 A) What to return on the website
 
-Upload an encrypted image file containing a screenshot of tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name and private key to decrypt the image. 
+Upload an encrypted image file containing a screenshot of Tails with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name or another identifier which you can provide in the return repository. 
 
 ### Task 3 B) Onionshare website
 
-Set up a static website with just your name on it with Onionshare, keep in mind this should be made visible. Provide the .onion address and possible password with your answers. 
-Your site should be up for time of the in class exercise time, it is at this time we check the sites.
+Set up a static website with just your name on it with Onionshare.
+You can do this in another system than Tails.
 
-**Then answer the questions below:**
+However, you should do it as **a reproducible service**.
+1. Take a look for [`onionshare-cli`](https://docs.onionshare.org/2.3.1/en/advanced.html#command-line-interface).
+2. Create `index.html` and modify it as you like, but include your name or another identifier which you should mention.
+3. Use containers to deploy the service (Docker[^25], Podman [^26] et. al). See the Dockers' guide [^25] if you are new to containers.
+`ENTRYPOINT` and `CMD` instructions should be used to launch the site with your configurations.
+4. Take a screenshot of your website from the Onion address. Identifier and address should be visible.
+5. Return the screenshot and Dockerfile[^27] or Containerfile [^28] to create the service.
 
-1. What happens when you pull out your Tails usb stick, did you try this?
 
-2. Why do these kinds of operations and services exist? Answer at around between 200 and 300 words.
+### Task 3 C) Then answer the questions below:
+
+1. What happens when you pull out your Tails USB stick, did you try this?
+
+2. Why do these kinds of operations and services exist? Answer at around between 100 and 200 words.
 
 ---
 
@@ -224,7 +233,7 @@ Your site should be up for time of the in class exercise time, it is at this tim
 [^14]: [TAILS](https://tails.boum.org/)
 [^15]: [GPG](ttps://www.gnupg.org/software/index.html)
 [^16]: [GPA](https://www.gnupg.org/related_software/gpa/index.html)
-[^17]: [TOR](https://www.torproject.org/)
+[^17]: [Tor Project](https://www.torproject.org/)
 [^18]: [Onionshare](https://onionshare.org/)
 [^19]: [APT](https://ubuntu.com/server/docs/package-management)
 [^20]: [Do not update via APT](https://tails.boum.org/support/faq/index.en.html#index10h2)
@@ -232,3 +241,7 @@ Your site should be up for time of the in class exercise time, it is at this tim
 [^22]: [IoT Privacy and Security: Challenges and Solutions ](https://www.mdpi.com/2076-3417/10/12/4102)
 [^23]: [IoT Security, Privacy, Safety and Ethics](https://link.springer.com/chapter/10.1007/978-3-030-18732-3_8)
 [^24]: [IoT Privacy and Security Challenges for Smart Home Environments](https://www.mdpi.com/2078-2489/7/3/44)
+[^25]: [Docker overview](https://docs.docker.com/get-started/)
+[^26]: [Podman](https://podman.io/)
+[^27]: [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
+[^28]: [Containerfile](https://github.com/containers/common/blob/main/docs/Containerfile.5.md)
