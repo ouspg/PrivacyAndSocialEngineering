@@ -188,7 +188,7 @@ Most computers handle this without any implications, and the most common problem
 
 - Encrypt the screenshot with GPG/GPA [**by using the provided public key**](for_tails_encryption.pub).
 
-- Follow the provided .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task 3 return box". 
+- Follow the [provided](https://github.com/ouspg/PrivacyAndSocialEngineering/blob/main/3.Operating_system_privacy/onionshare.md) .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task # return box". 
 
 ### Task 3 A) What to return on the website
 
