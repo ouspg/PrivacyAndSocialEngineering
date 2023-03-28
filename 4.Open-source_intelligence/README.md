@@ -65,19 +65,24 @@ Your end goal is to infiltrate the company's server. The server is located at 86
 Feel free to use tools such as:
 
 - [Sherlock](https://github.com/sherlock-project/sherlock)
+- 
     ``` sudo pacman -Sy sherlock```
 - [Breachdirectory](https://breachdirectory.org/)
 - [ReconFTW](https://github.com/six2dez/reconftw#osint)
+-
  ```
  git clone https://github.com/six2dez/reconftw.git 
  cd reconftw/
  ./install.sh
  ```
 - [Hashcat](https://hashcat.net/hashcat/)
+- 
 ```sudo pacman -Sy hashcat```
 - [John the ripper](https://github.com/openwall/john)
+- 
 ```sudo pacman -Sy john```
 - [Spiderfoot](https://github.com/smicallef/spiderfoot)
+- 
  ```
  wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz
  tar zxvf v4.0.tar.gz
