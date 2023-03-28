@@ -77,7 +77,7 @@ Feel free to use tools such as:
 ```sudo pacman -Sy hashcat```
 - [John the ripper](https://github.com/openwall/john)
 ```sudo pacman -Sy john```
-- [Spiderfoot] (https://github.com/smicallef/spiderfoot)
+- [Spiderfoot](https://github.com/smicallef/spiderfoot)
  ```
  wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz
  tar zxvf v4.0.tar.gz
