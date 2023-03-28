@@ -63,6 +63,7 @@ Start the task by finding possible social media accounts used for marketing by t
 Your end goal is to infiltrate the company's server. The server is located at 86.50.170.187
 
 Feel free to use tools such as:
+
 Installation instructions are for the course arch virtual machine.
 
 - [Sherlock](https://github.com/sherlock-project/sherlock)
