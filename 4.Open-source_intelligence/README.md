@@ -18,41 +18,43 @@ While you are at it you might want to check if **your own email addresses** have
 
 ---
 
-## **Task 2:** OSINT pair work
+## **Task 2:** Blockchain
 
-try to find information about your pair online both manually and using OSINT tool framework (SpiderFoot), report information you find and analyze it (do you believe information is about the correct person or someone else with the same name/ uses the same nickname online etc.)
-things to look for: possible usernames, social media accounts, interests(accounts in forums about music,sports,gaming etc.), educational background…
+We will take a brief look at online tools available for inspecting the bitcoin blockchain
 
-spiderfoot open source edition can be installed from github: https://github.com/smicallef/spiderfoot?ref=d
-and is also pre installed in kali linux
+Just as a quick recap: **Blockchain** is a ledger containing information of all transactions made with the cryptocurrency. Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block. These hashes are brute forces aka **mined** mainly using the prosessing power of Graphics Processing Units (GPU).
 
-# **Week 4: Open-source Intelligence** 
+Early Bitcoin developer Laszlo Hanyecz was alledgedly one of the first to invent GPU mining. However, what he is remembered for is the first documented purchase of goods using bitcoin, where he traded **10,000** bitcoin for **2 Pizzas**.
 
-## **Task 1:** Have I been Pwned
+You can find conflicting information from the internet about the pizza parlor where the pizzas were bought from. Aside from that, by inspecting the blockchain we can find exact information about the transaction.
 
-[Have I been Pwned](https://haveibeenpwned.com/) is a site that tracks occurrances of emails and phone numbers in various data leak dumps. 
+Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect the block **57043** and provide the following information.
 
-Search for ***joe@gmail.com*** and answer the following questions:
+Transaction
+- Date and Time of the transaction
+- Hash of the transaction
+- Address of sender
+- Address of receiver
+- Transaction fee amount in bitcoin
 
-In how many **data breaches** and **pastes** can this email be found?
+Receiver Address
+- Who was the owner of this address? Use [OXT.me](https://oxt.me/) and Google to figure out the real name of the user
+- The owner instantly divided and forwarded the 10,000 to **how many** other addresses
+- Addresses that received the 10,000 bitcoin and the corresponding sums to each address
 
-What are the **compromised data types** in the following services? (each separately)
+Block
+- Hash of the block 57043
+- Amount of transactions in the block
+- Block reward amount
 
-- **Bell**
-- **Drizly**
-- **Robinhood**
-    
-While you are at it you might want to check if **your own email addresses** have been assosiated with any dataleaks, and promptly change your password in these services
+Miner
+- Address of the miner for block 57043
+- Has this address spent the block reward they received?
+
+
+**FYI**: **Maltego** is a great tool for blockchain tracing. It let's you to create a tree like structure out of inbound and outbound transactions from different addresses. It also requires registration.
 
 ---
-
-## **Task 2:** OSINT pair work
-
-try to find information about your pair online both manually and using OSINT tool framework (SpiderFoot), report information you find and analyze it (do you believe information is about the correct person or someone else with the same name/ uses the same nickname online etc.)
-things to look for: possible usernames, social media accounts, interests(accounts in forums about music,sports,gaming etc.), educational background…
-
-spiderfoot open source edition can be installed from github: https://github.com/smicallef/spiderfoot?ref=d
-and is also pre installed in kali linux
 
 ## **Task 3:** OSINT exploitation
 You have applied for a job at Pelle Security, the new clown-themed cybersecurity startup.
@@ -120,12 +122,4 @@ Installation instructions are for the course arch virtual machine.
 
 ### 7. What is in the text file located on the server?
 
-
-
-
 ---
-
-
-
-
-
