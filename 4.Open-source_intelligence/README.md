@@ -1,6 +1,12 @@
 # **Week 4: Open-source Intelligence** 
 
+What information is publicly available about you?
+The amount can surprise you.
+
+The exercises this week through some popular methods and sources. The information is also used in task three. 
 ## **Task 1:** Have I been Pwned
+
+One of the most typical and critical situations for a person could be the case when their login credentials have been leaked online publicly as a part of a cyber incident or another matter.
 
 [Have I been Pwned](https://haveibeenpwned.com/) is a site that tracks occurrances of emails and phone numbers in various data leak dumps. 
 
@@ -28,6 +34,7 @@ As a second task there is a secret **Activation Key** for you to figure out, whi
 
 As a third and last task there is a **Super secret password** that is hardcoded, but has been encrypted with a mystery hash.
 
+
 In case if the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process. Use an editor that can understands C++ to inspect the file with proper highlighting.
 
 You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey**
@@ -35,6 +42,7 @@ You can run the C program to validate your findings in your terminal by navigati
 After completing the task, you have five items to return. Return a valid **password** and **one valid activation key** along with the **instructions** on how to create rest of the activation keys, since there are multiple valid ones. Also return the **plaintext version of the super secret password** and **the name of the hash function** it was encrypted with.
 
 ---
+
 
 ## **Task 3:** OSINT exploitation
 
@@ -60,26 +68,26 @@ Installation instructions are for the course arch virtual machine.
 - [Breachdirectory](https://breachdirectory.org/)
 - [ReconFTW](https://github.com/six2dez/reconftw#osint)
 
- ```
- git clone https://github.com/six2dez/reconftw.git 
- cd reconftw/
- ./install.sh
- ```
+    ```
+    git clone https://github.com/six2dez/reconftw.git 
+    cd reconftw/
+    ./install.sh
+    ```
 - [Hashcat](https://hashcat.net/hashcat/)
 
-```sudo pacman -Sy hashcat```
+    ```sudo pacman -Sy hashcat```
 - [John the ripper](https://github.com/openwall/john)
 
-```sudo pacman -Sy john```
+    ```sudo pacman -Sy john```
 - [Spiderfoot](https://github.com/smicallef/spiderfoot)
 
- ```
- wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz
- tar zxvf v4.0.tar.gz
- cd spiderfoot-4.0
- pip3 install -r requirements.txt
- python3 ./sf.py -l 127.0.0.1:5001
- ```
+    ```
+    wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz
+    tar zxvf v4.0.tar.gz
+    cd spiderfoot-4.0
+    pip3 install -r requirements.txt
+    python3 ./sf.py -l 127.0.0.1:5001
+    ```
 
 **PROVIDE SCREENSHOTS FOR ALL PARTS OF THIS TASK!**
 
