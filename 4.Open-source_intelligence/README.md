@@ -18,7 +18,7 @@ Task #|Points|Description|
 [Task 1](#task-1-have-i-been-pwned) | 1 | Have I been Pwned 
 [Task 2](#task-2-hardcoded-passwords) | 1 | Hardcoded passwords
 [Task 3](#task-3-osint-exploitation) | 2 | OSINT exploitation
-[Task 4](#task4-blockchain-bonus) | 1 | Blockchain (bonus)
+[Task 4](#task-4-blockchain-bonus) | 1 | Blockchain (bonus)
 
 
 ## **Task 1:** Have I been Pwned
@@ -41,8 +41,35 @@ What are the **compromised data types** in the following services? (each separat
     
 While you are at it you might want to check if **your own email addresses** have been associated with any data leaks, and promptly change your password in these services.
 
-> Remember that when entering your email, password or phone number, you ultimately trust the service provider not to misuse this information..
+> Remember that when entering your email, password or phone number, you ultimately trust the service provider not to misuse this information.
 
+### **Task 1 B)** Breach data content
+
+However, "have I been pwned" service tries to limit what data it shows to you.
+Owning and sharing too private information can lead to legal troubles and controversial opinions.
+
+Some sensitive services might on their own tell too much about the owner of the email address, as anyone can look for anyone's email addresses, phone numbers and passwords.
+As a result, for example, sometimes you need to verify the email address before you can see all breaches the address has been part of.
+
+On the other hand, some other services distribute all breach data content, as paid services.
+As the information is highly valuable for some entities, these entities will pay for the data, and platform providers will run the services until law enforcement will shut them down.
+
+1. **Find at least three of these paid services and list them.**
+
+*Consider the problems of breach data as follows*. 
+
+Would it be better to build platforms which make **all** breach data searchable for everyone? Or instead, try to remove it from the internet? Which might be impossible.
+
+Eventually, if the breach happens, the information is obtainable with or without money in the end.
+
+Would it be better for the end user to see what has been leaked precisely?
+Or would it be better that **maybe** the data has been removed from the internet, and there is no verification of what this data is?
+
+Could it change the way we think about privacy, and how we use services and prioritise security if the breach data is public?
+
+Or we make a compromise, and we will try to remove only the most damaging breaches from the internet?
+
+2. **Write a short essay (200 words) of your thoughts. There might not be a correct or incorrect answer.**
 
 ---
 
