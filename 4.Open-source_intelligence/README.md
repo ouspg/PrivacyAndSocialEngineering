@@ -3,7 +3,9 @@
 What information is publicly available about you?
 The amount can surprise you.
 
-The exercises this week through some popular methods and sources.
+The exercises this week through some popular methods and sources
+
+> We highly recommend to do the task 3!
 
 ## Grading
 
@@ -58,37 +60,43 @@ As the information is highly valuable for some entities, these entities will pay
 
 *Consider the problems of breach data as follows*. 
 
-Would it be better to build platforms which make **all** breach data searchable for everyone? Or instead, try to remove it from the internet? Which might be impossible.
+Would it be better to build platforms which make **all** breach data searchable for everyone, or identified persons? Or instead, try to remove it from the internet? Which might be impossible.
 
 Eventually, if the breach happens, the information is obtainable with or without money in the end.
 
 Would it be better for the end user to see what has been leaked precisely?
 Or would it be better that **maybe** the data has been removed from the internet, and there is no verification of what this data is?
 
+In many cases, the breached company cannot always say what data has been lost, or they are unwilling to do it, or downplays the impact.
+
 Could it change the way we think about privacy, and how we use services and prioritise security if the breach data is public?
 
 Or we make a compromise, and we will try to remove only the most damaging breaches from the internet?
 
-2. **Write a short essay (200 words) of your thoughts. There might not be a correct or incorrect answer.**
+2. **Write a short essay (150-200 words) of your thoughts. There might not be a correct or incorrect answer, but you need to make arguments.**
 
 ---
 
 ## **Task 2:** Hardcoded Passwords
 
-There have been a few cases of compromised systems due to hardcoded passwords and API keys accidentally ending up in production code. [Google offers some advice how to handle such information more securely](https://cloud.google.com/docs/authentication/api-keys)
+There have been a few cases of compromised systems due to hardcoded passwords and API keys accidentally ending up in production code. [Google offers some advice on how to handle such information more securely](https://cloud.google.com/docs/authentication/api-keys)
 
-Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a **plaintext hardcoded password** from the provided compiled C code file called **secretKey**. 
+1.  Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a **plaintext hardcoded password** from the provided compiled C code file called **secretKey**. 
 
-As a second task there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with the some closer inspection of the decompiler.
+2. As a second task, there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with some closer inspection of the decompiler.
 
-As a third and last task there is a **Super secret password** that is hardcoded, but has been encrypted with a mystery hash.
+3. As a third and last task, there is a **Super secret password** that is hardcoded but has been "encrypted" with a mystery hash.
 
 
-In case if the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process. Use an editor that can understands C++ to inspect the file with proper highlighting.
+In case the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process.
+Use an editor that can understand `C++` to inspect the file with proper highlighting.
 
-You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey**
+You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey** on `glibc` Linux system.
 
-After completing the task, you have five items to return. Return a valid **password** and **one valid activation key** along with the **instructions** on how to create rest of the activation keys, since there are multiple valid ones. Also return the **plaintext version of the super secret password** and **the name of the hash function** it was encrypted with.
+After completing the task, you have five items to return. 
+
+> Return a valid **password** and **one valid activation key** along with the **instructions** on how to create the rest of the activation keys, since there are multiple valid ones.
+Also, return the **plaintext version of the super secret password** and **the name of the hash function** it was created with.
 
 ---
 
