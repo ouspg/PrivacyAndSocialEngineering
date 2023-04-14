@@ -3,12 +3,31 @@
 What information is publicly available about you?
 The amount can surprise you.
 
-The exercises this week through some popular methods and sources. The information is also used in task three. 
+The exercises this week through some popular methods and sources.
+
+## Grading
+
+You must do tasks **in order**.
+
+You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
+
+The bonus task is not counted toward the course's maximum possible points; it is extra and can compensate for other work.
+
+Task #|Points|Description|
+-----|:---:|-----------|
+[Task 1](#task-1-have-i-been-pwned) | 1 | Have I been Pwned 
+[Task 2](#task-2-hardcoded-passwords) | 1 | Hardcoded passwords
+[Task 3](#task-3-osint-exploitation) | 2 | OSINT exploitation
+[Task 4](#task4-blockchain-bonus) | 1 | Blockchain (bonus)
+
+
 ## **Task 1:** Have I been Pwned
 
 One of the most typical and critical situations for a person could be the case when their login credentials have been leaked online publicly as a part of a cyber incident or another matter.
 
 [Have I been Pwned](https://haveibeenpwned.com/) is a site that tracks occurrances of emails and phone numbers in various data leak dumps. 
+
+### **Task 1 A)** Looking for leaks
 
 Search for ***joe@gmail.com*** and answer the following questions:
 
@@ -20,7 +39,10 @@ What are the **compromised data types** in the following services? (each separat
 - **Drizly**
 - **Robinhood**
     
-While you are at it you might want to check if **your own email addresses** have been assosiated with any dataleaks, and promptly change your password in these services
+While you are at it you might want to check if **your own email addresses** have been associated with any data leaks, and promptly change your password in these services.
+
+> Remember that when entering your email, password or phone number, you ultimately trust the service provider not to misuse this information..
+
 
 ---
 
@@ -46,13 +68,14 @@ After completing the task, you have five items to return. Return a valid **passw
 
 ## **Task 3:** OSINT exploitation
 
-**NOTE**: To do this task, you need to be connected to the University of Oulu VPN or have to be connected to the EDUROAM network on campus:
+> **Note**
+> To do this task, you need to be connected to the University of Oulu VPN or have to be connected to the EDUROAM network on campus:
 Instructions for connecting:
 https://ict.oulu.fi/16863/
 
 
 You have applied for a job at Pelle Security, the new clown-themed cybersecurity startup.
-As a last round interview assignment, you are tasked with performing OSINT on the company.
+As a last-round interview assignment, you are tasked with performing OSINT on the company.
 
 Start the task by finding possible social media accounts used for marketing by the company.
 
@@ -118,17 +141,23 @@ Installation instructions are for the course arch virtual machine.
 
 ---
 
-## **Task 4:** Blockchain
+## **Task 4:** Blockchain (bonus)
 
-We will take a brief look at online tools available for inspecting the bitcoin blockchain
+We will take a brief look at online tools available for inspecting the Bitcoin blockchain.
 
-Just as a quick recap: **Blockchain** is a ledger containing information of all transactions made with the cryptocurrency. Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block. These hashes are brute forces aka **mined** mainly using the prosessing power of Graphics Processing Units (GPU).
+Just as a quick recap: **Blockchain** is a distributed ledger containing information as blocks, which are securely linked together with cryptographic hashes.
+A well-known example of blockchain and ledger is all the transactions made with some cryptocurrencies. 
 
-Early Bitcoin developer Laszlo Hanyecz was alledgedly one of the first to invent GPU mining. However, what he is remembered for is the first documented purchase of goods using bitcoin, where he traded **10,000** bitcoin for **2 Pizzas**.
+Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block.
+These hashes are brute forced aka **mined** mainly using the processing power of Graphics Processing Units (GPU).
 
-You can find conflicting information from the internet about the pizza parlor where the pizzas were bought from. Aside from that, by inspecting the blockchain we can find exact information about the transaction.
+Early Bitcoin developer Laszlo Hanyecz was allegedly one of the first to invent GPU mining.
+However, what he is remembered for is the first documented purchase of goods using Bitcoin, where he traded **10,000** Bitcoin for **2 Pizzas**.
 
-Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect the block **57043** and provide the following information.
+You can find conflicting information on the internet about the pizza parlour where the pizzas were bought from.
+Aside from that, by inspecting the blockchain we can find the exact information about the transaction.
+
+> Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect block **57043** and provide the following information.
 
 Transaction
 - Date and Time of the transaction
@@ -139,7 +168,7 @@ Transaction
 
 Receiver Address
 - Who was the owner of this address? Use [OXT.me](https://oxt.me/) and Google to figure out the real name of the user
-- The owner instantly divided and forwarded the 10,000 to **how many** other addresses
+- The owner instantly divided and forwarded the 10,000 to (**how many?**) other addresses
 - Addresses that received the 10,000 bitcoin and the corresponding sums to each address
 
 Block
@@ -152,4 +181,5 @@ Miner
 - Has this address spent the block reward they received?
 
 
-**FYI**: **Maltego** is a great tool for blockchain tracing. It let's you to create a tree like structure out of inbound and outbound transactions from different addresses. It also requires registration.
+**Maltego** is a great tool for blockchain tracing.
+It let's you to create a tree like structure out of inbound and outbound transactions from different addresses. It also requires registration.
