@@ -27,7 +27,7 @@ Task #|Points|Description|
 
 One of the most typical and critical situations for a person could be the case when their login credentials have been leaked online publicly as a part of a cyber incident or another matter.
 
-[Have I been Pwned](https://haveibeenpwned.com/) is a site that tracks occurrances of emails and phone numbers in various data leak dumps. 
+[Have I been Pwned](https://haveibeenpwned.com/) is a site that tracks occurrences of emails and phone numbers in various data leaks.
 
 ### **Task 1 A)** Looking for leaks
 
@@ -180,7 +180,7 @@ Installation instructions are for the course arch virtual machine.
 
 We will take a brief look at online tools available for inspecting the Bitcoin blockchain.
 
-Just as a quick recap: **Blockchain** is a distributed ledger containing information as blocks, which are securely linked together with cryptographic hashes.
+Just as a quick recap: **Blockchain** is a distributed ledger containing the information as blocks, which are securely linked together with cryptographic hashes.
 A well-known example of blockchain and ledger is all the transactions made with some cryptocurrencies. 
 
 Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block.
@@ -216,5 +216,6 @@ Miner
 - Has this address spent the block reward they received?
 
 
-**Maltego** is a great tool for blockchain tracing.
-It let's you to create a tree like structure out of inbound and outbound transactions from different addresses. It also requires registration.
+**[Maltego](https://docs.maltego.com/support/solutions/articles/15000008703-client-requirements)** is a great tool for blockchain tracing.
+It lets you create a tree-like structure out of inbound and outbound transactions from different addresses.
+It also requires registration.
