@@ -190,9 +190,9 @@ Most computers handle this without any implications, and the most common problem
 
 - Follow the [provided](https://github.com/ouspg/PrivacyAndSocialEngineering/blob/main/3.Operating_system_privacy/onionshare.md) .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task # return box". 
 
-### Task 3 A) What to return on the website
+### Task 3 A) What to return on the ~~website~~ **GitHub**
 
-Upload an encrypted image file containing a screenshot of the Tails desktop with your name and student ID visible to the provided OnionShare address, accompanied by a message containing your name or another identifier. (Identifier can be mentioned in the return repository) 
+Upload an encrypted image file containing a screenshot of the Tails desktop with your name and student ID visible to the ~~provided OnionShare address~~ **Github repository**, accompanied by a message containing your name or another identifier. (Identifier can be mentioned in the return repository) 
 
 ### Task 3 B) Onionshare website
 
