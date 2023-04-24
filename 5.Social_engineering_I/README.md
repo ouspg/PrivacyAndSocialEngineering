@@ -208,6 +208,7 @@ class Netflix(SimpleHTTPRequestHandler):
         super().__init__(*args, directory=".", **kwargs) # Use current directory to serve files
 
     def do_POST(self):
+        # FIXME
         pass
 
 if __name__ == '__main__':
@@ -223,7 +224,7 @@ if __name__ == '__main__':
     logging.info('Stopping...\n')
 ```
 
-> Return the screenshot of your Netflix phishing site and also from the terminal, when it logs the user data after user submits it. You don't need to modify `index.html` in any way. What was the purpose of `301` response code and location header?
+> Return the code and the screenshot of your Netflix phishing site and from the terminal, when it logs the user data after user submits it. You don't need to modify `index.html` in any way. What was the purpose of `301` response code and location header?
 
 ## **Task 2:** Social Engineering Toolkit
 
