@@ -114,9 +114,9 @@ These two latter domains are likely registered because of the [typosquatting](ht
 
 How about `s-mobili.fi` and `smobili.fi`?
 
-> iii. Is anyone capable to register free domain names, even similar to known brands? 
+> iii. Is anyone capable to register free domain names, even similar to known brands? Take a brief look for registration requirements and process for `.fi` domains.
 
-> iv. Why it is so important pay attention to exact URLs and why can we trust the URLs in the first hand? Only a short explanation about the trust is required.
+> iv. Why it is so important pay attention to exact URLs and **why can we trust** the URLs in the first hand? Only a short explanation about the trust is required.
 
 > v. Look for the sender from the .eml message. How the message has been sent? You should be able to identify the service.
 
@@ -125,7 +125,7 @@ DMARC, DKIM, and SPF are email sender authentication methods.
 Take a short look [how they work](https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/).
 
 > **Note**
-> Internet Service Providers (ISPs), cloud providers and VPNs often also block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is difficult to send an email from your own computer these days.
+> Internet Service Providers (ISPs), cloud providers and VPNs often also block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is increasingly difficult to send an email from your own computer these days.
 
 Check the `.eml` file from the previous section.
 
@@ -133,9 +133,9 @@ Check the `.eml` file from the previous section.
 
 Take a look for DNS TXT records of the `op.fi`, `nordea.fi`, `poppankki.fi`, `saastopankki.fi` and `s-pankki.fi`. 
 
-You can do it with `drill` command, for example `drill -t <domain> TXT`.
+You can do it with `drill` command, for example `drill -t <domain> TXT`. DMARC record lives in the `_dmarc.*` subdomain.
 
-If you attempt to spoof some of these domain owners, in which cases the message is not delivered on properly configured email servers?
+If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers with `reject` policy?)
 
 
 Let's stop with the banking theme, and have fun with Netflix instead.
@@ -202,7 +202,7 @@ The walkthrough should make the usage of the tool clear and doable for people wi
 [^8]:
 [^9]:
 [^10]: [Internet Crime Complaint Center Releases 2022 Statistics](https://www.fbi.gov/contact-us/field-offices/springfield/news/internet-crime-complaint-center-releases-2022-statistics)
-[^11]: [](https://dvv.fi/en/-/watch-out-verify-warn-others-noticeable-increase-in-digital-scams-in-july-december-2022)
+[^11]: [Watch out, verify, warn others: Noticeable increase in digital scams in July–December 2022 ](https://dvv.fi/en/-/watch-out-verify-warn-others-noticeable-increase-in-digital-scams-in-july-december-2022)
 [^12]: [AOHell](https://en.wikipedia.org/wiki/AOHell)
 [^13]: [What is ChatGPT?](https://help.openai.com/en/articles/6783457-what-is-chatgpt)
 [^14]: [Internet Message Format](https://www.rfc-editor.org/rfc/rfc5322)
