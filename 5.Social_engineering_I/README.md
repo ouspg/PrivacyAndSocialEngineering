@@ -19,7 +19,7 @@ If you use other methods, you might need to explore a bit more by yourself.
 
 On Arch Linux to install all the required tools:
 ```sh
-sudo pacman -Sy spamassassin whois ldns wget
+sudo pacman -Sy --needed spamassassin whois ldns wget set
 ```
 
 ### Spamassassin
@@ -44,6 +44,12 @@ You will need [whois](https://github.com/rfc1036/whois) command-line tool or [we
 
 As a well-known alternative, you can also use `dig` command-line tool.
 
+### The Social Engineering Toolkit 
+
+[The Social Engineering Toolkit](https://github.com/trustedsec/social-engineer-toolkit) (SET or SEToolkit) is an open-source penetration testing framework[^1] designed for social engineering. It is being maintained by [TrustedSec](https://www.trustedsec.com/), a full-service Information Security consulting organization. They have created other useful tools as well, you can find these in their [GitHub](https://github.com/trustedsec).
+
+Please note, that Black Arch repository contains the `set` tool in this case, and it cannot be normally installed with `pacman`. 
+
 ## Grading
 
 You must do tasks **in order**.
@@ -63,6 +69,9 @@ Task #|Points|Description|
 Phishing as a term is originating from the context of email messages [^12].
 Email technology was new back then, and it enabled efficiently "fish" sensitive information from unsuspicious users.
 
+It was not designed to take spamming into account, and as result, there are many attempted "fixes", such as DMARC, DKIM and SPF since then to reduce spamming.
+
+Internet Service Providers (ISPs), cloud providers and VPNs often also block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is increasingly difficult to send an email directly from your own computer these days.
 
 
 Let's have a look into the following ChatGPT-generated [^13] phishing message which has been sent via email.
@@ -124,26 +133,47 @@ How about `s-mobili.fi` and `smobili.fi`?
 DMARC, DKIM, and SPF are email sender authentication methods.
 Take a short look [how they work](https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/).
 
-> **Note**
-> Internet Service Providers (ISPs), cloud providers and VPNs often also block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is increasingly difficult to send an email from your own computer these days.
+
 
 Check the `.eml` file from the previous section.
 
 > vi. What headers are telling about DMARC, DKIM and SPF checks?
 
-Take a look for DNS TXT records of the `op.fi`, `nordea.fi`, `poppankki.fi`, `saastopankki.fi` and `s-pankki.fi`. 
+> vii. Now, do you think that these checks will likely lead for previous mail to be deliver into spam rather than content on email server which has only SpamAssassin?
+
+Take a look for **DNS TXT** records of the `op.fi`, `nordea.fi`, `poppankki.fi`, `saastopankki.fi` and `s-pankki.fi`. 
 
 You can do it with `drill` command, for example `drill -t <domain> TXT`. DMARC record lives in the `_dmarc.*` subdomain.
 
-If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers with `reject` policy?)
+> viii. If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)
+
+As the last subtask, let's take a look into a totally different email message.
+
+The message is [Hello.eml](Hello.eml), and is similar to the infamous Nigerian prince scenario.
+
+Run the message with `spamassassin` and check email headers to validate sender authenticity.
+
+> ix. Is the message deliver to spam more likely because of the content than sending entity?
+
+> x. Identify at least five different psychological manipulation techniques what have been used in the message. 
 
 
-Let's stop with the banking theme, and have fun with Netflix instead.
 
 
-The website was missing from the phishing message.
+### Task 1B) Building a credential-stealing site
 
-How about we just... create one?
+Let's stop with the banking email theme, and have fun with Netflix instead.
+
+The website was missing from the phishing message in the previous task.
+
+How about we just... create one? How difficult it can be?
+
+Depending on how the site has been constructed, it could be almost too easy. 
+If it does not have many dynamical elements, it can be extremely easy to generate. 
+
+We'll use the Netflix login page as an example.
+There are many tools intended for cloning websites, but will use just wget[^16].
+
 
 ```sh
 wget -mk -nH netflix.com/fi-en/login
@@ -155,7 +185,7 @@ https://www.netflix.com/fi-en/login
 
 **Requires course VM for full functionality | min requirement is Linux**
 
-[The Social Engineering Toolkit](https://github.com/trustedsec/social-engineer-toolkit) (SET or SEToolkit) is an open-source penetration testing framework[^1] designed for social engineering. It is being maintained by [TrustedSec](https://www.trustedsec.com/), a full-service Information Security consulting organization. They have created other useful tools as well, you can find these in their [GitHub](https://github.com/trustedsec).
+
 
 The tool is very well documented on their "[SET user manual](https://github.com/trustedsec/social-engineer-toolkit#set-tutorial)" found on the tools github page, we encourage you to explore this manual when using the tool. 
 
@@ -207,5 +237,6 @@ The walkthrough should make the usage of the tool clear and doable for people wi
 [^13]: [What is ChatGPT?](https://help.openai.com/en/articles/6783457-what-is-chatgpt)
 [^14]: [Internet Message Format](https://www.rfc-editor.org/rfc/rfc5322)
 [^15]: [Apache SpamAssassin](https://spamassassin.apache.org/)
+[^16]: [GNU Wget](https://www.gnu.org/software/wget/)
 
 
