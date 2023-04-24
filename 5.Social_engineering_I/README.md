@@ -8,8 +8,10 @@ If you use other methods, you might need to explore a bit more by yourself.
 
 On Arch Linux to install all the required tools:
 ```sh
-sudo pacman -Sy spamassassin whois ldns gophish
+sudo pacman -Sy spamassassin whois ldns wget
 ```
+
+### Spamassassin
 
 One of the oldest email spam filters is Apace's SpamAssassin[^15].
 It can be used locally for single email messages, and on some tasks, it might be useful.
@@ -21,13 +23,15 @@ To update the rule list, run
 sudo sa-update
 ```
 
+### whois
+
 You will need [whois](https://github.com/rfc1036/whois) command-line tool or [website with similar features](https://who.is/) to query DNS owner information and make reverse IP lookup.
+
+### ldns
 
 `drill` command from the [ldns](https://github.com/NLnetLabs/ldns) library will be used to query DNS records.
 
 As a well-known alternative, you can also use `dig` command-line tool.
-
-[Gophish](https://github.com/gophish/gophish) is part of the [Black Arch tools](https://blackarch.org/tools.html). You won't be able to install it directly in regular Arch installation.
 
 
 ## Task 1: Can you... scam me?
@@ -102,12 +106,10 @@ How about `s-mobili.fi` and `smobili.fi`?
 > v. Look for the sender from the .eml message. How the message has been sent? You should be able to identify the service.
 
 
-#### SPF, DKIM and DMARC lookup
-
 DMARC, DKIM, and SPF are email sender authentication methods.
 Take a short look [how they work](https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/).
 
-> Note
+> **Note**
 > Internet Service Providers (ISPs), cloud providers and VPNs often block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is difficult to send an email from your own computer these days.
 
 Check the `.eml` file from the previous section.
