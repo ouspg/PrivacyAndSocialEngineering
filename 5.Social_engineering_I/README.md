@@ -179,7 +179,51 @@ There are many tools intended for cloning websites, but will use just wget[^16].
 wget -mk -nH netflix.com/fi-en/login
 ```
 
-https://www.netflix.com/fi-en/login
+The command will download the site into the `fi-en` folder, following the URL structure.
+Go into the folder, then rename `login` into `index.html`.
+
+Run command `python3 -m http.server 3000` in the folder and navigate to `localhost:3000` in the browser.
+
+Your clone should be pixel-perfect, including the favicon.
+
+How complicated it would be to add some features?
+Basic `http.server` does not support `POST` method.
+Your work is to add support for `POST` method for following code.
+It should be only a few lines of code. 
+
+1. The function should log the content data of the POST request
+2. The function should respond with response code `301`. 
+3. The function should set the response header `Location: 'https://www.netflix.com/browse'`
+
+Run the code in the same folder as `index.html`.
+
+
+```python
+#!/usr/bin/env python3
+from http.server import SimpleHTTPRequestHandler, HTTPServer
+import logging
+
+class Netflix(SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(*args, directory=".", **kwargs) # Use current directory to serve files
+
+    def do_POST(self):
+        pass
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+    server_address = ('', 3000)
+    httpd = HTTPServer(server_address, Netflix)
+    logging.info('Starting...\n')
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    httpd.server_close()
+    logging.info('Stopping...\n')
+```
+
+> Return the screenshot of your Netflix phishing site and also from the terminal, when it logs the user data after user submits it. You don't need to modify `index.html` in any way. What was the purpose of `301` response code and location header?
 
 ## **Task 2:** Social Engineering Toolkit
 
