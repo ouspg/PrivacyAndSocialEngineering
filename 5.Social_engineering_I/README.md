@@ -1,3 +1,134 @@
+
+## Pre-requisites
+
+This week, you will likely need a working Linux machine for every task.
+
+We provide guidance only for the course's virtual machine.
+If you use other methods, you might need to explore a bit more by yourself.
+
+On Arch Linux to install all the required tools:
+```sh
+sudo pacman -Sy spamassassin whois ldns gophish
+```
+
+One of the oldest email spam filters is Apace's SpamAssassin[^15].
+It can be used locally for single email messages, and on some tasks, it might be useful.
+
+Spamassassin needs its rule list to be updated before we can do anything with it.
+To update the rule list, run
+
+```sh
+sudo sa-update
+```
+
+You will need [whois](https://github.com/rfc1036/whois) command-line tool or [website with similar features](https://who.is/) to query DNS owner information and make reverse IP lookup.
+
+`drill` command from the [ldns](https://github.com/NLnetLabs/ldns) library will be used to query DNS records.
+
+As a well-known alternative, you can also use `dig` command-line tool.
+
+[Gophish](https://github.com/gophish/gophish) is part of the [Black Arch tools](https://blackarch.org/tools.html). You won't be able to install it directly in regular Arch installation.
+
+
+## Task 1: Can you... scam me?
+
+Phishing is ranked as the number one cybercrime in 2022 based on the FBI's crime statistics [^10].
+
+In Finland, phishing might be also the most visible cybercrime. 
+In 2022, Finns lost 32,4 million euros for scams and frauds [^11].
+Banks and media are constantly warning us about different phishing campaigns and schemes.
+Many of us have received SMS messages or emails related to phishing.
+
+In this exercise, we will try some simple phishing and counter-phishing technologies.
+
+
+### Task 1A) Email and URL phishing
+
+Phishing as a term is originating from the context of email messages [^12].
+Email technology was new back then, and it enabled efficiently "fish" sensitive information from unsuspicious users.
+
+
+
+Let's have a look into the following ChatGPT-generated [^13] phishing message which has been sent via email.
+
+> *The message is not related to the real S-Pankki in any way, and the bank is selected because of the linguistic properties of the name.*
+
+```
+Subject: Urgent Action Required: Verify Your Account Now
+From: "S-Pankki Finland" <fraudprevention@spanki.fi>
+
+Dear Customer,
+
+We recently detected unusual activity on your bank account and have temporarily suspended your access to online banking for security reasons.
+
+To restore your access, please click on the following link and verify your account information:
+
+https://spanki.fi/verification/1021f-abs21-21441-225af
+
+Please note that failure to verify your account within the next 24 hours will result in the permanent suspension of your online banking account.
+
+Thank you for your prompt attention to this matter.
+
+Sincerely,
+
+S-Pankki Finland
+```
+The full message in `.eml` format can be found [here](UrgentActionRequiredVerifyYourAccountNow.eml).
+EML, short for electronic mail, is a common method for storing email messages [^14].
+
+You can scan the message with `spamassassin` with the command to get the spam score.
+```sh
+spamassassin -t <FILENAME.eml>
+```
+It might or might not be useful.
+
+> i. What methods have been used on the message to convince the user to make an action and how the information is likely obtained?
+
+Let's have a look at domains related to this message.
+
+With `whois` tool, simply run `whois <domainname>`.
+
+
+> ii. Who owns the domain `spanki.fi` related to the previous message? How about the domains `s-panki.fi` or `spankki.fi`?
+
+These two latter domains are likely registered because of the [typosquatting](https://en.wikipedia.org/wiki/Typosquatting).
+
+How about `s-mobili.fi` and `smobili.fi`?
+
+> iii. Is anyone capable to register free domain names, even similar to known brands? 
+
+> iv. Why it is so important pay attention to exact URLs and why can we trust the URLs in the first hand? Only a short explanation about the trust is required.
+
+> v. Look for the sender from the .eml message. How the message has been sent? You should be able to identify the service.
+
+
+#### SPF, DKIM and DMARC lookup
+
+DMARC, DKIM, and SPF are email sender authentication methods.
+Take a short look [how they work](https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/).
+
+> Note
+> Internet Service Providers (ISPs), cloud providers and VPNs often block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is difficult to send an email from your own computer these days.
+
+Check the `.eml` file from the previous section.
+What headers are telling about DMARC, DKIM and SPF checks?
+
+Take a look for DNS TXT records of the `op.fi`, `nordea.fi`, `poppankki.fi`, `saastopankki.fi` and `s-pankki.fi`. 
+
+
+Let's stop with the banking theme, and have fun with Netflix instead.
+
+
+The website was missing from the phishing message.
+
+How about we just... create one?
+
+```sh
+wget -mk -nH netflix.com/fi-en/login
+```
+
+https://www.netflix.com/fi-en/login
+
 ## **Task 2:** Social Engineering Toolkit
 
 **Probably requires course VM for full functionality | min requirement is Linux**
@@ -61,9 +192,11 @@ When you are successful, download the conversation in JSON format and return it
 [^7]:
 [^8]:
 [^9]:
-[^10]:
-[^11]:
-[^12]:
-[^13]:
+[^10]: [Internet Crime Complaint Center Releases 2022 Statistics](https://www.fbi.gov/contact-us/field-offices/springfield/news/internet-crime-complaint-center-releases-2022-statistics)
+[^11]: [](https://dvv.fi/en/-/watch-out-verify-warn-others-noticeable-increase-in-digital-scams-in-july-december-2022)
+[^12]: [AOHell](https://en.wikipedia.org/wiki/AOHell)
+[^13]: [What is ChatGPT?](https://help.openai.com/en/articles/6783457-what-is-chatgpt)
+[^14]: [Internet Message Format](https://www.rfc-editor.org/rfc/rfc5322)
+[^15]: [Apache SpamAssassin](https://spamassassin.apache.org/)
 
 
