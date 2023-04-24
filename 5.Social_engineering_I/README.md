@@ -1,7 +1,18 @@
+# Week 5: Social Engineering and Technology
+
+Phishing is ranked as the number one cybercrime in 2022 based on the FBI's crime statistics [^10].
+
+In Finland, phishing might be also the most visible cybercrime. 
+In 2022, Finns lost 32,4 million euros for scams and frauds [^11].
+Banks and media are constantly warning us about different phishing campaigns and schemes.
+Many of us have received SMS messages or emails related to phishing.
+
+In this exercise, we will try some simple phishing and counter-phishing technologies.
+
 
 ## Pre-requisites
 
-This week, you will likely need a working Linux machine for every task.
+You will likely need a working Linux machine for every task.
 
 We provide guidance only for the course's virtual machine.
 If you use other methods, you might need to explore a bit more by yourself.
@@ -33,17 +44,18 @@ You will need [whois](https://github.com/rfc1036/whois) command-line tool or [we
 
 As a well-known alternative, you can also use `dig` command-line tool.
 
+## Grading
+
+You must do tasks **in order**.
+
+You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
+
+Task #|Points|Description|
+-----|:---:|-----------|
+[Task 1](#task-1-) | 2 | Can you... scam me?
+[Task 2](#task-2-) | 1 | Social Engineering Toolkit
 
 ## Task 1: Can you... scam me?
-
-Phishing is ranked as the number one cybercrime in 2022 based on the FBI's crime statistics [^10].
-
-In Finland, phishing might be also the most visible cybercrime. 
-In 2022, Finns lost 32,4 million euros for scams and frauds [^11].
-Banks and media are constantly warning us about different phishing campaigns and schemes.
-Many of us have received SMS messages or emails related to phishing.
-
-In this exercise, we will try some simple phishing and counter-phishing technologies.
 
 
 ### Task 1A) Email and URL phishing
@@ -84,7 +96,10 @@ You can scan the message with `spamassassin` with the command to get the spam sc
 ```sh
 spamassassin -t <FILENAME.eml>
 ```
-It might or might not be useful.
+It might or might not be useful. You can also ask [ChatGPT](https://chat.openai.com/chat) what it thinks about the message.
+If you don't want to give your phone number to use the service, you can use an unofficial and free [relay](https://chatgpt.org/chat). 
+Please note, that it operates through API and does not remember the context of the session; your query must be submitted on single message.
+
 
 > i. What methods have been used on the message to convince the user to make an action and how the information is likely obtained?
 
@@ -110,12 +125,17 @@ DMARC, DKIM, and SPF are email sender authentication methods.
 Take a short look [how they work](https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/).
 
 > **Note**
-> Internet Service Providers (ISPs), cloud providers and VPNs often block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is difficult to send an email from your own computer these days.
+> Internet Service Providers (ISPs), cloud providers and VPNs often also block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is difficult to send an email from your own computer these days.
 
 Check the `.eml` file from the previous section.
-What headers are telling about DMARC, DKIM and SPF checks?
+
+> vi. What headers are telling about DMARC, DKIM and SPF checks?
 
 Take a look for DNS TXT records of the `op.fi`, `nordea.fi`, `poppankki.fi`, `saastopankki.fi` and `s-pankki.fi`. 
+
+You can do it with `drill` command, for example `drill -t <domain> TXT`.
+
+If you attempt to spoof some of these domain owners, in which cases the message is not delivered on properly configured email servers?
 
 
 Let's stop with the banking theme, and have fun with Netflix instead.
@@ -133,7 +153,7 @@ https://www.netflix.com/fi-en/login
 
 ## **Task 2:** Social Engineering Toolkit
 
-**Probably requires course VM for full functionality | min requirement is Linux**
+**Requires course VM for full functionality | min requirement is Linux**
 
 [The Social Engineering Toolkit](https://github.com/trustedsec/social-engineer-toolkit) (SET or SEToolkit) is an open-source penetration testing framework[^1] designed for social engineering. It is being maintained by [TrustedSec](https://www.trustedsec.com/), a full-service Information Security consulting organization. They have created other useful tools as well, you can find these in their [GitHub](https://github.com/trustedsec).
 
@@ -171,19 +191,6 @@ The walkthrough should make the usage of the tool clear and doable for people wi
 - The walkthrough, included the use case, images and/or videos  
 - Why you picked the tool or tools you chose  
 
----
-
-## **Task 3:** Security Questions
-
-Security questions are still often used to confirm your identity in online services
-
-Work with this **Account recovery chatbot** and try to reset the password of a long lost account called **PewDie** that may have once belonged to the internet personality **Felix Kjellberg**
-
-When you are successful, download the conversation in JSON format and return it
-
-//chatbot in not currently hosted//
-
----
 
 [^1]: [Pentesting frameworks](https://www.mitnicksecurity.com/blog/what-is-a-pentest-framework)
 [^2]: [QR code](https://en.wikipedia.org/wiki/QR_code)
