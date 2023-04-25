@@ -65,7 +65,7 @@ You are expected to use more time on later tasks to get an equal amount of point
 
 Task #|Points|Description|
 -----|:---:|-----------|
-[Task 1](#task-1-) | 2 | Can you... scam me?
+[Task 1](#task-1-can-you-scam-me) | 2 | Can you... scam me?
 [Task 2](#task-2-social-engineering-toolkit) | 1 | Social Engineering Toolkit
 
 ## Task 1: Can you... scam me?
