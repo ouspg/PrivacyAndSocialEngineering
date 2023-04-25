@@ -33,22 +33,28 @@ To update the rule list, run
 ```sh
 sudo sa-update
 ```
+Arch Linux [man pages](https://man.archlinux.org/man/spamassassin.1p) for how to use.
 
 ### whois
 
 You will need [whois](https://github.com/rfc1036/whois) command-line tool or [website with similar features](https://who.is/) to query DNS owner information and make reverse IP lookup.
 
+Arch Linux [man pages](https://man.archlinux.org/man/whois.1.en) for how to use.
+
 ### ldns
 
 `drill` command from the [ldns](https://github.com/NLnetLabs/ldns) library will be used to query DNS records.
+
+You can check Arch Linux [man pages](https://man.archlinux.org/man/drill.1) for how to use.
 
 As a well-known alternative, you can also use `dig` command-line tool.
 
 ### The Social Engineering Toolkit 
 
-[The Social Engineering Toolkit](https://github.com/trustedsec/social-engineer-toolkit) (SET or SEToolkit) is an open-source penetration testing framework[^1] designed for social engineering. It is being maintained by [TrustedSec](https://www.trustedsec.com/), a full-service Information Security consulting organization. They have created other useful tools as well, you can find these in their [GitHub](https://github.com/trustedsec).
+[The Social Engineering Toolkit](https://github.com/trustedsec/social-engineer-toolkit) (SET or SEToolkit) is an open-source penetration testing framework[^1] designed for social engineering. It is being maintained by [TrustedSec](https://www.trustedsec.com/), a full-service Information Security consulting organization. 
+They have created other useful tools as well, you can find these on their [GitHub](https://github.com/trustedsec).
 
-Please note, that Black Arch repository contains the `set` tool in this case, and it cannot be normally installed with `pacman`. 
+Please note, that the Black Arch repository contains the `set` package in this case, and it cannot be normally installed with `pacman`. 
 
 ## Grading
 
@@ -59,7 +65,7 @@ You are expected to use more time on later tasks to get an equal amount of point
 Task #|Points|Description|
 -----|:---:|-----------|
 [Task 1](#task-1-) | 2 | Can you... scam me?
-[Task 2](#task-2-) | 1 | Social Engineering Toolkit
+[Task 2](#task-2-social-engineering-toolkit) | 1 | Social Engineering Toolkit
 
 ## Task 1: Can you... scam me?
 
@@ -164,7 +170,7 @@ Run the message with `spamassassin` and check email headers to validate sender a
 
 Let's stop with the banking email theme, and have fun with Netflix instead.
 
-The website was missing from the phishing message in the previous task.
+The website was missing from the phishing message in the first task.
 
 How about we just... create one? How difficult it can be?
 
@@ -172,7 +178,7 @@ Depending on how the site has been constructed, it could be almost too easy.
 If it does not have many dynamical elements, it can be extremely easy to generate. 
 
 We'll use the Netflix login page as an example.
-There are many tools intended for cloning websites, but will use just wget[^16].
+There are many tools intended for cloning websites but will use just wget[^16].
 
 
 ```sh
@@ -228,25 +234,35 @@ if __name__ == '__main__':
 
 ## **Task 2:** Social Engineering Toolkit
 
-**Requires course VM for full functionality | min requirement is Linux**
+This task will focus on the Social Engineering Toolkit which was mentioned in pre-requisites.
 
-
-
-The tool is very well documented on their "[SET user manual](https://github.com/trustedsec/social-engineer-toolkit#set-tutorial)" found on the tools github page, we encourage you to explore this manual when using the tool. 
+The tool is very well documented in their "[SET user manual](https://github.com/trustedsec/social-engineer-toolkit#set-tutorial)" found on the tool's GitHub page.
+We encourage you to explore this manual when using the tool. 
 
 ### **Task 2A)** QR Code[^2] Credential Harvest[^3]
 
-Take a look at the SET's tool QR code creation and web attack type credential harvest. In this task we create a QR code for your self hosted credential harvest page, and a poster to try and get people to scan it. We encourage you to get creative with your poster, it's important it would seem legitimate.
+Take a look at the SET's tool QR code creation and web attack type credential harvest. 
+The credential harvester automates the process from the previous task, where we created the site, but with reduced control.
 
-You can set the address to the QR code and the harvester page as your local address, in a real world situation you would set it as your server to actually collect credentials from people in different networks, this also makes the use of HTTPS certificates[^4] possible. You can use any site you want; cloned, self created or ready-to-use templates from the tool. Only requirement is, that it has to have the capability to harvest credentials.
+> **Note**
+> However, you are allowed and recommended to continue using the code and methods from the previous task, as it allows more control. Changing the website might be recommended.
+
+In this task, we create a QR code for your self-hosted credential harvest page and a poster to try and get people to scan it.
+We encourage you to get creative with your poster; it should seem legitimate.
+
+You can set the address to the QR code and the harvester page as your local address, in a real-world situation you would set it as your server to actually collect credentials from people in different networks, this also makes the use of HTTPS certificates[^4] possible. You can use any site you want; cloned, self-created or ready-to-use templates from the tool.
+
+The only requirement is, that it has to have the capability to harvest credentials.
 
 You could for example use the following poster to have a twitter login page for credential harvesting and after entering your credentials it redirects you to the actual address, in this case https://twitter.com/SecurityPelle. This example could be found at a cafe near an office you'd like to collect credentials from or at a lounge of a hotel if you're looking to gather a bunch of random credentials.
 
-You do not have to publicly host the site, it is enough if you can test it with the pc and phone in same network.
+You do not have to publicly host the site, it is enough if you can test it with the computer and phone in the same network.
+
+If you are using the code sample from the previous task to host your website, the
 
 **What to return:**  
 - The poster  
-- Scenario for usage  
+- Scenario for usage
 - Site used for harvesting  
 - Screenshot of the credential harvest tool successfully returning you the input credentials (Your name as username and surname as password)
 
@@ -258,9 +274,14 @@ You do not have to publicly host the site, it is enough if you can test it with 
 
 ### **Task 2B)** Tool Walkthrough
 
-SET has a plethora of cool and interesting utilities and you can create a huge arsenal of potential attacks with them. So in this task you get to choose a tool or a set of tools to create a "walkthrough" for an attack. Document the usage of the tool and provide atleast one plausible use case for it. You are required to include atleast one image or video for the walkthrough. Think of the walkthrough as teaching somone such as an employee, how to conduct your companys basic attack with the tool.
+SET has a plethora of cool and interesting utilities and you can create a huge arsenal of potential attacks with them. 
+So in this task, you get to choose a tool or a set of tools to create a "walkthrough" for an attack.
+Document the usage of the tool and provide at least one plausible use case for it.
+You are required to include at least one image or video for the walkthrough.
 
-The walkthrough should make the usage of the tool clear and doable for people with atleast some CLI experience.
+Think of the walkthrough as teaching someone such as an employee, how to conduct your company's basic attack with the tool.
+
+The walkthrough should make the usage of the tool clear and doable for people with at least some CLI experience.
 
 **What to return:**  
 - The walkthrough, included the use case, images and/or videos  
