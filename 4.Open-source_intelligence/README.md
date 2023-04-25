@@ -145,6 +145,8 @@ Installation instructions are for the course arch virtual machine.
     cd spiderfoot-4.0
     pip3 install -r requirements.txt
     python3 ./sf.py -l 127.0.0.1:5001
+    
+Note that not all of these are needed.
     ```
 
 **PROVIDE SCREENSHOTS FOR ALL PARTS OF THIS TASK!**
@@ -164,7 +166,7 @@ Installation instructions are for the course arch virtual machine.
 
 ### 4. Explain how you logged into the SFTP server. What was the password?
 
-This is a [hover text](## "First name") example.
+[HINT:](a "Hover text")
 
 
 
