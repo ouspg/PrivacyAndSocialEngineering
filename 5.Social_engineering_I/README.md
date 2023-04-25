@@ -267,6 +267,7 @@ In this task, we create a QR code for your self-hosted credential harvest page a
 We encourage you to get creative with your poster; it should seem legitimate.
 
 **Think about the context**; why your poster would be attractive? Why people would scan the QR from it? What makes it less suspicious? You can think about the psychology behind it. Who is your target group?
+Use methods to reduce getting caught; e.g. use redirect to natural and real place after the user submits credentials.
 
 You can set the address to the QR code and the harvester page as your local address (e.g. localhost, 192.168.0.0/16).
 
