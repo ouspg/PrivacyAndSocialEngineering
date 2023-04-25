@@ -88,6 +88,7 @@ Internet Service Providers (ISPs), cloud providers and VPNs often also block out
 
 Let's have a look into the following ChatGPT-generated [^13] phishing message which has been sent via email.
 
+> **Note**
 > *The message is not related to the real S-Pankki in any way, and the bank is selected because of the linguistic properties of the name.*
 
 ```
