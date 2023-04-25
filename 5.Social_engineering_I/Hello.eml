@@ -1,0 +1,184 @@
+Delivered-To: anonymous@gmail.com
+Received: by 2002:a5d:4e51:0:0:0:0:0 with SMTP id r17csp1432931wrt;
+        Mon, 17 Apr 2023 00:24:34 -0700 (PDT)
+X-Google-Smtp-Source: AKy350ZzM4DeruER/WiOirrRLWTudwrMbiZocoRDTR95TEnxcb/ko25Q8HhlJF7BkoDgaOhnvSSE
+X-Received: by 2002:a17:906:6d15:b0:94e:5708:a1f9 with SMTP id m21-20020a1709066d1500b0094e5708a1f9mr7440161ejr.39.1681716274034;
+        Mon, 17 Apr 2023 00:24:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1681716274; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ShA8gGQWE5wWDn9bDcL0RyXqYeKmBoEs7Aqi2owNUbIzRIz97yl6Nep2HaerfSThL3
+         fTwd46fp/L8FQjeCHCjCWyU01ybmHdiYr8Es7J2VlQ3G5TGIe4LZbu8XiDqMkXgZufyG
+         FKJN1H7i7GjEIoYflItjpxmDBErEw2M+ys8jmQqmp3pT0BldqmXbh1+9AOlo9NSV0Ppe
+         a+wp733IB8vEDcATobSIXGwbDs/8dTPU4+XAhNgRcJpZCqjvqWykC5Xz8KwEwGjRzyay
+         Glty6SIpULSBaQsdmUMdd0O32axQ5LcGyVBD3+oDw5xdIQ2ggPi3iJDIX1yCVyncwPNr
+         YKdg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=organization:message-id:user-agent:reply-to:subject:to:from:date
+         :mime-version:dkim-signature:dkim-signature;
+        bh=ZzOnjXVNXkIst6Ha4a3qa0lr52WC/3BY7cTTsZlEVQo=;
+        b=Ig1UzlhnlR1VJNyPnud52A8eyd7dmbQA7zoQOyUGOBKtcSPkfprYyKwDeKFiop8Bvp
+         oU/ZRaEhejhR3USL2KSCcJRu41wASdxpAjig5uBe8I8elMB+PhUeLX0Hf6FF+wjoDG8R
+         l1zCWS/wCho3V2HdOQriKtuUyQN/w235Z9A7cH+rr+8bd7zxz/WUGBq2Htu3aI2+YWpu
+         JvYSJWGZJDWMrt2fIRsxyUPRQYCK7XDrwvjlqALvfte76pOw1o16qsirQ983w52TdCcf
+         MQ2NsxvE8xF82ji+1qgqUwhyenzQTtOKBM+Q6WDvuINGZUbWUDmkPxUsQr8Wv7621orF
+         kiVA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass (test mode) header.i=@amis.net header.s=mail header.b=V2+UxMo5;
+       dkim=pass (test mode) header.i=@amis.net header.s=mail header.b=2qQk2EKe;
+       spf=pass (google.com: domain of takolepo@amis.net designates 212.18.32.4 as permitted sender) smtp.mailfrom=takolepo@amis.net
+Return-Path: <takolepo@amis.net>
+Received: from out-1.mail.amis.net (out-1.mail.amis.net. [212.18.32.4])
+        by mx.google.com with ESMTPS id fp32-20020a1709069e2000b0094f69e209desi931712ejc.1018.2023.04.17.00.24.33
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Apr 2023 00:24:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of takolepo@amis.net designates 212.18.32.4 as permitted sender) client-ip=212.18.32.4;
+Authentication-Results: mx.google.com;
+       dkim=pass (test mode) header.i=@amis.net header.s=mail header.b=V2+UxMo5;
+       dkim=pass (test mode) header.i=@amis.net header.s=mail header.b=2qQk2EKe;
+       spf=pass (google.com: domain of takolepo@amis.net designates 212.18.32.4 as permitted sender) smtp.mailfrom=takolepo@amis.net
+Received: from in-2.mail.amis.net (in-2.mail.amis.net [212.18.32.19])
+	by out-1.mail.amis.net (Postfix) with ESMTP id 10C0783AC7;
+	Mon, 17 Apr 2023 09:24:33 +0200 (CEST)
+Received: from in-2.mail.amis.net (localhost [127.0.0.1])
+	by in-2.mail.amis.net (Postfix) with ESMTP id E1C12C9474;
+	Mon, 17 Apr 2023 09:24:32 +0200 (CEST)
+X-Spam-Flag: YES
+X-Spam-Score: 11.364
+X-Spam-Level: ***********
+X-Spam-Status: Yes, score=11.364 required=5 tests=[ADVANCE_FEE_5_NEW_MONEY=3,
+	ALL_TRUSTED=-1, FREEMAIL_FORGED_REPLYTO=2.503,
+	FREEMAIL_REPLYTO_END_DIGIT=0.25, HTML_MESSAGE=0.001,
+	LOTS_OF_MONEY=0.001, MILLION_USD=1.999, MONEY_FRAUD_8=0.001,
+	MONEY_FREEMAIL_REPTO=1.499, T_MONEY_PERCENT=0.01, UNDISC_MONEY=3.099,
+	XFER_LOTSA_MONEY=0.001] autolearn=disabled
+Authentication-Results: in-2.mail.amis.net (amavisd-new);
+	dkim=pass (1024-bit key) header.d=amis.net header.b=V2+UxMo5;
+	dkim=pass (1024-bit key) header.d=amis.net header.b=2qQk2EKe
+Received: from in-2.mail.amis.net ([127.0.0.1])
+	by in-2.mail.amis.net (in-2.mail.amis.net [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id OIRaMvWg0LpX; Mon, 17 Apr 2023 09:24:32 +0200 (CEST)
+Received: from smtp1.amis.net (smtp1.amis.net [212.18.32.41])
+	by in-2.mail.amis.net (Postfix) with ESMTP id 3F5DEC9463;
+	Mon, 17 Apr 2023 09:24:32 +0200 (CEST)
+Received: from posta.amis.net (posta-be.amis.net [212.18.32.16])
+	by smtp1.amis.net (Postfix) with ESMTP id 4281FC2DDC;
+	Mon, 17 Apr 2023 09:24:31 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=amis.net; s=mail;
+	t=1681716272; bh=MFO/OCoovocEWdMckvHcNhkayP3WJrTRzAxrlv0EplY=;
+	h=Date:From:To:Subject:Reply-To;
+	b=V2+UxMo5bdmmrB2ap0jXy4HYWasgWkGu2BNoap0OVV2NIYfxOdYZC8EvvzPlQ7KSI
+	 Cf5Ssy6Ai7fe6+V9X/Ff9vTxhB10LsZCU1fb32ibdQeki+M1KVOfjzXFZU5ScaP8oS
+	 7MPDPU0VtYmkOFzCyrg8Dtlfe40HqBfut+zzFAro=
+Received: from a1mail.si (localhost [127.0.0.1])
+	by posta.amis.net (Postfix) with ESMTP id E89226840E9;
+	Mon, 17 Apr 2023 09:24:25 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=amis.net; s=mail;
+	t=1681716269; bh=MFO/OCoovocEWdMckvHcNhkayP3WJrTRzAxrlv0EplY=;
+	h=Date:From:To:Subject:Reply-To;
+	b=2qQk2EKeLK1OWVNf6xWPrqW77RV9lpkybm9aosPyo4ekrz8zjKxofEiwHkYedtPst
+	 k32ypOrCGx0eKhHZET2tUGcdkSoKu6+P5/p7EItPW6NFqWcbZb8DMIO0NIbvOXHIhS
+	 JqGO0HWIBzm5oh3ImwhpcNoLu0aK62pn9bTfVMs0=
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_5eb9dc2fef48f3e237cab43ff6be1436"
+Date: Mon, 17 Apr 2023 09:24:25 +0200
+From: "MS. MARIA RAMOS" <takolepo@amis.net>
+To: undisclosed-recipients:;
+Subject: Hello
+Reply-To: Msmariar6@gmail.com
+User-Agent: Roundcube Webmail/1.4.1
+Message-ID: <4f51700c75e18a59066320551e86b592@amis.net>
+X-Sender: takolepo@amis.net
+Organization: MS. MARIA RAMOS
+
+--=_5eb9dc2fef48f3e237cab43ff6be1436
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=US-ASCII;
+ format=flowed
+
+-- 
+Out of respect for your time, my name is Maria Ramos. Born in Lisbon,
+Portugal, but my late parents emigrated to South Africa when I was 6
+years old. I am a businesswoman, banker, and corporate executive.
+Kindly, you can research me to know more about me if you will. I know
+this may come to you as a surprise because you do not know me, but I
+need your trust and assistance urgently because of my present health
+condition - I am suffering from cancer (a long-term illness). I desire
+to have a genuine working relationship with you. 
+
+I am requiring your help to help me carry out my last wish of
+distributing my funds to various charitable organizations around you. I
+deposited the sum of USD 2.5M (Two million, Five Hundred Thousand United
+States Dollars) with a finance/bank in South Africa where I reside now.
+I have worked hard and donated to many charitable organizations in my
+community and neighboring countries. However, I want to help across
+international borders too as God directs me before I pass on. 
+
+This inspiration was sparked after watching a YouTube video about Jon
+Huntsman of the USA, who survived cancer multiple times and donated
+endlessly to the cancer issue. He contributed over a billion United
+States dollars of his money towards helping the less privileged all over
+the world. 
+
+Suffering from this cancer; my doctor informed me that due to my poor
+health condition, I would not be able to stay alive past the next few
+months. Knowing my condition, I decided to donate these funds to
+charitable organizations in your country. I prayed about this, and I
+have confidence in my decision. 
+
+Please reply and inform me if you can help with my last wish. I will
+compensate you and your family for your efforts by 50% of the $2.5M.
+Thank you for your attention, and I anticipate your earliest response. 
+
+Kindly reply to me here: Msmariar6@gmail.com 
+
+Sincerely,
+Ms. Maria Ramos.
+Help around the World to me is the Greatest Investment.
+--=_5eb9dc2fef48f3e237cab43ff6be1436
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8" /></head><body style=3D'font-size: 10pt; font-family: Verdana,Gen=
+eva,sans-serif'>
+<p><br /></p>
+<div id=3D"signature">-- <br />
+<p><strong>Out of respect for your time, my name is Maria Ramos. Born in Li=
+sbon, Portugal, but my late parents emigrated to South Africa when I was 6 =
+years old. I am a businesswoman, banker, and corporate executive. Kindly, y=
+ou can research me to know more about me if you will. I know this may come =
+to you as a surprise because you do not know me, but I need your trust and =
+assistance urgently because of my present health condition - I am suffering=
+ from cancer (a long-term illness). I desire to have a genuine working rela=
+tionship with you.</strong></p>
+<p><strong>I am requiring your help to help me carry out my last wish of di=
+stributing my funds to various charitable organizations around you. I depos=
+ited the sum of USD 2.5M (Two million, Five Hundred Thousand United States =
+Dollars) with a finance/bank in South Africa where I reside now. I have wor=
+ked hard and donated to many charitable organizations in my community and n=
+eighboring countries. However, I want to help across international borders =
+too as God directs me before I pass on.</strong></p>
+<p><strong>This inspiration was sparked after watching a YouTube video abou=
+t Jon Huntsman of the USA, who survived cancer multiple times and donated e=
+ndlessly to the cancer issue. He contributed over a billion United States d=
+ollars of his money towards helping the less privileged all over the world=
+=2E</strong></p>
+<p><strong>Suffering from this cancer; my doctor informed me that due to my=
+ poor health condition, I would not be able to stay alive past the next few=
+ months. Knowing my condition, I decided to donate these funds to charitabl=
+e organizations in your country. I prayed about this, and I have confidence=
+ in my decision.</strong></p>
+<p><strong>Please reply and inform me if you can help with my last wish. I =
+will compensate you and your family for your efforts by 50% of the $2.5M. T=
+hank you for your attention, and I anticipate your earliest response.</stro=
+ng></p>
+<p><strong>Kindly reply to me here: <span style=3D"text-decoration: underli=
+ne;">Msmariar6@gmail.com</span></strong></p>
+<p><strong>Sincerely,</strong><br /><strong>Ms. Maria Ramos.</strong><br />=
+<strong>Help around the World to me is the Greatest Investment.</strong></p=
+>
+</div>
+</body></html>
+
+--=_5eb9dc2fef48f3e237cab43ff6be1436--
