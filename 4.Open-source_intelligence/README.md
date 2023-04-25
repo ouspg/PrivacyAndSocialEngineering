@@ -165,12 +165,11 @@ Note that not all of these are needed.
 
 ### 4. Explain how you logged into the SFTP server. What was the password?
 
-<details open>
-<summary>HINT:</summary>
+<details>
+<summary>Hint:</summary>
 <br>
-Many people use only a part of their name to login to their computer
+People often use only a part of their name to login to their computers.
 </details>
-
 
 ### 5. What is in the flag.txt file located on the SFTP server?
 
