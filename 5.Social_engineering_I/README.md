@@ -203,8 +203,13 @@ Run command `python3 -m http.server 3000` in the folder and navigate to `localho
 Your clone should be pixel-perfect, including the favicon.
 
 How complicated it would be to add some features?
-Basic `http.server` does not support `POST` method.
-Your work is to add support for `POST` method for following code.
+
+You can take a quick look at the source code (index.html).
+This is easier by using browser developer tools and inspecting the login element.
+Login uses [HTML form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form), with POST method and action is defined to be a relative 'login' route.
+
+The basic `http.server` does not support `POST` method.
+Your work is to add support for `POST` method for the following code.
 It should be only a few lines of code. 
 
 1. The function should log the content data of the POST request
@@ -212,6 +217,7 @@ It should be only a few lines of code.
 3. The function should set the response header `Location: 'https://www.netflix.com/browse'`
 
 Run the code in the same folder as `index.html`.
+
 
 
 ```python
@@ -260,25 +266,27 @@ The credential harvester automates the process from the previous task, where we 
 In this task, we create a QR code for your self-hosted credential harvest page and **a poster** to try to get people to scan it.
 We encourage you to get creative with your poster; it should seem legitimate.
 
+**Think about the context**; why your poster would be attractive? Why people would scan the QR from it? What makes it less suspicious? You can think about the psychology behind it. Who is your target group?
+
 You can set the address to the QR code and the harvester page as your local address (e.g. localhost, 192.168.0.0/16).
 
 In a real-world situation, you would set it as your server's globally reachable address instead, which makes use of the HTTPS certificates[^4].
 However, we skip that this time.
+It is enough if you can test it with the computer and phone on the same network.
 
 You can use any site you want; cloned, self-created or ready-to-use templates from the tool.
 The only requirement is, that it has to have the capability to harvest credentials.
 
-You could for example use the following poster to have a Twitter login page for credential harvesting and after entering your credentials it redirects you to the actual address, in this case https://twitter.com/SecurityPelle. This example could be found at a cafe near an office you'd like to collect credentials from or at a lounge of a hotel if you're looking to gather a bunch of random credentials.
 
-You do not have to publicly host the site, it is enough if you can test it with the computer and phone in the same network.
-
-If you are using the code sample from the previous task to host your website, the
+If you are using the code sample from the previous task to host your website, on your local computer, it could be trivial to make it accessible on the local network. Bind the server to address `0.0.0.0` and find your computer's local IP address to access it from your phone.
 
 **What to return:**  
-- The poster  
-- Scenario for usage
-- Site used for harvesting  
+- The poster with the QR code
+- Scenario for usage. **Explain in detail** why your poster might be an effective way to collect credentials. Is it targeted to some specific group? Why it might work for them?
+- The site used for harvesting. You can test the QR with your phone and open the site in its browser.  
 - Screenshot of the credential harvest tool successfully returning you the input credentials (Your name as username and surname as password)
+
+You can look for the following example poster, which would have a Twitter login page for credential harvesting and after entering your credentials it redirects you to the actual address, in this case, https://twitter.com/SecurityPelle. This example could be found at a cafe near an office you'd like to collect credentials from or at a lounge of a hotel if you're looking to gather a bunch of random credentials.
 
 <details>
 <summary>An example poster</summary>
