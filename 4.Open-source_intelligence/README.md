@@ -147,7 +147,6 @@ Installation instructions are for the course arch virtual machine.
     python3 ./sf.py -l 127.0.0.1:5001
     
 Note that not all of these are needed.
-    ```
 
 **PROVIDE SCREENSHOTS FOR ALL PARTS OF THIS TASK!**
 
