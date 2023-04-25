@@ -132,7 +132,7 @@ The information that WebGL can provide about your machine, is yet another effici
 
 What are your Screen width and Screen height similarity percentage? You may or may not have a common screen resolution in use. However, people use User Interfaces and Taskbars of different sizes. Now check out the similarity percentage for Screen available width and Screen available height. Can you explain your result?
 
-Return similarity percentage for:
+Return similarity percentage and explanations of results for:
 - Canvas + WebGL Data
 - Screen width, Screen height
 - Screen available width, Screen available height
