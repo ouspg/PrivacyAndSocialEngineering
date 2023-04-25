@@ -164,6 +164,8 @@ Installation instructions are for the course arch virtual machine.
 
 ### 4. Explain how you logged into the SFTP server. What was the password?
 
+This is a [hover text](## "First name") example.
+
 
 
 ### 5. What is in the flag.txt file located on the SFTP server?
