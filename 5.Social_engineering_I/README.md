@@ -16,7 +16,7 @@ You will likely need a working Linux machine for every task.
 
 We provide guidance only for the course's virtual machine.
 If you use other methods, you might need to explore a bit more by yourself.
-On Slack, we can provide instructions for other platforms if really needed.
+On Slack, we can provide instructions for other platforms if needed.
 
 On Arch Linux to install all the required tools:
 ```sh
@@ -74,14 +74,14 @@ Banking and other finance related is the most typical context where you might re
 
 We will observe an email example related to banking, and how you might be able to verify, whether the message is coming from the claimed entity.
 
-Additionally, we observe one scam message and how easy it is to make a cloned credential stealing website.
+Additionally, we observe one scam message and how easy it is to make a cloned credential-stealing website.
 
 ### Task 1A) Email and URL phishing
 
 Phishing as a term is originating from the context of email messages [^12].
 Email technology was new back then, and it enabled efficiently "fish" sensitive information from unsuspicious users.
 
-It was not designed to take spamming into account, and as result, there are many attempted "fixes", such as spam filters, blacklists, DMARC, DKIM and SPF since then to reduce spamming.
+It was not designed to take spamming into account, and as a result, there are many attempted "fixes", such as spam filters, blacklists, DMARC, DKIM and SPF since then to reduce spamming.
 
 Internet Service Providers (ISPs), cloud providers and VPNs often also block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is increasingly difficult to send an email directly from your own computer these days.
 
