@@ -16,6 +16,7 @@ You will likely need a working Linux machine for every task.
 
 We provide guidance only for the course's virtual machine.
 If you use other methods, you might need to explore a bit more by yourself.
+On Slack, we can provide instructions for other platforms if really needed.
 
 On Arch Linux to install all the required tools:
 ```sh
@@ -69,6 +70,11 @@ Task #|Points|Description|
 
 ## Task 1: Can you... scam me?
 
+Banking and other finance related is the most typical context where you might receive phishing messages, or where you are being targeted.
+
+We will observe an email example related to banking, and how you might be able to verify, whether the message is coming from the claimed entity.
+
+Additionally, we observe one scam message and how easy it is to make a cloned credential stealing website.
 
 ### Task 1A) Email and URL phishing
 
@@ -111,9 +117,9 @@ You can scan the message with `spamassassin` with the command to get the spam sc
 ```sh
 spamassassin -t <FILENAME.eml>
 ```
-It might or might not be useful. You can also ask [ChatGPT](https://chat.openai.com/chat) what it thinks about the message.
+It might or might not be useful. You can also ask [ChatGPT](https://chat.openai.com/chat) what it thinks about the message (but verify from true sources if its claims are correct).
 If you don't want to give your phone number to use the service, you can use an unofficial and free [relay](https://chatgpt.org/chat). 
-Please note, that it operates through API and does not remember the context of the session; your query must be submitted on single message.
+Please note, that it operates through API and does not remember the context of the session; your query must be submitted on a single message.
 
 
 > i. What methods have been used on the message to convince the user to make an action and how the information is likely obtained?
@@ -149,7 +155,7 @@ Check the `.eml` file from the previous section.
 
 Take a look for **DNS TXT** records of the `op.fi`, `nordea.fi`, `poppankki.fi`, `saastopankki.fi` and `s-pankki.fi`. 
 
-You can do it with `drill` command, for example `drill -t <domain> TXT`. DMARC record lives in the `_dmarc.*` subdomain.
+You can do it with `drill` command, for example `drill -t <domain> TXT`. DMARC record lives in the `_dmarc.*.` subdomain.
 
 > viii. If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)
 
@@ -160,6 +166,10 @@ Let's take a look at a totally different email message.
 The message is [Hello.eml](Hello.eml), and is similar to the infamous Nigerian prince scenario.
 
 Run the message with `spamassassin` and check email headers to validate sender authenticity.
+Also, read it carefully.
+
+After making your conclusions, you could ask ChatGPT what it thinks about the message. 
+Remember to take it **with a grain of salt** whatever it is saying, and verify from true sources.
 
 > i. Will the message be delivered into the spam more likely because of the content rather than sending entity?
 
@@ -168,7 +178,7 @@ Run the message with `spamassassin` and check email headers to validate sender a
 
 ### Task 1C) Building a credential-stealing site
 
-Let's stop with the banking email theme, and have fun with Netflix instead.
+Let's stop with the financial theme, and have fun with Netflix instead.
 
 The website was missing from the phishing message in the first task.
 
@@ -219,7 +229,7 @@ class Netflix(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
-    server_address = ('', 3000)
+    server_address = ('', 3000) # Change first parameter to '0.0.0.0' to expose for outside network
     httpd = HTTPServer(server_address, Netflix)
     logging.info('Starting...\n')
     try:
@@ -245,16 +255,20 @@ Take a look at the SET's tool QR code creation and web attack type credential ha
 The credential harvester automates the process from the previous task, where we created the site, but with reduced control.
 
 > **Note**
-> However, you are allowed and recommended to continue using the code and methods from the previous task, as it allows more control. Changing the website might be recommended.
+> However, you are allowed and recommended to continue using the code and methods from the previous task, as it allows more control. Changing the website is recommended.
 
-In this task, we create a QR code for your self-hosted credential harvest page and a poster to try and get people to scan it.
+In this task, we create a QR code for your self-hosted credential harvest page and **a poster** to try to get people to scan it.
 We encourage you to get creative with your poster; it should seem legitimate.
 
-You can set the address to the QR code and the harvester page as your local address, in a real-world situation you would set it as your server to actually collect credentials from people in different networks, this also makes the use of HTTPS certificates[^4] possible. You can use any site you want; cloned, self-created or ready-to-use templates from the tool.
+You can set the address to the QR code and the harvester page as your local address (e.g. localhost, 192.168.0.0/16).
 
+In a real-world situation, you would set it as your server's globally reachable address instead, which makes use of the HTTPS certificates[^4].
+However, we skip that this time.
+
+You can use any site you want; cloned, self-created or ready-to-use templates from the tool.
 The only requirement is, that it has to have the capability to harvest credentials.
 
-You could for example use the following poster to have a twitter login page for credential harvesting and after entering your credentials it redirects you to the actual address, in this case https://twitter.com/SecurityPelle. This example could be found at a cafe near an office you'd like to collect credentials from or at a lounge of a hotel if you're looking to gather a bunch of random credentials.
+You could for example use the following poster to have a Twitter login page for credential harvesting and after entering your credentials it redirects you to the actual address, in this case https://twitter.com/SecurityPelle. This example could be found at a cafe near an office you'd like to collect credentials from or at a lounge of a hotel if you're looking to gather a bunch of random credentials.
 
 You do not have to publicly host the site, it is enough if you can test it with the computer and phone in the same network.
 
