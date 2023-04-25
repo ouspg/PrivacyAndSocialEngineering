@@ -69,7 +69,7 @@ Task #|Points|Description|
 Phishing as a term is originating from the context of email messages [^12].
 Email technology was new back then, and it enabled efficiently "fish" sensitive information from unsuspicious users.
 
-It was not designed to take spamming into account, and as result, there are many attempted "fixes", such as DMARC, DKIM and SPF since then to reduce spamming.
+It was not designed to take spamming into account, and as result, there are many attempted "fixes", such as spam filters, blacklists, DMARC, DKIM and SPF since then to reduce spamming.
 
 Internet Service Providers (ISPs), cloud providers and VPNs often also block outgoing TCP port `25` these days to prevent email spamming. The port is used to relay messages from server to server. As a result, it is increasingly difficult to send an email directly from your own computer these days.
 
@@ -147,20 +147,20 @@ You can do it with `drill` command, for example `drill -t <domain> TXT`. DMARC r
 
 > viii. If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)
 
-As the last subtask, let's take a look into a totally different email message.
+### Task 1B) Combining knowledge
+
+Let's take a look at a totally different email message.
 
 The message is [Hello.eml](Hello.eml), and is similar to the infamous Nigerian prince scenario.
 
 Run the message with `spamassassin` and check email headers to validate sender authenticity.
 
-> ix. Is the message deliver to spam more likely because of the content than sending entity?
+> i. Will the message be delivered into the spam more likely because of the content rather than sending entity?
 
-> x. Identify at least five different psychological manipulation techniques what have been used in the message. 
-
-
+> ii. Identify at least five different psychological manipulation techniques what have been used in the message. 
 
 
-### Task 1B) Building a credential-stealing site
+### Task 1C) Building a credential-stealing site
 
 Let's stop with the banking email theme, and have fun with Netflix instead.
 
