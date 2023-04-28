@@ -1,6 +1,23 @@
 # **Week 6**
 
-## **Task 1:** Thinking on your feet
+## Grading
+
+You must do tasks **in order**.
+
+You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
+
+Task #|Points|Description|
+-----|:---:|-----------|
+[Task 1](#task-1-) | 1 | 
+[Task 2](#task-2-) | 1 | Thinking on your feet
+[Task 3](#task-3-) | 1 | Prompt engineering
+
+
+##  **Task 1:** Reflecting privacy, OSINT, pretexing and impersonating
+
+During the course, we have handled the 
+
+## **Task 2:** Thinking on your feet
 
 As a social engineer it is useful to quickly take notice of small details and make assumptions based on them.
 
