@@ -136,7 +136,7 @@ These two latter domains are likely registered because of the [typosquatting](ht
 
 How about `s-mobili.fi` and `smobili.fi`?
 
-> iii. Is anyone capable to register free domain names, even similar to known brands? Take a brief look for registration requirements and process for `.fi` domains.
+> iii. Is anyone capable to register free domain names, even similar to known brands? Take a brief look for registration requirements and process for `.fi` domains. Think about new registrations of S-Pankki domains.
 
 > iv. Why it is so important pay attention to exact URLs and **why can we trust** the URLs in the first hand? Only a short explanation about the trust is required.
 
@@ -152,11 +152,15 @@ Check the `.eml` file from the previous section.
 
 > vi. What headers are telling about DMARC, DKIM and SPF checks?
 
-> vii. Now, do you think that these checks will likely lead for previous mail to be deliver into spam rather than content on email server which has only SpamAssassin?
+> vii. Now, do you think that these checks (especially the failure of them) will likely lead for previous mail to be deliver into spam rather than content on email server which has only SpamAssassin?
 
 Take a look for **DNS TXT** records of the `op.fi`, `nordea.fi`, `poppankki.fi`, `saastopankki.fi` and `s-pankki.fi`. 
 
 You can do it with `drill` command, for example `drill -t <domain> TXT`. DMARC record lives in the `_dmarc.*.` subdomain.
+
+> **Note**
+> Also DKIM records live in the other subdomain. Usually, the domain follows the name `<selector>._domainkey.<domain.com>`, as you can see from Cloudflare's documentation.
+Sometimes it is challenging to find this information. At first, you need to identify the mail service provider by looking `MX` records e.g. `drill -t <domain> MX`. Based on the service provider, you can look into their documentation to find how they usually select the selector name. In Outlook, it is often `selector1` or `selector2`. To find DKIM record for `nordea.fi` which uses Outlook, the record is find by using the command `drill -t selector1._domainkey.nordea.fi TXT`.
 
 > viii. If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)
 
