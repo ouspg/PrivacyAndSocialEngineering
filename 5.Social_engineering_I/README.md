@@ -158,8 +158,9 @@ Take a look for **DNS TXT** records of the `op.fi`, `nordea.fi`, `poppankki.fi`,
 
 You can do it with `drill` command, for example `drill -t <domain> TXT`. DMARC record lives in the `_dmarc.*.` subdomain.
 
-Also DKIM records live in the other subdomain. Usually, the domain follows the name `<selector>._domainkey.<domain.com>`, as you can see from Cloudflare's documentation.
-Sometimes it is challenging to find this information. At first, you need to identify the mail service provider by looking `MX` records e.g. `drill -t <domain> MX`. Based on the service provider, you can look into their documentation to find how they usually select the selector name. In Outlook, it is often `selector1` or `selector2`. To find DKIM record for `nordea.fi` which uses Outlook, the record is fond by using the command `drill -t selector1._domainkey.nordea.fi TXT`.
+Also, DKIM records live in the other subdomain. Usually, the domain follows the name `<selector>._domainkey.<domain.com>`, as you can see from Cloudflare's documentation.
+Sometimes it is challenging to find this information. 
+First, you need to identify the mail service provider by looking `MX` records e.g. `drill -t <domain> MX`. Based on the service provider, you can look into their documentation to find out how they usually select the selector name. In Outlook, it is often `selector1` or `selector2`. To find the DKIM record for `nordea.fi` which uses Outlook, the record is found by using the command `drill -t selector1._domainkey.nordea.fi TXT`.
 
 > viii. If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)
 
