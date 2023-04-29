@@ -11,8 +11,8 @@ You are expected to use more time on later tasks to get an equal amount of point
 
 Task #|Points|Description|
 -----|:---:|-----------|
-[Task 1](#task-1-) | 1 | Privacy and Social Engineering
-[Task 2](#task-2-) | 2 | Pretexting, prompt engineering and phishing
+[Task 1](#task-1-privacy-and-social-engineering) | 1 | Privacy and Social Engineering
+[Task 2](#task-2-pretexting-prompt-engineering-and-phishing) | 2 | Pretexting, prompt engineering and phishing
 
 
 ##  **Task 1:** Privacy and Social Engineering
@@ -24,17 +24,17 @@ When performing the social engineering attack, evaluate the importance, effectiv
 You can note and reference psychology and related common human behavior when it is suitable.
 You can use, but not limited to, the following thoughts.
 
-1. The information you have put publicly about yourself. This is not limited to persons; also information about companies or other entities.
+1. The information you have put publicly about yourself can be used for malicious purposes. This is not limited to persons; also information about companies or other entities.
 2. Performing the social engineering attack at the right time based on the known context (known package delivery, security incident, an expected message, something else?).
 3. Performing the social engineering attack on a suitable platform or way based on the known habits of the target (He uses LinkedIn a lot!). 
-4. The looks can deceive - something authentic looking in authentic time (physical or digital).
+4. The looks can deceive - something authentic looking or appealing in authentic time (physical or digital).
 5. The attacker makes himself/herself more likable based on what they know about the target. 
 6. The chance of ignoring the security policies when someone is likable and feels authentic. Consider impersonating with a pretext in the context of these security policies. Do people apply them to everyone equally, knowingly, all the time? (Was that police badge real??)
-7. Impersonating can be even more effective in the digital world when the user does not understand how technology works or what is possible. (Deep fakes, synthetic voice, something else?). There are a lot of videos and speeches available online about the target.
+7. Impersonating can be even more effective in the digital world when the user does not understand how technology works or what is possible. (Deep fakes, synthetic voice, something else?). For example, there are a lot of videos and speeches available online about the target or some useful entity.
 
 > You need to write a short essay, around 500 words. If you want, it can be longer.
 
-## **Task 2:**  Pretexting, phishing and prompt engineering
+## **Task 2:**  Pretexting, prompt engineering and phishing
 
 As the last exercise assignment of the course, you need to try to perform a social engineering attack in the form of a credible phishing message. 
 You also need to evaluate its performance. 
@@ -48,10 +48,10 @@ As a social engineer, it is useful to quickly take notice of small details and m
 Imagine you are strolling through an office space with a bunch of open workstations. You catch a glimpse of two workstations as you walk past them; **Workstation 1** and **Workstation 2**.
 
 Workstation 1:
-![Workstation1](https://user-images.githubusercontent.com/44393530/186127139-94be74cd-75e4-4976-bebf-f5669fa90ae4.jpg)
+![Workstation1](images/Workstation1.jpg)
 
 Workstation 2:
-![Workstation2](https://user-images.githubusercontent.com/44393530/186127266-e9eea022-078a-41dc-b54f-7ef51ac5388d.jpg)
+![Workstation2](images/Workstation2.jpg)
 
 1. What kind of assumptions can you make about the users of these machines?
 2. What is their possible occupation, operating system, personality/habits they have and what programs they use?
@@ -63,7 +63,7 @@ Workstation 2:
 
 Prompt engineering is a relatively new term related to AI and machine learning [^1].
 The main use case is to access the natural language data of Large Language Models  (LLMs) [^2].
-The introduction of the ChatGPT chatbot made it well-known, while it might not be much different than "crafting useful Google searches".
+The introduction of the ChatGPT chatbot made it as well-known term, while it might not be much different than "crafting useful Google searches".
 With specially crafted prompts, you are more likely to harvest useful data from the data model or bypass (with prompt injection) its restrictions.
 While the information is often obtainable in other ways, this can be more productive and effective.
 
@@ -84,30 +84,29 @@ You are allowed to write the message yourself if you don't want to use the servi
 We recommend using the [real ChatGPT](https://chat.openai.com/auth/login) for educational purposes.
 As an alternative and with an older GPT model and without context, you can use [the free relay](https://chatgpt.org/chat).
 
-It is better to use Chrome for this task, as you are required to export discussions in the end.
+It is better to use a Chromium-based browser for this task, as you are required to export discussions in the end, and it has a useful extension.
 
-1. You must give information from the previous task to create the selected pretext with ChatGPT
-2. Create the message with the intended pretext and scenario
-3. You can use English or Finnish. Try to use the specific dialect (e.g. Finnish dialects) or the format in the message (authoritative, friendly, casual?).
-3. Keep in mind that your goal is to obtain sensitive information - you can decide for yourselves what that information is
-4. We recommend that you try to include at least one link
-5. You can slightly modify the message yourself
-6. Once you have finished with the message, scan it with the anti-spam engines below.
-7. If it is flagged as spam, iterate a couple times
-8. Once you have finished, export the discussions with [Chrome extension as text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc), and save
-9. Provide screenshots from the spam results
+1. You must give information from the previous task for ChatGPT to create the selected pretext.
+2. Create the phishing message with the intended scenario with the help of the pretext
+3. You can use English or Finnish. Try to use the specific dialect (e.g. Finnish dialects) or the format in the message (authoritative, friendly, casual, other?). Try to briefly verify whether the dialect looks somewhat correct.
+3. Keep in mind that your goal is to obtain sensitive information - you can decide for yourselves what that information is 
+4. We recommend that it is something more than just to get someone to reply to the message. Maybe open a link, open an attached file, or a bit longer another process.
+5. You can slightly modify the message yourself.
+6. Once you have finished with the message, scan it with the anti-spam tests below.
+7. If it is flagged as spam, iterate a couple of times, but no need to do it endlessly.
+8. Once you have finished, export the ChatGPT discussions with [Chrome extension as copied text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc) and return it. Return the final crafted message.
+9. Provide screenshots of the spam score results
 
-Scan the email with SpamAssassin. Look for the details of the previous week to know how to.
+### Anti-spam engines
 
+Scan the email with SpamAssassin. Look for the details of the previous week to know how to do it. 
+To get a realistic score, you need to send it for yourself before you can download it in `.eml` format.
 
-Example tools (you are free to use others as you please): 
+Outlook and Gmail are two notorious email providers, which could be also tested.
+They have their own additional close-source spam filters.
+You can try one [inbox email tester](https://glockapps.com/inbox-email-tester/) to see if your emails land for these service providers. 
 
-[MailGenius](https://www.mailgenius.com/) 
-
-[Spamscanner](https://github.com/spamscanner/spamscanner) 
-
-[Rspamd](https://rspamd.com/) 
-
+For sending the test emails, it is recommended to not use your main email account, just in case. 
 
 [^1]: [Prompt Engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
 [^2]: [Large Language Model](https://en.wikipedia.org/wiki/Large_language_model)
