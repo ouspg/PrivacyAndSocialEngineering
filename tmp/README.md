@@ -14,62 +14,6 @@ Make a detailed summary of your research, including actions taken to harden the 
 
 ---
 
-## **Task 2:** Hardcoded Passwords
-
-There have been a few cases of compromised systems due to hardcoded passwords and API keys accidentally ending up in production code. [Google offers some advice how to handle such information more securely](https://cloud.google.com/docs/authentication/api-keys)
-
-Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a **plaintext hardcoded password** from the provided compiled C code file called **secretKey**. 
-
-As a second task there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with the some closer inspection of the decompiler.
-
-As a third and last task there is a **Super secret password** that is hardcoded, but has been encrypted with a mystery hash.
-
-In case if the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process. Use an editor that can understands C++ to inspect the file with proper highlighting.
-
-You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey**
-
-After completing the task, you have five items to return. Return a valid **password** and **one valid activation key** along with the **instructions** on how to create rest of the activation keys, since there are multiple valid ones. Also return the **plaintext version of the super secret password** and **the name of the hash function** it was encrypted with.
-
----
-
-## **Task 3:** Blockchain
-
-We will take a brief look at online tools available for inspecting the bitcoin blockchain
-
-Just as a quick recap: **Blockchain** is a ledger containing information of all transactions made with the cryptocurrency. Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block. These hashes are brute forces aka **mined** mainly using the prosessing power of Graphics Processing Units (GPU).
-
-Early Bitcoin developer Laszlo Hanyecz was alledgedly one of the first to invent GPU mining. However, what he is remembered for is the first documented purchase of goods using bitcoin, where he traded **10,000** bitcoin for **2 Pizzas**.
-
-You can find conflicting information from the internet about the pizza parlor where the pizzas were bought from. Aside from that, by inspecting the blockchain we can find exact information about the transaction.
-
-Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect the block **57043** and provide the following information.
-
-Transaction
-- Date and Time of the transaction
-- Hash of the transaction
-- Address of sender
-- Address of receiver
-- Transaction fee amount in bitcoin
-
-Receiver Address
-- Who was the owner of this address? Use [OXT.me](https://oxt.me/) and Google to figure out the real name of the user
-- The owner instantly divided and forwarded the 10,000 to **how many** other addresses
-- Addresses that received the 10,000 bitcoin and the corresponding sums to each address
-
-Block
-- Hash of the block 57043
-- Amount of transactions in the block
-- Block reward amount
-
-Miner
-- Address of the miner for block 57043
-- Has this address spent the block reward they received?
-
-
-**FYI**: **Maltego** is a great tool for blockchain tracing. It let's you to create a tree like structure out of inbound and outbound transactions from different addresses. It also requires registration.
-
----
-
 ## **Task 2:** OSINT pair work
 
 try to find information about your pair online both manually and using OSINT tool framework (SpiderFoot), report information you find and analyze it (do you believe information is about the correct person or someone else with the same name/ uses the same nickname online etc.)
@@ -77,3 +21,60 @@ things to look for: possible usernames, social media accounts, interests(account
 
 spiderfoot open source edition can be installed from github: https://github.com/smicallef/spiderfoot?ref=d
 and is also pre installed in kali linux
+
+
+## **Task 3:** Social Engineering on the Phone
+
+Phones have been steadily topping the scam lists in English-speaking countries for some time now. More often than not, the phone scams are social engineering, with the bad actors posing as another person or a corporate entity. 
+
+In the security side of things, social engineering on the phone more often is Vishing; Voice Phishing. The bad actors are using social engineering to make their targets **want** to do, whatever the bad actors want. The goal of Vishing is to gain access to valuable and/or protected information, helping them compromise the target.
+
+Examine following Vishing transcripts targeted at both companies and individuals.
+
+**Money Laundering** 
+
+Call to the founder(Matti Meikäläinen) of a Finnish company carrying out accounting tasks on behalf of external contractors.
+
+> *Founder (F)* : Founder speaking
+
+> *Caller (C)* : Hello this is Meikälainen Maija from the Finnish Regional State Administrative Agency, you might know us as AVI or as Aluehallintovirasto. 
+> I was trying to reach Meikäläinen Matti. Did we have the right number on register?
+
+> *(F)* : Yes, Hello Maija, this is Matti.
+
+> *(C)* : Wonderful.. I am calling you for the Anti-money laundering registration. As you might know, registration for anti-money laundering became obligatory in 2019. 
+> Due to Covid restraints, we've had some difficulties handling the applications. Do you remember filling the registration form?
+
+> *(F)* : Uhh.. I think so, is there something wrong with my form?
+
+> *(C)* : Oh goodness, no! Our IT-system requires us to call and confirm the identities for each company. This is done to have a record of the people possibly coming in contact with laundered money. Unfortunately there is quite the amount of small businesses used to circulate laundered money. 
+> Is there any other personnel handling transactions within your company?
+
+> *(F)* : Alright, that is important I guess. We have only one other person who handles payments; our own accounting manager Miina Meikäläinen.
+
+> *(C)* : Fantastic, nice to see businesses have only one accounting manager. I will be contacting her as well, could you provide me with her contact information? 
+
+> *(F)* : Ah yes. You can contact her at *email@companyemail.com* and her phone number is **********.
+
+> *(C)* : Right that was *email@companyemail.com* and *********'? 
+
+> *(F)* : Correct.
+
+> *(C)* : And would you like us to send the confirmation email to your personal or company email?
+
+> *(F)* : Company email please. *founder@companyemail.com*. Thank you very much.
+
+> *(C)* : Great, thank you for being so helpful. The email has the confirmation link, just follow that to confirm we contacted you and that's it!
+
+> *(F)* : Thank you, that seems simple enough! Will I be hearing from you after contacting Miina?
+
+> *(C)* : Hopefully not, if everything goes smoothly your registration is complete after her information is on the record.
+
+> *(F)* : Ah right. Well thank you for contacting me so swiftly, and have a nice day.
+
+> *(C)* : You too sir, have a nice day.
+
+**Fraudulent transaction**
+
+
+**_All transcripts are purely fictional and any similarities to actual events are coincidental_**
