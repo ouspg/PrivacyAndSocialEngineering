@@ -1,5 +1,8 @@
 # **Week 6**
 
+The final exercises will focus on reflecting on the relationship between privacy and social engineering. 
+We also try to craft a spear-phishing message and evaluate it.
+
 ## Grading
 
 You must do tasks **in order**.
@@ -8,36 +11,94 @@ You are expected to use more time on later tasks to get an equal amount of point
 
 Task #|Points|Description|
 -----|:---:|-----------|
-[Task 1](#task-1-) | 1 | 
-[Task 2](#task-2-) | 1 | Thinking on your feet
-[Task 3](#task-3-) | 1 | Prompt engineering
+[Task 1](#task-1-) | 1 | Privacy and Social Engineering
+[Task 2](#task-2-) | 2 | Pretexting, prompt engineering and phishing
 
 
-##  **Task 1:** Reflecting privacy, OSINT, pretexing and impersonating
+##  **Task 1:** Privacy and Social Engineering
 
-During the course, we have handled the 
+During the course, we have handled different privacy concerns in different scenarios and areas.
+Sometimes, the leaked information can lead to unexpected consequences and can be also used as a part of social engineering attack. 
 
-## **Task 2:** Thinking on your feet
+When performing the social engineering attack, evaluate the importance, effectiveness and some possible use cases of this information (known intelligence). 
+You can note and reference psychology and related common human behavior when it is suitable.
+You can use, but not limited to, the following thoughts.
 
-As a social engineer it is useful to quickly take notice of small details and make assumptions based on them.
+1. The information you have put publicly about yourself. This is not limited to persons; also information about companies or other entities.
+2. Performing the social engineering attack at the right time based on the known context (known package delivery, security incident, an expected message, something else?).
+3. Performing the social engineering attack on a suitable platform or way based on the known habits of the target (He uses LinkedIn a lot!). 
+4. The looks can deceive - something authentic looking in authentic time (physical or digital).
+5. The attacker makes himself/herself more likable based on what they know about the target. 
+6. The chance of ignoring the security policies when someone is likable and feels authentic. Consider impersonating with a pretext in the context of these security policies. Do people apply them to everyone equally, knowingly, all the time? (Was that police badge real??)
+7. Impersonating can be even more effective in the digital world when the user does not understand how technology works or what is possible. (Deep fakes, synthetic voice, something else?). There are a lot of videos and speeches available online about the target.
+
+> You need to write a short essay, around 500 words. If you want, it can be longer.
+
+## **Task 2:**  Pretexting, phishing and prompt engineering
+
+As the last exercise assignment of the course, you need to try to perform a social engineering attack in the form of a credible phishing message. 
+You also need to evaluate its performance. 
+
+We have provided some information for the pretext.
+
+### **Task 2A)** Thinking on your feet
+
+As a social engineer, it is useful to quickly take notice of small details and make assumptions based on them.
 
 Imagine you are strolling through an office space with a bunch of open workstations. You catch a glimpse of two workstations as you walk past them; **Workstation 1** and **Workstation 2**.
 
-What kind of assumptions can you make about the users of these machines? what is their possible occupation, operating system, personality/habits they have and what programs they use? What kind of attack vectors can you identify and what other observations can you make from these snapshots?
-
-Workstation 1
+Workstation 1:
 ![Workstation1](https://user-images.githubusercontent.com/44393530/186127139-94be74cd-75e4-4976-bebf-f5669fa90ae4.jpg)
 
-Workstation 2
+Workstation 2:
 ![Workstation2](https://user-images.githubusercontent.com/44393530/186127266-e9eea022-078a-41dc-b54f-7ef51ac5388d.jpg)
 
-## **Task 2:** Social Engineering via Email
+1. What kind of assumptions can you make about the users of these machines?
+2. What is their possible occupation, operating system, personality/habits they have and what programs they use?
+3. What kind of attack vectors can you identify and what other observations can you make from these snapshots?
 
-The most common attack vectors include Social Engineering via e-mail, this includes most types of phishing and more general identity faking. Since e-mail is such a popular attack vector, most email providers use spam filtering and detection systems to catch these e-mails and keep your inbox clean, while making it harder for you to click on fraudulent emails.
+> Pay attention to all the details. Everything can matter. You also need them in the following task!
 
-Your task is to write a credible and believable spear phishing e-mail to your pair that can pass through these detections. Be creative with your your email, but try to include atleast one link that the target can click on.
+### **Task 2B)** Pretexting, prompt engineering and phishing
 
-Before sending the email, test the email with at least one detection tool of your choice. 
+Prompt engineering is a relatively new term related to AI and machine learning [^1].
+The main use case is to access the natural language data of Large Language Models  (LLMs) [^2].
+The introduction of the ChatGPT chatbot made it well-known, while it might not be much different than "crafting useful Google searches".
+With specially crafted prompts, you are more likely to harvest useful data from the data model or bypass (with prompt injection) its restrictions.
+While the information is often obtainable in other ways, this can be more productive and effective.
+
+You can see these resources [^3][^4] if you are more interested in prompt engineering.
+It is increasingly important to understand the capabilities of these language models and what to expect.
+See [Europol's statement](https://www.europol.europa.eu/publications-events/publications/chatgpt-impact-of-large-language-models-law-enforcement) about the impact of these models in criminal space.
+
+
+> On this task, you need to create a spear-phishing scenario based on the information provided in the previous task.
+There are multiple cases available.
+As a special quirk, the message is recommended to be generated with ChatGPT.
+Finally you need to test it against anti-spam engines.
+
+Part of the assignment is to bypass some "protections" of ChatGPT to generate spear-phishing messages. 
+At the moment of writing, they are straightforward to bypass.
+You are allowed to write the message yourself if you don't want to use the service. 
+
+We recommend using the [real ChatGPT](https://chat.openai.com/auth/login) for educational purposes.
+As an alternative and with an older GPT model and without context, you can use [the free relay](https://chatgpt.org/chat).
+
+It is better to use Chrome for this task, as you are required to export discussions in the end.
+
+1. You must give information from the previous task to create the selected pretext with ChatGPT
+2. Create the message with the intended pretext and scenario
+3. You can use English or Finnish. Try to use the specific dialect (e.g. Finnish dialects) or the format in the message (authoritative, friendly, casual?).
+3. Keep in mind that your goal is to obtain sensitive information - you can decide for yourselves what that information is
+4. We recommend that you try to include at least one link
+5. You can slightly modify the message yourself
+6. Once you have finished with the message, scan it with the anti-spam engines below.
+7. If it is flagged as spam, iterate a couple times
+8. Once you have finished, export the discussions with [Chrome extension as text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc), and save
+9. Provide screenshots from the spam results
+
+Scan the email with SpamAssassin. Look for the details of the previous week to know how to.
+
 
 Example tools (you are free to use others as you please): 
 
@@ -47,62 +108,8 @@ Example tools (you are free to use others as you please):
 
 [Rspamd](https://rspamd.com/) 
 
-You are to review the email sent to you and grade it on a scale of 0-5. Write your name at the end of the review and send it as a response to the original email.
 
-For grading return the email you sent, tester used with any possible output as well as your peer's review.
-
-## **Task 3:** Social Engineering on the Phone
-
-Phones have been steadily topping the scam lists in English-speaking countries for some time now. More often than not, the phone scams are social engineering, with the bad actors posing as another person or a corporate entity. 
-
-In the security side of things, social engineering on the phone more often is Vishing; Voice Phishing. The bad actors are using social engineering to make their targets **want** to do, whatever the bad actors want. The goal of Vishing is to gain access to valuable and/or protected information, helping them compromise the target.
-
-Examine following Vishing transcripts targeted at both companies and individuals.
-
-**Money Laundering** 
-
-Call to the founder(Matti Meikäläinen) of a Finnish company carrying out accounting tasks on behalf of external contractors.
-
-> *Founder (F)* : Founder speaking
-
-> *Caller (C)* : Hello this is Meikälainen Maija from the Finnish Regional State Administrative Agency, you might know us as AVI or as Aluehallintovirasto. 
-> I was trying to reach Meikäläinen Matti. Did we have the right number on register?
-
-> *(F)* : Yes, Hello Maija, this is Matti.
-
-> *(C)* : Wonderful.. I am calling you for the Anti-money laundering registration. As you might know, registration for anti-money laundering became obligatory in 2019. 
-> Due to Covid restraints, we've had some difficulties handling the applications. Do you remember filling the registration form?
-
-> *(F)* : Uhh.. I think so, is there something wrong with my form?
-
-> *(C)* : Oh goodness, no! Our IT-system requires us to call and confirm the identities for each company. This is done to have a record of the people possibly coming in contact with laundered money. Unfortunately there is quite the amount of small businesses used to circulate laundered money. 
-> Is there any other personnel handling transactions within your company?
-
-> *(F)* : Alright, that is important I guess. We have only one other person who handles payments; our own accounting manager Miina Meikäläinen.
-
-> *(C)* : Fantastic, nice to see businesses have only one accounting manager. I will be contacting her as well, could you provide me with her contact information? 
-
-> *(F)* : Ah yes. You can contact her at *email@companyemail.com* and her phone number is **********.
-
-> *(C)* : Right that was *email@companyemail.com* and *********'? 
-
-> *(F)* : Correct.
-
-> *(C)* : And would you like us to send the confirmation email to your personal or company email?
-
-> *(F)* : Company email please. *founder@companyemail.com*. Thank you very much.
-
-> *(C)* : Great, thank you for being so helpful. The email has the confirmation link, just follow that to confirm we contacted you and that's it!
-
-> *(F)* : Thank you, that seems simple enough! Will I be hearing from you after contacting Miina?
-
-> *(C)* : Hopefully not, if everything goes smoothly your registration is complete after her information is on the record.
-
-> *(F)* : Ah right. Well thank you for contacting me so swiftly, and have a nice day.
-
-> *(C)* : You too sir, have a nice day.
-
-**Fraudulent transaction**
-
-
-**_All transcripts are purely fictional and any similarities to actual events are coincidental_**
+[^1]: [Prompt Engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
+[^2]: [Large Language Model](https://en.wikipedia.org/wiki/Large_language_model)
+[^3]: [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+[^4]: [Brex's Prompt Engineering Crash Course](https://github.com/brexhq/prompt-engineering)
