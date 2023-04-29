@@ -94,8 +94,6 @@ It is better to use a Chromium-based browser for this task, as you are required 
 5. You can slightly modify the message yourself.
 6. Once you have finished with the message, scan it with the anti-spam tests below.
 7. If it is flagged as spam, iterate a couple of times, but no need to do it endlessly.
-8. Once you have finished, export the ChatGPT discussions with [Chrome extension as copied text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc) and return it. Return the final crafted message.
-9. Provide screenshots of the spam score results
 
 ### Anti-spam engines
 
@@ -107,6 +105,10 @@ They have their own additional close-source spam filters.
 You can try one [inbox email tester](https://glockapps.com/inbox-email-tester/) to see if your emails land for these service providers. 
 
 For sending the test emails, it is recommended to not use your main email account, just in case. 
+
+> Once you have finished, export the ChatGPT discussions with [Chrome extension as copied text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc) and return it. 
+> Return the final crafted message.
+> Provide screenshots of the spam score results.
 
 [^1]: [Prompt Engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
 [^2]: [Large Language Model](https://en.wikipedia.org/wiki/Large_language_model)
