@@ -12,7 +12,7 @@ You are expected to use more time on later tasks to get an equal amount of point
 Task #|Points|Description|
 -----|:---:|-----------|
 [Task 1](#task-1-privacy-and-social-engineering) | 1 | Privacy and Social Engineering
-[Task 2](#task-2-pretexting-prompt-engineering-and-phishing) | 2 | Pretexting, prompt engineering and phishing
+[Task 2](#task-2b-pretexting-prompt-engineering-and-phishing) | 2 | Pretexting, prompt engineering and phishing
 
 
 ##  **Task 1:** Privacy and Social Engineering
@@ -87,9 +87,9 @@ As an alternative and with an older GPT model and without context, you can use [
 It is better to use a Chromium-based browser for this task, as you are required to export discussions in the end, and it has a useful extension.
 
 1. You must give information from the previous task for ChatGPT to create the selected pretext.
-2. Create the phishing message with the intended scenario with the help of the pretext
-3. You can use English or Finnish. Try to use the specific dialect (e.g. Finnish dialects) or the format in the message (authoritative, friendly, casual, other?). Try to briefly verify whether the dialect looks somewhat correct.
-3. Keep in mind that your goal is to obtain sensitive information - you can decide for yourselves what that information is 
+2. Create the phishing message with the intended scenario with the help of the pretext.
+3. You can use English or Finnish. Try to use the specific dialect (e.g. Finnish dialects) or the format in the message.(authoritative, friendly, casual, other?). Try to briefly verify whether the dialect looks somewhat correct.
+3. Keep in mind that your goal is to obtain sensitive information - you can decide for yourselves what that information is.
 4. We recommend that it is something more than just to get someone to reply to the message. Maybe open a link, open an attached file, or a bit longer another process.
 5. You can slightly modify the message yourself.
 6. Once you have finished with the message, scan it with the anti-spam tests below.
