@@ -82,7 +82,7 @@ At the moment of writing, they are straightforward to bypass.
 You are allowed to write the message yourself if you don't want to use the service. 
 
 We recommend using the [real ChatGPT](https://chat.openai.com/auth/login) for educational purposes.
-As an alternative and with an older GPT model and without context, you can use [the free relay](https://chatgpt.org/chat).
+As an alternative and with an older GPT model and without context, you can use [the registration-free relay](https://chatgpt.org/chat).
 
 It is better to use a Chromium-based browser for this task, as you are required to export discussions in the end, and it has a useful extension.
 
@@ -109,6 +109,7 @@ For sending the test emails, it is recommended to not use your main email accoun
 > Once you have finished, export the ChatGPT discussions with [Chrome extension as copied text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc) and return it. 
 > Return the final crafted message.
 > Provide screenshots of the spam score results.
+> Was the process effective? Do you think someone could fall for your message. 
 
 [^1]: [Prompt Engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
 [^2]: [Large Language Model](https://en.wikipedia.org/wiki/Large_language_model)
