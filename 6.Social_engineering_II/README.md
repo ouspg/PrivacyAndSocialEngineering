@@ -12,7 +12,7 @@ You are expected to use more time on later tasks to get an equal amount of point
 Task #|Points|Description|
 -----|:---:|-----------|
 [Task 1](#task-1-privacy-and-social-engineering) | 1 | Privacy and Social Engineering
-[Task 2](#task-2b-pretexting-prompt-engineering-and-phishing) | 2 | Pretexting, prompt engineering and phishing
+[Task 2](#task-2-pretexting-prompt-engineering-and-phishing) | 2 | Pretexting, prompt engineering and phishing
 
 
 ##  **Task 1:** Privacy and Social Engineering
@@ -59,7 +59,7 @@ Workstation 2:
 
 > Pay attention to all the details. Everything can matter. You also need them in the following task!
 
-### **Task 2B)** Pretexting, prompt engineering and phishing
+### **Task 2B)** Prompt engineering
 
 Prompt engineering is a relatively new term related to AI and machine learning [^1].
 The main use case is to access the natural language data of Large Language Models  (LLMs) [^2].
