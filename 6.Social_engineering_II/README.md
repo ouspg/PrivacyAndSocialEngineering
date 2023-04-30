@@ -12,7 +12,7 @@ You are expected to use more time on later tasks to get an equal amount of point
 Task #|Points|Description|
 -----|:---:|-----------|
 [Task 1](#task-1-privacy-and-social-engineering) | 1 | Privacy and Social Engineering
-[Task 2](#task-2-pretexting-prompt-engineering-and-phishing) | 2 | Pretexting, prompt engineering and phishing
+[Task 2](#task-2--pretexting-prompt-engineering-and-phishing) | 2 | Pretexting, prompt engineering and phishing
 
 
 ##  **Task 1:** Privacy and Social Engineering
