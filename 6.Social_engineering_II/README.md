@@ -90,7 +90,7 @@ It is better to use a Chromium-based browser for this task, as you are required 
 2. Create the phishing message with the intended scenario with the help of the pretext.
 3. You can use English or Finnish. Try to use the specific dialect (e.g. Finnish dialects) or the format in the message.(authoritative, friendly, casual, other?). Try to briefly verify whether the dialect looks somewhat correct.
 3. Keep in mind that your goal is to obtain sensitive information - you can decide for yourselves what that information is.
-4. We recommend that it is something more than just to get someone to reply to the message. Maybe open a link, open an attached file, or a bit longer another process.
+4. We recommend that it is something more than just to get someone to reply to the message. Maybe open a link, open an attached file, or a bit longer different process.
 5. You can slightly modify the message yourself.
 6. Once you have finished with the message, scan it with the anti-spam tests below.
 7. If it is flagged as spam, iterate a couple of times, but no need to do it endlessly.
@@ -109,7 +109,7 @@ For sending the test emails, it is recommended to not use your main email accoun
 > Once you have finished, export the ChatGPT discussions with [Chrome extension as copied text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc) and return it. 
 > Return the final crafted message.
 > Provide screenshots of the spam score results.
-> Was the process effective? Do you think someone could fall for your message. 
+> Was the process effective? Do you think someone could fall for your message? 
 
 [^1]: [Prompt Engineering](https://en.wikipedia.org/wiki/Prompt_engineering)
 [^2]: [Large Language Model](https://en.wikipedia.org/wiki/Large_language_model)
