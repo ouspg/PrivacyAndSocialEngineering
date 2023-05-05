@@ -99,7 +99,9 @@ Provide short answers to what **the following listings mean**, keeping VPNs' pri
 
 In addition to explaining the listings, find out why Wireguard protocol is often considered "superior" to OpenVPN from a performance and security point of view, but this might not be the case with privacy.
 
-> Explain the listings.
+### What to return
+
+> Explain the listings and compare three VPNs.
 
 > Reason on a technical level, why privacy might, or might not be an issue, with Wireguard. 
 
