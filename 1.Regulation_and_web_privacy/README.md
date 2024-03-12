@@ -44,6 +44,10 @@ You may use prewritten templates, however, you should make sure the template use
 
 You can return to this assignment once you have received your information, but you should make the request as soon as possible.
 
+<details>
+<summary><strong>Answer the following</strong></summary>
+<br>
+
 After receiving the answer to your data request answer the following questions. Keep your answers concise, focused and **at most** 200 words.
 
 1. Which company did you choose to request your data from and how long did it take to submit that information?
@@ -53,7 +57,9 @@ After receiving the answer to your data request answer the following questions. 
 5. Do you think that the company collected the least amount of data required to provide the service you needed? 
 6. Were you surprised about something, what? 
 
-> Please, aswer to these questions to complete this assigment.
+</details>
+
+> Please, update your aswer to these questions by [date TBA] to complete this assigment.
 
 ---
 
@@ -85,7 +91,11 @@ To read more about security-related properties of cookies, see the book Computer
 
 ### Looking at the [Old School Runescape Landing Page](https://oldschool.runescape.com/)
 
-Let's look at the information about cookies on the Old School Runescape landing page. When you enter the page, you should be prompted to give your consent to the use of cookies. If this is not the case, you may have visited the site before or you may have already given your consent to bulk cookie tracking on another site that uses Cookiebot as its cookie manager. You can see the prompt again if you open the page in a new safe search page, such as Incognito in Chrome or Private Search in Safari and Firefox. Use the *Details* tab **to answer the following questions**:
+Let's look at the information about cookies on the Old School Runescape landing page. When you enter the page, you should be prompted to give your consent to the use of cookies. If this is not the case, you may have visited the site before or you may have already given your consent to bulk cookie tracking on another site that uses Cookiebot as its cookie manager. You can see the prompt again if you open the page in a new safe search page, such as Incognito in Chrome or Private Search in Safari and Firefox. 
+
+<details>
+<summary><strong>Use the Details tab to answer the following</strong></summary>
+<br>
 
 * How many necessary cookies are there? 
 * What happens if you try to disable necessary cookies? 
@@ -94,7 +104,9 @@ Let's look at the information about cookies on the Old School Runescape landing 
 * In Statistics, what are the expiry time and cookie type of **JXWEBUID** 
 * In Statistics and Marketing, what other Apps or Companies are listed, other than Jagex 
 
-You can inspect cookies in depth by using the browser's developer tools.
+</details>
+
+> You can inspect cookies in depth by using the browser's developer tools.
 For example, with Firefox, you can open `Web Developer Tools` panel, and from there the storage tab.
 Cookies are presented as key-value pairs.
 
@@ -115,13 +127,21 @@ In this assignment, you can test your browsers and the traces they leave.
 
 ### Task 3 A) [EFF Cover Your Tracks](https://coveryourtracks.eff.org/)
 
-Run the test made by EFF. After running the test you will see a score for ‘Bits of identifying information’. Below each score, you will see how many users on X amount of devices are running the same setup. The rarer your setup is the more uniquely identifiable you are. Return two categories and results where you had the highest and lowest amount of identifying bits of information.
+Run the test made by EFF. After running the test you will see a score for ‘Bits of identifying information’. Below each score, you will see how many users on X amount of devices are running the same setup. The rarer your setup is the more uniquely identifiable you are. 
 
-**(Ignore the AD BLOCKER USED section, as it appears to not work correctly, giving a -0.0 score)**
+> (Ignore the AD BLOCKER USED section, as it appears to not work correctly, giving a -0.0 score)
 
-Why does identifiability matter? 
+<details>
+<summary><strong>Answer the following</strong></summary>
+<br>
 
-What pros and cons can you think of to being unique vs common?
+* Return two categories and results where you had the *highest* and *lowest* amount of identifying bits of information.
+
+* Why does identifiability matter? 
+
+* What pros and cons can you think of to being unique vs common?
+
+</details>
 
 ---
 
@@ -132,11 +152,15 @@ The information that WebGL can provide about your machine, is yet another effici
 
 What are your Screen width and Screen height similarity percentage? You may or may not have a common screen resolution in use. However, people use User Interfaces and Taskbars of different sizes. Now check out the similarity percentage for Screen available width and Screen available height. Can you explain your result?
 
-Return similarity percentage and explanations of results for:
-- Canvas + WebGL Data
-- Screen width, Screen height
-- Screen available width, Screen available height
+<details>
+<summary><strong>Return similarity percentage and explanations of your results for:</strong></summary>
+<br>
 
+* Canvas + WebGL Data
+* Screen width, Screen height
+* Screen available width, Screen available height, Can you explain your result?
+
+</details>
 
 ## Task 4: TikTok Challenge (bonus)
 
