@@ -99,7 +99,7 @@ Let's look at the information about cookies on the Old School Runescape landing 
 
 * How many necessary cookies are there? 
 * What happens if you try to disable necessary cookies? 
-* List at least 7 different expiry times from the necessary cookies 
+* List at least 6 different expiry times from the necessary cookies 
 * List 3 different cookie types from necessary cookies 
 * In Statistics, what are the expiry time and cookie type of **JXWEBUID** 
 * In Statistics and Marketing, what other Apps or Companies are listed, other than Jagex 
