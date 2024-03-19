@@ -1,6 +1,6 @@
 # **In Class Extras**
 
-Tasks in this directory are designed to be completed during in person exercise sessions. All points awarded for these tasks are counted as extra points, and therefore the max grade for the course can be achieved without completing these.
+Tasks in this directory are designed to be completed during the in person exercise sessions. All points awarded for these tasks are counted as bonus points, and therefore the max grade for the course can be achieved without completing these.
 
 Tasks require equipment, security mechanisms and/or confirmations only provided during the exercise session.
 
@@ -8,7 +8,7 @@ You can complete these in any order you want.
 
 Task #|Points|Description|
 -----|:---:|-----------|
-[Task 1](lockpicking-1p) | 1 | Lockpicking
+[Task 1](#lockpicking-1p) | 1 | Lockpicking
 [Task 2](#wi-fi-deauthentication-password-attack-1p) | 1 | Wi-Fi Deauthentication password attack
 
 ## Lockpicking 1p.
