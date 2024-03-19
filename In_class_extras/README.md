@@ -35,6 +35,7 @@ You are able to pick all of the locks using the regular one pin at a time tactic
 
 * Linux on HW or on a VM (preferably course VM)
 * Provided monitor mode capable Wi-Fi adapter
+    * Receive this after answering to a couple of easy questions about the aircrack-ng suite
 
 Wi-Fi deauthentication attack is a sort of DoS (denial-of-service) attack, where the attacker sends out deauthentication frames to devices connected to a certain AP (access point). When a device receives a deauthentication frame it will first be disconnected from the AP and then attempt to reconnect.
 
