@@ -1,23 +1,28 @@
 # **In Class Extras**
 
-Tasks in this directory are designed to be completed during in person exercise sessions. All points awarded for these tasks are counted as extra points, and therefore are not counted in the presented maximum points for this course. 
+Tasks in this directory are designed to be completed during in person exercise sessions. All points awarded for these tasks are counted as extra points, and therefore the max grade for the course can be achieved without completing these.
 
-Tasks require equipment and/or security mechanisms only provided during the exercise session.
+Tasks require equipment, security mechanisms and/or confirmations only provided during the exercise session.
 
-## Lockpicking
+## Lockpicking 1p.
 
 The provided lockpicking set includes:
+
 * Transparent practice locks with increasing difficulty:
-    1. Padlock
-    2. Double-sided lock, one side is more difficult.
-    3. Small lock
-    4. A 4 way lock
+    - A Padlock, the easiest lock of the set.
+    - A Double-sided lock, one side slightly more difficult.
+    - A Small cylindrical lock, tougher with a slightly obstructed view.
+    - A Cruciform/Zeiss lock, toughest of the bunch. Picking this lock one pin at a time, the standard way will be time consuming.
 * Lockpicks
 * Turning tools
 * Instruction booklet
+* Keys (These will be removed before hand)
 
+You are able to pick all of the locks using the regular one pin at a time tactic, for the cruciform this may take a very long time. We encourage you to test different picking styles and picks. Please ask for help if you get stuck.
 
+**To complete** this task you are required to pick open 2 locks of your choice. You may pick the others as well, but 2 are required for a point.
 
-## Wi-Fi deauthentication password attack
+## Wi-Fi deauthentication password attack 1p.
 
-Wi-Fi deauthentication is a sort of DoS (denial-of-service) attack, where the attacker sends out deauthentication frames to devices connected to a certain AP (access point). When a device receives a deauthentication frame it will first be disconnected from the AP and then attempt to reconnect.
+Wi-Fi deauthentication attack is a sort of DoS (denial-of-service) attack, where the attacker sends out deauthentication frames to devices connected to a certain AP (access point). When a device receives a deauthentication frame it will first be disconnected from the AP and then attempt to reconnect.
+
