@@ -4,6 +4,13 @@ Tasks in this directory are designed to be completed during in person exercise s
 
 Tasks require equipment, security mechanisms and/or confirmations only provided during the exercise session.
 
+You can complete these in any order you want.
+
+Task #|Points|Description|
+-----|:---:|-----------|
+[Task 1](lockpicking-1p) | 1 | Lockpicking
+[Task 2](#wi-fi-deauthentication-password-attack-1p) | 1 | Wi-Fi Deauthentication password attack
+
 ## Lockpicking 1p.
 
 The provided lockpicking set includes:
@@ -24,5 +31,14 @@ You are able to pick all of the locks using the regular one pin at a time tactic
 
 ## Wi-Fi deauthentication password attack 1p.
 
+#### Requirements:
+
+* Linux on HW or on a VM (preferably course VM)
+* Provided monitor mode capable Wi-Fi adapter
+
 Wi-Fi deauthentication attack is a sort of DoS (denial-of-service) attack, where the attacker sends out deauthentication frames to devices connected to a certain AP (access point). When a device receives a deauthentication frame it will first be disconnected from the AP and then attempt to reconnect.
+
+In this task you will perform a Wi-Fi deauthentication attack and carry out a dictionary attack on the recorded wireless traffic of the WLAN SSID "OUSPGTestNetwork". 
+
+You will get to know the basics of [aircrack-ng suite](https://www.aircrack-ng.org/documentation.html) and [wireshark]() in the context of wireless monitoring.
 
