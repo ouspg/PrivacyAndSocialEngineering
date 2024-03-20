@@ -46,10 +46,11 @@ Wi-Fi deauthentication attack is a sort of DoS (denial-of-service) attack, where
 This disconnection - reconnection traffic can be captured, and in our case, we will try to gain the password for the AP via a dictionary attack on the traffic. 
 
 To receive the monitor mode capable adapter, you need to answer a couple of easy questions about the following:
-* aircrack-ng
-* aireplay-ng
-* airmon-ng
-* airodump-ng
+* aircrack-ng, How to use a wordlist to perform the attack?
+* aireplay-ng, How to use the deauthentication attack with aireplay-ng?
+* airmon-ng, How to set an adapter to monitor mode?
+* airodump-ng, How to specify a range of channels to monitor?
+* wireshark, How to save a .pcap file?
 
 You will get to know the basics of [aircrack-ng suite](https://www.aircrack-ng.org/documentation.html) and [wireshark](https://www.wireshark.org/docs/wsug_html_chunked/) in the context of wireless monitoring.
 
@@ -66,19 +67,19 @@ For the adapter to work remember to enable USB3 support on virtualbox and you ne
 <summary><strong>Help</strong></summary>
 <br>
 
-> Set the adapter to monitor mode, this requires killing interefering processes.
+> Set the adapter to monitor mode, this requires killing interfering processes.  
 
 > Start capturing 802.11 frames on the monitoring adapter, include atleast channels 1-170  
 
 > Start capturing traffic with Wireshark,you can also see what's happening  
 
-> Switch to capturing frames from the target BSSID on the targets channel  
+> Switch to capturing frames from the target BSSID on the targets channel with airodump-ng  
 
-> Start sending deauths to the target BSSID  
+> Start sending deauths to the target BSSID   
 
-> Wait, you should see a note marked for your target on airodump, after this you may stop deauthenticating and airodump  
+> Wait. You should see a note 'EAPOL' marked for your target on airodump, after this you may stop deauthenticating and airodump  
 
-> Save Wireshark capture to a pcap file  
+> Stop and save Wireshark capture to a pcap file  
 
 > Crack this file with a wordlist  
 > You can install wordlists with ```sudo pacman -Syu wordlistctl``` With this tool you can ```wordlistctl fetch rockyou``` unpack the rockyou file and you can use it to crack the password  
