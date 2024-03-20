@@ -57,9 +57,30 @@ You will get to know the basics of [aircrack-ng suite](https://www.aircrack-ng.o
 
 In this task you will perform a Wi-Fi deauthentication attack and carry out a dictionary attack on the recorded wireless traffic of the WLAN SSID "OUSPGTestNetwork". 
 
-TODO: Add small instruction set
-
 For the adapter to work remember to enable USB3 support on virtualbox and you need to install and enable the driver inside the VM:
 * ```yay rtl88xxau-aircrack-dkms-git``` 
 * ```sudo vim /modules-load.d/alfa-wifi.conf```
 * Write "8812au" in the alfa-wifi.conf file. In vim press 'I' to to insert text, write "8812au", press esc and write ':wq'
+
+<details>
+<summary><strong>Help</strong></summary>
+<br>
+
+> Set the adapter to monitor mode, this requires killing interefering processes.
+
+> Start capturing 802.11 frames on the monitoring adapter, include atleast channels 1-170  
+
+> Start capturing traffic with Wireshark,you can also see what's happening  
+
+> Switch to capturing frames from the target BSSID on the targets channel  
+
+> Start sending deauths to the target BSSID  
+
+> Wait, you should see a note marked for your target on airodump, after this you may stop deauthenticating and airodump  
+
+> Save Wireshark capture to a pcap file  
+
+> Crack this file with a wordlist  
+> You can install wordlists with ```sudo pacman -Syu wordlistctl``` With this tool you can ```wordlistctl fetch rockyou``` unpack the rockyou file and you can use it to crack the password  
+
+</details>
