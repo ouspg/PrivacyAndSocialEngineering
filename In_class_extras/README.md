@@ -59,7 +59,7 @@ In this task you will perform a Wi-Fi deauthentication attack and carry out a di
 
 For the adapter to work remember to enable USB3 support on virtualbox and you need to install and enable the driver inside the VM:
 * ```yay rtl88xxau-aircrack-dkms-git``` 
-* ```sudo vim /modules-load.d/alfa-wifi.conf```
+* ```sudo vim /etc/modules-load.d/alfa-wifi.conf```
 * Write "8812au" in the alfa-wifi.conf file. In vim press 'I' to to insert text, write "8812au", press esc and write ':wq'
 
 <details>
