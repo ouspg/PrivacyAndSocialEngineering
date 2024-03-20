@@ -45,7 +45,7 @@ Wi-Fi deauthentication attack is a sort of DoS (denial-of-service) attack, where
 
 This disconnection - reconnection traffic can be captured, and in our case, we will try to gain the password for the AP via a dictionary attack on the traffic. 
 
-To receive the monitor mode capable adapter, you need to answer a couple of questions about the following:
+To receive the monitor mode capable adapter, you need to answer a couple of easy questions about the following:
 * aircrack-ng
 * aireplay-ng
 * airmon-ng
@@ -59,3 +59,7 @@ In this task you will perform a Wi-Fi deauthentication attack and carry out a di
 
 TODO: Add small instruction set
 
+For the adapter to work remember to enable USB3 support on virtualbox and you need to install and enable the driver inside the VM:
+* ```yay rtl88xxau-aircrack-dkms-git``` 
+* ```sudo vim /modules-load.d/alfa-wifi.conf```
+* Write "8812au" in the alfa-wifi.conf file. In vim press 'I' to to insert text, write "8812au", press esc and write ':wq'
