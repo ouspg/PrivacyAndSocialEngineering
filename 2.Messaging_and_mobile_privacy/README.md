@@ -26,23 +26,42 @@ Task #|Points|Description|
 
 In private messaging, no other than the sender and intended receiver should be able to read the message content.
 For the receiver to be able to verify that the message is coming from the claimed source, the sender must sign it, and then the receiver can verify it from the *signature*.
-You can read more about encryption and digital signatures from Wikipedia if needed [^29][^28].
+You can refresh about encryption and digital signatures from Wikipedia if need be [^29][^28].
 
 This task will combine some of the basic concepts of encryption and authentication, by using PGP as an example, which is often used in emails.
 
 "PGP" Encryption is short for Pretty Good Privacy, an encryption program originally published by Phil Zimmermann & Associates in 1991 [^1].
 Later on derivatives OpenPGP[^2] and GPG[^3] were introduced, which stand for Open-Source PGP and GnuPG/Gnu Privacy Guard respectively.
 OpenPGP became standardized by the IETF [^4] and GPG was specifically designed to be compatible with OpenPGP and allows the decryption of OpenPGP encryption.
-These encryptions allow users to quite easily have, for example, encrypted email conversations.
+These encryptions allow users to quite easily have, for example, self-encrypted email conversations.
 
 "*Arguing that you don't care about the right to privacy because you have nothing to hide is no different from saying you don't care about free speech because you have nothing to say.*" – **Edward Snowden**
 
-Using any(**LEGAL**) means necessary to try to stay **as private** and **as anonymous as possible** and exchange public keys to start an encrypted email conversation with your randomly selected classmate. Your goal is to have the conversation **as unlinkable** to yourself **as possible** even for statewide actors. Being completely untraceable is quite impossible, the important part here is to learn and show how invisible you can become and what it takes.
+Using any(**LEGAL**) means necessary try to stay **as private** and **as anonymous as possible** and exchange public keys to start an encrypted email conversation with your randomly selected classmate. Your goal is to have the conversation **as unlinkable** to yourself **as possible**. Being completely untraceable is quite impossible, the important part here is to learn and show how invisible you can become and what it takes.
 
+> The first point of contact(i.e the first message) will be to one of your school email accounts, from there onwards use other accounts. 
+
+> You can do this in pairs, if you need an assigned pair, please contanct us.
+
+<details>
+<summary>Requirements to pass:</summary>
+<br>
+
+* You are allowed to have one unencrypted message, but it must be from an unknown address.
+* All other messages are to be encrypted and signed.
+* You can not use messaging platform that promises end-to-end encryption as your only encryption.
+
+</details>
+
+<details>
+<summary><strong>Answer the following</strong></summary>
+<br>
 
 * Document your actions precisely, and name software or services used to the best of your ability. 
-* You are expected to generate PGP keys, exchange them (public keys only!), encrypt, sign, verify and decrypt the message content
+* You are expected to generate PGP keys, exchange them (public keys only!), encrypt, sign, verify and decrypt the message contents. Would anyone logged in on your account on the machine be able to read the messages? Why or why not?
 * Describe the experience and how difficult you found this to be.
+
+</details>
 
 The task will be graded based on the methods used and actions taken to accomplish the conversation and by the level of anonymity achieved.
 
@@ -112,7 +131,7 @@ Also, consider the following example scenario to highlight the metadata:
 Without knowing the message content, can you deduce information from User A and User B?
 
 
-**Write an essay of one A4 page (400 to 500 words) based on the previous sources and examples, including app comparison and considering also the importance of E2E encrypted metadata.**
+**Write an essay of atleast 300 words based on the previous sources and examples, including app comparison and considering also the importance of E2E encrypted metadata.**
 
 Note also the use of the same phone number across different services. 
 For example, WhatsApp shares phone numbers and other information with Meta Company outside of the European Union [^6].
@@ -133,7 +152,7 @@ Images can contain a lot of additional metadata as EXIF (Exchangeable Image File
 Some services (especially image related) strip it off for your own safety, but that is always not the case.
 
 
-Download [**image2**](images/image2.jpg?raw=true) and extract the following information from it
+**Download [**image2**](images/image2.jpg?raw=true) and extract the following information from it**
 - GPS coordinates
 - Device manufacturer and the model the image has been taken with
 - Date and time when the image has been originally taken
@@ -168,6 +187,9 @@ You can either use it on the browser or [in command-line.](https://github.com/Ex
 
 **Choose two (2)** applications yourself to analyze with the help of Exodus, **and find a third** application that has obvious unnecessary dangerous permissions, such as a flashlight application accessing your contacts. 
 
+<details>
+<summary><strong>Name your application and answer the following</strong></summary>
+<br>
 Name your application and answer the following questions for each application.
 
 1. How many trackers and permissions each application has?
@@ -176,6 +198,7 @@ Name your application and answer the following questions for each application.
 4. Describe two attack vectors enabled by these permissions for each application, had an attacker gained access into the application and/or their database.
 5. Compare Android and iOS privacy labels (if it is available on both platforms) to your findings about trackers
 
+</details>
 
 ## Task 4: Application SDKs, code signatures, Tags and Pixels (bonus)
 
