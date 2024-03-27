@@ -27,7 +27,7 @@ Task #|Points|Description|
 [Task 1](#task-1-telemetry-and-other-data-collection) | 1 | Telemetry and other data collection
 [Task 2](#task-2-vpn8-comparison) | 1 | VPN comparison
 [Task 3](#task-3-leaving-no-traces-with-tails-gpg-tor-and-onionshare) | 2 | Tails, GPG, Tor, Onionshare
-[Task 4](#task-4-reproducible-onionshare-site-(bonus)) | 1 | Reproducible Onionshare site (bonus)
+[Task 4](#task-4-reproducible-onionshare-site-bonus) | 1 | Reproducible Onionshare site (bonus)
 
 ## **Task 1:** Telemetry and other data collection
 
