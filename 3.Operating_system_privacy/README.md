@@ -27,6 +27,7 @@ Task #|Points|Description|
 [Task 1](#task-1-telemetry-and-other-data-collection) | 1 | Telemetry and other data collection
 [Task 2](#task-2-vpn8-comparison) | 1 | VPN comparison
 [Task 3](#task-3-leaving-no-traces-with-tails-gpg-tor-and-onionshare) | 2 | Tails, GPG, Tor, Onionshare
+[Task 4](#task-4-reproducible-onionshare-site-(bonus)) | 1 | Reproducible Onionshare site (bonus)
 
 ## **Task 1:** Telemetry and other data collection
 
@@ -47,14 +48,17 @@ Use your browser's private mode if they seem to be behind a paywall.
 
 What **security risks** and **privacy implications** there are from bringing this kinds of devices to your home?
 
-
-**Answer the following questions:**
+<details>
+<summary><strong>Answer the following:</strong></summary>
+<br
 
 - For each device separately describe two situations where the privacy and/or security of the user can be compromised
 - Find and list 5 CVEs[^1] for IOT devices such as those above. Give a short explanation of the CVEs. (You can choose the devices and CVEs yourself and the CVEs can be patchable)
 - In the U.S., there is a so-called [third-party doctorine](https://en.wikipedia.org/wiki/Third-party_doctrine), which essentially gives the government access to all of your data without warrants, if you have given consent for a service provider to collect your data. Does this apply in Finland? If not, is it prevented by the Finnish legislation or European Union regulation?
 
 A great place to search for the CVEs is [Mitre](https://cve.mitre.org/index.html). Their CVE list search is an amazing tool. [Tips for the search](https://cve.mitre.org/find/search_tips.html)
+
+</details>
 
 > You are expected to produce essay-like answer, approximately half A4 (200-250 words).
 
@@ -68,6 +72,10 @@ Most operating systems and manufacturers collect and send telemetry and other in
 Search online to find out what data your phone or computer manufacturer and operating system are sending forward.
 If you are unable to find sources for your devices, you can use some well-studied ones instead.
 
+<details>
+<summary><strong>Answer in the following manner:</strong></summary>
+<br>
+
 > Include at least two **peer-reviewed** research sources
 
 > Analyze your findings, write a summary and list your sources. (Keep this at around half a page / 200-250 words)
@@ -77,6 +85,8 @@ If you are unable to find sources for your devices, you can use some well-studie
 - The phone/computer and the OS version
 - Manufacturer and their country of origin
 - Did you learn anything new about your phone/computer?
+
+</details>
 
 ---
 
@@ -99,13 +109,17 @@ Provide short answers to what **the following listings mean**, keeping VPNs' pri
 
 In addition to explaining the listings, find out why Wireguard protocol is often considered "superior" to OpenVPN from a performance and security point of view, but this might not be the case with privacy.
 
-### What to return
+<details>
+<summary><strong>What to return:</strong></summary>
+<br>
 
-> Explain the listings and compare three VPNs.
+* Explain the listings and compare three VPNs.
 
-> Reason on a technical level, why privacy might, or might not be an issue, with Wireguard. 
+* Reason on a <strong>technical</strong> level, why privacy might, or might not be an issue, with Wireguard. 
 
-> Which three VPN service providers do you think are the most important to avoid and why?
+* Which three VPN service providers do you think are the most important to avoid and why?
+
+</details>
 
 ---
 
@@ -186,20 +200,31 @@ Most computers handle this without any implications, and the most common problem
 
 **Once inside Tails**
 
-- Take a screenshot showing your name and student id on any text editor.
+- Take a screenshot showing your name and student id on any text editor. **Include 3B in to the screenshot if completed.**
 
 - Encrypt the screenshot with GPG/GPA [**by using the provided public key**](for_tails_encryption.pub).
 
-- Follow the [provided](https://github.com/ouspg/PrivacyAndSocialEngineering/blob/main/3.Operating_system_privacy/onionshare.md) .onion address to the Onionshare file-sharing site. It should ask for a password, it is also provided. The site should say "Task # return box". 
+### Task 3 A) What to return on the **GitHub**
 
-### Task 3 A) What to return on the ~~website~~ **GitHub**
-
-Upload an encrypted image file containing a screenshot of the Tails desktop with your name and student ID visible to the ~~provided OnionShare address~~ **Github repository**, accompanied by a message containing your name or another identifier. (Identifier can be mentioned in the return repository) 
+Upload an encrypted image file containing a screenshot of the Tails desktop with your name and student ID visible to your **Github repository**, accompanied by a message containing your name or another identifier. (Identifier can be mentioned in the return repository). **Include 3B in this if completed.**
 
 ### Task 3 B) Onionshare website
 
-Set up a static website with just your name on it with Onionshare.
-You can do this in another system than Tails.
+Set up an Onionshare website within Tails, it [should](https://tails.net/doc/anonymous_internet/onionshare/index.en.html) be already installed in Tails. You can choose what type of Onionshare site you want to set up. Once the site is ready, keep onionshare visible in the screenshot for 3A.
+
+### Task 3 C) Then answer the questions below:
+
+1. What happens when you pull out your Tails USB stick, did you try this?
+
+2. Why do these kinds of operations and services exist? Answer at around between 100 and 200 words.
+
+---
+
+### Task 4 Reproducible Onionshare site (bonus)
+
+**You can complete this task outside Tails.**
+Set up a static website with just your name on it with Onionshare. 
+You won't have to leave the site up, and you can password protect it.
 
 However, you should do it as **a reproducible service**.
 1. Take a look for [`onionshare-cli`](https://docs.onionshare.org/2.3.1/en/advanced.html#command-line-interface).
@@ -207,14 +232,7 @@ However, you should do it as **a reproducible service**.
 3. Use containers to deploy the service (Docker[^25], Podman [^26] et. al). See the Dockers' guide [^25] if you are new to containers.
 `ENTRYPOINT` and `CMD` instructions should be used to launch the site with your configurations.
 4. Take a screenshot of your website from the Onion address. Identifier and address should be visible.
-5. Return the screenshot and Dockerfile[^27] or Containerfile [^28], which was used to create the service. These should be returned to your own repository.
-
-
-### Task 3 C) Then answer the questions below:
-
-1. What happens when you pull out your Tails USB stick, did you try this?
-
-2. Why do these kinds of operations and services exist? Answer at around between 100 and 200 words.
+5. Return the screenshot **and** the Dockerfile[^27] or the Containerfile [^28], which was used to create the service. These should be returned to your own repository.
 
 ---
 
