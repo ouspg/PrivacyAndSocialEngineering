@@ -68,6 +68,10 @@ For the adapter to work remember to enable USB3 support on virtualbox and you ne
 <summary><strong>Help</strong></summary>
 <br>
 
+<strong>Issues</strong>
+
+> First debug step pull the adapter out and plug it back in
+
 <strong>Commands that may be of use:</strong>
 
 > lsusb
@@ -86,7 +90,7 @@ For the adapter to work remember to enable USB3 support on virtualbox and you ne
 
 > Start sending deauths to the target BSSID   
 
-> Wait. You should see a note 'EAPOL' marked for your target on airodump, after this you may stop deauthenticating and airodump  
+> Wait. You should see a note 'EAPOL' marked for your target on airodump, after this you may stop airodump and deauthenticating. You may want to keep an eye on wireshark on the channel of your target aswell, you should see the different steps of EAPOL on it.  
 
 > Stop and save Wireshark capture to a pcap file  
 
