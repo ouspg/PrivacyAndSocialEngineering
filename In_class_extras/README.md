@@ -62,10 +62,17 @@ For the adapter to work remember to enable USB3 support on virtualbox and you ne
 * ```yay rtl88xxau-aircrack-dkms-git``` 
 * ```sudo vim /etc/modules-load.d/alfa-wifi.conf```
 * Write "8812au" in the alfa-wifi.conf file. In vim press 'I' to to insert text, write "8812au", press esc and write ':wq'
+* Can't see the adapter? Try ```sudo pacman -Syu linux linux-headers``` after this plug in the adapter again.
 
 <details>
 <summary><strong>Help</strong></summary>
 <br>
+
+Commands that may be of use
+
+> lsusb
+
+> iwconfig
 
 > Set the adapter to monitor mode, this requires killing interfering processes.  
 
