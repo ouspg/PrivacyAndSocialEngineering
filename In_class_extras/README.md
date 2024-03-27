@@ -68,11 +68,13 @@ For the adapter to work remember to enable USB3 support on virtualbox and you ne
 <summary><strong>Help</strong></summary>
 <br>
 
-Commands that may be of use
+<strong>Commands that may be of use:</strong>
 
 > lsusb
 
 > iwconfig
+
+<strong>Basic track for the task:</strong>
 
 > Set the adapter to monitor mode, this requires killing interfering processes.  
 
