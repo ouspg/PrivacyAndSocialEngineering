@@ -94,7 +94,7 @@ To read more about security-related properties of cookies, see the book Computer
 Let's look at the information about cookies on the Old School Runescape landing page. When you enter the page, you should be prompted to give your consent to the use of cookies. If this is not the case, you may have visited the site before or you may have already given your consent to bulk cookie tracking on another site that uses Cookiebot as its cookie manager. You can see the prompt again if you open the page in a new safe search page, such as Incognito in Chrome or Private Search in Safari and Firefox. 
 
 <details>
-<summary><strong>Use the Details tab to answer the following</strong></summary>
+<summary><strong>Use the Details tab of the cookie banner to answer the following</strong></summary>
 <br>
 
 * How many necessary cookies are there? 
