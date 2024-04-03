@@ -3,9 +3,9 @@
 What information is publicly available about you?
 The amount can surprise you.
 
-The exercises this week through some popular methods and sources
+In the exercises this week we go through some popular methods and sources of openly available information.
 
-> We highly recommend to do the task 3!
+> We highly recommend the task 3!
 
 ## Grading
 
@@ -39,7 +39,7 @@ Search for ***joe@gmail.com*** on Have I been Pwned, and...
 
 In how many <strong>data breaches</strong> and <strong>pastes</strong> can this email be found?
 
-What are the <strong>compromised data types</strong> in the following services? (each separately)
+What are the <strong>compromised data types</strong> in the following services? (answer each separately)
 
 - <strong>Bell</strong>
 - <strong>Drizly</strong>
@@ -77,7 +77,7 @@ In many cases, the breached company cannot always say what data has been lost, o
 
 Could it change the way we think about privacy, and how we use services and prioritise security if the breach data is public?
 
-Or we make a compromise, and we will try to remove only the most damaging breaches from the internet?
+Or do we make a compromise, and try to remove only the most damaging breaches from the internet?
 
 2. **Write a short answer (150-200 words) of your thoughts. There might not be a correct or incorrect answer, but you need to make arguments.**
 
@@ -91,7 +91,7 @@ There have been a few cases of compromised systems due to hardcoded passwords an
 
 2. As a second part, there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with some closer inspection of the decompiler.
 
-3. As a third and last part, there is a **Super secret password** that is hardcoded but has been "encrypted" with a mystery hash.
+3. As a third and last part, there is a **Super secret password** that is hardcoded but has been "encrypted" with a secret hash.
 
 
 In case the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process.
