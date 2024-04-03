@@ -204,6 +204,13 @@ Most computers handle this without any implications, and the most common problem
 
 - Encrypt the screenshot with GPG/GPA [**by using the provided public key**](for_tails_encryption.pub).
 
+<details>
+<summary><strong>Hint:</strong></summary>
+<br>
+
+>  Use gpg --help to find how to sign, encrypt and import
+</details>
+
 ### Task 3 A) What to return on the **GitHub**
 
 Upload an encrypted image file containing a screenshot of the Tails desktop with your name and student ID visible to your **Github repository**, accompanied by a message containing your name or another identifier. (Identifier can be mentioned in the return repository). **Include 3B in this if completed.**
