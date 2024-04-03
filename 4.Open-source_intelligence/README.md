@@ -31,17 +31,23 @@ One of the most typical and critical situations for a person could be the case w
 
 ### **Task 1 A)** Looking for leaks
 
-Search for ***joe@gmail.com*** and answer the following questions:
+Search for ***joe@gmail.com*** on Have I been Pwned, and...  
 
-In how many **data breaches** and **pastes** can this email be found?
+<details>
+<summary><strong>Answer the following:</strong></summary>
+<br>
 
-What are the **compromised data types** in the following services? (each separately)
+In how many <strong>data breaches</strong> and <strong>pastes</strong> can this email be found?
 
-- **Bell**
-- **Drizly**
-- **Robinhood**
-    
-While you are at it you might want to check if **your own email addresses** have been associated with any data leaks, and promptly change your password in these services.
+What are the <strong>compromised data types</strong> in the following services? (each separately)
+
+- <strong>Bell</strong>
+- <strong>Drizly</strong>
+- <strong>Robinhood</strong>
+
+</details>
+
+> While you are at it you might want to check if **your own email addresses** have been associated with any data leaks, and promptly change your password in these services.
 
 > Remember that when entering your email, password or phone number, you ultimately trust the service provider not to misuse this information.
 
@@ -73,7 +79,7 @@ Could it change the way we think about privacy, and how we use services and prio
 
 Or we make a compromise, and we will try to remove only the most damaging breaches from the internet?
 
-2. **Write a short essay (150-200 words) of your thoughts. There might not be a correct or incorrect answer, but you need to make arguments.**
+2. **Write a short answer (150-200 words) of your thoughts. There might not be a correct or incorrect answer, but you need to make arguments.**
 
 ---
 
@@ -83,9 +89,9 @@ There have been a few cases of compromised systems due to hardcoded passwords an
 
 1.  Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a **plaintext hardcoded password** from the provided compiled C code file called **secretKey**. 
 
-2. As a second task, there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with some closer inspection of the decompiler.
+2. As a second part, there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with some closer inspection of the decompiler.
 
-3. As a third and last task, there is a **Super secret password** that is hardcoded but has been "encrypted" with a mystery hash.
+3. As a third and last part, there is a **Super secret password** that is hardcoded but has been "encrypted" with a mystery hash.
 
 
 In case the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process.
@@ -95,8 +101,16 @@ You can run the C program to validate your findings in your terminal by navigati
 
 After completing the task, you have five items to return. 
 
-> Return a valid **password** and **one valid activation key** along with the **instructions** on how to create the rest of the activation keys, since there are multiple valid ones.
-Also, return the **plaintext version of the super secret password** and **the name of the hash function** it was created with.
+<details>
+<summary><strong>What to return:</strong></summary>
+<br>
+
+Return a valid <strong>Password</strong> and  
+<strong>One valid activation key</strong> and  
+The <strong>instructions</strong> on how to create the rest of the activation keys, since there are multiple valid ones.  
+Also, return the <strong>plaintext version of the super secret password</strong> and <strong>the name of the hash function</strong> it was created with.
+
+</details>
 
 ---
 
@@ -148,34 +162,25 @@ Installation instructions are for the course arch virtual machine.
     
 Note that not all of these are needed.
 
-**PROVIDE SCREENSHOTS FOR ALL PARTS OF THIS TASK!**
+## Answer this task with screenshots for all parts listed below
 
-
-### 1. What is the alias of the new employee and where is he from? Explain where you found this information.
-
-
+### 1. What is the alias of the new employee and where is he from? Explain where you found this information
 
 ### 2. What is the employee's real name? Explain how you found it.
 
-
-
 ### 3. The employee may have accidentally leaked his email address. Find the password of this leaked email. Explain where you found it:
-
-
 
 ### 4. Explain how you logged into the SFTP server. What was the password?
 
 <details>
-<summary>Hint:</summary>
+<summary><strong>Hint:</strong></summary>
 <br>
 People often use only a part of their name to login to their computers.
 </details>
 
 ### 5. What is in the flag.txt file located on the SFTP server?
 
-
 ### 6. Now finish the task by logging into the company's server. Explain how you did this.
-
 
 ### 7. What is in the text file located on the server?
 
@@ -197,7 +202,12 @@ However, what he is remembered for is the first documented purchase of goods usi
 You can find conflicting information on the internet about the pizza parlour where the pizzas were bought from.
 Aside from that, by inspecting the blockchain we can find the exact information about the transaction.
 
-> Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect block **57043** and provide the following information.
+> Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect block **57043** and...  
+
+<details>
+<summary><strong>Provide the following information:</strong></summary>
+<br>
+
 
 Transaction
 - Date and Time of the transaction
@@ -220,7 +230,9 @@ Miner
 - Address of the miner for block 57043
 - Has this address spent the block reward they received?
 
+</details>
 
-**[Maltego](https://docs.maltego.com/support/solutions/articles/15000008703-client-requirements)** is a great tool for blockchain tracing.
-It lets you create a tree-like structure out of inbound and outbound transactions from different addresses.
-It also requires registration.
+
+>**[Maltego](https://docs.maltego.com/support/solutions/articles/15000008703-client-requirements)** is a great tool for blockchain tracing.
+It lets you create a tree-like structure out of inbound and outbound transactions from different addresses. We recommend checking it out.  
+It requires registration.
