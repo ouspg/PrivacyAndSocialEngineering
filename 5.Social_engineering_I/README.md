@@ -168,21 +168,21 @@ First, you need to identify the mail service provider by looking `MX` records e.
 <summary><strong>Question Recap:</strong></summary>
 <br>
 
-> i. What methods have been used on the message to convince the user to make an action and how the information is likely obtained?
+<strong>i.</strong> What methods have been used on the message to convince the user to make an action and how the information is likely obtained?  
 
-> ii. Who owns the domain `spanki.fi` related to the previous message? How about the domains `s-panki.fi` or `spankki.fi`?
+<strong>ii.</strong> Who owns the domain `spanki.fi` related to the previous message? How about the domains `s-panki.fi` or `spankki.fi`?  
 
-> iii. Is anyone capable to register free domain names, even similar to known brands? Take a brief look for registration requirements and process for `.fi` domains. Think about new registrations of S-Pankki domains.
+<strong>iii.</strong> Is anyone capable to register free domain names, even similar to known brands? Take a brief look for registration requirements and process for `.fi` domains. Think about new registrations of S-Pankki domains.  
 
-> iv. Why it is so important pay attention to exact URLs and <strong>why can we trust</strong> the URLs in the first hand? Only a short explanation about the trust is required.
+<strong>iv.</strong> Why it is so important pay attention to exact URLs and <strong>why can we trust</strong> the URLs in the first hand? Only a short explanation about the trust is required.  
 
-> v. Look for the sender from the .eml message. How the message has been sent? You should be able to identify the service.
+<strong>v.</strong> Look for the sender from the .eml message. How the message has been sent? You should be able to identify the service.  
 
-> vi. What headers are telling about DMARC, DKIM and SPF checks
+<strong>vi.</strong> What headers are telling about DMARC, DKIM and SPF checks  
 
-> vii. Now, do you think that these checks (especially the failure of them) will likely lead for previous mail to be deliver into spam rather than content on email server which has only SpamAssassin?
+<strong>vii.</strong> Now, do you think that these checks (especially the failure of them) will likely lead for previous mail to be deliver into spam rather than content on email server which has only SpamAssassin?  
 
-> viii. If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)
+<strong>viii.</strong> If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)  
 
 </details>
 
