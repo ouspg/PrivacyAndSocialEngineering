@@ -164,6 +164,28 @@ First, you need to identify the mail service provider by looking `MX` records e.
 
 > viii. If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)
 
+<details>
+<summary><strong>Question Recap:</strong></summary>
+<br>
+
+> i. What methods have been used on the message to convince the user to make an action and how the information is likely obtained?
+
+> ii. Who owns the domain `spanki.fi` related to the previous message? How about the domains `s-panki.fi` or `spankki.fi`?
+
+> iii. Is anyone capable to register free domain names, even similar to known brands? Take a brief look for registration requirements and process for `.fi` domains. Think about new registrations of S-Pankki domains.
+
+> iv. Why it is so important pay attention to exact URLs and <strong>why can we trust</strong> the URLs in the first hand? Only a short explanation about the trust is required.
+
+> v. Look for the sender from the .eml message. How the message has been sent? You should be able to identify the service.
+
+> vi. What headers are telling about DMARC, DKIM and SPF checks
+
+> vii. Now, do you think that these checks (especially the failure of them) will likely lead for previous mail to be deliver into spam rather than content on email server which has only SpamAssassin?
+
+> viii. If you attempt to spoof some of these domain owners, in which cases the messages are not delivered regardless of the content? (Who has configured their servers correctly (also with DKIM and SPF) with `reject` policy?)
+
+</details>
+
 ### Task 1B) Combining knowledge
 
 Let's take a look at a totally different email message.
@@ -176,10 +198,15 @@ Also, read it carefully.
 After making your conclusions, you could ask ChatGPT what it thinks about the message. 
 Remember to take it **with a grain of salt** whatever it is saying, and verify from true sources.
 
+<details>
+<summary><strong>Answer the following:</strong></summary>
+<br>
+
 > i. Will the message be delivered into the spam more likely because of the content rather than sending entity?
 
 > ii. Identify at least five different psychological manipulation techniques what have been used in the message. 
 
+</details>
 
 ### Task 1C) Building a credential-stealing site
 
@@ -251,18 +278,25 @@ if __name__ == '__main__':
     logging.info('Stopping...\n')
 ```
 
+
+<details>
+<summary><strong>What to return:</strong></summary>
+<br>
+
 > Return the code and the screenshot of your Netflix phishing site and from the terminal, when it logs the user data after user submits it. You don't need to modify `index.html` in any way. What was the purpose of `301` response code and location header?
+
+</details>
 
 ## **Task 2:** Social Engineering Toolkit
 
 This task will focus on the Social Engineering Toolkit which was mentioned in pre-requisites.
 
 The tool is very well documented in their "[SET user manual](https://github.com/trustedsec/social-engineer-toolkit#set-tutorial)" found on the tool's GitHub page.
-We encourage you to explore this manual when using the tool. 
+We encourage you to explore this manual(`CTRL + F` is a friend) when using the tool. 
 
 ### **Task 2A)** QR Code[^2] Credential Harvest[^3]
 
-Take a look at the SET's tool QR code creation and web attack type credential harvest. 
+Take a look at the SET's QR code creation tool and web attack type credential harvest. 
 The credential harvester automates the process from the previous task, where we created the site, but with reduced control.
 
 > **Note**
@@ -271,7 +305,7 @@ The credential harvester automates the process from the previous task, where we 
 In this task, we create a QR code for your self-hosted credential harvest page and **a poster** to try to get people to scan it.
 We encourage you to get creative with your poster; it should seem legitimate.
 
-**Think about the context**; why your poster would be attractive? Why people would scan the QR from it? What makes it less suspicious? You can think about the psychology behind it. Who is your target group?
+**Think about the context**; why your poster would be attractive? Why people would scan the QR from it? What makes it less suspicious? You can think about the psychology behind it. Who is your target group? Be creative.
 Use methods to reduce getting caught; e.g. use redirect to natural and real place after the user submits credentials.
 
 You can set the address to the QR code and the harvester page as your local address (e.g. localhost, 192.168.0.0/16).
@@ -286,7 +320,10 @@ The only requirement is, that it has to have the capability to harvest credentia
 
 If you are using the code sample from the previous task to host your website, on your local computer, it could be trivial to make it accessible on the local network. Bind the server to address `0.0.0.0` and find your computer's local IP address to access it from your phone.
 
-**What to return:**  
+<details>
+<summary><strong>What to return:</strong></summary>
+<br>
+
 - The poster with the QR code
 - Scenario for usage. **Explain in detail** why your poster might be an effective way to collect credentials. Is it targeted to some specific group? Why it might work for them?
 - The site used for harvesting. You can test the QR with your phone and open the site in its browser.  
@@ -294,8 +331,10 @@ If you are using the code sample from the previous task to host your website, on
 
 You can look for the following example poster, which would have a Twitter login page for credential harvesting and after entering your credentials it redirects you to the actual address, in this case, https://twitter.com/SecurityPelle. This example could be found at a cafe near an office you'd like to collect credentials from or at a lounge of a hotel if you're looking to gather a bunch of random credentials.
 
+</details>
+
 <details>
-<summary>An example poster</summary>
+<summary>An example poster for twitter credentials</summary>
 <br>
 <img src="https://user-images.githubusercontent.com/20062360/233234591-c534cadf-06a7-473c-9562-64e0bf3e84ef.PNG" alt="An example poster"/>
 </details>
