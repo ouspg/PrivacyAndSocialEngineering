@@ -287,6 +287,8 @@ if __name__ == '__main__':
 
 </details>
 
+---
+
 ## **Task 2:** Social Engineering Toolkit
 
 This task will focus on the Social Engineering Toolkit which was mentioned in pre-requisites.
