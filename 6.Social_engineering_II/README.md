@@ -74,19 +74,19 @@ See [Europol's statement](https://www.europol.europa.eu/publications-events/publ
 
 > On this task, you need to create a spear-phishing scenario based on the information provided in the previous task.
 There are multiple cases available.
-As a special quirk, the message is recommended to be generated with ChatGPT.
+As a special quirk, the message is recommended to be generated with ChatGPT/HuggingChat.
 Finally you need to test it against anti-spam engines.
 
-Part of the assignment is to bypass some "protections" of ChatGPT to generate spear-phishing messages. 
-At the moment of writing, they are straightforward to bypass.
-You are allowed to write the message yourself if you don't want to use the service. 
-
-We recommend using the [real ChatGPT](https://chat.openai.com/auth/login) for educational purposes.
+If you are up for a challenge, try using the [real ChatGPT](https://chat.openai.com/auth/login) for educational purposes.
 As an alternative and with an older GPT model and without context, you can use [the registration-free relay](https://chatgpt.org/chat).
+However, ChatGPT has a lot of 'protections' regarding phishing email generation and will usually refuse to do so. 
+Alternatively, you can use [HuggingChat](https://huggingface.co/chat/) that has more lenient protections.
 
-It is better to use a Chromium-based browser for this task, as you are required to export discussions in the end, and it has a useful extension.
+You are allowed to write the message yourself if you don't want to use these services. 
 
-1. You must give information from the previous task for ChatGPT to create the selected pretext.
+If you use ChatGPT, It is better to use a Chromium-based browser for this task, as you are required to export discussions in the end, and it has a useful extension.
+
+1. You must give information from the previous task for ChatGPT/HuggingChat to create the selected pretext.
 2. Create the phishing message with the intended scenario with the help of the pretext.
 3. You can use English or Finnish. Try to use the specific dialect (e.g. Finnish dialects) or the format in the message.(authoritative, friendly, casual, other?). Try to briefly verify whether the dialect looks somewhat correct.
 3. Keep in mind that your goal is to obtain sensitive information - you can decide for yourselves what that information is.
@@ -106,7 +106,7 @@ You can try one [inbox email tester](https://glockapps.com/inbox-email-tester/) 
 
 For sending the test emails, it is recommended to not use your main email account, just in case. 
 
-> Once you have finished, export the ChatGPT discussions with [Chrome extension as copied text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc) and return it. 
+> Once you have finished, export the ChatGPT discussions with [Chrome extension as copied text](https://chrome.google.com/webstore/detail/export-chatgpt-conversati/clgidpflecgaaabfcmdmkcgebpbadgoc) and return it. You can post a link to your HuggingChat conversation by using the 'Share this conversation' feature.
 > Return the final crafted message.
 > Provide screenshots of the spam score results.
 > Was the process effective? Do you think someone could fall for your message? 
