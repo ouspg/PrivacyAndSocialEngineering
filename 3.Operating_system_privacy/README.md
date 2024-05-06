@@ -54,7 +54,7 @@ What **security risks** and **privacy implications** there are from bringing thi
 
 - For each device separately describe two situations where the privacy and/or security of the user can be compromised
 - Find and list 5 CVEs[^1] for IOT devices such as those above. Give a short explanation of the CVEs. (You can choose the devices and CVEs yourself and the CVEs can be patchable)
-- In the U.S., there is a so-called [third-party doctorine](https://en.wikipedia.org/wiki/Third-party_doctrine), which essentially gives the government access to all of your data without warrants, if you have given consent for a service provider to collect your data. Does this apply in Finland? If not, is it prevented by the Finnish legislation or European Union regulation?
+- In the U.S., there is a so-called [third-party doctrine](https://en.wikipedia.org/wiki/Third-party_doctrine), which essentially gives the government access to all of your data without warrants, if you have given consent for a service provider to collect your data. Does this apply in Finland? If not, is it prevented by the Finnish legislation or European Union regulation?
 
 A great place to search for the CVEs is [Mitre](https://cve.mitre.org/index.html). Their CVE list search is an amazing tool. [Tips for the search](https://cve.mitre.org/find/search_tips.html)
 
