@@ -128,7 +128,7 @@ In addition to explaining the listings, find out why Wireguard protocol is often
 [Tails](https://tails.boum.org/), [GPG](https://www.gnupg.org/software/index.html)/[GPA](https://www.gnupg.org/related_software/gpa/index.html), [Tor](https://www.torproject.org/), [OnionShare](https://onionshare.org/) 
 
 
-*This task **requires a USB stick** and operates through the Tor network.*
+*This task **requires a USB stick** and operates through the Tor network. Apple devices have a higher chance of issues, especially M1 or M2*
 
 It is recommended to use a USB stick, but if you really can't, you can boot Tails with the virtual machine.
 
