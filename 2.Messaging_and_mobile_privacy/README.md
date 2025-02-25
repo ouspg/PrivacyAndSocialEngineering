@@ -37,45 +37,36 @@ These encryptions allow users to quite easily have, for example, self-encrypted 
 
 "*Arguing that you don't care about the right to privacy because you have nothing to hide is no different from saying you don't care about free speech because you have nothing to say.*" – **Edward Snowden**
 
-Using any(**LEGAL**) means necessary try to stay **as private** and **as anonymous as possible** and exchange public keys to start an encrypted email conversation with your randomly selected classmate. Your goal is to have the conversation **as unlinkable** to yourself **as possible**. Being completely untraceable is quite impossible, the important part here is to learn and show how invisible you can become and what it takes.
+### **Task 1A)** Signing a message 1/4p
 
-> The first point of contact(i.e the first message) will be to one of your school email accounts, from there onwards use other accounts. 
+Create a gpg keypair, use the private key with a passphrase to sign a message and **return both keys here**.
 
-> You can do this in pairs, if you need an assigned pair, please contanct us.
+Proceed to 1B.
 
-<details>
-<summary>Requirements to pass:</summary>
+### **Task 1B)** Encrypting the message 2/4p
+
+Encrypt the message using the provided public key in the "files" folder. Send the encrypted message to [email address for the task](), the **subject should be your full name** - this matters for grading the task. It does not matter what address you send the email from. **Mark this task done**.
+
+Proceed to 1C.
+
+### **Task 1C)** Verifying a message 3/4p
+
+Download the message in the "files" folder and verify the signature on it with the public key in the same folder. **Answer this part with the name of the owner** of said keys.
+
+Proceed to 1D.
+
+### **Task 1D)** Questions 4/4p
+
+* What can be found out about the email you sent, by one who intercepted it in transit?
+* Does verifying the the message **guarantee** the senders identity?
+* Is the process of sending an email this way end-to-end-encrypted(E2EE)?
+
+<details><summary>Help</summary>
 <br>
 
-* You are allowed to have one unencrypted message, but it must be from an unknown address.
-* All other messages are to be encrypted and signed.
-* You can not use messaging platform that promises end-to-end encryption as your only encryption.
-
-</details>
-
-<details>
-<summary><strong>Answer the following</strong></summary>
-<br>
-
-* Document your actions precisely, and name software or services used to the best of your ability. 
-* You are expected to generate PGP keys, exchange them (public keys only!), encrypt, sign, verify and decrypt the message contents. Would anyone logged in on your account on the machine be able to read the messages? Why or why not?
-* Describe the experience and how difficult you found this to be.
-
-</details>
-
-The task will be graded based on the methods used and actions taken to accomplish the conversation and by the level of anonymity achieved.
-
-<details><summary>Tips and Tricks</summary>
-
-You can generate PGP keys [in the browser as well](https://gchq.github.io/CyberChef/#recipe=Generate_PGP_Key_Pair('ECC-384','','','')) by using CyberChef. For practice only!
-
-> **Warning**
-> Cryptographic operations in CyberChef should not be relied upon to provide security in any situation. No guarantee is offered for their correctness. We advise you not to use keys generated from CyberChef in operational contexts.
-
-You can use [CyberChef](https://gchq.github.io/CyberChef/) to encrypt and sign the data as well. 
-You can also use it for verifying and decrypting the data.
-
-There is a search in CyberChef. Use `PGP` search word to find the required operations.
+1. For Linux you should be able to find GPG in your package manager.
+2. You can find and download windows version of GPG: gpg4win [here.](https://www.gnupg.org/download/)
+3. You may use any mail client, GPG/PGP interface and application, as long as you are in control of you your keys and messages.
 
 </details>
 
