@@ -108,7 +108,8 @@ After completing the task, you have five items to return.
 Return a valid <strong>Password</strong> and  
 <strong>One valid activation key</strong> and  
 The <strong>instructions</strong> on how to create the rest of the activation keys, since there are multiple valid ones.  
-Also, return the <strong>plaintext version of the super secret password</strong> and <strong>the name of the hash function</strong> it was created with.
+Also, return the <strong>plaintext version of the super secret password</strong> and <strong>the name of the hash function</strong> it was created with.   
+You can use for example https://crackstation.net/ to decode the password.
 
 </details>
 
