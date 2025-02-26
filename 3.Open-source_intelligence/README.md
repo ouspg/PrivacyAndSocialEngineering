@@ -192,7 +192,7 @@ People often use only a part of their name to login to their computers.
 We will take a brief look at online tools available for inspecting the Bitcoin blockchain.
 
 Just as a quick recap: **Blockchain** is a distributed ledger containing the information as blocks, which are securely linked together with cryptographic hashes.
-A well-known example of blockchain and ledger is all the transactions made with some cryptocurrencies. 
+Well-known examples of blockchains are cryprocurrency ledgers that contain all the transactions made with said cryptocurrencies. 
 
 Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block.
 These hashes are brute forced aka **mined** mainly using the processing power of Graphics Processing Units (GPU).
@@ -218,7 +218,7 @@ Transaction
 - Transaction fee amount in bitcoin
 
 Receiver Address
-- Who was the owner of this address? Use [OXT.me](https://oxt.me/) and Google to figure out the real name of the user
+- Who was the owner of this address? Use Google to figure out the real name of the user
 - The owner instantly divided and forwarded the 10,000 to (**how many?**) other addresses
 - Addresses that received the 10,000 bitcoin and the corresponding sums to each address
 
