@@ -30,10 +30,10 @@ These will be released weekly and will handle current affairs.
 
 Total Points|Total Grade
 :-:|:-:
-6+ | 2
-10+ | 3
-14+ | 4
-18+ | 5
+7+ | 2
+11+ | 3
+15+ | 4
+19+ | 5
 
 ## General material
 
