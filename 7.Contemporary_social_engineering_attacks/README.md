@@ -46,16 +46,16 @@ After going through the material, answer the following questions adding possible
 	* Was it successful?
 * How about any **possible** technical solutions, can you think of a possible new solution?  
 
-### **Bonus Task** Deepfake 1p
+### **Bonus Task** Deepfake? 1p
 
-This bonus won't have any explicit guide, instead you may choose any software yourself, to create a deepfake video.  
+This bonus won't have any explicit guide, instead you may choose any software yourself, to create a deepfake or faceswap video.  
 One such tool is the [Deep-live-cam tool](https://github.com/hacksider/Deep-Live-Cam) 
 
 Create a video of yourself talking with a face of a celebrity, holding a piece of paper with your name on it. Upload the video or gif and then answer the questions.   
 
 #### Questions
 
-* What tool did you use?
+* What tool did you use? Is it a deepfake or faceswap tool?
 * Do you think your video could fool someone?
 * Was it easy?
 

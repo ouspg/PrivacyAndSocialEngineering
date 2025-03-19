@@ -39,13 +39,13 @@ These encryptions allow users to quite easily have, for example, self-encrypted 
 
 ### **Task 1A)** Signing a message 1/4p
 
-Create a gpg keypair, use the private key with a passphrase to sign a message and **return both keys here**.
+Create a gpg keypair, create a message of your choice into a file named 'message.txt', then sign the message and **return both keys here**.
 
 Proceed to 1B.
 
 ### **Task 1B)** Encrypting the message 2/4p
 
-Encrypt the message using the provided public key in the "files" folder. Send the encrypted message to [email address for the task](), the **subject should be your full name** - this matters for grading the task. It does not matter what address you send the email from. **Mark this task done**.
+Encrypt the message from 1A using the provided public key in the "files" folder. Send the encrypted message to [taskmailaddress@proton.me](taskmailaddress@proton.me), the **subject should be your full name** - this matters for grading the task. It does not matter what address you send the email from. **Mark this task done**.
 
 Proceed to 1C.
 
@@ -66,7 +66,8 @@ Proceed to 1D.
 
 1. For Linux you should be able to find GPG in your package manager.
 2. You can find and download windows version of GPG: gpg4win [here.](https://www.gnupg.org/download/)
-3. You may use any mail client, GPG/PGP interface and application, as long as you are in control of you your keys and messages.
+3. ```gpg --help```
+4. You may use any mail client, GPG/PGP interface and application, as long as you are in control of you your keys and messages.
 
 </details>
 
