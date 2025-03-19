@@ -73,9 +73,9 @@ For the adapter to work remember to enable USB3 support on virtualbox and you ne
 Remember to set it as the network adapter in virtualbox settings.
 
 > [!NOTE]
-> update keyring to use wordlistctl for wordlist. ```sudo pacman -S archlinux-keyring```
-> yay python3
-> yay python-urllib
+> update keyring to use wordlistctl for wordlist. ```sudo pacman -S archlinux-keyring```  
+> yay python3  
+> yay python-urllib  
 
 <details>
 <summary><strong>Help</strong></summary>
