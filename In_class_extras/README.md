@@ -59,10 +59,18 @@ You will get to know the basics of [aircrack-ng suite](https://www.aircrack-ng.o
 In this task you will perform a Wi-Fi deauthentication attack and carry out a dictionary attack on the recorded wireless traffic of the WLAN SSID "OUSPGTestNetwork". 
 
 For the adapter to work remember to enable USB3 support on virtualbox and you need to install and enable the driver inside the VM:
-* ```yay rtl88xxau-aircrack-dkms-git``` 
+* ```yay rtl88xxau-aircrack-dkms-git```
+> [!NOTE]
+> yay might not be installed,  
+> ```sudo pacman -S go linux-headers base-devel make```  
+> ```git clone https://aur.archlinux.org/yay.git```  
+> ```cd yay```  
+> ```makepkg -si```
 * ```sudo vim /etc/modules-load.d/alfa-wifi.conf```
 * Write "8812au" in the alfa-wifi.conf file. In vim press 'I' to to insert text, write "8812au", press esc and write ':wq'
 * Can't see the adapter? Try ```sudo pacman -Syu linux linux-headers``` after this plug in the adapter again.
+
+Remember to set it as the network adapter in virtualbox settings.
 
 <details>
 <summary><strong>Help</strong></summary>
