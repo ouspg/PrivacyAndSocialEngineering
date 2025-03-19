@@ -41,6 +41,9 @@ These encryptions allow users to quite easily have, for example, self-encrypted 
 
 Create a gpg keypair, create a message of your choice into a file named 'message.txt', then sign the message and **return both keys here**.
 
+> [!CAUTION]
+> NEVER upload your actual private keys in the internet and never share them with anyone else. This key is only used to confirm your keys.
+
 Proceed to 1B.
 
 ### **Task 1B)** Encrypting the message 2/4p
