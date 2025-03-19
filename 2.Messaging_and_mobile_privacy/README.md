@@ -45,7 +45,7 @@ Proceed to 1B.
 
 ### **Task 1B)** Encrypting the message 2/4p
 
-Encrypt the message from 1A using the provided public key in the "files" folder. Send the encrypted message to [taskmailaddress@proton.me](taskmailaddress@proton.me), the **subject should be your full name** - this matters for grading the task. It does not matter what address you send the email from. **Mark this task done**.
+Encrypt the message from 1A using the provided public key in the "files" folder. Send the encrypted message to [taskmailaddress@proton.me](mailto:taskmailaddress@proton.me), the **subject should be your full name** - this matters for grading the task. It does not matter what address you send the email from. **Mark this task done**.
 
 Proceed to 1C.
 
