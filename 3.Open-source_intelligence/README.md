@@ -129,7 +129,7 @@ As a last-round interview assignment, you are tasked with performing OSINT on th
 
 Start the task by finding possible social media accounts used for marketing by the company.
 
-Your end goal is to infiltrate the company's server. The server is located at (new ip soon)
+Your end goal is to infiltrate the company's server. The server is located at 172.232.132.8
 
 Feel free to use tools such as:
 
