@@ -119,9 +119,9 @@ You can use for example https://crackstation.net/ to decode the password.
 ## **Task 3:** OSINT exploitation
 
 > **Note**
-> To do this task, you need to be connected to the University of Oulu VPN or have to be connected to the EDUROAM network on campus:
-Instructions for connecting:
-https://ict.oulu.fi/16863/
+> ~~To do this task, you need to be connected to the University of Oulu VPN or have to be connected to the EDUROAM network on campus:~~
+~~Instructions for connecting:~~
+~~https://ict.oulu.fi/16863/~~
 
 
 You have applied for a job at Pelle Security, the new clown-themed cybersecurity startup.
