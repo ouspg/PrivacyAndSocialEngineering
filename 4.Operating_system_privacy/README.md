@@ -1,4 +1,4 @@
-# **Week 3: Operating system privacy** 
+# **Week 4: Operating system privacy** 
 
 Operating systems and their representative devices very often "phone home"[^21], collect telemetry or another kind of data for their respective owners and/or manufacturers. 
 In 2021, Windows OS talked to 291 hosts and 2,764 IPs on the internet [^0].
