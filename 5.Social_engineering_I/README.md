@@ -210,6 +210,10 @@ Remember to take it **with a grain of salt** whatever it is saying, and verify f
 
 ### Task 1C) Building a credential-stealing site
 
+> [!IMPORTANT]  
+> Due to changes on how netflix handles logging in this part is not completable as is, so it does not affect grading this year. You can still follow the instructions if you want and maybe try adapting it to work on some other site. Getting it to function somewhere could be worth of extra point!
+
+
 Let's stop with the financial theme, and have fun with Netflix instead.
 
 The website was missing from the phishing message in the first task.
