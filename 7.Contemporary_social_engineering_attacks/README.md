@@ -16,8 +16,8 @@ The bonus task is not counted toward the course's maximum possible points; it is
 Task #|Points|Description|
 -----|:---:|-----------|
 [Task 1](#task-1-) | 1 | Deepfakes and influential people
-[Task 2](#task-2-) | 1 | Shockvertising and social engineering?
-[Task 3](#task-3-) | 2 | DEV#POPPER?
+[Task 2](#task-2-) | WIP | Shockvertising and social engineering?
+[Task 3](#task-3-) | WIP | DEV#POPPER?
 
 ## **Task 1:** Deepfakes in teams calls
 
@@ -59,10 +59,10 @@ Create a video of yourself talking with a face of a celebrity, holding a piece o
 * Do you think your video could fool someone?
 * Was it easy?
 
-## **Task 2:** Shockvertising/or other
+## **Task 2:** Shockvertising/or other WIP not in 2025 instance of course
 
 
-## **Task 3:** Technical analysis/recreation of DEV#POPPER attack
+## **Task 3:** Technical analysis/recreation of DEV#POPPER attack WIP not in 2025 instance of course
 
 ![Paloalto description of contagious interview attack](images/unit42_paloalto_contagious_interview.png)  
 [Source](https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/)  
