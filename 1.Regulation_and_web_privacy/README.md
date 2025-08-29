@@ -114,6 +114,8 @@ Cookies are presented as key-value pairs.
 
 ## **Task 3:** Browser Fingerprinting
 
+[Browsers privacy test for 2026 spring run](https://privacytests.org/)
+
 Cookies are an efficient way to identify the specific user from a single device, especially if they have authenticated against the service.
 What if the user has not always logged in to the website or has prevented all the cookies?
 
