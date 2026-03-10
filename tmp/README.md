@@ -78,3 +78,77 @@ Call to the founder(Matti Meikäläinen) of a Finnish company carrying out accou
 
 
 **_All transcripts are purely fictional and any similarities to actual events are coincidental_**
+
+
+
+----
+
+
+## Task 4: TikTok Challenge (bonus)
+
+> This task requires some technical skills! You are expected to know how HTTP protocol works, and the command line is required.
+
+TikTok is notoriously known for its data collection practices, including fingerprinting and data sharing with third-party services.
+Also, TikTok development kit and trackers appear at least in 25 281 other apps [^28] and hundreds of websites collecting data for TikTok [^29].
+Governments and individual security researchers have raised privacy concerns related to the behaviour of the service [^15][^16][^17][^18][^19][^20].
+Recently, there have been a lot of talks about banning it in the U.S. [^27]. 
+
+> **Note**
+> Conversation is likely highlighted on TikTok for political reasons; many other platforms collect also a lot of data, and this should be also noted. 
+
+But how much and what kind of data it collects?
+We will take a brief look at that.
+
+### Task 4 A) Analysing the HAR file
+
+We have the following  [HTTP Archive (HAR) file](files/www.tiktok.com.har) from browsing TikTok with a web browser.
+HAR is an industry-standard file format to archive captured HTTP traffic [^21][^22][^23].
+
+You can analyse a HAR file by using, for example, [Google's HAR analyser](https://toolbox.googleapps.com/apps/har_analyzer/) in the browser, importing it in the browser's developer tools,  or just looking at the JSON file manually.
+
+Captured traffic presents the following workflow:
+
+  1. The user opens tiktok.com in private mode
+  2. The user attempts to search with the specific keyword
+
+**Your work is to identify the following information about the user:**
+
+  * Browser
+  * Operating system
+  * Screen size
+  * Local language
+  * Browser language
+  * Region
+  * Timezone
+  * Search keyword
+
+You can reproduce the previous by capturing the HAR file yourself, and looking into the details if you want.
+
+ > **Find the previos information. Also, describe shortly where this information is located and how and when it is carried to TikTok's servers.**
+
+### Task 4 B) TikTok data obfuscation
+
+However, it appears that the previous details are not the only information TikTok is collecting.
+There is a lot of random-looking data in the previous requests.
+
+Apparently, TikTok has created a virtual machine in JavaScript virtual space to hide some of its data collection operations.
+
+Read the following blog posts:
+
+   * [Reverse Engineering Tiktok's VM Obfuscation (Part 1)(2022)](https://www.nullpt.rs/reverse-engineering-tiktok-vm-1)
+   * [Reverse Engineering TikTok's VM Obfuscation (Part 2)(2023) (different author)](https://ibiyemiabiodun.com/projects/reversing-tiktok-pt2/)
+
+You don't have to understand what is going on there exactly but we will try to replicate something easy.
+
+In the first blog post, you notice the long cURL[^24] command to request TikTok API as an attempt outside of the browser.
+
+We will try to make a minimal working cURL command to get information about the user `pellesecurity`, by using TikTok's API `https://www.tiktok.com/api/user/detail/`.
+
+Some tips and tricks:
+  * The default compression algorithm for TikTok's responses is [brotli](https://github.com/google/brotli).
+  cURL does not support it by default in many systems, so you can either control it by adjusting `Accept-Encoding` header or installing `brotli` on the system. For example, on Debian based system, it is `brotli` package, which provides the command-line tool.
+  * You can copy a full cURL command for the specific request from Firefox's web developer tools, in the network tab. It is recommended to clean and format it.
+  * You can use [`jq`](https://stedolan.github.io/jq/) to lint JSON data, for example, `$ brotli -dc data.br | jq .` 
+
+  > Make a minimal working cURL command to get the user information, and return the command and user information in JSON format. What are mandatory parameters for command to work? Do you have any idea what they mean?
+
