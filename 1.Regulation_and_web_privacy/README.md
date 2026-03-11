@@ -97,12 +97,12 @@ Let's look at the information about cookies on the Old School Runescape landing 
 <summary><strong>Use the Details tab of the cookie banner to answer the following</strong></summary>
 <br>
 
-* How many necessary cookies are there? 
-* What happens if you try to disable necessary cookies? 
-* List at least 6 different expiry times from the necessary cookies 
-* List 3 different cookie types from necessary cookies 
-* In Statistics, what are the expiry time and cookie type of **JXWEBUID** 
-* In Statistics and Marketing, what other Apps or Companies are listed, other than Jagex 
+* How many necessary cookies are there? 79
+* What happens if you try to disable necessary cookies?     it gives a pop up message which states that necessary cookies are mandatory and cannot be disabled 
+* List at least 6 different expiry times from the necessary cookies.    Persistent, Session, 30 days, 1 day, 1 week 1 year
+* List 3 different cookie types from necessary cookies.      HTTP cookie, HTML local storage, Pixel tracker
+* In Statistics, what are the expiry time and cookie type of **JXWEBUID**.   There is no  jxwebuid or i didnt find it but closest one in statistics is jxfront uid which has expiry time of session and is cookie type HTTP cookie. Actully found it in developer mode buyt it doesnt give the type but the expiry time is around 1 year based on the dev tools  
+* In Statistics and Marketing, what other Apps or Companies are listed, other than Jagex.     Google, youtube, facebook, twitter, meta
 
 </details>
 
@@ -138,11 +138,12 @@ Run the test made by EFF. After running the test you will see a score for ‘Bit
 <br>
 
 * Return two categories and results where you had the *highest* and *lowest* amount of identifying bits of information.
-
+Hash of WebGL fingerprint is the highest with 12.23 bits and CPU Class is the lowest with 0.09 bits
 * Why does identifiability matter? 
-
+Its easier to indetify you when open the browser
 * What pros and cons can you think of to being unique vs common?
-
+pros of unique is that you get more personalized adds and recommends for examble in youtube and cons are that they know who you are and build a profile about it
+Pros of common is that they dont know much about you are you can stay way more private and cons are that nothing is personalized and you are not being recommended anything
 </details>
 
 ---
@@ -158,9 +159,9 @@ What are your Screen width and Screen height similarity percentage? You may or m
 <summary><strong>Return similarity percentage and explanations of your results for:</strong></summary>
 <br>
 
-* Canvas + WebGL Data
-* Screen width, Screen height
-* Screen available width, Screen available height, Can you explain your result?
+* Canvas + WebGL Data      Canvas 0.25% and WebGL Data 0.83%
+* Screen width, Screen height     width 5.08%   height 5.49% I think its because i have 2k resolution monitor so its sharper than most 
+* Screen available width, Screen available height, Can you explain your result?   height 1.38%  width 4.93%  again because i have 27" monitor its probably bigger than most of the devices that this site is being ran.  
 
 </details>
 
@@ -193,18 +194,19 @@ Captured traffic presents the following workflow:
 
 **Your work is to identify the following information about the user:**
 
-  * Browser
-  * Operating system
-  * Screen size
-  * Local language
-  * Browser language
-  * Region
-  * Timezone
-  * Search keyword
+  * Browser    Safari
+  * Operating system    mac os
+  * Screen size   1800 x 1169
+  * Local language  English
+  * Browser language English
+  * Region    FI 
+  * Timezone   Europe/Helsinki
+  * Search keyword   pellesecurity
 
 You can reproduce the previous by capturing the HAR file yourself, and looking into the details if you want.
 
  > **Find the previos information. Also, describe shortly where this information is located and how and when it is carried to TikTok's servers.**
+2023-02-21T16:10:12.720 at this time it was carried to tiktok servers by requesting https://www.tiktok.com address. Located in Query string Parameters
 
 ### Task 4 B) TikTok data obfuscation
 
