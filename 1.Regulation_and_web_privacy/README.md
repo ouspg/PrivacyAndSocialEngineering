@@ -149,6 +149,9 @@ Run the test made by EFF. After running the test you will see a score for ‘Bit
 
 ### Task 3 B) [AmIUnique](https://amiunique.org/)
 
+>[!NOTE]
+>Unclear if AmIUnique is down temporarily or permanently, some alternatives that provide similar information include: [CreepJS](https://abrahamjuliot.github.io/creepjs/index.html),  [Browserleaks](https://browserleaks.com/)  & [CanvasBlocker](https://canvasblocker.kkapsner.de/test/).[^30]. Only they do not keep data and therefore can not provide similarity percentage.
+
 View your browser fingerprint with Am I Unique. **Canvas elements** are created by taking features from your device and browser. These features are used to generate a picture that represents your browsing setup. Return the similarity percentages of your Canvas and, if your browser supports it, WebGL Data Attributes.
 The information that WebGL can provide about your machine, is yet another efficient way to fingerprint across the web [^25][^26]. 
 
@@ -290,3 +293,5 @@ Some tips and tricks:
 [^28]: [We Found 28,000 Apps Sending TikTok Data. Banning the App Won't Help.](https://gizmodo.com/tiktok-ban-joe-biden-28000-apps-sdk-data-china-1850174019)
 
 [^29]: [How TikTok Tracks You Across the Web, Even If You Don’t Use the App](https://www.consumerreports.org/electronics-computers/privacy/tiktok-tracks-you-across-the-web-even-if-you-dont-use-app-a4383537813/)
+
+[^30]: [List of fingerprinting test sites by arkenfox wiki](https://github.com/arkenfox/user.js/wiki/Appendix-B-Test-Sites-%5BFingerprinting%5D)
