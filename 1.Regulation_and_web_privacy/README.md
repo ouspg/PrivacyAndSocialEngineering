@@ -184,6 +184,9 @@ We will take a brief look at that.
 
 ### Task 4 A) Analysing the HAR file
 
+> **Note**
+> This task may be more difficult than intented due to changes made on tiktoks side.
+
 We have the following  [HTTP Archive (HAR) file](files/www.tiktok.com.har) from browsing TikTok with a web browser.
 HAR is an industry-standard file format to archive captured HTTP traffic [^21][^22][^23].
 
