@@ -65,6 +65,7 @@ After receiving the answer to your data request answer the following questions. 
 
 ## **Task 2:** Cookie Raid
 
+Update for 2027 for students to check [cookie policy website](https://www.jagex.com/cookies) for more info and  more accurate details on necessary cookies.
 
 If you have been using the internet before and after the GDPR regulation, you might have noticed that banners have drastically increased.
 European ePrivacy Directive (Cookie Law) was already effective in 2002 [^1], but GDPR changed the overall impact.
