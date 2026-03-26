@@ -69,8 +69,9 @@ Proceed to 1D.
 
 1. For Linux you should be able to find GPG in your package manager.
 2. You can find and download windows version of GPG: gpg4win [here.](https://www.gnupg.org/download/)
-3. ```gpg --help```
-4. You may use any mail client, GPG/PGP interface and application, as long as you are in control of you your keys and messages.
+3. There is GPG cli-application for Mac os as well. ```brew install gnupg``` Should get it with homebrew. WE HAVE NOT TESTED THIS AS OF 26.03.2026
+4. ```gpg --help```
+5. You may use any mail client, GPG/PGP interface and application, as long as you are in control of you your keys and messages.
 
 </details>
 
