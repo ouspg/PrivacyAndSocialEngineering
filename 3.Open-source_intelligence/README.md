@@ -1,4 +1,4 @@
-# **Week 4: Open-source Intelligence** 
+# **Week 3: Open-source Intelligence** 
 
 What information is publicly available about you?
 The amount can surprise you.
