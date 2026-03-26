@@ -1,325 +1,283 @@
-# **Week 2: Messaging and mobile privacy**
+Task 1A -  Signing a Message
 
-The nature of privacy has changed over the past decades.
-Digital transformation has made it possible to eavesdrop on conversations in new and advanced ways.
+For this task, I generated a new GPG keypair and created a simple text file named message.txt. I wrote a short message inside the file and then used GPG to sign it. As required, I am including my public key and the signature of the signed message.  
+My private key was not shared or uploaded.
 
-Exercises this week goes some basics of the digital confidential discussion and what kind of information you can leave even if the message content is encrypted.
+My Public Key
 
-Also, we will go through privacy problems, measurements and features on iOS and Android-based mobile systems.
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 
-## Grading
+mDMEacS7EhYJKwYBBAHaRw8BAQdAWlSC0Auk7tEXY7wa0CXcCmxJaCLLedJr+QM0
+B+nY3h+0O0NoaWJ1em9yIENocmlzdG9waGVyIE9ueWVnZXNpICA8Y2hpYnV6b3Jv
+bnllZ2VzaUBnbWFpbC5jb20+iHIEExYIABoECwkIBwIVCAIWAQIZAQWCacS7EgKe
+AQKbAwAKCRA+AWZnxnc4oWXUAQCYrw/t1sRZRk8waDHGkOJCVLRY5V1o4T5/rD+D
+7vByDQEAmmVFvcB+ToK4Cj5EBsDe+qmhJBrD3kdEwafjZIl+2Qq4OARpxLsSEgor
+BgEEAZdVAQUBAQdAv4a41DS6WDrQPAPcnogCj/msl/yVP9WZAzt2ePA+NHgDAQgH
+iGEEGBYIAAkFgmnEuxICmwwACgkQPgFmZ8Z3OKH6EAEA+MdGQgrJHKbMfM7X/DWe
+JRqHPWBti0NvS/dOk6EN6fIA/3J9TuI4aZS6xTwET6ZIvwRmnvXplrCrQTd4ZvlQ
+hicK
+=wQm5
+-----END PGP PUBLIC KEY BLOCK-----
 
-You must do tasks **in order**.
+Signed Message Output
 
-You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
 
-The bonus task is not counted toward the course's maximum possible points; it is extra and can compensate for other work.
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 
-Task #|Points|Description|
------|:---:|-----------|
-[Task 1](#task-1-private-and-authentic-messaging) | 1 | Private and authentic messaging
-[Task 2](#task-2-metadata-and-messaging) | 2 | Metadata and messaging
-[Task 3](#task-3-application-permissions-and-trackers) | 1 | Application permissions and trackers 
-[Task 4](#task-4-application-sdks-code-signatures-tags-and-pixels-bonus) | 1 | Application SDKs, code signatures, Tags and Pixels (bonus)
+mDMEacS7EhYJKwYBBAHaRw8BAQdAWlSC0Auk7tEXY7wa0CXcCmxJaCLLedJr+QM0
+B+nY3h+0O0NoaWJ1em9yIENocmlzdG9waGVyIE9ueWVnZXNpICA8Y2hpYnV6b3Jv
+bnllZ2VzaUBnbWFpbC5jb20+iHIEExYIABoECwkIBwIVCAIWAQIZAQWCacS7EgKe
+AQKbAwAKCRA+AWZnxnc4oWXUAQCYrw/t1sRZRk8waDHGkOJCVLRY5V1o4T5/rD+D
+7vByDQEAmmVFvcB+ToK4Cj5EBsDe+qmhJBrD3kdEwafjZIl+2Qq4OARpxLsSEgor
+BgEEAZdVAQUBAQdAv4a41DS6WDrQPAPcnogCj/msl/yVP9WZAzt2ePA+NHgDAQgH
+iGEEGBYIAAkFgmnEuxICmwwACgkQPgFmZ8Z3OKH6EAEA+MdGQgrJHKbMfM7X/DWe
+JRqHPWBti0NvS/dOk6EN6fIA/3J9TuI4aZS6xTwET6ZIvwRmnvXplrCrQTd4ZvlQ
+hicK
+=wQm5
+-----END PGP PUBLIC KEY BLOCK-----
+-----BEGIN PGP SIGNATURE-----
 
-## **Task 1:** Private and authentic messaging
+iJsEARYIAEM8HENoaWJ1em9yIENocmlzdG9waGVyIE9ueWVnZXNpICA8Y2hpYnV6
+b3JvbnllZ2VzaUBnbWFpbC5jb20+BQJpxTNwAAoJED4BZmfGdzihZuYA/1scPBPz
+DQuu7OPv8YruKHqYTMjnV6QyK8HYu81AH9QEAQDv0PH/so9lKwUIiLAp/ZXDfjGy
+oV2B3LAPf0ea2cavBg==
+=xCQs
+-----END PGP SIGNATURE-----
 
-In private messaging, no other than the sender and intended receiver should be able to read the message content.
-For the receiver to be able to verify that the message is coming from the claimed source, the sender must sign it, and then the receiver can verify it from the *signature*.
-You can refresh about encryption and digital signatures from Wikipedia if need be [^29][^28].
 
-This task will combine some of the basic concepts of encryption and authentication, by using PGP as an example, which is often used in emails.
+Task 1B: 
 
-"PGP" Encryption is short for Pretty Good Privacy, an encryption program originally published by Phil Zimmermann & Associates in 1991 [^1].
-Later on derivatives OpenPGP[^2] and GPG[^3] were introduced, which stand for Open-Source PGP and GnuPG/Gnu Privacy Guard respectively.
-OpenPGP became standardized by the IETF [^4] and GPG was specifically designed to be compatible with OpenPGP and allows the decryption of OpenPGP encryption.
-These encryptions allow users to quite easily have, for example, self-encrypted email conversations.
+I encrypted the message from Task 1A using the provided public key and sent it to taskmailaddress@proton.me with the subject “Chibuzor Christopher Onyegesi”.
 
-"*Arguing that you don't care about the right to privacy because you have nothing to hide is no different from saying you don't care about free speech because you have nothing to say.*" – **Edward Snowden**
+Task 1C: The signature belongs to: Slatey Cirk
 
-### **Task 1A)** Signing a message 1/4p
+Task 1D 
 
-Create a gpg keypair, create a message of your choice into a file named 'message.txt', then sign the message and **return both keys here**.
+1. What can be found out about the email you sent, by someone who intercepts it in transit?
 
-> [!CAUTION]
-> NEVER upload your actual private keys in the internet and never share them with anyone else. This key is only used to confirm your keys.
+Even though the message content is encrypted, an interceptor can still see the metadata. This includes the sender’s email address, the receiver’s email address, the subject line, the time the email was sent, the size of the message, and the mail servers involved in delivery. They cannot read the encrypted body, but they can still build a picture of who is communicating with whom, when, and how often.
 
-Proceed to 1B.
+2. Does verifying the message guarantee the sender’s identity?
 
-### **Task 1B)** Encrypting the message 2/4p
+No. Verifying the signature only proves that the message was signed with the private key that corresponds to the public key you used for verification. It does not guarantee the real‑world identity of the person behind that key. If someone created a fake key with a fake name, the signature would still verify. Identity depends on trust in the key owner, not the cryptography alone.
 
-Encrypt the message from 1A using the provided public key in the "files" folder. Send the encrypted message to [taskmailaddress@proton.me](mailto:taskmailaddress@proton.me), the **subject should be your full name** - this matters for grading the task. It does not matter what address you send the email from. **Mark this task done**.
+3. Is the process of sending an email this way end‑to‑end encrypted (E2EE)?
 
-Proceed to 1C.
+Only the message body is end‑to‑end encrypted. The email system itself is not. Email metadata (sender, receiver, subject, timestamps, routing information) is still visible to mail servers and anyone monitoring the network. True E2EE would hide both content and metadata, but PGP‑encrypted email only protects the content.
 
-### **Task 1C)** Verifying a message 3/4p
+Perfect — let’s craft Task 2A in a human, conversational, reflective tone.  
+Something that sounds like a real student thinking through privacy, not a robot dumping facts.
 
-Download the message in the "files" folder and verify the signature on it with the public key in the same folder. **Answer this part with the name of the owner** of said keys.
 
-Proceed to 1D.
+Task 2A
 
-### **Task 1D)** Questions 4/4p
+When you compare WhatsApp, Signal, Telegram and Messenger, you quickly realise that “private messaging” means very different things depending on the company behind it. WhatsApp loves to market itself as secure, and yes, the messages are end‑to‑end encrypted by default. But the amount of metadata it collects is huge: phone numbers, contacts, device details, usage patterns, and even unencrypted backups unless you manually turn on encrypted backups. Signal feels like the opposite philosophy minimal data collection, no phone‑number sharing beyond registration, and metadata protection that tries to reveal as little as possible. Telegram sits in a strange middle ground: it collects more data than Signal, and its default chats are not end‑to‑end encrypted unless you manually switch to “Secret Chat.” Messenger is the least private of the four, with E2EE only available in specific modes and a long list of data collection practices tied to Meta’s advertising ecosystem.
 
-* What can be found out about the email you sent, by one who intercepted it in transit?
-* Does verifying the the message **guarantee** the senders identity?
-* Is the process of sending an email this way end-to-end-encrypted(E2EE)?
+The defaults matter more than people realise. Most users never change settings, so if a platform doesn’t enable E2EE by default, the average person simply won’t use it. That’s why WhatsApp’s unencrypted backups and Messenger’s opt‑in encryption create a false sense of security. People think they’re protected because the app advertises privacy, but the defaults quietly undermine that promise.
 
-<details><summary>Help</summary>
-<br>
+The metadata example in the assignment makes this painfully clear. Even without reading the messages, you can infer a lot: User A and B meet every Thursday, one uses an iPhone, the other switches between a Windows PC and an Android phone, and their locations and routines are predictable. You can almost reconstruct their relationship just from timestamps and devices. Add the fact that WhatsApp shares phone numbers with Meta outside the EU, and suddenly your social graph becomes a goldmine for profiling and behaviour modelling.
 
-1. For Linux you should be able to find GPG in your package manager.
-2. You can find and download windows version of GPG: gpg4win [here.](https://www.gnupg.org/download/)
-3. There is GPG cli-application for Mac os as well. ```brew install gnupg``` Should get it with homebrew. WE HAVE NOT TESTED THIS AS OF 26.03.2026
-4. ```gpg --help```
-5. You may use any mail client, GPG/PGP interface and application, as long as you are in control of you your keys and messages.
+“Last seen” and “online status” make things even worse. If someone automates checking your status every second, they can build a timeline of your daily habits when you wake up, when you sleep, when you talk to someone frequently, and even when you’re avoiding them. It’s a small feature with surprisingly deep privacy risks.
 
-</details>
 
-## **Task 2:** Metadata and messaging
+Task 2B:
 
-Sometimes the data you send contains more information than you are aware of.
-Especially in the context of modern messaging, the message content might be less interesting than *to whom, where and when you are sending it*.
+After extracting the EXIF metadata from image2.jpg, I found the following:
 
-Depending on the nature of the messaging platform, a centralised platform owner is often able to gather on top of message content:
+- GPS Latitude: 65.05767059305555
+- GPS Longitude: 25.46864318833333
+- Device Make: HUAWEI
+- Device Model: CLT-L29
+- Original Date/Time: 2022-08-23 12:15:59 (from Unix timestamp 1661267759)
 
-  * Social graphs [^5]
-  * Availability status (last seen and online)
-  * Read receipts
-  * The intensity of messaging and timestamps
-  * Global unique identifier (phone number)
-  * Location
-  * Device
+I then removed the EXIF metadata using CyberChef. The cleaned image no longer contains any GPS data, device information, or timestamps.
 
-### **Task 2A)** Compare messaging platforms
 
-Compare different mobile messaging platforms; check online for official and research sources *what kind of information* WhatsApp, Signal, Telegram and Messenger collect about users.
-You can also compare additional services if you want to.
-To compare specifically mobile application privacy, Apple's Privacy Labels [^8] might be useful:
+Task 2C
 
-  * WhatsApp in [App Store](https://apps.apple.com/us/app/whatsapp-messenger/id310633997) and [Play Store](https://play.google.com/store/apps/details?id=com.whatsapp) 
-  * Signal in [App Store](https://apps.apple.com/us/app/signal-private-messenger/id874139669) and [Play Store](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms)
-  * Telegram in [App Store](https://apps.apple.com/us/app/telegram-messenger/id686449807) and [Play Store](https://play.google.com/store/apps/details?id=org.telegram.messenger)
-  * Meta's Messenger in [App Store](https://apps.apple.com/us/app/messenger/id454638411) and [Play Store](https://play.google.com/store/apps/details?id=com.facebook.orca)
+1. Facebook (Meta)
+I checked Facebook on Exodus Privacy, and the results were exactly what you’d expect from a massive advertising‑driven platform. It had a long list of trackers — everything from Meta’s own analytics to third‑party advertising SDKs. The app also requested a large number of permissions, including several dangerous ones like access to the camera, microphone, location, contacts, and storage. Some of these make sense because Facebook allows video calls, photo uploads, and location tagging. But the combination of trackers and permissions shows how deeply the app integrates into a user’s device. Even when the permissions are “justified,” the amount of behavioural data collected in the background is far beyond what is needed for basic messaging or social networking.
 
-Scroll down to *App Privacy* section and click *See Details*.
-You can also use Google's Play store's *Data Safety Labels* [^13], or even compare the labels of these two.
+2. WhatsApp
+WhatsApp had fewer trackers than Facebook, but still more than a privacy‑focused messaging app should have. The trackers were mostly Meta‑related analytics and crash reporting tools. WhatsApp also requested several dangerous permissions: camera, microphone, contacts, location (optional), and storage. Some of these are necessary for voice notes, video calls, and sending media. However, the contact‑syncing permission is the most sensitive one, because it exposes your entire social graph — not just who you talk to, but everyone in your phonebook. Even though WhatsApp uses end‑to‑end encryption for messages, the metadata and contact‑matching system still reveal a lot about your relationships.
 
-> **Note**
-> However, these labels should be taken **with a grain of salt**; both of them are mostly based on the "honour" system; app publisher tells about them and nobody is officially verifying them.
-A recent study from Mozilla claims Google's labels are misleading [^9], and also other research [^11][^12] indicates the same about Apple's labels. 
+3. Phone Cleaner Apps (Unnecessary Dangerous Permissions)
+Phone cleaner apps are the perfect example of suspicious permission requests. Many of them ask for dangerous permissions like full storage access, location, contacts, and sometimes even microphone or phone state. A cleaner app should only need access to temporary files. it has no legitimate reason to read your contacts, track your location, or monitor your calls. These apps often combine aggressive permissions with multiple trackers, which makes them high‑risk. The permissions do not match the purpose of the app, and that mismatch is usually a red flag for data harvesting or hidden advertising behaviour.
 
 
-Consider also encryption options from the "defaults" perspective.
-In what scenarios is end-to-end-encrypted (E2EE) enabled by default? How about E2EE of the metadata?
+ TASK 3 
 
-By default, for example, WhatsApp encrypts messages in the delivery phase, but backups messages as unencrypted, and recommends backing up the data.
-On iOS devices, chats are also included in iCloud Backups as unencrypted by default [^7].
-What does it mean if law enforcement wants to access your private conversations?
-Has end-to-end encryption on messaging helped on preventing access in that case?
-What is the impact of defaults on the general public, which use the service advertised as a "private, secure messenger", but has no idea of the meaning of defaults?
+In this task, I analyzed two applications using Exodus Privacy and selected a third application that clearly requests unnecessary dangerous permissions. The goal was to understand how apps collect data, what permissions they rely on, and whether those permissions make sense for their intended functionality.
 
-Also, consider the following example scenario to highlight the metadata:
+1. Facebook
 
-> User A only messages User B from an iPhone 14 Pro Max, once a week, every Thursday. Location stays; the same Helsinki City location of “The Nice Cafe,” around 13:00 PM CET
+Trackers and permissions
+According to Exodus Privacy:
 
-> User B messages User A from a Windows machine,  Acer Nitro computer, connected to “Best Wi-Fi” with IP address 123.45.67.89 every Thursday at 13:10 PM CET and later around 13:30 PM CET from a Nokia G21 running Android 12 near a Elisa cell tower within a 3-kilometer radius of the Helsinki City location of “The Nice Cafe.”
+- Trackers: 18  
+- Permissions: 45  
 
-Without knowing the message content, can you deduce information from User A and User B?
+Facebook had one of the highest tracker counts of any mainstream app. These included Meta analytics, advertising SDKs, crash reporters, and multiple third‑party profiling tools.
 
+Dangerous / special permissions
+Facebook had 11 dangerous permissions, including:
 
-**Write an essay of atleast 300 words based on the previous sources and examples, including app comparison and considering also the importance of E2E encrypted metadata.**
+- Camera  
+- Microphone  
+- Fine & coarse location  
+- Read contacts  
+- Read phone state  
+- Read/write external storage  
+- Record audio  
+- Access network state  
 
-Note also the use of the same phone number across different services. 
-For example, WhatsApp shares phone numbers and other information with Meta Company outside of the European Union [^6].
-What does this mean in the context of social graphs and the accuracy of possible behaviour and knowledge modelling?
+Data that can be monetized
+Yes, Facebook collects multiple categories of monetizable data:
 
-**Write one paragraph of your thoughts.**
+- Location → used for location‑based ads  
+- Contacts → used to build social graphs  
+- Device ID & phone state → cross‑app tracking  
+- Usage analytics → behavioural profiling  
+- Advertising trackers → targeted ad optimization  
 
-Additionally, what privacy risks "last seen" or showing "online status" can include? Imagine a situation, where someone who has the same contact list as you have, automates to process of checking the online status of every contact for every second and finally stores this information for a longer period.
+These permissions and trackers directly support Meta’s advertising business model.
 
-**Write one paragraph of your thoughts.**
+Two attack vectors
+1. Social graph exploitation  
+If an attacker accessed Facebook’s backend or local data, they could map your entire contact network, identify relationships, and target individuals with phishing or impersonation attacks.
 
-### **Task 2 B)** Image metadata
+2. Location‑based stalking  
+   With access to precise location and timestamps, an attacker could reconstruct your daily routines, identify your home/work locations, and track your movements.
 
-Messaging is not limited to text anymore, and photos and videos might be the most common data you also share.
-These can also include more data than you are aware of.
+Android vs iOS privacy labels
+On Android, Exodus reveals the exact trackers and permissions.  
+On iOS, Apple’s Privacy Label confirms Facebook collects:
 
-Images can contain a lot of additional metadata as EXIF (Exchangeable Image File Format) data.
-Some services (especially image related) strip it off for your own safety, but that is always not the case.
+- Location  
+- Identifiers  
+- Usage data  
+- Contact info  
+- Browsing data  
 
+However, Apple’s labels are high‑level and do not list the 18 trackers or the specific SDKs.  
+Exodus provides a more transparent and technical view of Facebook’s tracking behaviour.
 
-**Download [**image2**](images/image2.jpg?raw=true) and extract the following information from it**
-- GPS coordinates
-- Device manufacturer and the model the image has been taken with
-- Date and time when the image has been originally taken
+2. WhatsApp
 
-You can either use the EXIF tool of [CyberChef](https://gchq.github.io/CyberChef/#recipe=Extract_EXIF()) or install [Perl based tool on Arch Linux, for example](https://archlinux.org/packages/extra/any/perl-image-exiftool/).
+Trackers and permissions
+According to Exodus Privacy:
 
-Then strip the image of the above-mentioned information and return the image. You can do this for example by using [CyberChef's Remove EXIF](https://gchq.github.io/CyberChef/#recipe=Remove_EXIF()) or  [**Imagemagick**](https://imagemagick.org/index.php).
-The image should not contain the above-mentioned information **in any form**.
+- Trackers: 4  
+- Permissions: 27  
 
-For reference, here is [**image1**](images/image1.jpg?raw=true) as an example of a picture where the EXIF data has been stripped.
+WhatsApp has fewer trackers than Facebook, but still more than a privacy‑focused app should have.
 
-Many other file formats also include metadata, but we don't handle them in this exercise.
+Dangerous / special permissions
+WhatsApp had 9 dangerous permissions, including:
 
----
+- Camera  
+- Microphone  
+- Read contacts  
+- Read phone state  
+- Access location  
+- Read/write storage  
+- Record audio  
 
-## **Task 3:** Application permissions and trackers
+Data that can be monetized
+Even though messages are end‑to‑end encrypted, WhatsApp still collects:
 
-In the previous task, we observed data collection practices on some common messaging applications.
-Apple's Privacy Labels and Google's Data Safety Labels were mentioned as one measurement.
+- Contacts → social graph mapping  
+- Device identifiers → cross‑service tracking  
+- Usage data → behavioural analytics  
+- Location (optional) → location‑based insights  
 
-In this task, we expand the scope for general applications and we will make some research by ourselves.
+This metadata can be used to improve Meta’s advertising accuracy across platforms.
 
-### Identifying permissions and trackers
+Two attack vectors
+1. Contact graph extraction  
+   An attacker could use synced contacts and metadata to map who you talk to, how often, and from which devices — enabling targeted social engineering.
 
-Applications may have permissions [^14][^15] and trackers for data the application does not require to function. Such data may be used for example to profile and hook you, for research, and for monetary gain by selling to third parties, which may or may not handle it safely. 
+2. Microphone/camera abuse  
+   If the app or its permissions were compromised, an attacker could activate the microphone or camera outside of calls, bypassing encryption entirely.
 
-These permissions might also be exploited by an insider attacker or an outside attacker for compromising your privacy and safety. Such are for example the permission to record audio and full network access.
+Android vs iOS privacy labels
+Apple’s Privacy Label for WhatsApp lists:
 
-[Exodus](https://reports.exodus-privacy.eu.org/en/) is a privacy auditing platform for Android applications. You can use Exodus to check Android applications for trackers, permissions and signing fingerprints. 
+- Contact info  
+- Identifiers  
+- Usage data  
+- Diagnostics  
 
-You can either use it on the browser or [in command-line.](https://github.com/Exodus-Privacy/exodus-standalone)
+But it does not show the 4 trackers or the exact SDKs.  
+Exodus gives a clearer picture of the technical tracking happening behind the scenes.
 
-**Choose two (2)** applications yourself to analyze with the help of Exodus, **and find a third** application that has obvious unnecessary dangerous permissions, such as a flashlight application accessing your contacts. 
+3. Phone Cleaner App (Super Phone Cleaner – Antivirus, Booster)
 
-<details>
-<summary><strong>Name your application and answer the following</strong></summary>
-<br>
-Name your application and answer the following questions for each application.
+Trackers and permissions
+According to Exodus Privacy:
 
-1. How many trackers and permissions each application has?
-2. How many "dangerous" (runtime) and/or "special" permissions does each have? (Red exclamation mark, see these in Google's guide [^14])
-3. Did the applications have permission to access such data they could use or sell for monetary gain? Which permissions and trackers are these?
-4. Describe two attack vectors enabled by these permissions for each application, had an attacker gained access into the application and/or their database.
-5. Compare Android and iOS privacy labels (if it is available on both platforms) to your findings about trackers
+- Trackers: 10  
+- Permissions: 26  
 
-</details>
+Cleaner apps are notorious for unnecessary permissions and aggressive tracking.
 
-## Task 4: Application SDKs, code signatures, Tags and Pixels (bonus)
+Dangerous / special permissions
+This cleaner app had 8 dangerous permissions, including:
 
-> What is the motivation behind advertising business and trackers? Let's see how do they work in the mobile world and elsewhere.
+- Read contacts  
+- Access fine location  
+- Read phone state  
+- Read/write external storage  
+- Record audio  
+- Full network access  
 
-Mobile business advertising spending was estimated to be around 330 billion U.S. dollars worldwide in 2022 [^19][^20], from a total of 600 billion spent on digital ads[^21].
+Data that can be monetized
+These permissions are unnecessary for a cleaner app but extremely valuable for monetization:
 
-Revenue of some of the world's most valuable companies is based on ads:
-  * Alphabet, Inc. (Google Ads, YouTube Ads)
-  * Meta Platforms, Inc. (Facebook, Instagram, Messenger, WhatsApp, Oculus, etc.)
+- Contacts → sold to data brokers  
+- Location → used for targeted ads  
+- Device ID → cross‑app tracking  
+- Storage access → behavioural profiling  
+- Network access + trackers → sending data to third‑party ad networks  
 
-In 2022, Meta and Alphabet took alone 48,4% of the digital ad revenue [^22]. 
+The app’s core function (clearing cache) does not require any of this.
 
-Other companies with audience-based platforms have also high revenue on ads:
-  * ByteDance (TikTok)
-  * Twitter, Inc. (Twitter)
-  * Snap Inc. (Snapchat)
-  * Microsoft (LinkedIn, Microsoft Search Network)
-  * Amazon.com, Inc (Amazon Ads)
+Two attack vectors
+1. Silent data exfiltration  
+   With storage + network access, an attacker could steal files, contacts, and device identifiers without the user noticing.
 
-Companies spend a lot of money on advertising, and they like to know whether their money has had any impact, or what kind of impact it has been.
-To offer capabilities for estimating the ad efficiency and targeting of the ads, many of these advertising companies have developed many, but similar kinds of technologies.
+2. Location‑based targeting  
+   With location permissions, an attacker could track the user’s movements and build a detailed location history.
 
-### Task 4A) Legacy technologies
+Android vs iOS privacy labels
+Cleaner apps on iOS often appear harmless in Apple’s Privacy Labels, listing only “usage data” or “diagnostics.”  
+But Exodus reveals:
 
-Some traditional tracking technologies to track users across the web and apps include
-  * Third-party cookies (the end is near [^24][^30])
-  * Advertising ID by Google [^23] and Identifier for Advertisers (IDFA)[^16] by Apple on mobile phones
+- 10 trackers  
+- 26 permissions  
+- 8 dangerous permissions  
 
-In early 2021, Apple made use of the IDFA, currently known as App Tracking Transparency (ATT) [^18] feature, requiring a prompt for users; the user was able to opt-in or out of IDFA.
-As a result, about 75% of worldwide users opted out of IDFA[^17], which made it significantly harder to track users between different applications. 
-Google followed, and a year later, they introduced similar permission [^23].
+This shows how privacy labels can hide the true extent of tracking, while Exodus exposes the technical reality.
 
-This little change has been estimated to bring a significant impact on the advertising business and user privacy.
-As a response, for example, ByteDance (TikTok) has started to test more efficient device fingerprinting technologies [^25].
+TASK 4 
 
-> Look for research articles regarding the impact of this change. Write 2-3 paragraphs based on at least 3 sources.
+4A Legacy Tracking Technologies and the Impact of ATT/IDFA
 
+When Apple introduced App Tracking Transparency (ATT), it quietly flipped the advertising world upside down. Before ATT, the Identifier for Advertisers (IDFA) acted like a universal tag that followed you from one app to another. Advertisers relied on it heavily because it made cross‑app tracking effortless. Once Apple forced apps to ask for permission, most people simply said no. Overnight, companies lost access to a tracking method they had depended on for years.
 
-### Task 4B) The use of the advanced technologies
+The ripple effects were huge. Meta publicly admitted that Apple’s change cost them billions in lost ad efficiency. TikTok and other platforms started experimenting with more aggressive fingerprinting techniques to compensate. Researchers pointed out that advertisers suddenly had far less visibility into user behaviour, and many companies had to rebuild their analytics systems from scratch. What’s interesting is that this wasn’t a technical change, it was a policy change — but it reshaped the entire mobile advertising ecosystem.
 
-Currently, there are more sophisticated ways to track users across devices.
-They are also developer-friendly and easy to use.
+From a privacy perspective, the shift was long overdue. Users finally had a meaningful choice, and the default moved toward privacy instead of surveillance. But the industry didn’t just give up. Instead, it pivoted to first‑party data, server‑side tracking, and more subtle forms of behavioural analysis. In other words, ATT didn’t kill tracking,  it forced it to evolve. The whole situation shows how fragile the advertising economy is when a single company changes the rules, and how quickly the industry adapts when its revenue is threatened.
 
-On mobile applications, the normal way for ad platform providers **and their partners** is to develop and offer application SDKs which can be embedded into the other apps.
-They often bring post-install tracking capabilities off the self.
+4B Modern Tracking: SDKs, Pixels, and Real‑World Observations
 
+Tracking today is far more sophisticated than the old cookie‑based model. When I browsed Finnish websites with helper extensions enabled, I was surprised by how many tracking pixels were active on ordinary sites. Google Tag, Meta Pixel, TikTok Pixel, LinkedIn Insight Tag, they were everywhere. Accepting cookies often unlocked even more trackers, and some sites loaded multiple analytics tools at once. It becomes clear that a single page visit can be shared with several advertising networks simultaneously.
 
-So-called **Pixels** or **Tags** are currently trending ways to track the efficiency of ads and people's actions after they see the ads and go to the websites. 
-They are little code snippets that you inject into your website or integrate into the mobile application.
+The same pattern appears in mobile apps. When I checked some of these companies’ apps on Exodus, I found SDKs from the same advertising platforms whose pixels appeared on their websites. For example, if a site used TikTok Pixel, the app often included AppFlyer o or TikTok’s analytics SDK. This creates a continuous loop: the website tracks you, the app tracks you, and the data flows back to the same advertising partners. It’s a full ecosystem designed to follow your behaviour across devices and platforms.
 
-See [TikTok's graph](https://ads.tiktok.com/help/article/tiktok-pixel?lang=en#) to understand the basic workflow.
+What makes this more concerning is how invisible it is. Privacy policies rarely explain where the data actually goes or how many partners receive it. If an app includes AppFlyer, for example, your data might end up with TikTok, Meta, Google, or other partners depending on the integration. The user has no real way to know. And when you add “Login with Google” or “Login with Facebook” on top of that, the tracking becomes even more precise because your identity is now tied to your behaviour across multiple services.
 
-|Platform| Pixel/Tag | Helper |
-|-|-|-|
-|Google| [Google Tag](https://developers.google.com/tag-platform/devguides)| [Tag Assistant](https://tagassistant.google.com/)/[Legacy extension](https://chrome.google.com/webstore/detail/tag-assistant-legacy-by-g/kejbdjndbnbjgmefkgdddjlbokphdefk?hl=en)
-|Meta Platforms| [Meta Pixel](https://developers.facebook.com/docs/meta-pixel/)/[Meta App Event Tracking](https://developers.facebook.com/docs/app-events/) | [Meta Pixel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper/fdgfkebogiimcoedlicjlajpkdmockpc) |
-|Twitter | [Twitter Pixel](https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html) | [Twitter Pixel Helper](https://chrome.google.com/webstore/detail/twitter-pixel-helper/jepminnlebllinfmkhfbkpckogoiefpd) |
-| TikTok | [TikTok Pixel](https://ads.tiktok.com/help/article/tiktok-pixel?redirected=2#) | [TikTok Pixel Helper](https://chrome.google.com/webstore/detail/tiktok-pixel-helper/aelgobmabdmlfmiblddjfnjodalhidnn?hl=en) |
-| Snapchat | [Snap Pixel](https://businesshelp.snapchat.com/s/article/snap-pixel-about?language=en_US) | [Snap Pixel Helper](https://chrome.google.com/webstore/detail/snap-pixel-helper/hnlbfcoodjpconffdbddfglilhkhpdnf?hl=en) | 
-| LinkedIn | [Linkedin Insight Tag](https://business.linkedin.com/marketing-solutions/insight-tag) | [LinkedIn Pixel Helper](https://chrome.google.com/webstore/detail/pixel-helper-for-linkedin/adbhmmjkppnhjjiapocjgjaknpigdoaa)|
+The more I looked into it, the more obvious it became that modern tracking is not just about ads,  it’s about building detailed behavioural profiles. Pixels show what you do on websites. SDKs show what you do inside apps. Login integrations tie it all together under a single identity. Even after Apple and Google introduced restrictions, the industry simply shifted to deeper, more embedded tracking methods. It’s a reminder that privacy protections often trigger innovation — just not always in the direction users expect.
 
-
-Go through some Finnish or other web services with the above helper extensions installed. 
-
-
-
-
-* For example, you can check [here for analytics on sites](https://trends.builtwith.com/analytics) in Finland, or some examples below.
-
-  * motonet.fi
-  * masku.com
-  * polar.com
-  * wolt.com
-  * verkkokauppa.com
-  * power.fi
-  * etuovi.com
-  * huutokaupat.com
-  * tentree.ca
-  * crypto.com
-  * investing.com
-
-What kind of tracking pixels you are finding? Note, that you might need to accept all the cookies.
-
-Have you encountered ads when using some of the social platforms? You can check if the advertising entity has analytics integrated.
-
-Use Exodus privacy to detect possible code signatures of the advertising platform SDKs if the website has its own app.
-Many of the tracking capabilities are integrated into "partners", software.
-Take a look for example the partnership between AppFlyers and TikTok [^26][^27]. 
-
-Do you find similar analytics from their apps? If you don't, but for example, you find AppFlyers integrated, do you have any idea where your data is going and what is even tracked?
-
-Also, consider what is the impact of using advertiser-provided log-in options.
-E.g. for using Google login or Facebook login to some service, which has integrated relevant tracking software.
-
-> Write at least 4-5 paragraphs of your thoughts and findings, when looking these trackers.
-
-
-[^1]: [Why I Wrote PGP](https://www.philzimmermann.com/EN/essays/WhyIWrotePGP.html)
-[^2]: [OpenPGP ](https://www.openpgp.org/)
-[^3]: [The GNU Privacy Guard](https://gnupg.org/)
-[^4]: [IETF](https://www.ietf.org/)
-[^5]: [Social graph](https://en.wikipedia.org/wiki/Social_graph)
-[^6]: [What information does WhatsApp share with the Meta Companies?](https://faq.whatsapp.com/1303762270462331)
-[^7]: [About end-to-end encrypted backup - Device-level backups on iPhone](https://faq.whatsapp.com/490592613091019)
-[^8]: [App privacy details on the App Store](https://developer.apple.com/app-store/app-privacy-details/)
-[^9]: [See No Evil: Loopholes in Google’s Data Safety Labels Keep Companies in the Clear and Consumers in the Dark](https://foundation.mozilla.org/en/campaigns/googles-data-safety-labels/)
-[^10]: [I checked Apple’s new privacy ‘nutrition labels.’ Many were false.](https://www.washingtonpost.com/technology/2021/01/29/apple-privacy-nutrition-label/)
-[^11]: [Lalaine: Measuring and Characterizing Non-Compliance of Apple Privacy Labels at Scale](https://arxiv.org/abs/2206.06274)
-[^12]: [Goodbye Tracking? Impact of iOS App Tracking Transparency and Privacy Labels](https://dl.acm.org/doi/10.1145/3531146.3533116)
-[^13]: [Provide information for Google Play's Data safety section](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en)
-[^14]: [Permissions on Android](https://developer.android.com/guide/topics/permissions/overview)
-[^15]: [Requesting access to protected resources](https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy/requesting_access_to_protected_resources)
-[^16]: [Identifier for Advertisers](https://en.wikipedia.org/wiki/Identifier_for_Advertisers)
-[^17]: [App Tracking Transparency Opt-In Rate - Monthly Updates](https://www.flurry.com/blog/att-opt-in-rate-monthly-updates/)
-[^18]: [App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)
-[^19]: [Mobile advertising spending worldwide from 2007 to 2024 ](https://www.statista.com/statistics/303817/mobile-internet-advertising-revenue-worldwide/)
-[^20]: [State of Mobile](https://www.data.ai/en/go/state-of-mobile-2023/)
-[^21]: [Digital Ad Spend (2021–2026)](https://www.oberlo.com/statistics/digital-ad-spend)
-[^22]: [Slow fade for Google and Meta's ad dominance](https://www.axios.com/2022/12/20/google-meta-duopoly-online-advertising)
-[^23]: [Advertising ID](https://support.google.com/googleplay/android-developer/answer/6048248?hl=en)
-[^24]: [What the Death of Browser Tracking Cookies Means for Marketers: Part 1](https://www.invoca.com/blog/what-the-death-of-browser-tracking-cookies-means-for-marketers-part-1)
-[^25]: [CAID (technology)](https://en.wikipedia.org/wiki/CAID_(technology))
-[^26]: [TikTok partners with AppsFlyer to boost in-app measurement and performance](https://www.tiktok.com/business/en-US/blog/appsflyer-in-app-measurement-performance)
-[^27]: [How to win on iOS 14+ with AppsFlyer and TikTok: The complete guide](https://www.tiktok.com/business/en-US/blog/win-ios14-appsflyer-tiktok-complete-guide)
-[^28]: [Digital signature](https://en.wikipedia.org/wiki/Digital_signature)
-[^29]: [Encryption](https://en.wikipedia.org/wiki/Encryption)
-[^30]: [Tracking Cookies are Dead: What Marketers Can Do About It](https://www.invoca.com/blog/tracking-cookies-are-dead-what-marketers-can-do-about-it)
