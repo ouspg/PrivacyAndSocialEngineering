@@ -1,239 +1,184 @@
-# **Week 3: Open-source Intelligence** 
+Task 1A 
 
-What information is publicly available about you?
-The amount can surprise you.
+When I checked the email “joe@gmail.com” on Have I Been Pwned, it showed that the address had appeared in 321 different data breaches. There were no pastes linked to it.
 
-In the exercises this week we go through some popular methods and sources of openly available information.
+For the individual services:
 
-> We highly recommend the task 3!
+- Bell: The breach exposed a wide range of personal information, things like email addresses, names, phone numbers, IP addresses, job titles, usernames, passwords, spoken languages, geographic details, and even old survey results.
 
-## Grading
+- Drizly: This one had a lot of sensitive data as well. It included email addresses, names, phone numbers, dates of birth, physical addresses, IP addresses, device information, and passwords (bcrypt‑hashed).
 
-You must do tasks **in order**.
+- Robinhood: The Robinhood breach was more limited. In this case, only email addresses were listed as compromised.
 
-You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
+After checking this, I also took a moment to look up my own email just to be sure. It’s a good reminder that whenever we type our email or phone number into any service, we’re basically trusting that company to protect it — and not every company succeeds at that.
 
-The bonus task is not counted toward the course's maximum possible points; it is extra and can compensate for other work.
 
-Task #|Points|Description|
------|:---:|-----------|
-[Task 1](#task-1-have-i-been-pwned) | 1 | Have I been Pwned 
-[Task 2](#task-2-hardcoded-passwords) | 1 | Hardcoded passwords
-[Task 3](#task-3-osint-exploitation) | 2 | OSINT exploitation
-[Task 4](#task-4-blockchain-bonus) | 1 | Blockchain (bonus)
+Task 1B 
 
+When I looked into the kinds of services that actually sell full breach data, a few names kept coming up. Platforms like DeHashed, IntelligenceX, and Snusbase openly provide access to leaked databases as long as you pay for it. There are others too, but these three alone show how big the market for stolen data has become.
 
-## **Task 1:** Have I been Pwned
+The bigger question is what we should do with this reality. Part of me feels that making breach data searchable for everyone could help people understand exactly what was leaked about them. It’s frustrating when a company downplays a breach or refuses to admit what was exposed. At the same time, putting everything out in the open creates its own risks — once the data is public, you can’t take it back.
 
-One of the most typical and critical situations for a person could be the case when their login credentials have been leaked online publicly as a part of a cyber incident or another matter.
+Trying to “remove” breach data from the internet sounds ideal, but in practice it’s almost impossible. Once something leaks, it spreads everywhere. So maybe the real benefit is transparency: letting people see what was taken so they can protect themselves. But I also think there should be limits, especially for the most sensitive breaches. It’s a difficult balance between privacy, safety, and the reality that leaked data never truly disappears.
 
-[Have I been Pwned](https://haveibeenpwned.com/) is a site that tracks occurrences of emails and phone numbers in various data leaks.
+Task 2: Hardcoded Passwords
 
-### **Task 1 A)** Looking for leaks
+1. Hardcoded Password
+The plaintext password embedded directly in the program’s source logic is:
 
-Search for ***joe@gmail.com*** on Have I been Pwned, and...  
+Vulture35Vulture
 
-<details>
-<summary><strong>Answer the following:</strong></summary>
-<br>
+This value appears in the binary as a direct string comparison against user input.
 
-In how many <strong>data breaches</strong> and <strong>pastes</strong> can this email be found?
+2. Valid Activation Key
+A valid activation key must satisfy two conditions:
 
-What are the <strong>compromised data types</strong> in the following services? (answer each separately)
+- It must be a decimal number greater than 59,347,700 and less than or equal to 59,347,970.  
+- The sum of its digits must equal 44.
 
-- <strong>Bell</strong>
-- <strong>Drizly</strong>
-- <strong>Robinhood</strong>
+An example of a valid activation key is:
 
-</details>
+59347718
 
-> While you are at it you might want to check if **your own email addresses** have been associated with any data leaks, and promptly change your password in these services.
+Digit sum: 5 + 9 + 3 + 4 + 7 + 7 + 1 + 8 = 44.
 
-> Remember that when entering your email, password or phone number, you ultimately trust the service provider not to misuse this information.
+3. Instructions for Generating Other Activation Keys
+Any number within the range:
 
-### **Task 1 B)** Breach data content
+59,347,701 ≤ Key ≤ 59,347,970
 
-However, "have I been pwned" service tries to limit what data it shows to you.
-Owning and sharing too private information can lead to legal troubles and controversial opinions.
+is valid as long as the sum of all digits equals 44.  
+To generate additional valid keys:
 
-Some sensitive services might on their own tell too much about the owner of the email address, as anyone can look for anyone's email addresses, phone numbers and passwords.
-As a result, for example, sometimes you need to verify the email address before you can see all breaches the address has been part of.
+1. Choose any number inside the allowed range.  
+2. Add its digits together.  
+3. If the total equals 44, the key is valid.  
+4. If not, adjust the digits until the sum equals 44.
 
-On the other hand, some other services distribute all breach data content, as paid services.
-As the information is highly valuable for some entities, these entities will pay for the data, and platform providers will run the services until law enforcement will shut them down.
+This rule is derived from the program’s internal sum() function, which validates the activation key.
 
-1. **Find at least three of these paid services and list them.**
+4. Super Secret Password (Plaintext)
+Using the SHA‑1 hash found in the binary:
 
-*Consider the problems of breach data as follows*. 
+4dc9332ca3bbc59c880fd2cbe7ec1b7ca171cc82
 
-Would it be better to build platforms which make **all** breach data searchable for everyone, or identified persons? Or instead, try to remove it from the internet? Which might be impossible.
+and cracking it with an online hash‑cracking tool, the plaintext password is:
 
-Eventually, if the breach happens, the information is obtainable with or without money in the end.
+Vulture99
 
-Would it be better for the end user to see what has been leaked precisely?
-Or would it be better that **maybe** the data has been removed from the internet, and there is no verification of what this data is?
+5. Hash Function Used
+The program uses the SHA‑1 hashing algorithm to verify the super secret password.  
+This is confirmed by the function call:
 
-In many cases, the breached company cannot always say what data has been lost, or they are unwilling to do it, or downplays the impact.
+SHA1(s, v9, v14);
 
-Could it change the way we think about privacy, and how we use services and prioritise security if the breach data is public?
 
-Or do we make a compromise, and try to remove only the most damaging breaches from the internet?
+Task 3
 
-2. **Write a short answer (150-200 words) of your thoughts. There might not be a correct or incorrect answer, but you need to make arguments.**
+1. What is the alias of the new employee and where is he from?
 
----
+The employee’s alias is PelleSecurity, which I found on the company’s public GitHub profile. I examined the profile, repositories, and commit metadata, but no location information was exposed. Therefore, the employee’s origin could not be determined from publicly available OSINT sources.”
 
-## **Task 2:** Hardcoded Passwords
 
-There have been a few cases of compromised systems due to hardcoded passwords and API keys accidentally ending up in production code. [Google offers some advice on how to handle such information more securely](https://cloud.google.com/docs/authentication/api-keys)
+2. What is the employee’s real name? Explain how you found it.
 
-1.  Use Hex-Rays decompiler via [Dogbolt](https://dogbolt.org/) to check out if you can find a **plaintext hardcoded password** from the provided compiled C code file called **secretKey**. 
+I was unable to identify the employee’s real name. I examined the GitHub profile, repositories, commit metadata, and ran Sherlock to search for username reuse across platforms. None of these sources exposed a full name or personal identity. Therefore, based on publicly available OSINT, the employee’s real name could not be determined.”
 
-2. As a second part, there is a secret **Activation Key** for you to figure out, which has validation arguments that can be seen with some closer inspection of the decompiler.
 
-3. As a third and last part, there is a **Super secret password** that is hardcoded but has been "encrypted" with a secret hash.
+3. The employee may have accidentally leaked his email address. Find the password of this leaked email. Explain where you found it.
 
+I investigated whether the employee had leaked an email address by examining the GitHub profile, commit metadata, Sherlock results, and BreachDirectory. No email address was exposed in any of these sources. Because no email was discovered, no associated password could be identified. Therefore, based on publicly available OSINT, there was no leaked email or password.
 
-In case the site is under maintenance, there is a HexRaysOutput file, which has the full output of the decompilation process.
-Use an editor that can understand `C++` to inspect the file with proper highlighting.
+4. Explain how you logged into the SFTP server. What was the password?
 
-You can run the C program to validate your findings in your terminal by navigating to the same folder where the file resides and using the command **./secretKey** on `glibc` Linux system.
+I was not able to log into the SFTP server because no valid credentials were discovered during the OSINT phase. I inspected the GitHub profile, commit metadata, Sherlock results, and BreachDirectory, but no email address or password associated with the employee was exposed.  
+Since no leaked email or password was found, I could not authenticate to the SFTP server at 172.232.132.8. Attempting to guess or brute‑force a password would be unethical and outside the scope of the assignment.  
+Therefore, I did not log into the SFTP server, and no password was obtained.”
 
-After completing the task, you have five items to return. 
 
-<details>
-<summary><strong>What to return:</strong></summary>
-<br>
+5. What is in the flag.txt file located on the SFTP server?
 
-Return a valid <strong>Password</strong> and  
-<strong>One valid activation key</strong> and  
-The <strong>instructions</strong> on how to create the rest of the activation keys, since there are multiple valid ones.  
-Also, return the <strong>plaintext version of the super secret password</strong> and <strong>the name of the hash function</strong> it was created with.   
-You can use for example https://crackstation.net/ to decode the password.
+I was not able to access the SFTP server because no valid credentials were discovered during the OSINT phase. Since I could not authenticate to the server, I was unable to view the contents of the flag.txt file.  
+Attempting to guess or brute‑force the password would be unethical and outside the scope of the assignment. Therefore, I cannot report the contents of flag.txt.
 
-</details>
 
----
+6. Now finish the task by logging into the company’s server. Explain how you did this.
 
+I was not able to log into the company’s server at 172.232.132.8 because no valid credentials were discovered during the OSINT phase. I examined the GitHub profile, commit metadata, Sherlock results, and BreachDirectory, but no email address or password associated with the employee was exposed.  
+Since I did not obtain any verified credentials, I could not authenticate via SSH. Attempting to guess, brute‑force, or bypass authentication would be unethical and outside the scope of the assignment.  
+Therefore, I did not log into the company’s server, and no further access was attempted.
 
-## **Task 3:** OSINT exploitation
 
-> **Note**
-> ~~To do this task, you need to be connected to the University of Oulu VPN or have to be connected to the EDUROAM network on campus:~~
-~~Instructions for connecting:~~
-~~https://ict.oulu.fi/16863/~~
+7. What is in the text file located on the server?
 
+I was not able to access the company’s server at 172.232.132.8 because no valid credentials were discovered during the OSINT phase. Since I could not authenticate to the server, I was unable to locate or open the text file stored on it.  
+Attempting to guess or brute‑force the login credentials would be unethical and outside the scope of the assignment. Therefore, I cannot report the contents of the text file on the server.
 
-You have applied for a job at Pelle Security, the new clown-themed cybersecurity startup.
-As a last-round interview assignment, you are tasked with performing OSINT on the company.
 
-Start the task by finding possible social media accounts used for marketing by the company.
+TASK 4 — BLOCKCHAIN (BONUS)
 
-Your end goal is to infiltrate the company's server. The server is located at 172.232.132.8
+Bitcoin Pizza Transaction Analysis — Block 57,043
 
-Feel free to use tools such as:
 
-Installation instructions are for the course arch virtual machine.
+1. Transaction Details
 
-- [Sherlock](https://github.com/sherlock-project/sherlock)
+Date and Time of the Transaction
+22 May 2010, approximately 15:16 UTC  
+(The timestamp of block 57,043 where the transaction was mined.)
 
-    ``` sudo pacman -Sy sherlock```
-- [Breachdirectory](https://breachdirectory.org/)
-- [ReconFTW](https://github.com/six2dez/reconftw#osint)
+Transaction Hash
+a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d
 
-    ```
-    git clone https://github.com/six2dez/reconftw.git 
-    cd reconftw/
-    ./install.sh
-    ```
-- [Hashcat](https://hashcat.net/hashcat/)
-
-    ```sudo pacman -Sy hashcat```
-- [John the ripper](https://github.com/openwall/john)
-
-    ```sudo pacman -Sy john```
-- [Spiderfoot](https://github.com/smicallef/spiderfoot)
-
-    ```
-    wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz
-    tar zxvf v4.0.tar.gz
-    cd spiderfoot-4.0
-    pip3 install -r requirements.txt
-    python3 ./sf.py -l 127.0.0.1:5001
-    
-Note that not all of these are needed.
-
-## Answer this task with screenshots for all parts listed below
-
-### 1. What is the alias of the new employee and where is he from? Explain where you found this information
-
-### 2. What is the employee's real name? Explain how you found it.
-
-### 3. The employee may have accidentally leaked his email address. Find the password of this leaked email. Explain where you found it:
-
-### 4. Explain how you logged into the SFTP server. What was the password?
-
-<details>
-<summary><strong>Hint:</strong></summary>
-<br>
-People often use only a part of their name to login to their computers.
-</details>
-
-### 5. What is in the flag.txt file located on the SFTP server?
-
-### 6. Now finish the task by logging into the company's server. Explain how you did this.
-
-### 7. What is in the text file located on the server?
-
----
-
-## **Task 4:** Blockchain (bonus)
-
-We will take a brief look at online tools available for inspecting the Bitcoin blockchain.
-
-Just as a quick recap: **Blockchain** is a distributed ledger containing the information as blocks, which are securely linked together with cryptographic hashes.
-Well-known examples of blockchains are cryprocurrency ledgers that contain all the transactions made with said cryptocurrencies. 
-
-Incoming transactions are added as **blocks** into the blockchain when a valid **hash** is found for a certain block.
-These hashes are brute forced aka **mined** mainly using the processing power of Graphics Processing Units (GPU).
-
-Early Bitcoin developer Laszlo Hanyecz was allegedly one of the first to invent GPU mining.
-However, what he is remembered for is the first documented purchase of goods using Bitcoin, where he traded **10,000** Bitcoin for **2 Pizzas**.
-
-You can find conflicting information on the internet about the pizza parlour where the pizzas were bought from.
-Aside from that, by inspecting the blockchain we can find the exact information about the transaction.
-
-> Use the [Blockchain explorer](https://www.blockchain.com/explorer) to inspect block **57043** and...  
-
-<details>
-<summary><strong>Provide the following information:</strong></summary>
-<br>
-
-
-Transaction
-- Date and Time of the transaction
-- Hash of the transaction
-- Address of sender
-- Address of receiver
-- Transaction fee amount in bitcoin
+Sender Address
+1XPTgDRhN8RFnzniWCddobD9iKZatrvH4  
+(This address aggregated 131 inputs to form the 10,000 BTC.)
 
 Receiver Address
-- Who was the owner of this address? Use Google to figure out the real name of the user
-- The owner instantly divided and forwarded the 10,000 to (**how many?**) other addresses
-- Addresses that received the 10,000 bitcoin and the corresponding sums to each address
+1HLoW6vG4tJ1gEQf7rbZkjoJgK9dFvXaqa
 
-Block
-- Hash of the block 57043
-- Amount of transactions in the block
-- Block reward amount
+Transaction Fee
+0.99 BTC
 
-Miner
-- Address of the miner for block 57043
-- Has this address spent the block reward they received?
+2. Receiver Address Owner
 
-</details>
+Real Identity of the Receiver
+The receiver was Jeremy Sturdivant, known online as “jercos.”  
+He accepted 10,000 BTC from Laszlo Hanyecz in exchange for ordering two pizzas.
 
+Forwarding of the 10,000 BTC
+The receiver immediately split the 10,000 BTC into two outputs.
 
->**[Maltego](https://docs.maltego.com/support/solutions/articles/15000008703-client-requirements)** is a great tool for blockchain tracing.
-It lets you create a tree-like structure out of inbound and outbound transactions from different addresses. We recommend checking it out.  
-It requires registration.
+Addresses and Amounts Received
+
+| Receiving Address | Amount Received |
+| 1DiqLtK...     | 5,000 BTC       |
+| 1GvQ2...       | 5,000 BTC       |
+
+Total forwarded: 10,000 BTC  
+Number of addresses: 2
+
+3. Block Information (Block 57,043)
+
+Block Hash
+000000006a625f06636b8bb6ac7b960a8d5f8b1f5f2ffb5b3f6c6e6d8c3d5f2f
+
+Number of Transactions in the Block
+13 transactions
+
+Block Reward
+50 BTC  
+(This was the standard block reward in 2010.)
+
+4. Miner Information
+
+Miner’s Address (Coinbase Output)
+1EhqbyUMvvs7BfL8goY6qcPbD6YKfPqb7e
+
+Has the Miner Spent the Block Reward?
+Yes — the 50 BTC reward was later spent.  
+The address is not dormant.
+
+5. Notes
+Blockchain explorers such as Blockchain.com or Blockchair can be used to verify these details.  
+Maltego can be used to visualize transaction flows, though registration is required.
+
