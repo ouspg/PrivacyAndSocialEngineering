@@ -139,6 +139,9 @@ Installation instructions are for the course arch virtual machine.
 
     ``` sudo pacman -Sy sherlock```
 - [Breachdirectory](https://breachdirectory.org/)
+
+Breachdirectory censors parts of the passwords (Marked with star *** symbols) so you will have to do some guesswork about the last part. Crack the hash or maybe try numbers?
+
 - [ReconFTW](https://github.com/six2dez/reconftw#osint)
 
     ```
