@@ -65,7 +65,7 @@ You are expected to use more time on later tasks to get an equal amount of point
 
 Task #|Points|Description|
 -----|:---:|-----------|
-[Task 1](#task-1-can-you-scam-me) | 2 | Can you... scam me?
+[Task 1](#task-1-can-you-scam-me) | 2 (+1) | Can you... scam me?
 [Task 2](#task-2-social-engineering-toolkit) | 1 | Social Engineering Toolkit
 
 ## Task 1: Can you... scam me?
@@ -208,10 +208,10 @@ Remember to take it **with a grain of salt** whatever it is saying, and verify f
 
 </details>
 
-### Task 1C) Building a credential-stealing site
+### Task 1C) Building a credential-stealing site (BONUS, worth 1 extra point)
 
 > [!IMPORTANT]  
-> Due to changes on how netflix handles logging in this part is not completable as is, so it does not affect grading this year. You can still follow the instructions if you want and maybe try adapting it to work on some other site. Getting it to function somewhere could be worth of extra point!
+> Due to changes on how netflix handles logging in this part is not completable as is, so it will stay as a bonus point task (A & B will already be worth 2 points). You can still follow the instructions if you want and maybe try adapting it to work on some other site. Getting it to function somewhere could be worth of extra point! Optinally you can use other websites with a login functionality than Netflix and redirect accordingly.
 
 
 Let's stop with the financial theme, and have fun with Netflix instead.
