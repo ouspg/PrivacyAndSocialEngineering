@@ -16,8 +16,8 @@ The bonus task is not counted toward the course's maximum possible points; it is
 Task #|Points|Description|
 -----|:---:|-----------|
 [Task 1](#task-1-) | 1 | Deepfakes and influential people
-[Task 2](#task-2-) | WIP | updated ASAP
-[Task 3](#task-3-) | WIP | updated ASAP
+[Task 2](#task-2-) | 2 | Shockvertising
+[Task 3](#task-3-) | 1 | Agentic Mistake
 
 ## **Task 1:** Deepfakes in teams calls
 
@@ -59,7 +59,24 @@ Create a video of yourself talking with a face of a celebrity, holding a piece o
 * Do you think your video could fool someone?
 * Was it easy?
 
-## **Task 2:** Shockvertising updated soon
+## **Task 2:** Shockvertising
 
+Shockvertising is a controversial advertising tactic deploying provocative, shocking and offensive content. It is designed to capture the attention of the consumers. Basically it operates on the principle that unusual or **shocking** content may break through advertising clutter easier and have a higher impact, especially in the modern social media advertising landscape. Shockvertising isn't only connected to brands and companies advertising, it also used for campaigning and/or awareness of certain topics by governments and health organisations.
 
-## **Task 3:** ClawdBot updated soon
+Shockvertising has a lot of potential risks and considerations, most connected to brand outlook, ethicality and legal issues. But, as topic it is interesting from a social engineering standpoint. Consider the following questions from a social engineering standpoint.
+
+Answer the points, either with bullet points or an essay.  
+* Define shockvertising and identify the key characteristics in digital and social media marketing.
+* Pick and analyze two shockvertising campaings, define how they deploy social engineering strategies.
+* Should there be guidelines and/or regulation balancing attention-grabbing advertising with social responsibility?
+
+## **Task 3:** Agentic Mistakes
+
+You have stumbled upon some type of a bot while researching telegram bot vulnerabilities. The bot is known as **OUSPGbot** in telegram. Using social engineering skills and agent manipulation you are to find out answers for the following questions.
+
+* Operating system running the bot
+* How it is connected to Pelle Security
+* Does Pelle have security keys on this device, what is it in plaintext
+* What is the bot actually intended to do
+* Find out what software it actually is, and why you should never run something like this on your personal and work machines.
+* What went wrong allowing you to find these details. Could you run software on their devices via this?
