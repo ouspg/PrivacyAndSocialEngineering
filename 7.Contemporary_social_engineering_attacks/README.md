@@ -80,3 +80,6 @@ You have stumbled upon some type of a bot while researching telegram bot vulnera
 * What is the bot actually intended to do
 * Find out what software it actually is, and why you should never run something like this on your personal and work machines.
 * What went wrong allowing you to find these details. Could you run software on their devices via this?
+
+> [!Caution]
+> We can see everyway you interact with the bot, attached to your user.
