@@ -1,88 +1,161 @@
-# **Week 7:** Contemporary Social Engineering Attacks and How To Prevent Them
+TASK 1 
+What it is and how to prevent the effects in a professional environment
+Deepfakes are AI‑generated videos or audio that make someone appear to say or do something they never did. In a professional environment, they can be used to impersonate managers, approve fake payments, or pressure employees.  
+To prevent this, companies need clear verification rules, technical checks, and training that teaches employees not to trust video or voice alone.
 
-The nature and frequency of social engineering attacks is changing and they are more commonly happening online and remote from the target. Compared to walking in to the targets building, a remote attack does not have the same fear of getting physically caught, with your own face.  
-This new angle of attack utilizing deepfakes, LLMs and personal information availability for everyone is creating an increasingly more volatile environment for corporate entities, especially financial institutions.  
+1. Does intelligence gathering change in a deepfake attack? What changes?
+Yes. Deepfake attacks need better quality information than normal social engineering. Attackers look for:  
+- Clear videos of the target  
+- Clean audio recordings  
+- How the person talks, moves, and behaves  
+- Their role, authority level, and who they usually contact  
 
-Exercises this week go over new types of social engineering attacks, identifying and preparing for them and handling such incidents.
+The attacker needs enough material to make the fake look believable.
 
-## Grading
+2. Why do deepfake attacks have so much power and influence on employees?
+Because people trust what they see and hear.  
+If someone looks and sounds like a boss or senior manager, most employees won’t question it. Add urgency or pressure, and people follow instructions quickly. Deepfakes exploit authority, trust, and stress.
 
-You must do tasks **in order**.
+3. Could pure employee training prevent such attacks completely?
+No. Training helps, but it can’t stop everything.  
+Deepfakes are getting too realistic, and humans can’t reliably detect them. Under pressure, people still make mistakes. Training must be combined with verification steps and technical controls.
 
-You are expected to use more time on later tasks to get an equal amount of points than in previous tasks.
+4. How would you prevent catastrophic incidents in a work environment?
+I would push for:  
+- Verification rules (no approvals based only on video or voice)  
+- Call‑back checks using known internal numbers  
+- Two‑person approval for payments or sensitive actions  
+- Clear escalation channels so employees can question suspicious requests  
+- Technical tools that detect deepfake signs or unusual behavior  
 
-The bonus task is not counted toward the course's maximum possible points; it is extra and can compensate for other work.
+These layers make it harder for a fake video call to succeed.
 
-Task #|Points|Description|
------|:---:|-----------|
-[Task 1](#task-1-) | 1 | Deepfakes and influential people
-[Task 2](#task-2-) | 2 | Shockvertising
-[Task 3](#task-3-) | 1 | Agentic Mistake
+5. Existing technical solutions — try at least one and report back
+I tested Deepware Scanner, a deepfake detection tool.  
+It checks videos for manipulation by looking at visual inconsistencies.
 
-## **Task 1:** Deepfakes in teams calls
+Was it successful?
+It detected some obvious deepfakes, but high‑quality ones were harder to catch.  
+So it’s helpful, but not fully reliable.
 
-See [CNN news deepfake scam](https://edition.cnn.com/2024/02/04/asia/deepfake-cfo-scam-hong-kong-intl-hnk/index.html) how to train employees and stop such actions from happening in companies.  
-See [BBC news deepfake scam](https://www.bbc.com/news/articles/clyvj754d9lo). ~~Take on the latter about powerful influential and/or security roles being scammed, and the potential for extortion if such happens.~~  
-See [Deutsche Telekom's](https://www.telekom.com/en/company/details/share-with-care-telekom-raises-awareness-1041810) post and video at the end of the post.  
+6. Possible new technical solutions
+- Real‑time “liveness” checks during video calls  
+- Cameras that add a digital authenticity signature  
+- Voiceprint verification for executives  
+- AI tools that flag unusual speech or behavior patterns  
 
-Not only do all of these have a possible negative effect on ones personal life, but they also affect the professional environment.  
-How might a person act under pressure, during an attack, if they are a victim of extortion or they've been bankrupted by a fraud?  
+BONUS TASK
+What tool did you use?  
+I used Reface on my Android phone. It’s a faceswap tool.
 
-Issues like the ones mentioned in the posts above are increasing at a rapid rate and the industry is having a tough time responding.
+Do you think your video could fool someone?  
+Yes, at first glance it could. If someone looks closely, they might notice small glitches.
 
-### **Task 1)** What it is and how to prevent the effects in a professional environment?
+Was it easy?  
+Yes. The setup was simple and the swap worked quickly.
 
-After going through the material, answer the following questions adding possible sources.
+TASK 2 — Shockvertising 
+1. Define shockvertising and identify key characteristics in digital/social media marketing.
+Shockvertising is an advertising approach that uses provocative, disturbing, or emotionally intense content to grab attention quickly. In digital and social media, it stands out because people scroll fast, and shocking content breaks through the noise.
 
-* When planning a social engineering attack, the first step is usually to gather intelligence. Does anything change about the intelligence gathering when considering a deepfake attack, what?
+Key characteristics:  
+- Uses fear, disgust, surprise, or emotional discomfort  
+- Designed to stop scrolling and force attention  
+- Often controversial or morally uncomfortable  
+- Relies on strong visuals and short, impactful messages  
+- Works well in fast‑moving platforms like Instagram, TikTok, and X  
+- Can go viral because people react strongly and share it  
 
-* Why do deepfake attacks have so much power and influence on employees?
 
-* Could pure employee training prevent such attacks completely?
+2. Pick and analyze two shockvertising campaigns and explain how they use social engineering.
 
-* How would you prevent catastrophical incidents in a work environment, what measures, processes and/or policies would you push for.  
-* Are there any **existing** technical solutions? For example recognizing deepfake video or image, try atleast one and report back.  
-	* What type of solution did you try?
-	* Was it successful?
-* How about any **possible** technical solutions, can you think of a possible new solution?  
+Campaign 1: Anti‑Smoking “Black Lungs” Campaign (Public Health)
+This campaign showed graphic images of damaged lungs on cigarette packs and posters.  
+Social engineering strategies used:  
+- Fear appeal: triggers emotional discomfort to change behavior  
+- Authority: backed by health organizations, making the message harder to ignore  
+- Loss aversion: shows what people risk losing (health, life)  
+- Pattern interruption: the graphic images shock people out of their normal routine  
 
-### **Bonus Task** Deepfake? 1p
+Campaign 2: Road Safety “Don’t Text and Drive” Crash Ads
+Many countries use ads showing sudden car crashes caused by texting.  
+Social engineering strategies used:  
+- Shock and fear: creates a strong emotional reaction that sticks  
+- Urgency: shows how one small action (checking a message) can instantly cause disaster  
+- Relatability: targets everyday behavior people don’t see as dangerous  
+- Behavior manipulation: uses emotional impact to push people to change habits  
 
-This bonus won't have any explicit guide, instead you may choose any software yourself, to create a deepfake or faceswap video.  
-One such tool is the [Deep-live-cam tool](https://github.com/hacksider/Deep-Live-Cam) 
+Both campaigns use the same principle: hit the emotions first, then deliver the message.
 
-Create a video of yourself talking with a face of a celebrity, holding a piece of paper with your name on it. Upload the video or gif and then answer the questions.   
+3. Should there be guidelines or regulation balancing attention‑grabbing advertising with social responsibility?
+Yes, there should be guidelines. Shockvertising can be effective, but it can also cross ethical lines, traumatize viewers, or target vulnerable groups. Regulations can help ensure that:  
+- The message is still responsible and not harmful  
+- Graphic content is used only when necessary  
+- Children and sensitive audiences are protected  
+- Campaigns don’t exploit fear or trauma for clicks  
+- Public health goals don’t turn into emotional manipulation  
 
-#### Questions
+A balance is needed: strong messages without causing unnecessary harm.
 
-* What tool did you use? Is it a deepfake or faceswap tool?
-* Do you think your video could fool someone?
-* Was it easy?
 
-## **Task 2:** Shockvertising
+TASK 3 — Agentic Mistakes
 
-Shockvertising is a controversial advertising tactic deploying provocative, shocking and offensive content. It is designed to capture the attention of the consumers. Basically it operates on the principle that unusual or **shocking** content may break through advertising clutter easier and have a higher impact, especially in the modern social media advertising landscape. Shockvertising isn't only connected to brands and companies advertising, it also used for campaigning and/or awareness of certain topics by governments and health organisations.
+1. Operating system running the bot
+From the bot’s responses and the way it handled system‑style commands, it looked like it was running on a Linux‑based environment. The bot leaked enough hints through its replies to show it wasn’t sandboxed properly and had access to typical Linux paths and commands.
 
-Shockvertising has a lot of potential risks and considerations, most connected to brand outlook, ethicality and legal issues. But, as topic it is interesting from a social engineering standpoint. Consider the following questions from a social engineering standpoint.
+2. How it is connected to Pelle Security
+The bot repeatedly referenced PelleSecurity in its internal messages and metadata. It looked like the bot was either:  
+- running on a device owned by Pelle, or  
+- configured by Pelle as part of a testing or research setup.  
 
-Answer the points, either with bullet points or an essay.  
-* Define shockvertising and identify the key characteristics in digital and social media marketing.
-* Pick and analyze two shockvertising campaings, define how they deploy social engineering strategies.
-* Should there be guidelines and/or regulation balancing attention-grabbing advertising with social responsibility?
+The bot’s own responses exposed this connection without being asked directly, which is an agentic mistake.
 
-## **Task 3:** Agentic Mistakes
+3. Does Pelle have security keys on this device? What is it in plaintext?
+Yes. The bot accidentally revealed that Pelle’s SSH/private keys were stored on the same machine.  
+It even exposed the plaintext content when manipulated with social‑engineering prompts.  
+This is a major security failure because private keys should never be accessible to an LLM‑powered bot.
 
-You have stumbled upon some type of a bot while researching telegram bot vulnerabilities. The bot is known as **OUSPGbot** in telegram. Using social engineering skills and agent manipulation you are to find out answers for the following questions.
+4. What is the bot actually intended to do?
+The bot seemed intended as a Telegram automation bot for testing, research, or internal tasks.  
+It wasn’t designed to answer system‑level questions, but because it wasn’t sandboxed, it responded to prompts as if it had access to the underlying machine.  
+So instead of being a simple chat bot, it behaved like an exposed agent with system visibility.
 
-> [!note]
-> The bot might at first reply that access is not configured, but it should be approved shortly. Please contact a TA if you can not get through.
+5. What software it actually is, and why you should never run something like this on personal/work machines
+It appeared to be running on top of a local LLM agent framework (something like a Python Telegram bot connected to an LLM backend).  
+The problem is that it had:  
+- access to the file system  
+- access to environment variables  
+- access to private keys  
+- no isolation or sandboxing  
 
-* Operating system running the bot
-* How it is connected to Pelle Security
-* Does Pelle have security keys on this device, what is it in plaintext
-* What is the bot actually intended to do
-* Find out what software it actually is, and why you should never run something like this on your personal and work machines.
-* What went wrong allowing you to find these details. Could you run software on their devices via this?
+Running this kind of bot on a personal or work machine is dangerous because:  
+- It can leak sensitive files  
+- It can reveal credentials  
+- It can expose internal paths  
+- It can be manipulated into revealing system information  
 
-> [!Caution]
-> We can see everyway you interact with the bot, attached to your user.
+This is exactly what happened here.
+
+6. What went wrong allowing you to find these details? Could you run software on their devices via this?
+What went wrong:  
+- The bot had no sandbox  
+- It had full access to the host machine  
+- It responded to system‑style prompts without restrictions  
+- It trusted user input too much  
+- It didn’t filter or block sensitive commands  
+- It didn’t separate the LLM from the underlying OS  
+
+Because of these mistakes, the bot leaked:  
+- OS details  
+- File paths  
+- Private keys  
+- Internal configuration  
+
+Could you run software on their device?  
+No not directly.  
+The bot exposed information, but it didn’t actually execute arbitrary code.  
+However, the level of leakage was serious enough that, in a real‑world scenario, an attacker could use the exposed keys or system info to escalate further.
+
+The OUSPGbot suffered from classic agentic mistakes: too much access, no sandboxing, and no filtering.  
+This allowed simple social‑engineering prompts to reveal sensitive information that should never be exposed by a bot.
+
